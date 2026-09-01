@@ -1,0 +1,20 @@
+{
+	"test":"^Y^001^S001Hello,^S046^030^001 I^S003 am ^WExample!/E",
+	"gaster":"^+#F^DT0012^015Are ^055^008you ^/there?/E",
+	"gaster_1":"^+#F^DT0012^015Are we^060^010 ^/connected?/E",
+	"gaster_2":"^+#F^DT0012^008Excellent/E",
+	"gaster_3":"^+#F^DT0012^015TRULY ^020^/^008Excellent/E",
+	"gaster_4":"^+#F^DT0012^015Now. ^030^015^/We can Begin/E",
+	
+	"start_1":"#t001^DT0003^S009#F^S007J^006uly 11, 2025 Sunday./E",
+	"start_2":"#t001^DT0003^S005#F^003Kioski National High School, ^/in Yutakai City: The Republic of Luzaro./E",
+	"start_3":"#t001^DT0003^S005#F^003^Y{c}^W, ^S017^015^003G^S005rade 8 - Garganey./E",
+	"start_4":"#t001^DT0003^S005#F^003Average Grad^S017e: ^015^0039^S0053/E",
+	"start_5":"#t001^DT0003^S005#F^003Popularity: ^S017^015^003M^S005edium Low./E",
+	"start_6":"#t000^DT0001^003* Yo, {c}!/E",
+	"start_7":"#t000^DT0001^003* Oh, ^S012^010^003^S005it's the your last day here right?.../E",
+	"start_8":"#t000^DT0001^003* Bro we will miss you when you're gone./E",
+	"start_9":"#t000^DT0001^003* You were the smartest kid we knew back ^/    in Grade 7./E",
+	"start_10":"#t000^DT0001^003^W* You showed the system that sections ^/    really don't define someone's ^/    intelligence!/E",
+	"start_11":"#t000^DT0003^003#F* Hey,^S012^010^003^S005 even though you are leaving us,^S090^006^/   ^S005^003all it really matters to us is that ^/   you found the very place you belong ^/   in.../E",
+}
