@@ -1,84 +1,39 @@
-
-
 if global.osflavor == Mobile {
-	
-	draw_rectangle(x1, y1, x1 + 40, y1 + 40, true)	
-	x1 /= 2 
-	y1 += 40
-	draw_rectangle(x1, y1, x1 + 40, y1 + 40, true)
-	
-	x1 = 80
-	y1 = 480 - 180
-	x1 += 40
-	y1 += 40
-	draw_rectangle(x1, y1, x1 + 40, y1 + 40, true)
-	
-	x1 = 80
-	y1 = 480 - 180
-	y1 += 80
-	draw_rectangle(x1, y1, x1 + 40, y1 + 40, true)
-	
-	x1 = 80
-	y1 = 480 - 180
-	x1 += 400
-	y1 += 80
-	draw_rectangle(x1, y1, x1 + 40, y1 + 40, true)
-	
-	x1 = 80
-	y1 = 480 - 180
-	x1 += 440
-	y1 += 40
-	draw_rectangle(x1, y1, x1 + 40, y1 + 40, true)
-	
-	x1 = 80
-	y1 = 480 - 180
-	x1 += 480
-	y1 += 80
-	draw_rectangle(x1, y1, x1 + 40, y1 + 40, true)
-	
-	x1 = 80
-	y1 = 480 - 180
-	y1 += 80
-	draw_set_halign(fa_center)
-	draw_set_valign(fa_center)
-	var old_fnt = draw_get_font()
-	draw_set_font(fnt_main)
-	draw_text(
-		x1 + 20,
-		y1 - 60,
-		"W"
-	)
-	draw_text(
-		x1 - 20,
-		y1 - 20,
-		"A"
-	)
-	draw_text(
-		x1 + 20,
-		y1 + 20,
-		"S"
-	)
-	draw_text(
-		x1 + 60,
-		y1 - 20,
-		"D"
-	)
-	draw_text(
-		x1 + 420,
-		y1 + 20,
-		"Z"
-	)
-	draw_text(
-		x1 + 460,
-		y1 - 20,
-		"X"
-	)
-	draw_text(
-		x1 + 500,
-		y1 + 20,
-		"C"
-	)
-	dra7w_set_font(old_fnt)
-	draw_set_halign(fa_left)
-	draw_set_valign(fa_top)
+	if !instance_exists(obj_joystick) {
+		instance_create(0,0,obj_joystick_border)
+		instance_create_depth(0,0,-1,obj_joystick)
+	}
+}
+global.w_held = keyboard_check(ord(global.w))
+global.w_press = keyboard_check_pressed(ord(global.w))
+global.a_held = keyboard_check(ord(global.a))
+global.a_press = keyboard_check_pressed(ord(global.a))
+global.s_held = keyboard_check(ord(global.s))
+global.s_press = keyboard_check_pressed(ord(global.s))
+global.d_held = keyboard_check(ord(global.d))
+global.d_press = keyboard_check_pressed(ord(global.d))
+
+global.interacted = keyboard_check_pressed(ord(global.z))
+global.interacted_x = keyboard_check_pressed(ord(global._x))
+global.interacted_c = keyboard_check_pressed(ord(global.c))
+global.interacted_f = keyboard_check_pressed(ord(global.f))
+global.held_x = keyboard_check(ord(global._x))
+global.l_click = device_mouse_check_button_pressed(0,mb_left)
+global.l_held = device_mouse_check_button(0,mb_left)
+if instance_exists(obj_joystick) && global.osflavor == Mobile {
+	angle = obj_joystick.angle
+}
+if global.osflavor == Mobile {
+	if (angle >= 0 && angle <= 89) || (angle >= 271 && angle <= 360) {
+		global.d_held = true
+	}
+	if angle >= 1 && angle <= 180 {
+		global.w_held = true // MAJOR
+	}
+	if angle >= 181 && angle <= 360 {
+		global.s_held = true
+	}
+	if (angle >= 181 && angle <= 269) || (angle >= 91 && angle <= 179){
+		global.a_held = true
+	}
 }

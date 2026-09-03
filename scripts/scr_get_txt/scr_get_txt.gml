@@ -9,8 +9,8 @@ function scr_get_txt(_msc, ui = false){
 		switch _msc {
 			case "gaster_start":
 				global.msg[index] = string_upper(result.gaster)
-				global.xx_offset[index] = room_width / 2 - 100
-				global.yy_offset[index] = room_height / 2 - 200
+				global.xx_offset[index] = 640 / 2 - 100
+				global.yy_offset[index] = 480 / 2 - 200
 			
 				index = 1
 				global.msg[index] = string_upper(result.gaster_1)
@@ -107,28 +107,50 @@ function scr_get_txt(_msc, ui = false){
 				index = 0
 				global.msg[index] = result.test_1
 				global.xx_offset[index] = 68
-				global.yy_offset[index] = room_height / 2 + 85
+				global.yy_offset[index] = 480 / 2 + 85
 				
 				index = 1
 				global.msg[index] = result.test_2
 				global.xx_offset[index] = 68
-				global.yy_offset[index] = room_height / 2 + 85
+				global.yy_offset[index] = 480 / 2 + 85
 				break
 			case "test_2":
 				index = 0
 				global.msg[index] = result.test_1_1
 				global.xx_offset[index] = 68
-				global.yy_offset[index] = room_height / 2 + 85
+				global.yy_offset[index] = 480 / 2 + 85
 				
 				index = 1
 				global.msg[index] = result.test_1_2
 				global.xx_offset[index] = 68
-				global.yy_offset[index] = room_height / 2 + 85
+				global.yy_offset[index] = 480 / 2 + 85
 				
 				index = 2
 				global.msg[index] = result.test_1_3
 				global.xx_offset[index] = 68
-				global.yy_offset[index] = room_height / 2 + 85
+				global.yy_offset[index] = 480 / 2 + 85
+				break
+			case "use_item_heroin":
+				index = 0
+				global.msg[index] = result.used_item_heroin
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 480 / 2 + 85
+				
+				index = 1
+				global.msg[index] = result.used_item_heroin_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 480 / 2 + 85
+				
+				index = 2
+				global.msg[index] = result.used_item_heroin_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 480 / 2 + 85
+				
+				
+				index = 3
+				global.msg[index] = result.used_item_heroin_3
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 480 / 2 + 85
 				break
 			default:
 				break

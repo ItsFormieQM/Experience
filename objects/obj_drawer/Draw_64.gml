@@ -347,6 +347,7 @@ for (var i = 1; i <= string_length(test); i++) {
 		draw_text_color(_tx, _ty, _text, _text_color, _text_color, _text_color, _text_color, alpha)
 		_x += string_width(char) + distance
 	}
+	
 }
 _x = global.xx_offset[count]
 _y = global.yy_offset[count]

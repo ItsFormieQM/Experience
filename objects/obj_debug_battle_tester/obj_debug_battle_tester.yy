@@ -6,8 +6,8 @@
   "name":"obj_debug_battle_tester",
   "overriddenProperties":[],
   "parent":{
-    "name":"Slander",
-    "path":"Slander.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

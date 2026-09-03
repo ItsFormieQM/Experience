@@ -1,3 +1,6 @@
 var cam = view_camera[0]
 x = camera_get_view_x(cam) + 320
 y = camera_get_view_y(cam) + 384
+if !instance_exists(obj_drawer) {
+	visible = false
+}

@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_notice",
   "parent":{
-    "name":"Slander",
-    "path":"Slander.yyp",
+    "name":"SFX",
+    "path":"folders/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

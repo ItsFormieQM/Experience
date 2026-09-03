@@ -1,4 +1,4 @@
-if place_meeting(x,y,obj_mainchara) {
+if place_meeting(x,y,obj_mainchara) && !obj_mainchara.occupied {
 	if global.interacted && can_move && !instance_exists(obj_drawer){
 		scr_get_txt(dialogue_type,true)
 		instance_create(0,0,obj_drawer)

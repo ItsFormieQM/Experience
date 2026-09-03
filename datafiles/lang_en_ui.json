@@ -5,4 +5,7 @@
 	"test_1_2":"#t000^000#fnt001^S001^S004^002* No one knows the origin but.../E",
 	"test_1_3":"#t000^000#fnt001^S001^S004^002* It's speculated that it came^/  from a movie./E",
 	
+	"used_item_heroin":"* You took Heroin.",
+	"used_item_heroin_1":"* You feel a bit tired and relaxed.",
+	"used_item_heroin_2":"* Movement is down by 50%!"
 }

@@ -1,7 +1,9 @@
 if keyboard_check_pressed(ord("I")) {
 	is_gunman = !is_gunman
 }
-image_speed = 0
+if !jump_state {
+	image_speed = 0
+}
 if global.run {
 	sp = 4
 }
@@ -9,6 +11,7 @@ else {
 	sp = 2
 }
 if global.canmove {
+	
 	if !is_gunman {
 		if global.interacted_f {
 			global.run = !global.run
@@ -21,7 +24,7 @@ if global.canmove {
 			if place_meeting(x - 1,y,obj_wall) {
 			
 				x += sp
-				image_speed = 0
+				
 			
 			}
 		
@@ -32,7 +35,7 @@ if global.canmove {
 			dir = Right
 			if place_meeting(x + 1,y,obj_wall) {
 				x -= sp
-				image_speed = 0
+				
 			
 			}
 		
@@ -44,7 +47,7 @@ if global.canmove {
 			if place_meeting(x,y - 1,obj_wall) {
 			
 				y += sp
-				image_speed = 0
+				
 			
 			}
 		
@@ -56,7 +59,7 @@ if global.canmove {
 			if place_meeting(x,y + 1,obj_wall) {
 			
 				y -= sp
-				image_speed = 0
+				
 			
 			}
 		
@@ -115,18 +118,18 @@ if global.canmove {
 		}
 	}
 }
-if !global.w_held && !global.a_held && !global.s_held && !global.d_held {
+if !global.w_held && !global.a_held && !global.s_held && !global.d_held && !jump_state {
 	ran = false
 	image_index = 0		
 }	
-else if global.canmove{
+else if global.canmove {
 	if !ran {
 		ran = true
 		image_index = 1
 	}
 }
 
-if !is_gunman {
+if !is_gunman && !jump_state {
 	switch dir {
 		case Up:
 			sprite_index = spr_mainchara_u
@@ -145,7 +148,7 @@ if !is_gunman {
 	}
 }
 else if is_gunman {
-	if global.interacted_x {
+	if global.interacted_x && ammo > 0 {
 		snd_play(snd_gunshot,1.2,0.9)
 		ammo--
 	}
@@ -161,4 +164,5 @@ else if is_gunman {
 			break
 	}
 }
+
 

@@ -1,4 +1,5 @@
-
+_x = 624
+_y = 0
 move_l = false
 moe_r = false
 move_u = false
@@ -16,5 +17,8 @@ alpha = 1
 colour = 1
 is_gunman = false
 ammo = 12
+jump_state = false
+rot = 0
+occupied = false
 
 
