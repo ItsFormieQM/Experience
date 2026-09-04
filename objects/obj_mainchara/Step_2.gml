@@ -14,6 +14,10 @@ with obj_dialogue {
 	x = camera_get_view_x(cam) + self_x
 	y = camera_get_view_y(cam) + self_y
 }
+with obj_bag {
+	x = camera_get_view_x(cam) + og_x
+	y = camera_get_view_y(cam) + og_y
+}
 
 move_l = false
 moe_r = false
