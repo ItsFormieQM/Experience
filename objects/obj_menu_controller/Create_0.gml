@@ -1,3 +1,4 @@
+scale = 2
 letters = [
 	{letter: "A"}, 
 	{letter: "B"}, 
@@ -40,8 +41,8 @@ choices = [
 choice_pos_map = [
 	{}
 ]
-_x = room_width / 2
-_y = room_height / 2 - 30
+_x = (640 / 2) * 2
+_y = (480 / 2 - 30) * 2
 name = ""
 sel_index = 0
 sel_letter = letters[0].letter

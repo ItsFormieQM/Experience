@@ -9,6 +9,10 @@ if global.interacted && skippable{
 		if instance_exists(obj_interactable) {
 			obj_interactable.can_move = true	
 		}
+		is_choicer = false
+		_spr_scalex = 0
+		_spr_scaley = 0
+		
 		font = fnt_main
 		skippable = false
 		plot++
@@ -33,6 +37,10 @@ if global.interacted && skippable{
 			test_string = global.msg[count]
 			_x_offset = global.xx_offset[count]
 			_y = global.yy_offset[count]
+			if spriter != noone {
+				_spr_x = global.xx_offset_spriter[count]
+				_spr_y = global.yy_offset_spriter[count]
+			}
 		}
 		for (var i = 1; i < string_length(test_string); i++) {
 			array_push(chars, string_char_at(test_string,i))
@@ -64,6 +72,8 @@ else if alpha <= 0 {
 	fade = false
 }
 if alpha <= 0 {
+	is_choicer = false
+	
 	font = fnt_main
 	ran = false
 	fade_rate = 0.02
@@ -71,7 +81,8 @@ if alpha <= 0 {
 	special_text = false
 	fade = false
 	skippable = false
-
+	_spr_scalex = 0
+	_spr_scaley = 0
 	current_string = ""
 	visible_text = ""
 	timer = 0
@@ -94,6 +105,10 @@ if alpha <= 0 {
 		test_string = global.msg[count]
 		_x_offset = global.xx_offset[count]
 		_y = global.yy_offset[count]
+		if spriter != noone {
+			_spr_x = global.xx_offset_spriter[count]
+			_spr_y = global.yy_offset_spriter[count]
+		}
 	}
 	for (var i = 1; i < string_length(test_string); i++) {
 		array_push(chars, string_char_at(test_string,i))

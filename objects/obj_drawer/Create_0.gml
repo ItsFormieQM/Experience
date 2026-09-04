@@ -3,6 +3,7 @@ if instance_exists(obj_plot_controller) {
 		scr_get_txt("gaster_start")
 	}
 }
+is_choicer = false
 buffer = true
 global.canmove = false
 chest_award = false
@@ -26,10 +27,17 @@ snd_timer = 0
 snd_delay = 5
 chars = []
 count = 0
-
+spriter = noone
+spriter_indice = 0
 _x_offset = global.xx_offset[count]
 _x = _x_offset
 _y = global.yy_offset[count]
+_spr_scalex = 0
+_spr_scaley = 0                                                                                                                                
+if spriter != noone {
+	_spr_x = global.xx_offset_spriter[count]
+	_spr_y = global.yy_offset_spriter[count]
+}
 plot = 0
 test_string = global.msg[count]
 font = fnt_main

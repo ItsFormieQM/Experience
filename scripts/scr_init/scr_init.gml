@@ -2,11 +2,14 @@ function scr_init(){
 	global.osflavor = pointer_null
 	global.msg = []
 	global.xx_offset = []
+	global.xx_offset_spriter = []
+	global.yy_offset_spriter = []
 	global.warp_list = [{}]
 	global.current_mus = pointer_null
 	global.current_mus_file = pointer_null
 	global.name = ""
 	global.inventory_arr = []
+	global.party_list = []
 	
 	// CONTROLS
 	global.w = "W"

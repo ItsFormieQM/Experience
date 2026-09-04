@@ -1,5 +1,5 @@
 {
-	"test":"^Y^001^S001Hello,^S046^030^001 I^S003 am ^WExample!/E",
+	"example":"^Y^001^S001Hello,^S046^030^001 I^S003 am ^WExample!/E",
 	"gaster":"^+#F^DT0012^015Are ^055^008you ^/there?/E",
 	"gaster_1":"^+#F^DT0012^015Are we^060^010 ^/connected?/E",
 	"gaster_2":"^+#F^DT0012^008Excellent/E",

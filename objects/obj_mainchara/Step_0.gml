@@ -147,7 +147,7 @@ if !is_gunman && !jump_state {
 			break
 	}
 }
-else if is_gunman {
+else if is_gunman && !jump_state {
 	if global.interacted_x && ammo > 0 {
 		snd_play(snd_gunshot,1.2,0.9)
 		ammo--

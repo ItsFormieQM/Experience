@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_dialogue_box",
-    "path":"sprites/spr_dialogue_box/spr_dialogue_box.yy",
+    "name":"spr_inv_box",
+    "path":"sprites/spr_inv_box/spr_inv_box.yy",
   },
   "spriteMaskId":null,
   "visible":true,

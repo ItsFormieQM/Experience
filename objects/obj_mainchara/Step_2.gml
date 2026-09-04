@@ -8,7 +8,13 @@ var ty = y - (cam_h / 2)
 tx = clamp(tx,0,room_width - cam_w)
 ty = clamp(ty,0,room_height - cam_h)
 
-camera_set_view_pos(cam,tx,ty)
+camera_set_view_pos(cam,floor(tx),floor(ty))
+with obj_dialogue {
+	cam = view_camera[0]
+	x = camera_get_view_x(cam) + self_x
+	y = camera_get_view_y(cam) + self_y
+}
+
 move_l = false
 moe_r = false
 move_u = false
