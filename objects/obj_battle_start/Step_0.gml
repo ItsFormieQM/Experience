@@ -2,26 +2,7 @@ if obj_mainchara.image_index >= obj_mainchara.image_number - 1{
 	obj_mainchara.image_speed = 0
 	obj_mainchara.image_index = obj_mainchara.image_number - 1
 }
-if !instance_exists(obj_battle_controller) {
-	timer++
-	with obj_mainchara {
-		if distance_to_point(other.center_x,other.center_y) <= 0.5 {
-			with obj_battle_start {
-				event_user(0)
-			}
-		}
-	}
-	if timer >= 50 {
-		if variable_instance_exists(self,"song") {
-			instance_create(0,0,obj_battle_controller,{mus: song})
-		}
-		else {
-			instance_create(0,0,obj_battle_controller,{})
-		}
-		instance_destroy()
-	}
-}
-if start {
+if start && !instance_exists(obj_battle_controller)  {
 	
 	
 	with obj_kris_centerer {
@@ -31,5 +12,27 @@ if start {
 	}
 	with obj_mainchara {
 		move_towards_point(other.center_x,other.center_y,other.sp)
+	}
+}
+if !instance_exists(obj_battle_controller) {
+	timer++
+	with obj_mainchara {
+	    if point_distance(x, y, other.center_x, other.center_y) <= other.sp {
+			x = other.center_x
+			y = other.center_y
+			speed = 0
+	        with obj_battle_start {
+	            event_user(0)
+	        }
+	    }
+	}
+	if timer >= 50 {
+		if variable_instance_exists(self,"song") {
+			instance_create(0,0,obj_battle_controller,{mus: song})
+		}
+		else {
+			instance_create(0,0,obj_battle_controller,{})
+		}
+		instance_destroy()
 	}
 }
