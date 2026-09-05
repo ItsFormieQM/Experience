@@ -1,5 +1,6 @@
-if obj_mainchara.image_index == obj_mainchara.image_number - 1 {
+if obj_mainchara.image_index >= obj_mainchara.image_number - 1{
 	obj_mainchara.image_speed = 0
+	obj_mainchara.image_index = obj_mainchara.image_number - 1
 }
 if !instance_exists(obj_battle_controller) {
 	timer++
@@ -11,7 +12,12 @@ if !instance_exists(obj_battle_controller) {
 		}
 	}
 	if timer >= 50 {
-		instance_create(0,0,obj_battle_controller,{})
+		if variable_instance_exists(self,"song") {
+			instance_create(0,0,obj_battle_controller,{mus: song})
+		}
+		else {
+			instance_create(0,0,obj_battle_controller,{})
+		}
 		instance_destroy()
 	}
 }

@@ -1,4 +1,9 @@
 if global.interacted && place_meeting(x,y,obj_mainchara) && !ran {
 	ran = true
-	instance_create(0,0,obj_battle_start)
+	if _song != noone {
+		instance_create(0,0,obj_battle_start,{song: _song})
+	}
+	else {
+		instance_create(0,0,obj_battle_start)
+	}
 }
