@@ -87,8 +87,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Noelle",
-    "path":"folders/Objects/Characters/Noelle.yy",
+    "name":"Sprites",
+    "path":"folders/Objects/Characters/Noelle/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

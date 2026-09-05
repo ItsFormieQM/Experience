@@ -1,4 +1,5 @@
 function scr_init(){
+	
 	global.osflavor = pointer_null
 	global.msg = []
 	global.xx_offset = []
@@ -22,10 +23,12 @@ function scr_init(){
 	global.f = "F"
 	global.interacted = 0
 	global.canmove = true
+	
 	// PLAYER
 	global.player_items = 0
 	global.player_points = 0
 	global.run = false
+	global.on_battle = false
 	if os_type == os_windows || os_type == os_linux || os_type == os_macosx || os_type == os_browser{
 		global.osflavor = PC	
 	}

@@ -9,8 +9,8 @@
   "name":"obj_noelle_actor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Slander",
-    "path":"Slander.yyp",
+    "name":"Noelle",
+    "path":"folders/Objects/Characters/Noelle.yy",
   },
   "parentObjectId":null,
   "persistent":false,

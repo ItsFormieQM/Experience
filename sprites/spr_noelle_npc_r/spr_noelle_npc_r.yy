@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Slander",
-    "path":"Slander.yyp",
+    "name":"Sprites",
+    "path":"folders/Objects/Characters/Noelle/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

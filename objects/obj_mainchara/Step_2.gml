@@ -11,7 +11,7 @@ ty = clamp(ty,0,room_height - cam_h)
 camera_set_view_pos(cam,floor(tx),floor(ty))
 with obj_dialogue {
 	cam = view_camera[0]
-	x = camera_get_view_x(cam) + self_x
+	x = camera_get_view_x(cam) + 320
 	y = camera_get_view_y(cam) + self_y
 }
 with obj_bag {
