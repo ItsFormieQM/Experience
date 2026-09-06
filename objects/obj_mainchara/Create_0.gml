@@ -20,5 +20,8 @@ ammo = 12
 jump_state = false
 rot = 0
 occupied = false
+movement_frames = []
+mov_append_tmr = 0
+buffer = true
 
 

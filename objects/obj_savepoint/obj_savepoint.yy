@@ -6,8 +6,8 @@
   "name":"obj_savepoint",
   "overriddenProperties":[],
   "parent":{
-    "name":"Slander",
-    "path":"Slander.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

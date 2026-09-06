@@ -9,8 +9,8 @@
   "name":"obj_battle_test",
   "overriddenProperties":[],
   "parent":{
-    "name":"Slander",
-    "path":"Slander.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,6 +30,7 @@
     {"$GMObjectProperty":"v2","%Name":"_song","filters":[
         "GMSound",
       ],"listItems":[],"multiselect":false,"name":"_song","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"_enemy_type","filters":[],"listItems":[],"multiselect":false,"name":"_enemy_type","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

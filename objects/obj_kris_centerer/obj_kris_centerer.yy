@@ -8,8 +8,8 @@
   "name":"obj_kris_centerer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Slander",
-    "path":"Slander.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

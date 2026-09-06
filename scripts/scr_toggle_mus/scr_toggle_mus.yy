@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_toggle_mus",
   "parent":{
-    "name":"Slander",
-    "path":"Slander.yyp",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

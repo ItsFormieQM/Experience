@@ -13,8 +13,8 @@
   "name":"obj_battle_start",
   "overriddenProperties":[],
   "parent":{
-    "name":"Slander",
-    "path":"Slander.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

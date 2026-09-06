@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"mus_battle_fallback",
+  "%Name":"mus_battle_kr",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":75.42857,
+  "duration":77.99764,
   "exportDir":"",
-  "name":"mus_battle_fallback",
+  "name":"mus_battle_kr",
   "parent":{
-    "name":"Slander",
-    "path":"Slander.yyp",
+    "name":"Battle",
+    "path":"folders/SFX/Music/Battle.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mus_battle_fallback.ogg",
+  "soundFile":"mus_battle_kr.ogg",
   "volume":1.0,
 }

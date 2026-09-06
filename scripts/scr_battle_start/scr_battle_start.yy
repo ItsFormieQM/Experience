@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_battle_start",
   "parent":{
-    "name":"Slander",
-    "path":"Slander.yyp",
+    "name":"Sprites",
+    "path":"folders/Sprites.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

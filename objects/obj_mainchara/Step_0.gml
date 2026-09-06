@@ -166,4 +166,15 @@ if !global.on_battle {
 		}
 	}
 }
-
+else if !instance_exists(obj_battle_controller){
+	mov_append_tmr++
+	if buffer {
+		buffer = false
+		mov_append_tmr = 0.01
+	}
+	var delay = 1
+	if mov_append_tmr >= delay {
+		array_push(movement_frames,{x_pos: x, y_pos: y, sprite: sprite_index, sprite_indice: image_index, alpha: 0.5})
+		mov_append_tmr = 0
+	}
+}

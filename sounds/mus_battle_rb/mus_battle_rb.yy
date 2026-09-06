@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_bstart",
+  "%Name":"mus_battle_rb",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.0714285,
+  "duration":75.42857,
   "exportDir":"",
-  "name":"snd_bstart",
+  "name":"mus_battle_rb",
   "parent":{
-    "name":"SFX",
-    "path":"folders/SFX.yy",
+    "name":"Battle",
+    "path":"folders/SFX/Music/Battle.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_bstart.wav",
+  "soundFile":"mus_battle_rb.ogg",
   "volume":1.0,
 }

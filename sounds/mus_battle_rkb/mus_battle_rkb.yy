@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"mus_battle",
+  "%Name":"mus_battle_rkb",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -12,15 +12,15 @@
   "conversionMode":0,
   "duration":102.85716,
   "exportDir":"",
-  "name":"mus_battle",
+  "name":"mus_battle_rkb",
   "parent":{
-    "name":"Slander",
-    "path":"Slander.yyp",
+    "name":"Battle",
+    "path":"folders/SFX/Music/Battle.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mus_battle.ogg",
+  "soundFile":"mus_battle_rkb.ogg",
   "volume":1.0,
 }
