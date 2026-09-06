@@ -50,7 +50,7 @@ if !instance_exists(obj_battle_controller) {
 	}
 	if timer >= 50 {
 		if variable_instance_exists(self,"song") {
-			instance_create(0,0,obj_battle_controller,{mus: song, vol: volume})
+			instance_create(0,0,obj_battle_controller,{mus: song, vol: volume, pit: pitch})
 		}
 		else {
 			instance_create(0,0,obj_battle_controller,{})

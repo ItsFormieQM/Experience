@@ -32,6 +32,7 @@
       ],"listItems":[],"multiselect":false,"name":"_song","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"_enemy_type","filters":[],"listItems":[],"multiselect":false,"name":"_enemy_type","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"none","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"_volume","filters":[],"listItems":[],"multiselect":false,"name":"_volume","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.2","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"_pitch","filters":[],"listItems":[],"multiselect":false,"name":"_pitch","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

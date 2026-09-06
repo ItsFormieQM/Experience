@@ -1,3 +1,4 @@
+
 if global.current_mus_file != music && !ran {
 	scr_fadeout(global.current_mus,100,0)
 	if !fade_in {
@@ -9,4 +10,5 @@ if global.current_mus_file != music && !ran {
 	}
 	ran = true
 }
+
 visible = false
