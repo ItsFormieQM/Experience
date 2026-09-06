@@ -235,6 +235,14 @@ function scr_get_txt(_msc, ui = false){
 				global.xx_offset_spriter[index] = 220
 				global.yy_offset_spriter[index] = 960 - 185
 				break
+			case "battle_test_1_1":
+				index = 0
+				global.msg[index] = result.test_battle_1
+				global.xx_offset[index] = 68 - 90
+				global.yy_offset[index] = 960 / 2 + 185
+				global.xx_offset_spriter[index] = 220
+				global.yy_offset_spriter[index] = 960 - 185
+				break
 			default:
 				break
 				

@@ -505,7 +505,7 @@ if spriter != noone {
 _x = global.xx_offset[count]
 _y = global.yy_offset[count]
 draw_set_colour(c_white)
-if instance_exists(obj_dialogue) {
+if instance_exists(obj_dialogue) && !global.on_battle {
 	with obj_dialogue {
 		visible = true
 	}

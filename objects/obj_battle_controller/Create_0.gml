@@ -13,5 +13,8 @@ obj_mainchara.image_speed = 1
 mus_play(mus,true,pit,vol)
 alarm[0] = 60 * 30
 sp = 15
-target_y = obj_battle_ui_txtbox.y - (32 * 4.5)
+sp_1 = 15
+target_y = obj_battle_ui_txtbox.y - (32 * 6.5)
 ismoving = true
+ran = false
+instance_create(0,0,obj_drawer)

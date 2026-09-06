@@ -15,6 +15,7 @@
 	"test_1_7":"#t000^000#fnt001^S001^S004^002^W* It's a really old movie./E",
 	"test_1_8":"#t000^000#fnt001^S001^S004^002^W* Like ^S099^010^S004^002very^S099^020 ^S004^002VERY ^S099^020^S004^002old./E",
 	"test_1_9":"#t000^000#fnt001^S001^S004^002^W* Maybe older than ^PThe Prophecy^W./E",
+	"test_battle_1":"#t000^000#fnt001^S001^S004^002^W* Test_inst 9000 accepted your duel!/E",
 	
 	"flowery_test_1":"#t002^000#fnt001^S001^S006^002* .../E",
 	"flowery_test_2":"#t002^000#fnt001^S001^S006^002^W* None?!/E",
@@ -22,6 +23,7 @@
 	"noelle_test_1":"#ET001#EI000^000#ESCX004#ESCY004#t003^000^000#fnt001^S001^S004^000^002* Hey, Kris!/E",
 	"noelle_test_2":"#EI034^000#ESCX004#ESCY004#t003^000^000#fnt001^S001^S004^000^002* Wait, ^S099^010^002^S004you want me to ^/  follow you?!/E",
 	"noelle_test_3":"#EI038^000#ESCX004#ESCY004#t003^000^000#fnt001^S001^S004^000^002* Err, ^S099^010^002^S004sure I guess.../E",
+	
 	
 	"used_item_heroin":"* You took Heroin.",
 	"used_item_heroin_1":"* You feel a bit tired and relaxed.",

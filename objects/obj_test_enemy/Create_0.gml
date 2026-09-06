@@ -1,7 +1,8 @@
 event_inherited()
 stats = {
 	hp: 500,
-	df: 1
+	df: 1,
+	name: "Tung Tung Tung Sahur"
 }
 position_map = [{}]
 timer = 0

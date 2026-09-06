@@ -31,6 +31,10 @@ if !global.on_battle {
 		x = camera_get_view_x(cam) + self_x
 		y = camera_get_view_y(cam) + self_y
 	}
+	with obj_battle_ui_fight {
+		x = camera_get_view_x(cam) + self_x
+		y = camera_get_view_y(cam) + self_y
+	}
 }
 move_l = false
 moe_r = false
