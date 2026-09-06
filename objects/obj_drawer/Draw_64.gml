@@ -351,21 +351,96 @@ for (var i = 1; i <= string_length(test); i++) {
 			i++
 			continue
 		}
-		else if future_char_2 == "B" { colour = c_blue; draw_set_colour(c_blue); i++; continue; }
-		else if future_char_2 == "G" { colour = c_green; draw_set_colour(c_green); i++; continue; }
-		else if future_char_2 == "K" { colour = c_black; draw_set_colour(c_black); i++; continue; }
-		else if future_char_2 == "M" { colour = c_maroon; draw_set_colour(c_maroon); i++; continue; }
-		else if future_char_2 == "O" { colour = c_orange; draw_set_colour(c_orange); i++; continue; }
-		else if future_char_2 == "P" { colour = c_purple; draw_set_colour(c_purple); i++; continue; }
-		else if future_char_2 == "S" { colour = c_silver; draw_set_colour(c_silver); i++; continue; }
-		else if future_char_2 == "T" { colour = c_teal; draw_set_colour(c_teal); i++; continue; }
-		else if future_char_2 == "A" { colour = c_aqua; draw_set_colour(c_aqua); i++; continue; }
-		else if future_char_2 == "F" { colour = c_fuchsia; draw_set_colour(c_fuchsia); i++; continue; }
-		else if future_char_2 == "L" { colour = c_lime; draw_set_colour(c_lime); i++; continue; }
-		else if future_char_2 == "N" { colour = c_navy; draw_set_colour(c_navy); i++; continue; }
-		else if future_char_2 == "'" { colour = c_dkgray; draw_set_colour(c_dkgray); i++; continue; }
-		else if future_char_2 == "?" { colour = c_gray; draw_set_colour(c_gray); i++; continue; }
-		else if future_char_2 == ":" { colour = c_ltgray; draw_set_colour(c_ltgray); i++; continue; }
+		else if future_char_2 == "B" { 
+			colour = c_blue
+			draw_set_colour(c_blue)
+			i++
+			continue
+		}
+		else if future_char_2 == "G" { 
+			colour = c_green
+			draw_set_colour(c_green)
+			i++
+			continue
+		}
+		else if future_char_2 == "K" { 
+			colour = c_black
+			draw_set_colour(c_black)
+			i++
+			continue
+		}
+		else if future_char_2 == "M" { 
+			colour = c_maroon
+			draw_set_colour(c_maroon)
+			i++
+			continue
+		}
+		else if future_char_2 == "O" { 
+			colour = c_orange
+			draw_set_colour(c_orange)
+			i++
+			continue
+		}
+		else if future_char_2 == "P" { 
+			colour = c_purple
+			draw_set_colour(c_purple)
+			i++
+			continue
+		}
+		else if future_char_2 == "S" { 
+			colour = c_silver
+			draw_set_colour(c_silver)
+			i++
+			continue
+		}
+		else if future_char_2 == "T" { 
+			colour = c_teal
+			draw_set_colour(c_teal)
+			i++
+			continue
+		}
+		else if future_char_2 == "A" { 
+			colour = c_aqua
+			draw_set_colour(c_aqua)
+			i++
+			continue
+		}
+		else if future_char_2 == "F" { 
+			colour = c_fuchsia
+			draw_set_colour(c_fuchsia)
+			i++
+			continue
+		}
+		else if future_char_2 == "L" { 
+			colour = c_lime
+			draw_set_colour(c_lime)
+			i++
+			continue
+		}
+		else if future_char_2 == "N" { 
+			colour = c_navy
+			draw_set_colour(c_navy)
+			i++
+			continue
+		}
+		else if future_char_2 == "'" { 
+			colour = c_dkgray
+			draw_set_colour(c_dkgray)
+			i++
+			continue
+		}
+		else if future_char_2 == "?" { 
+			colour = c_gray
+			draw_set_colour(c_gray)
+			i++
+			continue
+		}
+		else if future_char_2 == ":" { 
+			colour = c_ltgray
+			draw_set_colour(c_ltgray)
+			i++
+			continue
+		}
 	}
 	
 	if !gaster {
@@ -373,10 +448,8 @@ for (var i = 1; i <= string_length(test); i++) {
 			_x + 70,_y + 80,char,1,999,scale,scale,0,colour,colour,colour,colour,alpha
 		)
 		_x += (string_width(char) * scale) + distance
-		
 	}
 	else {
-		
 		var _text = char
 		var _tx = _x
 		var _ty = _y
