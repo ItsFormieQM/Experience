@@ -1,5 +1,5 @@
 var _name = ""
-if obj_battle_ui_fight.fight {
+if fight_nameshow {
 	for (var i = 0; i < array_length(global.enemies); i++) {
 		var enemy = global.enemies[i]
 		_name = enemy.stats.name

@@ -32,6 +32,7 @@ with obj_battle_ui_fight {
 				visible = false
 			}
 			other.ran = true
+			other.fight_nameshow = true
 		}
 	}
 	else if !fight && !chose {
@@ -43,6 +44,14 @@ with obj_battle_ui_fight {
 				visible = true
 			}
 			other.ran = false
+			other.fight_nameshow = false
 		}
+	}
+	if global.interacted {
+		if fight {
+			other.fight_nameshow = false
+			other.fight = true
+		}
+		snd_play(snd_select,1.2)
 	}
 }

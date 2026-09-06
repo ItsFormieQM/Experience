@@ -18,6 +18,9 @@ if start && !instance_exists(obj_battle_controller)  {
 	with obj_mainchara {
 		move_towards_point(other.center_x,other.center_y,other.sp)
 	}
+	
+}
+if start_enemy && !instance_exists(obj_battle_controller) {
 	for (var i = 0; i < array_length(global.enemies); i++) {
 		with global.enemies[i]  {
 			move_towards_point(other.center_x_enemy,other.center_y_enemy,other.enemy_sp)
@@ -43,7 +46,7 @@ if !instance_exists(obj_battle_controller) {
 					y = other.center_y_enemy
 					speed = 0
 			        with obj_battle_start {
-			            event_user(0)
+			            event_user(2)
 			        }
 			    }
 			}

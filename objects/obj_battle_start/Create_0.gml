@@ -7,6 +7,7 @@ for (var i = 0; i < array_length(global.enemies); i++) {
 	instance_create(obj_mainchara.x,obj_mainchara.y,global.enemies[i])
 }
 start = true
+start_enemy = true
 sp = 15
 timer = 0
 center_x = 0

@@ -1,4 +1,4 @@
-if global.interacted && place_meeting(x,y,obj_mainchara) && !ran {
+if (global.interacted && place_meeting(x,y,obj_mainchara) && !ran) || force_run {
 	ran = true
 	
 	if _song != noone {
@@ -7,5 +7,5 @@ if global.interacted && place_meeting(x,y,obj_mainchara) && !ran {
 	else {
 		instance_create(0,0,obj_battle_start,{enemy_type: _enemy_type, volume: _volume, pitch: _pitch})
 	}
-	
+	force_run = false
 }

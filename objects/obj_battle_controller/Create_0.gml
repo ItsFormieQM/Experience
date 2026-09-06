@@ -17,4 +17,6 @@ sp_1 = 15
 target_y = obj_battle_ui_txtbox.y - (32 * 6.5)
 ismoving = true
 ran = false
+fight_nameshow = false
+fight = false
 instance_create(0,0,obj_drawer)
