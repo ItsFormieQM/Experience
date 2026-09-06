@@ -89,6 +89,7 @@
     {"id":{"name":"obj_warp_marker","path":"objects/obj_warp_marker/obj_warp_marker.yy",},},
     {"id":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},},
     {"id":{"name":"obj_whiter","path":"objects/obj_whiter/obj_whiter.yy",},},
+    {"id":{"name":"test","path":"objects/test/test.yy",},},
     {"id":{"name":"room_gaster","path":"rooms/room_gaster/room_gaster.yy",},},
     {"id":{"name":"room_init","path":"rooms/room_init/room_init.yy",},},
     {"id":{"name":"room_luzaro_beach_wharf","path":"rooms/room_luzaro_beach_wharf/room_luzaro_beach_wharf.yy",},},
