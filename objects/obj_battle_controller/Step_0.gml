@@ -33,6 +33,7 @@ with obj_battle_ui_fight {
 			}
 			other.ran = true
 			other.fight_nameshow = true
+			
 		}
 	}
 	else if !fight && !chose {
@@ -45,6 +46,7 @@ with obj_battle_ui_fight {
 			}
 			other.ran = false
 			other.fight_nameshow = false
+			
 		}
 	}
 	if global.interacted {

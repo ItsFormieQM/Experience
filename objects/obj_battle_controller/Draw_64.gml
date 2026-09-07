@@ -1,7 +1,8 @@
 var _name = ""
-if fight_nameshow {
-	for (var i = 0; i < array_length(global.enemies); i++) {
-		var enemy = global.enemies[i]
+for (var i = 0; i < array_length(global.enemies); i++) {
+	var enemy = global.enemies[i]
+	enemy.highlighted = false
+	if fight_nameshow {
 		_name = enemy.stats.name
 		
 		var scale = 2
@@ -15,5 +16,9 @@ if fight_nameshow {
 			scale,
 			0
 		)
+		enemy.highlighted = true
 	}
+		
 }
+
+
