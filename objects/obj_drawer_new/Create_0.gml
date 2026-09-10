@@ -1,0 +1,10 @@
+count = 0
+_x = global.xx_offset[count]
+_y = global.yy_offset[count]
+msg = global.msg[count]
+timer = 0
+snd_timer = 0
+delay = 2
+snd_delay = 4
+char_index = 0
+visible_txt = ""

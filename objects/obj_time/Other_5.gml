@@ -1,0 +1,1 @@
+global.warp_list = []

@@ -1,0 +1,19 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_number_indicator",
+  "closed":false,
+  "kind":1,
+  "name":"pth_number_indicator",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":334.0,"y":288.0,},
+    {"speed":100.0,"x":369.0,"y":275.0,},
+    {"speed":100.0,"x":373.0,"y":291.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

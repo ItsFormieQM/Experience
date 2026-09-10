@@ -1,0 +1,11 @@
+x = 320
+self_x = x
+self_y = y - 0.1
+index = 1
+fight = false
+act = false
+item = false
+spare = false
+defend = false
+chose = false
+ran = false

@@ -1,0 +1,11 @@
+position_map = [{}]
+timer = 0
+timer_1 = 0
+attacked = false
+ran = false
+stop_aura = false
+shaker_strength = 24
+old_x = 0
+old_y = 0
+gen_damage_indicator = false
+sp = shaker_strength
