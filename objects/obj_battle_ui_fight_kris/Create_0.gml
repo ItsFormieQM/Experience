@@ -9,3 +9,6 @@ spare = false
 defend = false
 chose = false
 ran = false
+animtimer = 0
+anim_spr_arr = [{}]
+plskillmebro = false

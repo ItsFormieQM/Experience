@@ -9,3 +9,9 @@ if obj_battle_controller.attacked {
 		image_speed = 1 
 	}
 }	
+if obj_battle_controller.counter_attack {
+	var decrementor = 0.03
+	if image_alpha > 0 {
+		image_alpha -= decrementor
+	}
+}

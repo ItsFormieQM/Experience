@@ -18,6 +18,7 @@ function scr_init(){
 	global.battle_txt_x_offset = []
 	global.battle_txt_y_offset = []
 	
+
 	// CONTROLS
 	global.w = "W"
 	global.a = "A"
@@ -41,10 +42,14 @@ function scr_init(){
 	else if os_type == os_android || os_type == os_ios {
 		global.osflavor = Mobile
 	}
+	else if os_type == os_switch || os_type == os_switch2 {
+		global.osflavor = SwitchNX
+	}
 	
 	#region Macros
 	#macro PC "PC"
 	#macro Mobile "Mobile"
+	#macro SwitchNX "Nintendo Switches"
 	#endregion
 	
 	#region Enums
@@ -70,5 +75,6 @@ function scr_init(){
 		drug_cocaine,
 		drug_heroin,
 	}
+	
 	#endregion
 }

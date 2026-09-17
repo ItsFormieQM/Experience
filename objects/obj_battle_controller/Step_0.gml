@@ -4,7 +4,7 @@ if ismoving {
 		move_towards_point(x, other.target_y, other.sp)
 		
 	}
-	with obj_battle_ui_fight {
+	with obj_battle_ui_fight_kris {
 		move_towards_point(x, other.target_y - 31, other.sp_1)
 	}
 	with obj_battle_ui_txtbox {
@@ -14,7 +14,7 @@ if ismoving {
 			ismoving = false
 		}
 	}
-	with obj_battle_ui_fight {
+	with obj_battle_ui_fight_kris {
 		if point_distance(x,y,x,other.target_y - 31) <= other.sp_1 {
 			other.sp_1 = 0
 			speed = 0
@@ -22,7 +22,7 @@ if ismoving {
 		}
 	}
 }
-with obj_battle_ui_fight {
+with obj_battle_ui_fight_kris {
 	if fight && chose {
 		if !other.ran {
 			

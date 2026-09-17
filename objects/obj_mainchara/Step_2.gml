@@ -31,7 +31,7 @@ if !global.on_battle {
 		x = camera_get_view_x(cam) + self_x
 		y = camera_get_view_y(cam) + self_y
 	}
-	with obj_battle_ui_fight {
+	with obj_battle_ui_fight_kris {
 		x = camera_get_view_x(cam) + self_x
 		y = camera_get_view_y(cam) + self_y
 	}

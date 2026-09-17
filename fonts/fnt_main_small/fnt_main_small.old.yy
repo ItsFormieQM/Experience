@@ -138,6 +138,6 @@
     "name":"Default",
     "path":"texturegroups/Default",
   },
-  "TTFName":"C:\\Users\\Formerhyde\\GameMakerProjects\\Experience\\fonts\\fnt_main_small\\determination-mono.otf",
+  "TTFName":"C:\\Users\\Formerhyde\\GameMakerProjects\\Experience\\fonts\\fnt_main_small\\undertale-deltarune-extended-fixed.otf",
   "usesSDF":false,
 }

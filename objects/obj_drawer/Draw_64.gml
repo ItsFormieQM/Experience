@@ -128,51 +128,7 @@ if timer >= delay && !stop_draw {
 			}
 		}
 		// Expression Changer (What character portrait to use)
-		if string_char_at(test_str, index + 1) == "E" {
-			if string_char_at(test_str, index + 2) == "T" {
-				if string_canbe_int(string_char_at(test_str, index + 3)) {
-					if string_canbe_int(string_char_at(test_str, index + 4)) {
-						if string_canbe_int(string_char_at(test_str, index + 5)) {
-							var compare = real(
-											string_char_at(test_str, index + 3) +
-											string_char_at(test_str, index + 4) +
-											string_char_at(test_str, index + 5)
-										)
-							index += 6
-							switch compare {
-								case 0:
-									spriter = noone
-									break
-								case 1:
-									spriter = spr_noelle_dialogue
-									break
-								default:
-									break
-							}
-						}
-					}
-				}
-			}
-		}
-
-		// Expression Indice
-		if string_char_at(test_str, index + 1) == "E" {
-			if string_char_at(test_str, index + 2) == "I" {
-				if string_canbe_int(string_char_at(test_str, index + 3)) {
-					if string_canbe_int(string_char_at(test_str, index + 4)) {
-						if string_canbe_int(string_char_at(test_str, index + 5)) {
-							var compare = real(
-											string_char_at(test_str, index + 3) +
-											string_char_at(test_str, index + 4) +
-											string_char_at(test_str, index + 5)
-										)
-							index += 6
-							spriter_indice = compare
-						}
-					}
-				}
-			}
-		}
+		
 		
 		if string_char_at(test_str, index + 1) == "F" {
 			special_text = true
@@ -244,7 +200,7 @@ if timer >= delay && !stop_draw {
 								show_debug_message("font main")
 								break
 							case 1:
-								font = fnt_main_small
+								
 								break
 							default:
 								break

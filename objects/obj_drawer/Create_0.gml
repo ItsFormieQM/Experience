@@ -3,6 +3,7 @@ if instance_exists(obj_plot_controller) {
 		scr_get_txt("gaster_start")
 	}
 }
+show_debug_message("instantiate drwawer")
 is_choicer = false
 buffer = true
 global.canmove = false
@@ -41,9 +42,13 @@ if spriter != noone {
 plot = 0
 test_string = global.msg[count]
 font = fnt_main
-for (var i = 1; i < string_length(test_string); i++) {
-	array_push(chars, string_char_at(test_string,i))
-}
+for (var i = 1; i <= string_length(test_string); i++) {
+	if string_char_at(test_string,i) == "E" {
+		if string_char_at(test_string,i+1) == "T" {
+			if string_canbe_int(test_string) {}
+		} 
+	}
+} 
 stop_snd = false
 audio_falloff_set_model(audio_falloff_none)
 gaster = false
