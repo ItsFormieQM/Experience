@@ -26,5 +26,5 @@ if global.interacted && stop_draw {
 	y_offset = global.battle_txt_y_offset[count]
 	_x = x_offset
 	_y = y_offset
-	
+	event_user(0)
 }

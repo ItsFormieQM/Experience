@@ -178,3 +178,9 @@ else if !instance_exists(obj_battle_controller){
 		mov_append_tmr = 0
 	}
 }
+if instance_exists(obj_battle_controller) && obj_battle_controller.begin_counter_attack && !heart_show_ran {
+	heart_show = true
+	heart_show_ran = true
+	alarm[0] = 10
+	
+}

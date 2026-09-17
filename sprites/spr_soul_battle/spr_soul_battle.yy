@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Experience",
-    "path":"Experience.yyp",
+    "name":"Sprites",
+    "path":"folders/Soul/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

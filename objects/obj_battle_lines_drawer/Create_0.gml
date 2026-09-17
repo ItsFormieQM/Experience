@@ -10,6 +10,7 @@ buffer = true
 char_index = 0
 snd_delay = 4
 snd_timer = 0
+snd = noone
 scale = global.battle_txt_scale[count]
 alpha = 1
 stop_draw = false
@@ -19,4 +20,5 @@ x_offset = global.battle_txt_x_offset[count]
 y_offset = global.battle_txt_y_offset[count]
 _x = x_offset
 _y = y_offset
+event_user(0)
 

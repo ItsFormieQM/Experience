@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":71.42699,
+  "duration":152.34616,
   "exportDir":"",
   "name":"mus_battle_ttt",
   "parent":{

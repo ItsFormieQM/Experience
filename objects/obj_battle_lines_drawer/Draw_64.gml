@@ -1,4 +1,6 @@
-
+var oldcol = draw_get_colour()
+var oldfnt = draw_get_font()
+draw_set_font(fnt_battle)
 var colour = c_white
 var i = 1
 var _len = string_length(visible_txt)
@@ -8,7 +10,7 @@ while i <= _len {
 		if i < _len {
 			var _next = string_char_at(visible_txt,i + 1)
 			if _next == "/" {
-				_y += string_height(string_char_at(lines,string_length(lines) - char_index)) * scale 
+				_y += (string_height(string_char_at(lines,string_length(lines) - char_index)) * scale) + 10
 				_x = x_offset
 				i += 2
 				continue
@@ -68,5 +70,6 @@ while i <= _len {
 }
 _y = y_offset
 _x = x_offset
-
+draw_set_font(oldfnt)
+draw_set_colour(oldcol)
 draw_text(0,120,$"LENGTH {length}")

@@ -71,7 +71,7 @@ if fight {
 	var cam_y = camera_get_view_y(cam)
 	if !instance_exists(obj_atk_box) {
 		var _x = 75 + cam_x + 80
-		var _y = (480 + cam_y) - 102
+		var _y = (480 + cam_y) - 102 + 33
 		instance_create_depth(
 			_x,
 			_y,

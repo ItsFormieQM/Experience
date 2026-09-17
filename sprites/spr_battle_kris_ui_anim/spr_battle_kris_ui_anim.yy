@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_battle_kris_ui_anim",
   "bboxMode":0,
-  "bbox_bottom":70,
+  "bbox_bottom":68,
   "bbox_left":0,
   "bbox_right":212,
   "bbox_top":36,

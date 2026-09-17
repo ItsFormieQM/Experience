@@ -41,7 +41,7 @@ for (var i = 0; i < array_length(number_array); i++) {
 		spr,
 		spr_indice,
 		x + x_offset,
-		y,
+		y + y_offset,
 		image_xscale,
 		image_yscale,
 		0,

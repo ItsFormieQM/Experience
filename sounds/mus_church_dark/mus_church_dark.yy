@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"mus_church_dark",
   "parent":{
-    "name":"Experience",
-    "path":"Experience.yyp",
+    "name":"Music",
+    "path":"folders/SFX/Music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

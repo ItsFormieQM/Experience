@@ -24,5 +24,6 @@ image_xscale = 0.8
 image_yscale = 0.01
 alarm[2] = 50
 var sp = 7
+y_offset = 0
 path = pth_number_indicator
 path_start(path,sp,path_action_stop,false)

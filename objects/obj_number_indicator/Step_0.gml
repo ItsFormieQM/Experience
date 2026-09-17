@@ -5,9 +5,11 @@ if image_yscale < 0.8 {
 
 if fadeout {
 	incrementor = 0.06
-	image_xscale += incrementor
+	var floatier = 1
+	
 	image_yscale += incrementor
-	image_alpha -= 0.05
+	image_alpha -= 0.0288
+	y_offset -= floatier
 }
 alpha = image_alpha
 if image_alpha <= 0 {

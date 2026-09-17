@@ -12,7 +12,7 @@ for (var i = 0; i < array_length(global.enemies); i++) {
 			spr_heart,
 			0,
 			global.xx_offset[0] + 70 + 30,
-			global.yy_offset[0] + 80 + 35,
+			global.yy_offset[0] + 80 + 30,
 			scale + 0.1,
 			scale + 0.1,
 			0,

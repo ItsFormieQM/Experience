@@ -28,4 +28,5 @@ bullet_hell = false
 battle_plot = 0
 battle_plot_calculated = false
 counter_attack = false
+begin_counter_attack = false
 show_debug_message(global.enemy_instance_arr)
