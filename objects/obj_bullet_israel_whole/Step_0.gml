@@ -14,3 +14,7 @@ else if move_up {
 else if move_down {
 	y += sp
 }
+if x <= -100 {
+	instance_destroy()
+	
+}
