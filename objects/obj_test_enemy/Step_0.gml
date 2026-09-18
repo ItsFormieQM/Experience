@@ -42,3 +42,17 @@ if !ran_1 && instance_exists(obj_battle_controller) && obj_battle_controller.beg
 	show_debug_message("ran")
 	ran_1 = true
 }
+if instance_exists(obj_battle_controller) {
+	if obj_battle_controller.begin_counter_attack {
+		attack_timer++
+		attack_cooldown = 200
+		if obj_battle_controller.battle_plot == 1 {
+			if attack_timer >= attack_cooldown {
+				if instance_exists(obj_soul_battle) {
+					instance_create(choose(obj_soul_battle.x + 180, obj_soul_battle.x + 180),obj_soul_battle.y,obj_bullet_israel_whole,{move_left: true},true)
+				}
+				attack_timer = 0
+			}
+		}
+	}
+}

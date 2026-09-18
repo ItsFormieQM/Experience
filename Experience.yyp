@@ -194,6 +194,7 @@
     {"id":{"name":"spr_heart","path":"sprites/spr_heart/spr_heart.yy",},},
     {"id":{"name":"spr_heroin","path":"sprites/spr_heroin/spr_heroin.yy",},},
     {"id":{"name":"spr_inv_box","path":"sprites/spr_inv_box/spr_inv_box.yy",},},
+    {"id":{"name":"spr_israel_whole","path":"sprites/spr_israel_whole/spr_israel_whole.yy",},},
     {"id":{"name":"spr_joystick","path":"sprites/spr_joystick/spr_joystick.yy",},},
     {"id":{"name":"spr_kris_battle_start","path":"sprites/spr_kris_battle_start/spr_kris_battle_start.yy",},},
     {"id":{"name":"spr_kris_fall","path":"sprites/spr_kris_fall/spr_kris_fall.yy",},},

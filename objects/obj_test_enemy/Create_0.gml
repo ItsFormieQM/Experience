@@ -13,3 +13,5 @@ stop_aura = false
 alarm[0] = 300
 highlighted_spr = spr_test_enemy_white
 damage_took = 0
+attack_timer = 0
+attack_cooldown = 20
