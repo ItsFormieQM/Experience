@@ -9,3 +9,4 @@ old_x = 0
 old_y = 0
 gen_damage_indicator = false
 sp = shaker_strength
+ran_1 = false

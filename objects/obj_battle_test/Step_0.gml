@@ -12,3 +12,10 @@ if (global.interacted && place_meeting(x,y,obj_mainchara) && !ran) || force_run 
 	}
 	force_run = false
 }
+if global.on_battle {
+	var _layer = "Lower"
+	layer_add_instance(_layer,id)
+}
+else {
+	layer_add_instance(og_layer,id)
+}

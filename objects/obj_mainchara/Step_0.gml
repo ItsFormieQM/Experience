@@ -181,6 +181,7 @@ else if !instance_exists(obj_battle_controller){
 if instance_exists(obj_battle_controller) && obj_battle_controller.begin_counter_attack && !heart_show_ran {
 	heart_show = true
 	heart_show_ran = true
+	instance_create(x,y,obj_soul_battle,{},true)
 	alarm[0] = 10
 	
 }

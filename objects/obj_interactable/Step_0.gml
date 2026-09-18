@@ -12,3 +12,4 @@ if place_meeting(x,y,obj_mainchara) && !obj_mainchara.occupied {
 }	
 global.interacted = false
 
+
