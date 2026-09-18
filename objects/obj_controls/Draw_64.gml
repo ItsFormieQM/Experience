@@ -5,14 +5,14 @@ if global.osflavor == Mobile {
 	}
 }
 if global.osflavor == PC {
-	global.w_held = keyboard_check(ord(global.w))
-	global.w_press = keyboard_check_pressed(ord(global.w))
-	global.a_held = keyboard_check(ord(global.a))
-	global.a_press = keyboard_check_pressed(ord(global.a))
-	global.s_held = keyboard_check(ord(global.s))
-	global.s_press = keyboard_check_pressed(ord(global.s))
-	global.d_held = keyboard_check(ord(global.d))
-	global.d_press = keyboard_check_pressed(ord(global.d))
+	global.w_held = keyboard_check(ord(global.w)) || keyboard_check(vk_up)
+	global.w_press = keyboard_check_pressed(ord(global.w)) || keyboard_check_pressed(vk_up)
+	global.a_held = keyboard_check(ord(global.a)) || keyboard_check(vk_left)
+	global.a_press = keyboard_check_pressed(ord(global.a)) || keyboard_check_pressed(vk_left)
+	global.s_held = keyboard_check(ord(global.s)) || keyboard_check(vk_down)
+	global.s_press = keyboard_check_pressed(ord(global.s)) || keyboard_check_pressed(vk_down)
+	global.d_held = keyboard_check(ord(global.d)) || keyboard_check(vk_right)
+	global.d_press = keyboard_check_pressed(ord(global.d)) || keyboard_check_pressed(vk_right)
 	global.interacted = keyboard_check_pressed(ord(global.z))
 	global.interacted_x = keyboard_check_pressed(ord(global._x))
 	global.interacted_c = keyboard_check_pressed(ord(global.c))

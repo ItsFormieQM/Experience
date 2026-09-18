@@ -14,6 +14,23 @@ else if move_up {
 else if move_down {
 	y += sp
 }
+
+else if move_northeast {
+	x += sp
+	y -= sp
+}
+else if move_northwest {
+	x -= sp
+	y -= sp
+}
+else if move_southeast {
+	x += sp
+	y += sp
+}
+else if move_southwest {
+	x -= sp
+	y += sp
+}
 if x <= -100 {
 	instance_destroy()
 	

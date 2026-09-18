@@ -1,6 +1,6 @@
 draw_self()
 x_offset = 0
-draw_path(path,x,y,true)
+//draw_path(path,x,y,true)
 for (var i = 0; i < array_length(number_array); i++) {
 	switch number_array[i] {
 		case 0:

@@ -10,4 +10,17 @@ if !variable_instance_exists(self,"move_up") {
 if !variable_instance_exists(self,"move_down") {
 	move_down = false
 }
+
+if !variable_instance_exists(self,"move_northeast") {
+	move_northeast = false
+}
+if !variable_instance_exists(self,"move_northwest") {
+	move_northwest = false
+}
+if !variable_instance_exists(self,"move_southeast") {
+	move_southeast = false
+}
+if !variable_instance_exists(self,"move_southwest") {
+	move_southwest = false
+}
 image_alpha = 0

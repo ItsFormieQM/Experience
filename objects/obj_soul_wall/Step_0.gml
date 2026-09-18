@@ -1,6 +1,3 @@
 if keyboard_check_pressed(ord("2")) {
-	visible = true
+	visible = !visible
 } 
-else {
-	visible = false
-}

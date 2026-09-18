@@ -6,6 +6,30 @@ if soulmode == SoulMode.Red {
 				y += sp
 			}
 		} 
+		if global.w_press {
+			moving_up = true
+			moving_down = false
+			moving_left = false
+			moving_right = false
+		}
+		if global.a_press {
+			moving_up = false
+			moving_down = false
+			moving_left = true
+			moving_right = false
+		}
+		if global.s_press {
+			moving_up = false
+			moving_down = true
+			moving_left = false
+			moving_right = false
+		}
+		if global.d_press {
+			moving_up = false
+			moving_down = false
+			moving_left = false
+			moving_right = true
+		}
 		if global.a_held {
 			x -= sp
 			if place_meeting(x - 1,y,obj_soul_wall) {
@@ -22,6 +46,63 @@ if soulmode == SoulMode.Red {
 			x += sp
 			if place_meeting(x + 1,y,obj_soul_wall) {
 				x -= sp
+			}
+		}
+	}
+}
+else if soulmode == SoulMode.Orange {
+	if canmove {
+		if global.w_press {
+			moving_up = true
+			moving_down = false
+			moving_left = false
+			moving_right = false
+		}
+		if global.a_press {
+			moving_up = false
+			moving_down = false
+			moving_left = true
+			moving_right = false
+		}
+		if global.s_press {
+			moving_up = false
+			moving_down = true
+			moving_left = false
+			moving_right = false
+		}
+		if global.d_press {
+			moving_up = false
+			moving_down = false
+			moving_left = false
+			moving_right = true
+		}
+		
+		if moving_up {
+			y -= sp
+			if place_meeting(x,y - 1,obj_soul_wall) {
+				y += sp
+				event_user(0)
+			}
+		}
+		if moving_down {
+			y += sp
+			if place_meeting(x,y + 1,obj_soul_wall) {
+				y -= sp
+				event_user(0)
+			}
+		}
+		if moving_left {
+			x -= sp
+			if place_meeting(x-1,y,obj_soul_wall) {
+				x += sp
+				event_user(0)
+			}
+		}
+		if moving_right {
+			x += sp
+			if place_meeting(x + 1,y,obj_soul_wall) {
+				x -= sp
+				event_user(0)
 			}
 		}
 	}

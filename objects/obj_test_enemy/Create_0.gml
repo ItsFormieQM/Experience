@@ -1,8 +1,8 @@
 event_inherited()
 stats = {
-	hp: 500,
+	hp: 830,
 	df: 1,
-	name: "Big Sonion"
+	name: "Bryant Moreland (EDP445)"
 }
 position_map = [{}]
 timer = 0
