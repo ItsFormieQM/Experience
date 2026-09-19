@@ -36,6 +36,10 @@ function scr_init(){
 	global.player_points = 0
 	global.run = false
 	global.on_battle = false
+	global.hp = []
+	global.maxhp = []
+	global.hp[0] = 90
+	global.maxhp[0] = global.hp[0]
 	if os_type == os_windows || os_type == os_linux || os_type == os_macosx || os_type == os_browser{
 		global.osflavor = PC	
 	}

@@ -29,4 +29,15 @@ battle_plot = 0
 battle_plot_calculated = false
 counter_attack = false
 begin_counter_attack = false
+battle_timer = 0
+end_attack = function() {
+	begin_counter_attack = false
+	battle_timer = 0
+	with obj_battle_border {
+		fadeout_border()
+	}
+	with obj_soul_battle {
+		end_soulmode()
+	}
+}
 show_debug_message(global.enemy_instance_arr)

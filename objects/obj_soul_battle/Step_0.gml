@@ -112,9 +112,9 @@ if image_alpha < 1 {
 }
 if instance_exists(obj_battle_border) && !move_ran{
 	move_ran = true
-	move_towards_point(obj_battle_border.x,obj_battle_border.y,sp)
+	move_towards_point(obj_battle_border.x,obj_battle_border.y,othersp)
 }
-if point_distance(x,y,obj_battle_border.x,obj_battle_border.y) <= sp&& !stop_anim {
+if instance_exists(obj_battle_border) && point_distance(x,y,obj_battle_border.x,obj_battle_border.y) <= othersp&& !stop_anim {
 	sp = 2.5
 	speed = 0
 	if !canmove {
@@ -124,4 +124,18 @@ if point_distance(x,y,obj_battle_border.x,obj_battle_border.y) <= sp&& !stop_ani
 	show_debug_message("holy shit its running")
 	canmove = true
 	stop_anim = true
+}
+if retract {
+	if !ran {
+		ran = true
+		othersp = 10
+		canmove = false
+		move_towards_point(obj_mainchara.x,obj_mainchara.y,othersp)
+	}
+	if point_distance(x,y,obj_mainchara.x,obj_mainchara.y) <= othersp{
+		speed = 0
+		x = obj_mainchara.x
+		y = obj_mainchara.y
+		retract = false
+	}
 }

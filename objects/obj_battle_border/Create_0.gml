@@ -38,3 +38,7 @@ right.x = x + (sprite_width / 2) - 22
 right.image_xscale = 0.1
 right.image_yscale = sprite_height
 show_debug_message($"RIGHT X: {right.x} RIGHT Y: {right.y}")
+fadeout = false
+fadeout_border = function() {
+	fadeout = true
+}

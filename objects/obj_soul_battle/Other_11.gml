@@ -5,10 +5,13 @@ if soulmode == SoulMode.Orange {
 		moving_right = false
 		moving_up = false
 		moving_down = false
+	
 	}
 	movement_aura = [{}]
 	aura_timer = 0
+	sp = 3.5
 }
 else if soulmode == SoulMode.Red {
 	sprite_index = spr_soul_battle
+	sp = 2.5
 }

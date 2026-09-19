@@ -7,6 +7,9 @@ if ismoving {
 	with obj_battle_ui_fight_kris {
 		move_towards_point(x, other.target_y - 31, other.sp_1)
 	}
+	with obj_hp_bar {
+		move_towards_point(x, other.target_y - 31, other.sp_1)
+	}
 	with obj_battle_ui_txtbox {
 		if point_distance(x,y,x,other.target_y) <= other.sp {
 			other.sp = 0
@@ -114,4 +117,10 @@ if attacked {
 if chose && !battle_plot_calculated {
 	battle_plot++
 	battle_plot_calculated = true
+}
+if begin_counter_attack {
+	battle_timer++
+}
+else {
+	battle_timer = 0
 }

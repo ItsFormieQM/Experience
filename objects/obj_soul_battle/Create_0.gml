@@ -8,6 +8,10 @@ switch_soulmode = function(type = SoulMode.Red) {
 		event_user(1)
 	}
 }
+takedamage_normal = function(amount = 0, indice = 0) {
+	global.hp[indice] -= amount
+	snd_play(snd_damage,1.5)
+}
 enum SoulMode {
 	Red = 0,
 	Blue = 1,
@@ -22,5 +26,11 @@ move_ran = false
 stop_anim = false
 switch_soulmode(SoulMode.Red)
 initated = false
+othersp = 12
+retract = false
+end_soulmode = function() {
+	ran = false
+	retract = true
+}
 
 

@@ -37,4 +37,5 @@ if instance_exists(obj_atk_box) {
 	draw_text(0,90,$"ATK BOX: X.{obj_atk_box.x} Y.{obj_atk_box.y}")
 	draw_text(0,210,$"CHOSE: {chose ? "True" : "False"}")
 }	
+draw_text(0,330,$"BATTLE TIMER: {battle_timer}")
 

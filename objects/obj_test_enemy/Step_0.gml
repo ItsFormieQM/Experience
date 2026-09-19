@@ -50,7 +50,12 @@ if instance_exists(obj_battle_controller) {
 		if obj_battle_controller.battle_plot == 1 {
 			
 			attack_cooldown = irandom_range(50,120)
-		
+			with obj_battle_controller {
+				if battle_timer >= 60 * 12 {
+					end_attack()
+				}
+			}
+			
 			if attack_timer >= attack_cooldown {
 				if instance_exists(obj_soul_battle) {
 					//var rand = choose(0,1,2,3, 4,5,6,7)
