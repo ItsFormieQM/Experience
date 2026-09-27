@@ -404,7 +404,7 @@ for (var i = 1; i <= string_length(test); i++) {
 	
 	if !gaster {
 		draw_text_ext_transformed_colour(
-			_x + 70,_y + 80,char,1,999,scale,scale,0,colour,colour,colour,colour,alpha
+			_x + 70,_y + 90,char,1,999,scale,scale,0,colour,colour,colour,colour,alpha
 		)
 		_x += (string_width(char) * scale) + distance
 	}

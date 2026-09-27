@@ -1,7 +1,7 @@
 if !global.on_battle {
-	if keyboard_check_pressed(ord("I")) {
-		is_gunman = !is_gunman
-	}
+	//if keyboard_check_pressed(ord("I")) {
+	//	is_gunman = !is_gunman
+	//}
 	if !jump_state {
 		image_speed = 0
 	}
