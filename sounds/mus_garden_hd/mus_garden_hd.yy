@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"mus_garden_hd",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":168.95984,
+  "exportDir":"",
+  "name":"mus_garden_hd",
+  "parent":{
+    "name":"Music",
+    "path":"folders/SFX/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_garden_hd.ogg",
+  "volume":1.0,
+}

@@ -1,0 +1,1 @@
+array_push(heart_aura_struct,{spr: spr_soul_battle_start, spr_indice: 0,xscale: 0.05, yscale: 0.05, alpha: 0.1, alpha_regress: false})
