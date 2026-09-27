@@ -2,5 +2,8 @@
   "FolderOrderSettings":[
     {"name":"Commands","order":1,"path":"folders/Console/Commands.yy",},
   ],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"cmd_global_variable_get_value","order":1,"path":"scripts/cmd_global_variable_get_value/cmd_global_variable_get_value.yy",},
+    {"name":"cmd_global_variable_set_value","order":2,"path":"scripts/cmd_global_variable_set_value/cmd_global_variable_set_value.yy",},
+  ],
 }

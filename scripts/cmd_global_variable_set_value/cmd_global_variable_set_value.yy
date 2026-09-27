@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cmd_global_variable_set_value",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cmd_global_variable_set_value",
+  "parent":{
+    "name":"Commands",
+    "path":"folders/Console/Commands.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
