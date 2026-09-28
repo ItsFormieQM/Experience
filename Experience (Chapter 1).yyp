@@ -77,6 +77,7 @@
     {"id":{"name":"obj_controls","path":"objects/obj_controls/obj_controls.yy",},},
     {"id":{"name":"obj_cutscene_controller","path":"objects/obj_cutscene_controller/obj_cutscene_controller.yy",},},
     {"id":{"name":"obj_debug_battle_tester","path":"objects/obj_debug_battle_tester/obj_debug_battle_tester.yy",},},
+    {"id":{"name":"obj_dialogue_maker","path":"objects/obj_dialogue_maker/obj_dialogue_maker.yy",},},
     {"id":{"name":"obj_dialogue","path":"objects/obj_dialogue/obj_dialogue.yy",},},
     {"id":{"name":"obj_door_warp","path":"objects/obj_door_warp/obj_door_warp.yy",},},
     {"id":{"name":"obj_drawer","path":"objects/obj_drawer/obj_drawer.yy",},},
