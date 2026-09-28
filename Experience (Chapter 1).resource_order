@@ -3,6 +3,7 @@
     {"name":"Commands","order":1,"path":"folders/Console/Commands.yy",},
     {"name":"Other","order":2,"path":"folders/Console/Other.yy",},
     {"name":"Flowery","order":1,"path":"folders/Objects/Characters/Flowery.yy",},
+    {"name":"Helpers","order":1,"path":"folders/Scripts/Helpers.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"cmd_clear_cmd_history","order":7,"path":"scripts/cmd_clear_cmd_history/cmd_clear_cmd_history.yy",},
@@ -15,5 +16,7 @@
     {"name":"cmd_noclip","order":9,"path":"scripts/cmd_noclip/cmd_noclip.yy",},
     {"name":"cmd_restart","order":8,"path":"scripts/cmd_restart/cmd_restart.yy",},
     {"name":"cmd_snd_play","order":4,"path":"scripts/cmd_snd_play/cmd_snd_play.yy",},
+    {"name":"cmd_volume_set","order":11,"path":"scripts/cmd_volume_set/cmd_volume_set.yy",},
+    {"name":"snd_heal","order":1,"path":"sounds/snd_heal/snd_heal.yy",},
   ],
 }

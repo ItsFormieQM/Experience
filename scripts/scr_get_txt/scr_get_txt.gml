@@ -243,6 +243,23 @@ function scr_get_txt(_msc, ui = false){
 				global.xx_offset_spriter[index] = 220
 				global.yy_offset_spriter[index] = 960 - 185
 				break
+			case "savepoint_wharf_1":
+				index = -1
+				index += 1
+				global.msg[index] = result.savepoint_wharf_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index += 1
+				global.msg[index] = result.savepoint_wharf_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index += 1
+				global.msg[index] = result.savepoint_wharf_3
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
 			default:
 				break
 				

@@ -1,17 +1,20 @@
 for (var i = index; i <= string_length(startsnd); i++) {
-	if string_char_at(startsnd,i) == "{" {
-		for (var j = i; i <= string_length(startsnd); j++) {
-			startsnd += string_char_at(startsnd,i)
-			if string_char_at(startsnd,i) == "}" {
+	if string_char_at(startsnd,i) == "S" &&
+		string_char_at(startsnd,i + 1) == "P" &&
+		string_char_at(startsnd,i + 2) == "S" {
+		i += 4
+		if string_char_at(startsnd,i) == "{" {
+			for (var j = i; i <= string_length(startsnd); j++) {
+				startsnd += string_char_at(startsnd,i)
+				if string_char_at(startsnd,i) == "}" {
 				
-				break
-					}
+					break
 				}
-				break
-		
 			}
-	
+			break	
 		}
+	}
+}
 startsnd = asset_get_index(startsnd)
 if !ransps {
 	if startsnd != -1 {
