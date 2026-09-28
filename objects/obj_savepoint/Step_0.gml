@@ -12,6 +12,10 @@ if place_meeting(x,y,obj_mainchara) && !obj_mainchara.occupied {
 }
 if ran && !instance_exists(obj_drawer) {
 	ran = false
+	with obj_save_menu {
+		visible = true
+		global.canmove = false
+	}
 }
 global.interacted = false
 

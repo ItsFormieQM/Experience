@@ -109,6 +109,7 @@
     {"id":{"name":"obj_number_indicator","path":"objects/obj_number_indicator/obj_number_indicator.yy",},},
     {"id":{"name":"obj_overworld_controller","path":"objects/obj_overworld_controller/obj_overworld_controller.yy",},},
     {"id":{"name":"obj_plot_controller","path":"objects/obj_plot_controller/obj_plot_controller.yy",},},
+    {"id":{"name":"obj_save_menu","path":"objects/obj_save_menu/obj_save_menu.yy",},},
     {"id":{"name":"obj_savepoint","path":"objects/obj_savepoint/obj_savepoint.yy",},},
     {"id":{"name":"obj_soul_battle","path":"objects/obj_soul_battle/obj_soul_battle.yy",},},
     {"id":{"name":"obj_soul_wall","path":"objects/obj_soul_wall/obj_soul_wall.yy",},},
