@@ -2,10 +2,11 @@
   "FolderOrderSettings":[
     {"name":"Commands","order":1,"path":"folders/Console/Commands.yy",},
     {"name":"Other","order":2,"path":"folders/Console/Other.yy",},
+    {"name":"Flowery","order":1,"path":"folders/Objects/Characters/Flowery.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"cmd_clear_cmd_history","order":7,"path":"scripts/cmd_clear_cmd_history/cmd_clear_cmd_history.yy",},
-    {"name":"cmd_create_dialogue","order":10,"path":"scripts/cmd_create_dialogue/cmd_create_dialogue.yy",},
+    {"name":"cmd_dialogue_maker","order":10,"path":"scripts/cmd_dialogue_maker/cmd_dialogue_maker.yy",},
     {"name":"cmd_global_variable_get_value","order":1,"path":"scripts/cmd_global_variable_get_value/cmd_global_variable_get_value.yy",},
     {"name":"cmd_global_variable_set_value","order":2,"path":"scripts/cmd_global_variable_set_value/cmd_global_variable_set_value.yy",},
     {"name":"cmd_list_music","order":5,"path":"scripts/cmd_list_music/cmd_list_music.yy",},

@@ -1,3 +1,23 @@
+for (var i = index; i <= string_length(startsnd); i++) {
+	if string_char_at(startsnd,i) == "{" {
+		for (var j = i; i <= string_length(startsnd); j++) {
+			startsnd += string_char_at(startsnd,i)
+			if string_char_at(startsnd,i) == "}" {
+				
+				break
+					}
+				}
+				break
+		
+			}
+	
+		}
+startsnd = asset_get_index(startsnd)
+if !ransps {
+	if startsnd != -1 {
+		snd_play(startsnd,1.2)
+	}
+}
 var _sett = draw_get_settings()
 test_str = string_replace_all(test_string, "{c}", global.name)
 test_str = string_replace_all(test_str, "{C}", global.name)
@@ -438,15 +458,12 @@ for (var i = 1; i <= string_length(test); i++) {
 	
 }
 
-
 if snd_timer >= snd_delay && !stop_snd {
 	if snd != noone {
 		audio_play_sound(snd, 1, false)
 	}
 	snd_timer = 0
 }
-
-
 
 _x = global.xx_offset[count]
 _y = global.yy_offset[count]

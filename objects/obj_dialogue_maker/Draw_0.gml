@@ -16,7 +16,12 @@ if active {
 	draw_text_ext_transformed(
 		320 + camx, 
 		150 + camy,
-		
+		keyboard_string,
+		1.2,
+		string_width(string_char_at(keyboard_string, 1)) * 128,
+		scale,
+		scale,
+		0
 	)
 }
 draw_set_halign(oldh)

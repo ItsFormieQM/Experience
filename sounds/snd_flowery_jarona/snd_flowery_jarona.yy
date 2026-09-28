@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_flowery_jarona",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.2117914,
+  "exportDir":"",
+  "name":"snd_flowery_jarona",
+  "parent":{
+    "name":"Flowery",
+    "path":"folders/Objects/Characters/Flowery.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_flowery_jarona.wav",
+  "volume":1.0,
+}

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"cmd_create_dialogue",
+  "%Name":"cmd_dialogue_maker",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"cmd_create_dialogue",
+  "name":"cmd_dialogue_maker",
   "parent":{
     "name":"Commands",
     "path":"folders/Console/Commands.yy",

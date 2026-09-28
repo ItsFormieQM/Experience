@@ -49,6 +49,8 @@ for (var i = 1; i <= string_length(test_string); i++) {
 		} 
 	}
 } 
+startsnd = ""
+ransps = false
 stop_snd = false
 audio_falloff_set_model(audio_falloff_none)
 gaster = false
