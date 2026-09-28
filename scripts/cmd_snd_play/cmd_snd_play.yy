@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cmd_snd_play",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cmd_snd_play",
+  "parent":{
+    "name":"Commands",
+    "path":"folders/Console/Commands.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -31,4 +31,7 @@ show_debug_message($"SCRIPT NAME: {scr} ARGUMENT ARRAY: {args}")
 scr = asset_get_index(scr)
 if script_exists(scr) {
 	script_execute_ext(scr,args)
+	event_user(1)
 }
+array_push(history_commands,keyboard_string)
+

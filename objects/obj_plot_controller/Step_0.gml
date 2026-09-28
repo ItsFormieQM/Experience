@@ -67,7 +67,5 @@ if room == room_story {
 	}	
 	
 }
-if keyboard_check_pressed(ord("H")) {
-	room_goto(room_test)
-}
+
 scr_is_debug()

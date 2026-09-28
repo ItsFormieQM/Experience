@@ -12,7 +12,7 @@ ran = false
 #macro Right "r"
 #macro Up "u"
 #macro Down "d"
-
+noclip = false
 alpha = 1
 colour = 1
 is_gunman = false

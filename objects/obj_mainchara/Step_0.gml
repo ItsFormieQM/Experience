@@ -22,47 +22,51 @@ if !global.on_battle {
 				x -= sp
 				image_speed = sp / 2
 				dir = Left
-				if place_meeting(x - 1,y,obj_wall) {
+				if !noclip
+					if place_meeting(x - 1,y,obj_wall) {
 			
-					x += sp
+						x += sp
 				
 			
-				}
+					}
 		
 			}
 			else if global.d_held {
 				x += sp
 				image_speed = sp / 2
 				dir = Right
-				if place_meeting(x + 1,y,obj_wall) {
-					x -= sp
+				if !noclip
+					if place_meeting(x + 1,y,obj_wall) {
+						x -= sp
 				
 			
-				}
+					}
 		
 			}
 			if global.w_held {
 				y -= sp
 				image_speed = sp / 2
 				dir = Up
-				if place_meeting(x,y - 1,obj_wall) {
+				if !noclip
+					if place_meeting(x,y - 1,obj_wall) {
 			
-					y += sp
+						y += sp
 				
 			
-				}
+					}
 		
 			}
 			else if global.s_held {
 				y += sp
 				image_speed = sp / 2
 				dir = Down
-				if place_meeting(x,y + 1,obj_wall) {
+				if !noclip
+					if place_meeting(x,y + 1,obj_wall) {
 			
-					y -= sp
+						y -= sp
 				
 			
-				}
+					}
 		
 			}
 		}
@@ -75,46 +79,49 @@ if !global.on_battle {
 				x -= sp
 				image_speed = sp / 2
 				dir = Left
-				if place_meeting(x - 1,y,obj_wall) {
+				if !noclip
+					if place_meeting(x - 1,y,obj_wall) {
 			
-					x += sp
-					image_speed = 0
+						x += sp
+						image_speed = 0
 			
-				}
+					}
 		
 			}
 			else if global.d_held {
 				x += sp
 				image_speed = sp / 2
 				dir = Right
-				if place_meeting(x + 1,y,obj_wall) {
-					x -= sp
-					image_speed = 0
+				if !noclip
+					if place_meeting(x + 1,y,obj_wall) {
+						x -= sp
+						image_speed = 0
 			
-				}
+					}
 		
 			}
 			if global.w_held {
 				y -= sp
 				image_speed = sp / 2
+				if !noclip
+					if place_meeting(x,y - 1,obj_wall) {
 			
-				if place_meeting(x,y - 1,obj_wall) {
+						y += sp
+						image_speed = 0
 			
-					y += sp
-					image_speed = 0
-			
-				}
+					}
 		
 			}
 			else if global.s_held {
 				y += sp
 				image_speed = sp / 2
-				if place_meeting(x,y + 1,obj_wall) {
+				if !noclip
+					if place_meeting(x,y + 1,obj_wall) {
 			
-					y -= sp
-					image_speed = 0
+						y -= sp
+						image_speed = 0
 			
-				}
+					}
 		
 			}
 		}

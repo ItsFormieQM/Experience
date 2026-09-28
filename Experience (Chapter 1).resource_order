@@ -1,9 +1,18 @@
 {
   "FolderOrderSettings":[
     {"name":"Commands","order":1,"path":"folders/Console/Commands.yy",},
+    {"name":"Other","order":2,"path":"folders/Console/Other.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"cmd_clear_cmd_history","order":7,"path":"scripts/cmd_clear_cmd_history/cmd_clear_cmd_history.yy",},
+    {"name":"cmd_create_dialogue","order":10,"path":"scripts/cmd_create_dialogue/cmd_create_dialogue.yy",},
     {"name":"cmd_global_variable_get_value","order":1,"path":"scripts/cmd_global_variable_get_value/cmd_global_variable_get_value.yy",},
     {"name":"cmd_global_variable_set_value","order":2,"path":"scripts/cmd_global_variable_set_value/cmd_global_variable_set_value.yy",},
+    {"name":"cmd_list_music","order":5,"path":"scripts/cmd_list_music/cmd_list_music.yy",},
+    {"name":"cmd_list_sound","order":6,"path":"scripts/cmd_list_sound/cmd_list_sound.yy",},
+    {"name":"cmd_mus_play","order":3,"path":"scripts/cmd_mus_play/cmd_mus_play.yy",},
+    {"name":"cmd_noclip","order":9,"path":"scripts/cmd_noclip/cmd_noclip.yy",},
+    {"name":"cmd_restart","order":8,"path":"scripts/cmd_restart/cmd_restart.yy",},
+    {"name":"cmd_snd_play","order":4,"path":"scripts/cmd_snd_play/cmd_snd_play.yy",},
   ],
 }
