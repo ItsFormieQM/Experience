@@ -16,4 +16,5 @@ check_values = function() {
 }
 colour = c_white
 file_saved = false
+current_room = scr_get_custom_roomname(room)
 visible = false

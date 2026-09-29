@@ -6,12 +6,18 @@ var name = "Kris"
 var _x = 0
 var _y = 0
 draw_text_ext_transformed_colour(
-	_x + 320,_y + 310,name,1,999,scale,scale,0,colour,colour,colour,colour,alpha
+	_x + 320,_y + 280,name,1,999,scale,scale,0,colour,colour,colour,colour,alpha
+)
+draw_text_ext_transformed_colour(
+	_x + 320,_y + 350,current_room,1,999,scale,scale,0,colour,colour,colour,colour,alpha
+)
+draw_text_ext_transformed_colour(
+	_x + 320 * 2 - 60,_y + 280,"LV " + string(global.lv),1,999,scale,scale,0,colour,colour,colour,colour,alpha
 )
 if !file_saved {
 	for (var j = 0; j < array_length(choices); j++) {
 		draw_text_ext_transformed_colour(
-			_x + 375,_y + 450,choices[j],1,999,scale,scale,0,colour,colour,colour,colour,alpha
+			_x + 375,_y + 485,choices[j],1,999,scale,scale,0,colour,colour,colour,colour,alpha
 		)
 		_x = 345
 	}
@@ -20,7 +26,7 @@ scale = 2
 if !file_saved {
 	if i == 0 {
 		_x = 0 + 335
-		_y = 0 + 470
+		_y = 0 + 502
 	
 		draw_sprite_ext(
 			spr_small_heart,
@@ -36,7 +42,7 @@ if !file_saved {
 	}
 	else if i == 1 {
 		_x = 345 + 335
-		_y = 0 + 470
+		_y = 0 + 502
 		draw_sprite_ext(
 			spr_small_heart,
 			0,
@@ -52,7 +58,7 @@ if !file_saved {
 }
 else {
 	_x = 0 + 375
-	_y = 0 + 450
+	_y = 0 + 485
 	scale = 1.8
 	var txt = "File saved."
 	draw_text_ext_transformed_colour(

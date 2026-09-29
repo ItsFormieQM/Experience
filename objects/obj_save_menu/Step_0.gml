@@ -1,4 +1,5 @@
 if visible {
+	current_room = scr_get_custom_roomname(room)
 	global.canmove = false
 	if global.d_press {
 		i++

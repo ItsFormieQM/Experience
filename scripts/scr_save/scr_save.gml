@@ -19,11 +19,18 @@ function scr_save(){
 		file_text_write_real(file,room)
 		file_text_writeln(file)
 		
-		// custom proper room name
+		// custom proper room name (unused)
 		file_text_write_string(file,scr_get_custom_roomname(room))
 		file_text_writeln(file)
 	}
 	
+	// time in frames
+	file_text_write_real(file,global.time)
+	file_text_writeln(file)
+	
+	// lv
+	file_text_write_real(file,global.lv)
+	file_text_writeln(file)
 	
 	file_text_close(file)
 }

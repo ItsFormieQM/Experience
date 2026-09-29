@@ -18,6 +18,7 @@ function scr_init(){
 	global.battle_txt_x_offset = []
 	global.battle_txt_y_offset = []
 	global.time = 0
+	global.lv = 1
 	
 	// Create 5 save directories
 	for (var i = 1; i <= 5; i++) {
