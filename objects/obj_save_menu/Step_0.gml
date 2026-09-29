@@ -1,5 +1,6 @@
 if visible {
 	current_room = scr_get_custom_roomname(room)
+	
 	global.canmove = false
 	if global.d_press {
 		i++
@@ -36,4 +37,5 @@ else {
 	i = 0
 	file_saved = false
 	colour = c_white
+	ran = false
 }

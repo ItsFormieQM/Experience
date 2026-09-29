@@ -14,6 +14,9 @@ draw_text_ext_transformed_colour(
 draw_text_ext_transformed_colour(
 	_x + 320 * 2 - 60,_y + 280,"LV " + string(global.lv),1,999,scale,scale,0,colour,colour,colour,colour,alpha
 )
+draw_text_ext_transformed_colour(
+	_x + 320 * 3 - 120,_y + 280,$"{minutes}:{seconds}",1,999,scale,scale,0,colour,colour,colour,colour,alpha
+)
 if !file_saved {
 	for (var j = 0; j < array_length(choices); j++) {
 		draw_text_ext_transformed_colour(
