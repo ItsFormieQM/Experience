@@ -36,6 +36,7 @@ if script_exists(scr) {
 if keyboard_string != "clear" {
 	array_push(history_commands,keyboard_string)
 }
+io_clear()
 
 
 

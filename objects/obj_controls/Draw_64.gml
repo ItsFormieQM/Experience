@@ -13,7 +13,7 @@ if global.osflavor == PC {
 	global.s_press = keyboard_check_pressed(ord(global.s)) || keyboard_check_pressed(vk_down)
 	global.d_held = keyboard_check(ord(global.d)) || keyboard_check(vk_right)
 	global.d_press = keyboard_check_pressed(ord(global.d)) || keyboard_check_pressed(vk_right)
-	global.interacted = keyboard_check_pressed(ord(global.z))
+	global.interacted = keyboard_check_pressed(ord(global.z)) || keyboard_check_pressed(vk_enter)
 	global.interacted_x = keyboard_check_pressed(ord(global._x))
 	global.interacted_c = keyboard_check_pressed(ord(global.c))
 	global.interacted_f = keyboard_check_pressed(ord(global.f))
