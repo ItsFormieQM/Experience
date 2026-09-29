@@ -33,5 +33,9 @@ if script_exists(scr) {
 	script_execute_ext(scr,args)
 	event_user(1)
 }
-array_push(history_commands,keyboard_string)
+if keyboard_string != "clear" {
+	array_push(history_commands,keyboard_string)
+}
+
+
 

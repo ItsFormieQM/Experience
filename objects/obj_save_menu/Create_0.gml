@@ -1,3 +1,3 @@
-self_x = x
-self_y = y
+self_x = 320
+self_y = 201
 visible = false

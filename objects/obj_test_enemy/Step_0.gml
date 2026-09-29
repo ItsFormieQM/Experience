@@ -144,14 +144,3 @@ if instance_exists(obj_battle_controller) {
 		}
 	}
 }
-if keyboard_check_pressed(ord("3")) {
-	with obj_soul_battle {
-		
-		if soulmode == SoulMode.Red {
-			switch_soulmode(SoulMode.Orange)
-		}
-		else {
-			switch_soulmode(SoulMode.Red)
-		}
-	}
-}

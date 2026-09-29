@@ -1,5 +1,10 @@
 if place_meeting(x,y,obj_mainchara) && !obj_mainchara.occupied {
-	if global.interacted && !ran && !instance_exists(obj_drawer){
+	with obj_save_menu {
+		if visible {
+			exit
+		}
+	}
+	if global.interacted && !ran && !instance_exists(obj_drawer) {
 		scr_get_txt(dialogue_type,true)
 		instance_create(0,0,obj_drawer)
 		obj_mainchara.image_index = 0
