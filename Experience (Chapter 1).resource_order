@@ -7,7 +7,8 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_save_menu","order":1,"path":"objects/obj_save_menu/obj_save_menu.yy",},
-    {"name":"cmd_clear_cmd_history","order":7,"path":"scripts/cmd_clear_cmd_history/cmd_clear_cmd_history.yy",},
+    {"name":"cmd_chile","order":12,"path":"scripts/cmd_chile/cmd_chile.yy",},
+    {"name":"cmd_clear","order":7,"path":"scripts/cmd_clear/cmd_clear.yy",},
     {"name":"cmd_dialogue_maker","order":10,"path":"scripts/cmd_dialogue_maker/cmd_dialogue_maker.yy",},
     {"name":"cmd_global_variable_get_value","order":1,"path":"scripts/cmd_global_variable_get_value/cmd_global_variable_get_value.yy",},
     {"name":"cmd_global_variable_set_value","order":2,"path":"scripts/cmd_global_variable_set_value/cmd_global_variable_set_value.yy",},
@@ -18,6 +19,7 @@
     {"name":"cmd_restart","order":8,"path":"scripts/cmd_restart/cmd_restart.yy",},
     {"name":"cmd_snd_play","order":4,"path":"scripts/cmd_snd_play/cmd_snd_play.yy",},
     {"name":"cmd_volume_set","order":11,"path":"scripts/cmd_volume_set/cmd_volume_set.yy",},
+    {"name":"mus_meme_chile","order":1,"path":"sounds/mus_meme_chile/mus_meme_chile.yy",},
     {"name":"snd_heal","order":1,"path":"sounds/snd_heal/snd_heal.yy",},
   ],
 }

@@ -1,6 +1,7 @@
-function cmd_clear_cmd_history(){
+function cmd_clear(){
 	with obj_console {
 		history_commands = []
-		return 0
+		
 	}
+	return 0
 }

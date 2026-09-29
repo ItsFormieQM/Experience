@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"cmd_clear_cmd_history",
+  "%Name":"cmd_chile",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"cmd_clear_cmd_history",
+  "name":"cmd_chile",
   "parent":{
     "name":"Commands",
     "path":"folders/Console/Commands.yy",
