@@ -1,14 +1,62 @@
-if visible {
-	var oldfnt = draw_get_font()
-	draw_set_font(fnt_main_small)
-	var scale = 1.5
-	var colour = c_white
-	var alpha = 1
-	var name = "Kris"
-	var _x = 0
-	var _y = 0
-	draw_text_ext_transformed_colour(
-		_x + 70,_y + 90,name,1,999,scale,scale,0,colour,colour,colour,colour,alpha
-	)
-	draw_set_font(oldfnt)
+var oldfnt = draw_get_font()
+draw_set_font(fnt_main_small)
+var scale = 1.8
+var alpha = 1
+var name = "Kris"
+var _x = 0
+var _y = 0
+draw_text_ext_transformed_colour(
+	_x + 320,_y + 310,name,1,999,scale,scale,0,colour,colour,colour,colour,alpha
+)
+if !file_saved {
+	for (var j = 0; j < array_length(choices); j++) {
+		draw_text_ext_transformed_colour(
+			_x + 375,_y + 450,choices[j],1,999,scale,scale,0,colour,colour,colour,colour,alpha
+		)
+		_x = 345
+	}
 }
+scale = 2
+if !file_saved {
+	if i == 0 {
+		_x = 0 + 335
+		_y = 0 + 470
+	
+		draw_sprite_ext(
+			spr_small_heart,
+			0,
+			_x,
+			_y,
+			scale,
+			scale,
+			0,
+			c_white,
+			1
+		)
+	}
+	else if i == 1 {
+		_x = 345 + 335
+		_y = 0 + 470
+		draw_sprite_ext(
+			spr_small_heart,
+			0,
+			_x,
+			_y,
+			scale,
+			scale,
+			0,
+			c_white,
+			1
+		)
+	}
+}
+else {
+	_x = 0 + 375
+	_y = 0 + 450
+	scale = 1.8
+	var txt = "File saved."
+	draw_text_ext_transformed_colour(
+		_x,_y,txt,1,999,scale,scale,0,colour,colour,colour,colour,alpha
+	)
+}
+draw_set_font(oldfnt)

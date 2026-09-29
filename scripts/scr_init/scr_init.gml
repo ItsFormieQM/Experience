@@ -17,8 +17,16 @@ function scr_init(){
 	global.battle_yscale = []
 	global.battle_txt_x_offset = []
 	global.battle_txt_y_offset = []
+	global.time = 0
 	
-
+	// Create 5 save directories
+	for (var i = 1; i <= 5; i++) {
+		if !directory_exists($"save{i}") {
+			directory_create($"save{i}")
+		}
+	}
+	
+	global.save_folder = game_save_id + "save1/"
 	// CONTROLS
 	global.w = "W"
 	global.a = "A"
@@ -81,4 +89,7 @@ function scr_init(){
 	}
 	
 	#endregion
+	var filename = global.save_folder + "savedata.txt"
+	show_debug_message("DEFAULT SAVE FOLDER: " + filename)
+	
 }
