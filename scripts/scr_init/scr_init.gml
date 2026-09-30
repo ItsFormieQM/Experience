@@ -98,7 +98,7 @@ function scr_init(){
 	else if os_type == os_switch || os_type == os_switch2 {
 		global.osflavor = SwitchNX
 	}
-	global.osflavor = Mobile
+	
 	#region Macros
 	#macro PC "PC"
 	#macro Mobile "Mobile"
