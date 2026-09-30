@@ -19,7 +19,47 @@ function scr_init(){
 	global.battle_txt_y_offset = []
 	global.time = 0
 	global.lv = 1
-	
+	global.oldtime = 0
+	global.oldlv = 0
+	global.oldroom = ""
+	enum Flag {
+		On_School = 0,
+		Dream_World,
+		School_Type,
+		Days_Awoke,
+		Is_Sick,
+		Days_Sick,
+		Has_Drugs_Inside,
+		Took_Drugs,
+		Stamina,
+		Is_Arrested,
+		Arrested_Count,
+		COUNT
+	}
+	global.flags_name = [
+		"On_School",
+		"Dream_World",
+		"School_Type",
+		"Days_Awoke",
+		"Is_Sick",
+		"Days_Sick",
+		"Has_Drugs_Inside",
+		"Took_Drugs",
+		"Stamina",
+		"Is_Arrested",
+		"Arrested_Count",
+	]
+	global.flag = array_create(Flag.COUNT,false)
+	#region set flags to default
+	global.flag[Flag.On_School] = false
+	global.flag[Flag.Dream_World] = false
+	global.flag[Flag.School_Type] = "normal"
+	global.flag[Flag.Days_Awoke] = 0
+	global.flag[Flag.Is_Sick] = false
+	global.flag[Flag.Days_Sick] = 0
+	global.flag[Flag.Stamina] = 0
+	global.flag[Flag.Arrested_Count] = 0
+	#endregion
 	// Create 5 save directories
 	for (var i = 1; i <= 5; i++) {
 		if !directory_exists($"save{i}") {
@@ -46,7 +86,7 @@ function scr_init(){
 	global.run = false
 	global.on_battle = false
 	global.hp = []
-	global.maxhp = []
+	global.maxhp = [90]
 	global.hp[0] = 90
 	global.maxhp[0] = global.hp[0]
 	if os_type == os_windows || os_type == os_linux || os_type == os_macosx || os_type == os_browser{

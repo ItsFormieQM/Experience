@@ -12,7 +12,7 @@ draw_text_ext_transformed_colour(
 	_x + 320,_y + 350,current_room,1,999,scale,scale,0,colour,colour,colour,colour,alpha
 )
 draw_text_ext_transformed_colour(
-	_x + 320 * 2 - 60,_y + 280,"LV " + string(global.lv),1,999,scale,scale,0,colour,colour,colour,colour,alpha
+	_x + 320 * 2 - 60,_y + 280,"LV " + string(values[5]),1,999,scale,scale,0,colour,colour,colour,colour,alpha
 )
 draw_text_ext_transformed_colour(
 	_x + 320 * 3 - 120,_y + 280,$"{minutes}:{seconds}",1,999,scale,scale,0,colour,colour,colour,colour,alpha

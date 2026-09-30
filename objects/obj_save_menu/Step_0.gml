@@ -1,5 +1,5 @@
 if visible {
-	current_room = scr_get_custom_roomname(room)
+	
 	
 	global.canmove = false
 	if !file_saved {
@@ -23,6 +23,7 @@ if visible {
 			file_saved = true
 			colour = c_yellow
 			scr_save(savepoint_id)
+			ran = false
 			snd_play(snd_saved,1.35)
 		}
 		else if i == 1 {
@@ -36,7 +37,6 @@ if visible {
 	
 }
 else {
-	i = 0
 	file_saved = false
 	colour = c_white
 	ran = false

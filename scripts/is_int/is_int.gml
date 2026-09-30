@@ -18,3 +18,9 @@ function integer_round(_str) {
 	var test = real(_str) 
 	return round(test)
 } 
+function string_canbe_bool(_str) {
+	if _str == "true" || _str == "false" {
+		return true
+	}
+	return false
+}

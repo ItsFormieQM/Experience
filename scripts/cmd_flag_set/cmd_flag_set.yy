@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cmd_flag_set",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cmd_flag_set",
+  "parent":{
+    "name":"Commands",
+    "path":"folders/Console/Commands.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

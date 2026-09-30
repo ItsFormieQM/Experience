@@ -1,6 +1,8 @@
 if visible {
+	values = scr_get_savefile_values()
 	if !ran {
-		absolute_seconds = global.time div 60
+		current_room = values[3]
+		absolute_seconds = values[4] div 60
 		minutes = absolute_seconds div 60
 		seconds = absolute_seconds % 60
 		if string_length(string(seconds)) == 1 {

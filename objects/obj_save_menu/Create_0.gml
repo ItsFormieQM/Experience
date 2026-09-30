@@ -22,4 +22,5 @@ minutes = 0
 seconds = 0
 absolute_seconds = 0
 savepoint_id = instance_nearest(x,y,obj_savepoint)
+values = scr_get_savefile_values()
 visible = false

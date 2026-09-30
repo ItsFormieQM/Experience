@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"mus_battle_finale",
+  "%Name":"mus_battle_finale_loop",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":170.68263,
+  "duration":60.633106,
   "exportDir":"",
-  "name":"mus_battle_finale",
+  "name":"mus_battle_finale_loop",
   "parent":{
     "name":"Battle",
     "path":"folders/SFX/Music/Battle.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mus_battle_finale.ogg",
+  "soundFile":"mus_battle_finale_loop.ogg",
   "volume":1.0,
 }

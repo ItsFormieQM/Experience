@@ -1,6 +1,5 @@
 function scr_save(savepoint_id){
 	var filename = global.save_folder + "savedata.txt"
-	show_debug_message("")
 	if file_exists(filename) {
 		file_delete(filename)
 	}
@@ -36,5 +35,23 @@ function scr_save(savepoint_id){
 	// slot number of the nearest warp marker
 	var nearest_wm = instance_nearest(savepoint_id.x,savepoint_id.y,obj_warp_marker)
 	file_text_write_real(file,nearest_wm.slot)
+	file_text_close(file)
+	
+	// FLAGS SAVING
+	filename = global.save_folder + "flags.json"
+	if file_exists(filename) {
+		file_delete(filename)
+	}
+	file = file_text_open_write(filename)
+	for (var i = 0; i < Flag.COUNT; i++) {
+		if !is_bool(global.flag[i]) {
+			file_text_write_string(file,global.flags_name[i] + ": "+ string(global.flag[i]))
+			file_text_writeln(file)
+		}
+		else {
+			file_text_write_string(file,global.flags_name[i] + ": "+ string(global.flag[i] ? "True":"False"))
+			file_text_writeln(file)
+		}
+	}
 	file_text_close(file)
 }

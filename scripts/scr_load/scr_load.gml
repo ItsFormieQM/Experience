@@ -24,6 +24,7 @@ function scr_load(){
 	file_text_readln(file)
 		
 	global.time = file_text_read_real(file)
+	global.oldtime = global.time
 	file_text_readln(file)
 		
 	global.lv = file_text_read_real(file)
