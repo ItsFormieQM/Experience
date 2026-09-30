@@ -19,7 +19,7 @@ noclip = false
 alpha = 1
 colour = 1
 removed_variable_1 = false
-ammo = 12
+
 jump_state = false
 rot = 0
 occupied = false
