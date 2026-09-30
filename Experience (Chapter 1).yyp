@@ -137,6 +137,7 @@
     {"id":{"name":"cmd_instance_create","path":"scripts/cmd_instance_create/cmd_instance_create.yy",},},
     {"id":{"name":"cmd_list_music","path":"scripts/cmd_list_music/cmd_list_music.yy",},},
     {"id":{"name":"cmd_list_sound","path":"scripts/cmd_list_sound/cmd_list_sound.yy",},},
+    {"id":{"name":"cmd_load","path":"scripts/cmd_load/cmd_load.yy",},},
     {"id":{"name":"cmd_mus_play","path":"scripts/cmd_mus_play/cmd_mus_play.yy",},},
     {"id":{"name":"cmd_noclip","path":"scripts/cmd_noclip/cmd_noclip.yy",},},
     {"id":{"name":"cmd_restart","path":"scripts/cmd_restart/cmd_restart.yy",},},

@@ -36,6 +36,7 @@
     {"name":"inst_4E28B73D","path":"rooms/room_luzaro_beach_wharf/room_luzaro_beach_wharf.yy",},
     {"name":"inst_7B6F5116","path":"rooms/room_luzaro_beach_wharf/room_luzaro_beach_wharf.yy",},
     {"name":"inst_4BCC10D7","path":"rooms/room_luzaro_beach_wharf/room_luzaro_beach_wharf.yy",},
+    {"name":"inst_22E6D1D1","path":"rooms/room_luzaro_beach_wharf/room_luzaro_beach_wharf.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -46,6 +47,9 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},"propertyId":{"name":"tp_sprite","path":"objects/obj_warp/obj_warp.yy",},"resource":{"name":"spr_mainchara_u","path":"sprites/spr_mainchara_u/spr_mainchara_u.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_mainchara_u",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":13.0,"scaleY":1.0,"x":3392.0,"y":-32.0,},
         {"$GMRInstance":"v4","%Name":"inst_223FE388","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_223FE388","objectId":{"name":"obj_kris_centerer","path":"objects/obj_kris_centerer/obj_kris_centerer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":54.0,"y":192.0,},
+        {"$GMRInstance":"v4","%Name":"inst_22E6D1D1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_22E6D1D1","objectId":{"name":"obj_warp_marker","path":"objects/obj_warp_marker/obj_warp_marker.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_warp_marker","path":"objects/obj_warp_marker/obj_warp_marker.yy",},"propertyId":{"name":"slot","path":"objects/obj_warp_marker/obj_warp_marker.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3712.0,"y":3840.0,},
       ],"layers":[],"name":"TECHNICAL","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"test","assets":[],"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"test","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

@@ -8,24 +8,22 @@ function scr_save(){
 		return -1
 	}
 	var file = file_text_open_write(filename)
-	// player x line 1
+	
+	// player room line 1
+	file_text_write_real(file,room)
+	file_text_writeln(file)
+		
+	// player x line 2
 	file_text_write_real(file,obj_mainchara.x)
 	file_text_writeln(file)
 	
-	// player y line 2
+	// player y line 3
 	file_text_write_real(file,obj_mainchara.y)
 	file_text_writeln(file)
 	
-	
-	with obj_mainchara {
-		// player room line 3
-		file_text_write_real(file,room)
-		file_text_writeln(file)
-		
-		// custom proper room name (unused) line 4
-		file_text_write_string(file,scr_get_custom_roomname(room))
-		file_text_writeln(file)
-	}
+	// custom room, unused line 4
+	file_text_write_string(file,scr_get_custom_roomname(room))
+	file_text_writeln(file)
 	
 	// time in frames line 5
 	file_text_write_real(file,global.time)
@@ -35,5 +33,8 @@ function scr_save(){
 	file_text_write_real(file,global.lv)
 	file_text_writeln(file)
 	
+	// slot number of the nearest warp marker
+	var nearest_wm = instance_nearest(obj_mainchara.x,obj_mainchara.y,obj_warp_marker)
+	file_text_write_real(file,nearest_wm.slot)
 	file_text_close(file)
 }

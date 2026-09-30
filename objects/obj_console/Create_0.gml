@@ -1,7 +1,14 @@
 active = false
 history_commands = []
 i = 0
+first_time = true
 setcmd = function() {
+	if first_time {
+		first_time = false
+		if array_length(history_commands) >= 1 {
+			i = array_length(history_commands) - 1
+		}
+	}
 	keyboard_string = history_commands[i]
 }
 history_file = "cmd_history.txt"

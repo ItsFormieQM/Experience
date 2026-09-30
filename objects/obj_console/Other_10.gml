@@ -32,6 +32,7 @@ scr = asset_get_index(scr)
 if script_exists(scr) {
 	script_execute_ext(scr,args)
 	event_user(1)
+	first_time = true
 }
 if keyboard_string != "clear" {
 	array_push(history_commands,keyboard_string)

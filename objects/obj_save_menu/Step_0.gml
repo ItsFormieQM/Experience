@@ -2,13 +2,15 @@ if visible {
 	current_room = scr_get_custom_roomname(room)
 	
 	global.canmove = false
-	if global.d_press {
-		i++
-		check_values()
-	}
-	else if global.a_press {
-		i-- 
-		check_values()
+	if !file_saved {
+		if global.d_press {
+			i++
+			check_values()
+		}
+		else if global.a_press {
+			i-- 
+			check_values()
+		}
 	}
 	if global.interacted {
 		if file_saved {

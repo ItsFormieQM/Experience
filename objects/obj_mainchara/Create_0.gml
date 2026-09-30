@@ -1,5 +1,8 @@
 _x = 624
 _y = 0
+loaded = false
+goto_x = 0
+goto_y = 0
 move_l = false
 moe_r = false
 move_u = false
