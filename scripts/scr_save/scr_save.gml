@@ -4,31 +4,34 @@ function scr_save(){
 	if file_exists(filename) {
 		file_delete(filename)
 	}
+	if !instance_exists(obj_mainchara) {
+		return -1
+	}
 	var file = file_text_open_write(filename)
-	// player x
+	// player x line 1
 	file_text_write_real(file,obj_mainchara.x)
 	file_text_writeln(file)
 	
-	// player y
+	// player y line 2
 	file_text_write_real(file,obj_mainchara.y)
 	file_text_writeln(file)
 	
 	
 	with obj_mainchara {
-		// player room
+		// player room line 3
 		file_text_write_real(file,room)
 		file_text_writeln(file)
 		
-		// custom proper room name (unused)
+		// custom proper room name (unused) line 4
 		file_text_write_string(file,scr_get_custom_roomname(room))
 		file_text_writeln(file)
 	}
 	
-	// time in frames
+	// time in frames line 5
 	file_text_write_real(file,global.time)
 	file_text_writeln(file)
 	
-	// lv
+	// lv line 6
 	file_text_write_real(file,global.lv)
 	file_text_writeln(file)
 	

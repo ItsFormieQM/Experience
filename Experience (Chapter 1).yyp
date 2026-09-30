@@ -158,6 +158,7 @@
     {"id":{"name":"scr_is_offensive","path":"scripts/scr_is_offensive/scr_is_offensive.yy",},},
     {"id":{"name":"scr_isdebug","path":"scripts/scr_isdebug/scr_isdebug.yy",},},
     {"id":{"name":"scr_item_effects","path":"scripts/scr_item_effects/scr_item_effects.yy",},},
+    {"id":{"name":"scr_load","path":"scripts/scr_load/scr_load.yy",},},
     {"id":{"name":"scr_pause_mus","path":"scripts/scr_pause_mus/scr_pause_mus.yy",},},
     {"id":{"name":"scr_read_json","path":"scripts/scr_read_json/scr_read_json.yy",},},
     {"id":{"name":"scr_sanitize_string","path":"scripts/scr_sanitize_string/scr_sanitize_string.yy",},},
