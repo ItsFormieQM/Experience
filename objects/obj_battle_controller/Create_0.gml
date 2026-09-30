@@ -7,6 +7,10 @@ if !variable_instance_exists(self,"vol") {
 if !variable_instance_exists(self,"nobackground") {
 	nobackground = false
 }
+if !variable_instance_exists(self,"pit") {
+	pit = 1
+}
+pit = obj_battle_test._pitch
 obj_mainchara.image_index = 0
 obj_mainchara.sprite_index = spr_kris_lw_battle_idle
 obj_mainchara.image_speed = 1

@@ -4,5 +4,6 @@ function scr_load(){
 		return -1
 	}
 	var file = file_text_open_read(filename)
+	file_text_close(file)
 	
 }
