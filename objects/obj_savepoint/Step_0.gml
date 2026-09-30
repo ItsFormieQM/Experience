@@ -20,6 +20,7 @@ if ran && !instance_exists(obj_drawer) {
 	with obj_save_menu {
 		visible = true
 		global.canmove = false
+		savepoint_id = id
 	}
 }
 global.interacted = false

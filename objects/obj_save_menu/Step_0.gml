@@ -22,7 +22,7 @@ if visible {
 		if i == 0 {
 			file_saved = true
 			colour = c_yellow
-			scr_save()
+			scr_save(savepoint_id)
 			snd_play(snd_saved,1.35)
 		}
 		else if i == 1 {

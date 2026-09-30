@@ -1,4 +1,4 @@
-function scr_save(){
+function scr_save(savepoint_id){
 	var filename = global.save_folder + "savedata.txt"
 	show_debug_message("")
 	if file_exists(filename) {
@@ -34,7 +34,7 @@ function scr_save(){
 	file_text_writeln(file)
 	
 	// slot number of the nearest warp marker
-	var nearest_wm = instance_nearest(obj_mainchara.x,obj_mainchara.y,obj_warp_marker)
+	var nearest_wm = instance_nearest(savepoint_id.x,savepoint_id.y,obj_warp_marker)
 	file_text_write_real(file,nearest_wm.slot)
 	file_text_close(file)
 }
