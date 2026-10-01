@@ -18,7 +18,7 @@ function cmd_battle_start(_song = noone,_enemy_type = "none", _volume = 1, _pit 
 	if !instance_exists(obj_battle_ui_txtbox) {
 		instance_create(0,584,obj_battle_ui_txtbox)
 	}
-	if !global.on_battle {
+	if !global.flag[Flag.On_Battle] {
 		if !string_canbe_int(_volume) || !string_canbe_int(_pit) {
 			return -1
 		}

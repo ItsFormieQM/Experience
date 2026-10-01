@@ -1,4 +1,4 @@
-if !global.on_battle {
+if !global.flag[Flag.On_Battle] {
 	if !jump_state {
 		image_speed = 0
 	}

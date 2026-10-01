@@ -1,7 +1,7 @@
 if keyboard_check_pressed(ord("Q")) {
 	game_restart()	
 }
-else if keyboard_check_pressed(ord("1")) && !global.on_battle {
+else if keyboard_check_pressed(ord("1")) && !global.flag[Flag.On_Battle] {
 	if global.canmove {
 		if room >= room_test {
 			var inst = instance_create(-1000,-1000,obj_battle_test,{_song: mus_battle_files, _enemy_type: "none", _volume: 1.5})

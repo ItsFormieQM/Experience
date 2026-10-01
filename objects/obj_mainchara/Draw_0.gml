@@ -1,5 +1,5 @@
 draw_self()
-if global.on_battle && variable_instance_exists(self,"movement_frames") && is_array(movement_frames) && array_length(movement_frames) >= 1 {
+if global.flag[Flag.On_Battle] && variable_instance_exists(self,"movement_frames") && is_array(movement_frames) && array_length(movement_frames) >= 1 {
 	aura_decay = 0.035
 	aura_scale = 2
 	for (var i = 1; i < array_length(movement_frames); i++) {

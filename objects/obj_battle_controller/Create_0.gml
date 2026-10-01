@@ -45,3 +45,6 @@ end_attack = function() {
 	}
 }
 show_debug_message(global.enemy_instance_arr)
+var rm = room
+is_rm_persistent = room_persistent
+room_persistent = false

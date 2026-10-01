@@ -1,7 +1,7 @@
 function cmd_switch_soulmode(soulmode){
 	
 	smode = string_lower(soulmode)
-	if !global.on_battle {
+	if !global.flag[Flag.On_Battle] {
 		return -1
 	}
 	with obj_soul_battle {

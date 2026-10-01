@@ -49,7 +49,7 @@ function scr_save(savepoint_id){
 			file_text_writeln(file)
 		}
 		else {
-			file_text_write_string(file,global.flags_name[i] + ": "+ string(global.flag[i] ? "True":"False"))
+			file_text_write_string(file,global.flags_name[i] + ": "+ string(global.flag[i] ? "true":"false"))
 			file_text_writeln(file)
 		}
 	}

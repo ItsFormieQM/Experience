@@ -39,15 +39,26 @@ function scr_load(){
 	if file_exists(filename) {
 		file = file_text_open_read(filename)
 		for (var i = 0; i <= Flag.COUNT; i++) {
+			var sanitized_value = ""
 			var value = file_text_read_string(file)
+			
+			for (var j = 1; j <= string_length(value); j++) {
+				if string_char_at(value,j) == " " {
+					for (var k = j + 1; k <= string_length(value); k++) {
+						sanitized_value += string_char_at(value,k)
+					}
+					break
+				}
+			}
 			file_text_readln(file)
-			if string_canbe_int(value) {
-				value = real(value)
+			if string_canbe_int(sanitized_value) {
+				sanitized_value = real(sanitized_value)
 			}
-			if string_canbe_bool(value) {
-				value = bool(value)
+			if string_canbe_bool(sanitized_value) {
+				sanitized_value = bool(sanitized_value)
 			}
-			global.flag[i] = value
+			show_debug_message(sanitized_value)
+			global.flag[i] = sanitized_value
 		}
 		file_text_close(file)
 	}

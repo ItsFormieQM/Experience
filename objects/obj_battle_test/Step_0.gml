@@ -1,5 +1,5 @@
 if (global.interacted && place_meeting(x,y,obj_mainchara) && !ran) || force_run {
-	if global.on_battle {
+	if global.flag[Flag.On_Battle] {
 		exit
 	}
 	ran = true
@@ -12,7 +12,7 @@ if (global.interacted && place_meeting(x,y,obj_mainchara) && !ran) || force_run 
 	}
 	force_run = false
 }
-if global.on_battle {
+if global.flag[Flag.On_Battle] {
 	var _layer = "Lower"
 	layer_add_instance(_layer,id)
 }

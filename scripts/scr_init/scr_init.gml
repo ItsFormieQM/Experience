@@ -34,6 +34,7 @@ function scr_init(){
 		Stamina,
 		Is_Arrested,
 		Arrested_Count,
+		On_Battle,
 		COUNT
 	}
 	global.flags_name = [
@@ -48,6 +49,7 @@ function scr_init(){
 		"Stamina",
 		"Is_Arrested",
 		"Arrested_Count",
+		"On_Battle"
 	]
 	global.flag = array_create(Flag.COUNT,false)
 	#region set flags to default
@@ -59,6 +61,7 @@ function scr_init(){
 	global.flag[Flag.Days_Sick] = 0
 	global.flag[Flag.Stamina] = 0
 	global.flag[Flag.Arrested_Count] = 0
+	
 	#endregion
 	// Create 5 save directories
 	for (var i = 1; i <= 5; i++) {
@@ -84,7 +87,7 @@ function scr_init(){
 	global.player_items = 0
 	global.player_points = 0
 	global.run = false
-	global.on_battle = false
+	global.flag[Flag.On_Battle] = false
 	global.hp = []
 	global.maxhp = [90]
 	global.hp[0] = 90

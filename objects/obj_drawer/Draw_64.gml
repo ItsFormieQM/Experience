@@ -471,7 +471,7 @@ if snd_timer >= snd_delay && !stop_snd {
 _x = global.xx_offset[count]
 _y = global.yy_offset[count]
 draw_set_colour(c_white)
-if instance_exists(obj_dialogue) && !global.on_battle {
+if instance_exists(obj_dialogue) && !global.flag[Flag.On_Battle] {
 	with obj_dialogue {
 		visible = true
 	}

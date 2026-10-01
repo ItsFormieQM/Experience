@@ -1,5 +1,5 @@
 ran = false
-if !global.on_battle
+if !global.flag[Flag.On_Battle]
 	if global.interacted && skippable{
 		buffer = true
 		global.interacted = false

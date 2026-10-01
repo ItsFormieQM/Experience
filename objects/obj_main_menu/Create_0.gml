@@ -1,12 +1,17 @@
-i = 1
+index = 0
+choicer = 0
 max_save_files = 5
-check_values = function() {
-	if i <= 0 {
-		i = max_save_files
+choices = [
+	"Continue",
+	"Copy",
+	"Erase",
+]
+erase_file = function(file) {
+	if file_exists(file) {
+		file_delete(file)
 	}
-	else if i > max_save_files {
-		i = 1
-	}
+	values = get_values()
+	save_files = save_files_list()
 }
 save_files_list = function() {
 	var save_files_found = []

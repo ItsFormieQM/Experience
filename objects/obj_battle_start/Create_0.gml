@@ -1,4 +1,4 @@
-global.on_battle = true
+global.flag[Flag.On_Battle] = true
 scr_enemy_init(enemy_type)
 show_debug_message($"GLOBAL ENEMY ARRAY, {global.enemies}")
 obj_mainchara.image_speed = 1
