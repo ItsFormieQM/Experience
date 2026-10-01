@@ -14,6 +14,7 @@ if fadeout {
 }
 x = obj_mainchara.x
 y = obj_mainchara.y
+
 if image_alpha <= 0 {
 	instance_destroy()
 }

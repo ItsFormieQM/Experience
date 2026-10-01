@@ -82,7 +82,7 @@ function scr_init(){
 	global.f = "F"
 	global.interacted = 0
 	global.canmove = true
-	
+	global.buggy_room = false
 	// PLAYER
 	global.player_items = 0
 	global.player_points = 0

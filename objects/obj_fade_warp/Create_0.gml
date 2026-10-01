@@ -3,6 +3,6 @@ rate = 0.03
 ran = false
 fadeout_rate = 0.05
 done = false
-persistent = true
+buggy_room = global.buggy_room
 i = 0
 fadeout = false

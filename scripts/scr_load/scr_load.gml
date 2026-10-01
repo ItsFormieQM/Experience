@@ -8,7 +8,15 @@ function scr_load(){
 		layer_create(-999, "TECHNICAL")
 	}
 	if !instance_exists(obj_mainchara) {
-		instance_create(-666,-666,obj_mainchara)
+		if room == room_gaster {
+			instance_create(320,240,obj_mainchara)
+			with obj_mainchara {
+				visible = false
+			}
+		}
+		else {
+			instance_create(-666,-666,obj_mainchara)
+		}
 	}
 	
 	var file = file_text_open_read(filename)

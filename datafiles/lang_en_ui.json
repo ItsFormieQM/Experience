@@ -18,11 +18,11 @@
 	"test_battle_1":"#t000^000#fnt001^S001^S003^002^W* EDP445 blocks the way!/E",
 	
 	"flowery_test_1":"#t002^000#fnt001^S001^S006^002* .../E",
-	"flowery_test_2":"#t002^000#fnt001^S001^S006^002^W* None?!/E",
+	"flowery_test_2":"#t002^000#fnt001^S001^S006^002^W* You know you can just leave^/  this to me.../E",
 	
-	"noelle_test_1":"#ET001#EI000^000#ESCX004#ESCY004#t003^000^000#fnt001^S001^S004^000^002* Hey, Kris!/E",
-	"noelle_test_2":"#EI034^000#ESCX004#ESCY004#t003^000^000#fnt001^S001^S004^000^002* Wait, ^S099^010^002^S004you want me to ^/  follow you?!/E",
-	"noelle_test_3":"#EI038^000#ESCX004#ESCY004#t003^000^000#fnt001^S001^S004^000^002* Err, ^S099^010^002^S004sure I guess.../E",
+	"noelle_test_1":"#t003^000^000#fnt001^S001^S003^002* Hey, Kris!/E",
+	"noelle_test_2":"#t003^000^000#fnt001^S001^S006^007* The words I've been waiting for.../E",
+	"noelle_test_3":"#t003^000^000#fnt001^S001^S006^007^W* ^RProceed^W./E",
 	
 	"savepoint_wharf_1":"#t000^000#fnt001^S001^S003^002* The water smells nice as it^/  gushes down the ocean./E",
 	"savepoint_wharf_2":"#t000^000#fnt001^S001^S003^002* But as your reading this./E",
