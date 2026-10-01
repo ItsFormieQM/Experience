@@ -35,6 +35,21 @@ function scr_load(){
 	
 	file_text_close(file)
 	
-	
+	filename = global.save_folder + "flags.json"
+	if file_exists(filename) {
+		file = file_text_open_read(filename)
+		for (var i = 0; i <= Flag.COUNT; i++) {
+			var value = file_text_read_string(file)
+			file_text_readln(file)
+			if string_canbe_int(value) {
+				value = real(value)
+			}
+			if string_canbe_bool(value) {
+				value = bool(value)
+			}
+			global.flag[i] = value
+		}
+		file_text_close(file)
+	}
 	instance_create(obj_mainchara.x,obj_mainchara.y,obj_warp, {target_marker_slot: wm_slot, target_room: rm, is_onload: true})
 }

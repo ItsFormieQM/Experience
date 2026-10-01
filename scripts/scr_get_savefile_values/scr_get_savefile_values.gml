@@ -1,5 +1,7 @@
-function scr_get_savefile_values(){
-	var filename = global.save_folder + "savedata.txt"
+function scr_get_savefile_values(filename = ""){
+	if filename = "" {
+		filename = global.save_folder + "savedata.txt"
+	}
 	if !file_exists(filename) {
 		return [
 			0,//rm,
