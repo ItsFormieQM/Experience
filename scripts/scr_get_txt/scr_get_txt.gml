@@ -260,6 +260,27 @@ function scr_get_txt(_msc, ui = false){
 				global.xx_offset[index] = 68
 				global.yy_offset[index] = 960 / 2 + 85
 				break
+			case "door_locked_1":
+				index = -1
+				index++
+				global.msg[index] = result.door_locked_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "door_locked_1_deped":
+				index = -1
+				index++
+				global.msg[index] = result.door_locked_1_deped
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "deped_kris_refusal_warp_1":
+				index = -1
+				index++
+				global.msg[index] = result.deped_kris_refusal_warp_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
 			default:
 				break
 				

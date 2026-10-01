@@ -1,8 +1,4 @@
-if instance_exists(obj_plot_controller) {
-	if !variable_instance_exists(obj_plot_controller,"plot") {
-		scr_get_txt("gaster_start")
-	}
-}
+
 show_debug_message("instantiate drwawer")
 is_choicer = false
 buffer = true

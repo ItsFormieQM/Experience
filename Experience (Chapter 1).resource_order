@@ -9,7 +9,9 @@
     {"name":"Battle","order":9,"path":"folders/SFX/Music/Battle.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_kris_refrain","order":3,"path":"objects/obj_kris_refrain/obj_kris_refrain.yy",},
     {"name":"obj_main_menu","order":9,"path":"objects/obj_main_menu/obj_main_menu.yy",},
+    {"name":"obj_plot_controller","order":2,"path":"objects/obj_plot_controller/obj_plot_controller.yy",},
     {"name":"obj_save_menu","order":1,"path":"objects/obj_save_menu/obj_save_menu.yy",},
     {"name":"room_deped_hallway_up","order":1,"path":"rooms/room_deped_hallway_up/room_deped_hallway_up.yy",},
     {"name":"cmd_battle_start","order":16,"path":"scripts/cmd_battle_start/cmd_battle_start.yy",},
@@ -63,6 +65,7 @@
     {"name":"snd_heal","order":1,"path":"sounds/snd_heal/snd_heal.yy",},
     {"name":"snd_saved","order":5,"path":"sounds/snd_saved/snd_saved.yy",},
     {"name":"spr_boxed_menu","order":10,"path":"sprites/spr_boxed_menu/spr_boxed_menu.yy",},
+    {"name":"spr_deped_classroom_door","order":14,"path":"sprites/spr_deped_classroom_door/spr_deped_classroom_door.yy",},
     {"name":"spr_deped_hallway_down","order":11,"path":"sprites/spr_deped_hallway_down/spr_deped_hallway_down.yy",},
     {"name":"spr_deped_hallway_up","order":12,"path":"sprites/spr_deped_hallway_up/spr_deped_hallway_up.yy",},
     {"name":"spr_fade_black","order":1,"path":"sprites/spr_fade_black/spr_fade_black.yy",},

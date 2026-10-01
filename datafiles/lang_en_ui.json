@@ -23,7 +23,9 @@
 	"noelle_test_1":"#t003^000^000#fnt001^S001^S003^002* Hey, Kris!/E",
 	"noelle_test_2":"#t003^000^000#fnt001^S001^S006^007* The words I've been waiting for.../E",
 	"noelle_test_3":"#t003^000^000#fnt001^S001^S006^007^W* ^RProceed^W./E",
-	
+	"door_locked_1":"#t000^000#fnt001^S001^S003^002* (It's locked)./E",
+	"door_locked_1_deped":"#t000^000#fnt001^S001^S003^002* (It's locked).^/* (Seems like you can't enter).^/* (Perhaps ask a staff member)?/E",
+	"deped_kris_refusal_warp_1":"#t000^000#fnt001^S001^S003^002* You tried entering but^/  something on your mind made^/  you retract your decision./E",
 	"savepoint_wharf_1":"#t000^000#fnt001^S001^S003^002* The water smells nice as it^/  gushes down the ocean./E",
 	"savepoint_wharf_2":"#t000^000#fnt001^S001^S003^002* But as your reading this./E",
 	"savepoint_wharf_3":"#t000^000#fnt001^S001^S003^002* Something told you to keep^/  going./E",

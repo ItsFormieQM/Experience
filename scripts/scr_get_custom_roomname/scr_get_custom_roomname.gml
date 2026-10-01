@@ -6,6 +6,8 @@ function scr_get_custom_roomname(rm){
 			return "Luzaro Wharf"
 		case room_deped_hallway_down:
 			return "School Hallway - Lower"
+		case room_deped_hallway_up:
+			return "School Hallway - Upper"
 		default:
 			return "Unknown"
 	}

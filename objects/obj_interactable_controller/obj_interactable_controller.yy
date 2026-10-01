@@ -40,6 +40,7 @@
     {"$GMObjectProperty":"v2","%Name":"open_sound","filters":[
         "GMSound",
       ],"listItems":[],"multiselect":false,"name":"open_sound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_openchest","path":"sounds/snd_openchest/snd_openchest.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_openchest","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"is_drawn","filters":[],"listItems":[],"multiselect":false,"name":"is_drawn","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
