@@ -8,8 +8,9 @@ function cmd_mus_play(mus = noone,vol = 1,pitch = 1){
 		if audio_exists(mus) {
 			audio_stop_all()
 			mus_play(mus, true,pitch,vol)
+			return 0
 		}
-		return 0
+		
 	}
 	return -1
 }

@@ -1,6 +1,9 @@
 if keyboard_check_pressed(vk_tab) {
 	event_user(1)
 	keyboard_string = ""
+	if instance_exists(obj_mainchara) {
+		obj_mainchara.image_index = 0
+	}
 }
 if active {
 	if array_length(history_commands) >= 1 {

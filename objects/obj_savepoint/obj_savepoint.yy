@@ -30,6 +30,7 @@
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"dialogue_type","filters":[],"listItems":[],"multiselect":false,"name":"dialogue_type","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"savepoint_wharf_1","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"empty","filters":[],"listItems":[],"multiselect":false,"name":"empty","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"warp_marker_slot","filters":[],"listItems":[],"multiselect":false,"name":"warp_marker_slot","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

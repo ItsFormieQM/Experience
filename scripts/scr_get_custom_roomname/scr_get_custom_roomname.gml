@@ -8,6 +8,8 @@ function scr_get_custom_roomname(rm){
 			return "School Hallway - Lower"
 		case room_deped_hallway_up:
 			return "School Hallway - Upper"
+		case room_deped_classroom_4_ph:
+			return "Classroom - Room 4 (Plh)"
 		default:
 			return "Unknown"
 	}

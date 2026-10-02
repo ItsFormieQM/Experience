@@ -1,4 +1,5 @@
 function scr_get_txt(_msc, ui = false){
+	
 	global.msg = []
 	global.xx_offset = []
 	global.yy_offset = []
@@ -278,6 +279,25 @@ function scr_get_txt(_msc, ui = false){
 				index = -1
 				index++
 				global.msg[index] = result.deped_kris_refusal_warp_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "deped_classroom_room4_savepoint_1":
+				index = -1
+				index++
+				global.msg[index] = result.savepoint_deped_classroom_room4_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				
+				index++
+				global.msg[index] = result.savepoint_deped_classroom_room4_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+			
+				index++
+				global.msg[index] = result.savepoint_deped_classroom_room4_3
 				global.xx_offset[index] = 68
 				global.yy_offset[index] = 960 / 2 + 85
 				break

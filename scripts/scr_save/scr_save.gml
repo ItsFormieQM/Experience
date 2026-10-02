@@ -33,8 +33,7 @@ function scr_save(savepoint_id){
 	file_text_writeln(file)
 	
 	// slot number of the nearest warp marker
-	var nearest_wm = instance_nearest(savepoint_id.x,savepoint_id.y,obj_warp_marker)
-	file_text_write_real(file,nearest_wm.slot)
+	file_text_write_real(file,savepoint_id)
 	file_text_close(file)
 	
 	// FLAGS SAVING
