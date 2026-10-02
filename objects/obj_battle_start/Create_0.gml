@@ -1,4 +1,10 @@
 global.flag[Flag.On_Battle] = true
+var cam = view_camera[0]
+var camx = camera_get_view_x(cam)
+var camy = camera_get_view_y(cam)
+if !custom_bg {
+	instance_create_layer(camx,camy,"Lower",obj_battle_default_bg)
+}
 scr_enemy_init(enemy_type)
 show_debug_message($"GLOBAL ENEMY ARRAY, {global.enemies}")
 obj_mainchara.image_speed = 1
