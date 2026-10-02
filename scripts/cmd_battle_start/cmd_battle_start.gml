@@ -1,7 +1,10 @@
 function cmd_battle_start(_song = noone,_enemy_type = "none", _volume = 1, _pit = 1){
 	global.msg = []
+	var cam = view_camera[0]
+	var camx = camera_get_view_x(cam)
+	var camy = camera_get_view_y(cam)
 	if !instance_exists(obj_mainchara) {
-		return -1
+		instance_create(camx / 2,camy / 2,obj_mainchara)
 	}
 	if !layer_exists("Lower") {
 		layer_create(layer_get_depth("Instances") - 1, "Lower")

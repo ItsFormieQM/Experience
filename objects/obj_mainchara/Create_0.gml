@@ -29,9 +29,10 @@ buffer = true
 heart_show = false
 heart_show_ran = 0
 heart_aura_struct = [
-	{spr: spr_soul_battle_start, spr_indice: 0,xscale: 0.05, yscale: 0.05, alpha: 0.1, alpha_regress: false},
+	
 	
 ]
+array_push(heart_aura_struct,{spr: spr_soul_battle_start, spr_indice: 0,xscale: 1, yscale: 0.35, alpha: 0.1, alpha_regress: false})
 heart_timer = 0
 
 

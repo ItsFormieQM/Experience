@@ -3,7 +3,7 @@ function cmd_chile(){
 		return -1
 	}
 	with obj_mainchara {
-		image_xscale = 0.1
+		image_xscale = 0.3
 		
 	}
 	return 0
