@@ -5,7 +5,7 @@ if !variable_instance_exists(self,"vol") {
 	vol = 1
 }
 if !variable_instance_exists(self,"nobackground") {
-	nobackground = false
+	nobackground = false // unused
 }
 if !variable_instance_exists(self,"pit") {
 	pit = 1

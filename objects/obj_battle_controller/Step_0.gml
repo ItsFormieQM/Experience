@@ -1,14 +1,16 @@
 if ismoving {
+	var up = 61
 	with obj_battle_ui_txtbox {
 		
-		move_towards_point(x, other.target_y, other.sp)
+		move_towards_point(x, other.target_y - up, other.sp_1)
 		
 	}
+	
 	with obj_battle_ui_fight_kris {
-		move_towards_point(x, other.target_y - 31, other.sp_1)
+		move_towards_point(x, other.target_y - up, other.sp_1)
 	}
 	with obj_hp_bar {
-		move_towards_point(x, other.target_y - 31, other.sp_1)
+		move_towards_point(x, other.target_y - up, other.sp_1)
 	}
 	with obj_battle_ui_txtbox {
 		if point_distance(x,y,x,other.target_y) <= other.sp {
@@ -18,7 +20,7 @@ if ismoving {
 		}
 	}
 	with obj_battle_ui_fight_kris {
-		if point_distance(x,y,x,other.target_y - 31) <= other.sp_1 {
+		if point_distance(x,y,x,other.target_y - up) <= other.sp_1 {
 			other.sp_1 = 0
 			speed = 0
 			

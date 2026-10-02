@@ -51,7 +51,13 @@ function scr_get_battle_lines(_msc = noone, count = 0){
 						global.battle_txt_scale[index] = 0.7
 						break
 					case 1:
-						global.battle_lines[0] = result.test1_enemy
+						index = 0
+						global.battle_lines[index] = result.test4_enemy
+						global.battle_xscale[index] = 1
+						global.battle_yscale[index] = 1
+						global.battle_txt_x_offset[index] = 870
+						global.battle_txt_y_offset[index] = 340
+						global.battle_txt_scale[index] = 0.7
 						break
 					default:
 						global.battle_lines[0] = "Lorem goon stop the goon son"

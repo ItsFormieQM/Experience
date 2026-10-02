@@ -11,8 +11,8 @@ for (var i = 0; i < array_length(global.enemies); i++) {
 		draw_sprite_ext(
 			spr_heart,
 			0,
-			global.xx_offset[0] + 70 + 30,
-			global.yy_offset[0] + 80 + 30,
+			global.xx_offset[0] + 70 + 25,
+			global.yy_offset[0] + 80 + 35,
 			scale + 0.1,
 			scale + 0.1,
 			0,
@@ -21,7 +21,7 @@ for (var i = 0; i < array_length(global.enemies); i++) {
 		)
 		draw_text_ext_transformed(
 			global.xx_offset[0] + 70 + 70,
-			global.yy_offset[0] + 80,
+			global.yy_offset[0] + 90,
 			$"{_name}",
 			1,
 			999,
