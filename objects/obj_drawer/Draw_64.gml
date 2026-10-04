@@ -299,7 +299,7 @@ if timer >= delay && !stop_draw {
 	}	
 	playtxt = true
 	if playtxt {
-		if string_char_at(test_str,index+1) != " " && string_char_at(test_str,index+1) != "  " {
+		if string_char_at(test_str,index) != " " && string_char_at(test_str,index) != "  " {
 			if !stop_draw {
 
 				if snd != noone {
@@ -444,7 +444,7 @@ for (var i = 1; i <= string_length(test); i++) {
 	
 	if !gaster {
 		draw_text_ext_transformed_colour(
-			_x + 70,_y + 97.5,char,1,999,scale,scale,0,colour,colour,colour,colour,alpha
+			_x + 55,_y + 122.5,char,1,999,scale,scale,0,colour,colour,colour,colour,alpha
 		)
 		_x += (string_width(char) * scale) + distance
 	}

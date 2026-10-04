@@ -59,7 +59,7 @@ function typersnd_play(typersnd = noone){
 	}
 	if typersnd != noone {
 		audio_stop_sound(typersnd)
-		audio_play_sound(typersnd,1,false,1.1)
+		audio_play_sound(typersnd,1,false,1.5)
 	}
-	return sndhandle
+	
 }

@@ -1,8 +1,6 @@
 timer++
-snd_timer++
 if global.held_x {
 	if !stop_draw {
-		snd_timer += 8
 		timer += 8
 	}
 }
@@ -59,9 +57,10 @@ if timer >= delay && !stop_draw{
 	}
 	visible_txt += string_char_at(lines,char_index)
 	timer = 0
+	if string_char_at(lines,char_index) != " " && string_char_at(lines,char_index) != "  " {
+		if snd != noone {
+			typersnd_play(snd)
+		}
+	}
 	
-}
-if snd_timer >= snd_delay && !stop_draw {
-	snd_play(snd,1.2)
-	snd_timer = 0
 }
