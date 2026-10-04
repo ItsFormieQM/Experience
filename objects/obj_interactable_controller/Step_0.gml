@@ -1,4 +1,7 @@
 // Inherit the parent event
+if global.flag[Flag.On_Battle] {
+	exit
+}
 if place_meeting(x,y,obj_mainchara) && !obj_mainchara.occupied{
 	if global.interacted && can_move && !instance_exists(obj_drawer) {
 		

@@ -1,6 +1,8 @@
-ran = false
-if !global.flag[Flag.On_Battle]
+
+if !global.flag[Flag.On_Battle] {
 	if global.interacted && skippable{
+		
+		playtxt = false
 		buffer = true
 		global.interacted = false
 		if special_text {
@@ -73,8 +75,9 @@ if !global.flag[Flag.On_Battle]
 		fade = false
 	}
 	if alpha <= 0 {
+		
 		is_choicer = false
-	
+		playtxt = false
 		font = fnt_main
 		ran = false
 		fade_rate = 0.02
@@ -128,3 +131,6 @@ if !global.flag[Flag.On_Battle]
 			obj_interactable.can_move = true	
 		}	
 	}
+	
+}
+

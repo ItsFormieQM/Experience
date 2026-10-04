@@ -44,8 +44,14 @@ function scr_save(savepoint_id){
 	file = file_text_open_write(filename)
 	for (var i = 0; i < Flag.COUNT; i++) {
 		if !is_bool(global.flag[i]) {
-			file_text_write_string(file,global.flags_name[i] + ": "+ string(global.flag[i]))
-			file_text_writeln(file)
+			if i == 11 {
+				file_text_write_string(file,global.flags_name[i] + ": "+ string("false"))
+				file_text_writeln(file)
+			}
+			else {
+				file_text_write_string(file,global.flags_name[i] + ": "+ string(global.flag[i]))
+				file_text_writeln(file)
+			}
 		}
 		else {
 			file_text_write_string(file,global.flags_name[i] + ": "+ string(global.flag[i] ? "true":"false"))

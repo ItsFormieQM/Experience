@@ -15,12 +15,9 @@ for (var i = index; i <= string_length(startsnd); i++) {
 		}
 	}
 }
+
 startsnd = asset_get_index(startsnd)
-if !ransps {
-	if startsnd != -1 {
-		snd_play(startsnd,1.2)
-	}
-}
+
 var _sett = draw_get_settings()
 test_str = string_replace_all(test_string, "{c}", global.name)
 test_str = string_replace_all(test_str, "{C}", global.name)
@@ -197,11 +194,16 @@ if timer >= delay && !stop_draw {
 						snd = snd_txt2
 						break
 					case 2:
-						snd = snd_flowery
+						snd = typer_sound.flowery
 						break
 					case 3:
 						snd = snd_txtnoelle
 						break
+					case 4:
+						snd = typer_sound.gaster
+						break
+					case 5:
+						snd = snd_floweytalk1
 					default:
 						break
 				}	
@@ -289,10 +291,25 @@ if timer >= delay && !stop_draw {
 	}
 	
 	timer = 0
+	
 	if string_length(visible_text) >= string_length(test_str) {
 		stop_snd = true	
 		show_debug_message("true")
+		canplay = false
 	}	
+	playtxt = true
+	if playtxt {
+		if string_char_at(test_str,index+1) != " " && string_char_at(test_str,index+1) != "  " {
+			if !stop_draw {
+
+				if snd != noone {
+					typersnd_play(snd)
+				}
+				
+			}
+			
+		}
+	}
 }
 
 var test = visible_text
@@ -427,7 +444,7 @@ for (var i = 1; i <= string_length(test); i++) {
 	
 	if !gaster {
 		draw_text_ext_transformed_colour(
-			_x + 70,_y + 90,char,1,999,scale,scale,0,colour,colour,colour,colour,alpha
+			_x + 70,_y + 97.5,char,1,999,scale,scale,0,colour,colour,colour,colour,alpha
 		)
 		_x += (string_width(char) * scale) + distance
 	}
@@ -461,13 +478,6 @@ for (var i = 1; i <= string_length(test); i++) {
 	
 }
 
-if snd_timer >= snd_delay && !stop_snd {
-	if snd != noone {
-		audio_play_sound(snd, 1, false)
-	}
-	snd_timer = 0
-}
-
 _x = global.xx_offset[count]
 _y = global.yy_offset[count]
 draw_set_colour(c_white)
@@ -476,6 +486,9 @@ if instance_exists(obj_dialogue) && !global.flag[Flag.On_Battle] {
 		visible = true
 	}
 }
+
 if is_choicer {
 	
 }
+
+

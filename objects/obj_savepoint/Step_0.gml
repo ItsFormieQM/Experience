@@ -1,4 +1,4 @@
-if place_meeting(x,y,obj_mainchara) && !obj_mainchara.occupied {
+if place_meeting(x,y,obj_mainchara) && !global.flag[Flag.On_Battle] {
 	with obj_save_menu {
 		if visible {
 			exit

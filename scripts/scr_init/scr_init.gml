@@ -61,6 +61,7 @@ function scr_init(){
 	global.flag[Flag.Days_Sick] = 0
 	global.flag[Flag.Stamina] = 0
 	global.flag[Flag.Arrested_Count] = 0
+	global.flag[Flag.On_Battle] = false
 	
 	#endregion
 	// Create 5 save directories
