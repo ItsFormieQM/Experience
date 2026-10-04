@@ -1,6 +1,6 @@
 playtxt = false
 sndhandle = noone
-
+handle = noone
 show_debug_message("instantiate drwawer")
 is_choicer = false
 buffer = true
@@ -58,4 +58,6 @@ if string_char_at(test_string,1) == "^" && string_char_at(test_string,2) == "+" 
 }
 else {
 	snd = snd_txt1	
-}	
+}
+scr_facechoice(noone)
+event_user(0)

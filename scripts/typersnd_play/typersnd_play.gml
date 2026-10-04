@@ -1,7 +1,8 @@
-function typersnd_play(typersnd = noone){
+function typersnd_play(typersnd = noone,handle = noone){
 	if typersnd == noone {
 		return
 	}
+	randomise()
 	enum typer_sound {
 		temmie,
 		mettaton,
@@ -38,28 +39,37 @@ function typersnd_play(typersnd = noone){
 					break
 			}
 		case typer_sound.flowery:
-			rand = irandom_range(1,7)
+			
+			rand = irandom_range(1,3)
+			
+			
 			switch rand {
 				case 1:
 					typersnd = snd_flowery_vn1
+					
 					break
 				case 2:
 					typersnd = snd_flowery_vn2
+					
 					break
 				case 3:
 					typersnd = snd_flowery_vn3
+					
 					break
 				default:
 					typersnd = noone
+					
 					break
 			}
-			
 		default:
 			break
 	}
-	if typersnd != noone {
-		audio_stop_sound(typersnd)
-		audio_play_sound(typersnd,1,false,1.5)
-	}
 	
+	if typersnd != noone {
+		if audio_exists(handle) {
+			audio_stop_sound(handle)
+		}
+		handle = audio_play_sound(typersnd,1,false,1.5)
+	}
+	return handle
 }

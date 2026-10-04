@@ -8,5 +8,10 @@ if instance_exists(obj_dialogue) {
 		visible = true
 	}
 }
+if global.facechoice != noone {
+	if instance_exists(global.facechoice) {
+		instance_destroy(global.facechoice)
+	}
+}
 plot++
 global.canmove = true

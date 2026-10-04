@@ -2,8 +2,8 @@
 if global.flag[Flag.On_Battle] {
 	exit
 }
-if place_meeting(x,y,obj_mainchara) && !obj_mainchara.occupied{
-	if global.interacted && can_move && !instance_exists(obj_drawer) {
+if (place_meeting(x,y,obj_mainchara) && !obj_mainchara.occupied) || force_run{
+	if (global.interacted && can_move && !instance_exists(obj_drawer)) || force_run {
 		
 		if interact_counter >= 1 && !can_be_reused {
 			exit
@@ -16,6 +16,7 @@ if place_meeting(x,y,obj_mainchara) && !obj_mainchara.occupied{
 		can_move = false
 		show_debug_message("ran???/")
 		obj_dialogue.visible = true
+		force_run = false
 	}
 	if can_move && !instance_exists(obj_drawer) {
 		obj_dialogue.visible = false
@@ -46,5 +47,8 @@ else {
 	if can_be_reused {
 		awarded = false
 		
+	}
+	if force_run {
+		instance_destroy()
 	}
 }

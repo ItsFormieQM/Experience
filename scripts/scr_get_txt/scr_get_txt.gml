@@ -91,6 +91,10 @@ function scr_get_txt(_msc, ui = false){
 				global.yy_offset[index] = 960 / 2 + 90
 				break
 			default:
+				index = 0
+				global.msg[index] = "* What a dirty hacker we got here./E"
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
 				break
 		}
 	}
@@ -183,22 +187,16 @@ function scr_get_txt(_msc, ui = false){
 				break
 			case "use_item_heroin":
 				index = 0
-				global.msg[index] = result.used_item_heroin
-				global.xx_offset[index] = 68
-				global.yy_offset[index] = 960 / 2 + 85
-				
-				index = 1
 				global.msg[index] = result.used_item_heroin_1
 				global.xx_offset[index] = 68
 				global.yy_offset[index] = 960 / 2 + 85
 				
-				index = 2
+				index = 1
 				global.msg[index] = result.used_item_heroin_2
 				global.xx_offset[index] = 68
 				global.yy_offset[index] = 960 / 2 + 85
 				
-				
-				index = 3
+				index = 2
 				global.msg[index] = result.used_item_heroin_3
 				global.xx_offset[index] = 68
 				global.yy_offset[index] = 960 / 2 + 85
@@ -219,22 +217,31 @@ function scr_get_txt(_msc, ui = false){
 				global.msg[index] = result.noelle_test_1
 				global.xx_offset[index] = 68 + 220
 				global.yy_offset[index] = 960 / 2 + 85
-				global.xx_offset_spriter[index] = 220
-				global.yy_offset_spriter[index] = 960 - 185
+				global.xx_offset_spriter[index] = 240
+				global.yy_offset_spriter[index] = 360
 				
 				index = 1
 				global.msg[index] = result.noelle_test_2
 				global.xx_offset[index] = 68 + 220
 				global.yy_offset[index] = 960 / 2 + 85
-				global.xx_offset_spriter[index] = 220
-				global.yy_offset_spriter[index] = 960 - 185
+				global.xx_offset_spriter[index] = 320
+				global.yy_offset_spriter[index] = 240
 				
 				index = 2
 				global.msg[index] = result.noelle_test_3
 				global.xx_offset[index] = 68 + 220
 				global.yy_offset[index] = 960 / 2 + 85
 				global.xx_offset_spriter[index] = 220
-				global.yy_offset_spriter[index] = 960 - 185
+				global.yy_offset_spriter[index] = 360
+				
+				index = 3
+				global.msg[index] = result.noelle_test_4
+				global.xx_offset[index] = 68 + 220
+				global.yy_offset[index] = 960 / 2 + 85
+				global.xx_offset_spriter[index] = 320
+				global.yy_offset_spriter[index] = 240
+				
+				index++
 				break
 			case "battle_test_1_1":
 				index = 0
@@ -299,9 +306,59 @@ function scr_get_txt(_msc, ui = false){
 				global.xx_offset[index] = 68
 				global.yy_offset[index] = 960 / 2 + 85
 				break
+			case "test_toriel_1":
+				index = -1
+				index++
+				global.msg[index] = result.test_toriel_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				
+				index++
+				global.msg[index] = result.test_toriel_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+			
+				index++
+				global.msg[index] = result.test_toriel_3
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.test_toriel_4
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.test_toriel_5
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.test_toriel_6
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.test_toriel_7
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "sans_test_1":
+				index = -1
+				index++
+				global.msg[index] = result.sans_test_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
 			default:
+				index = 0
+				global.msg[index] = "* What a dirty hacker we got here./E"
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
 				break
 				
-		}	
+		}	 
 	}
 }

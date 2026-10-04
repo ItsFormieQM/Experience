@@ -25,6 +25,7 @@ if visible {
 			scr_save(savepoint_id)
 			ran = false
 			snd_play(snd_saved,1.35)
+			snd_play(snd_menu_move,1)
 		}
 		else if i == 1 {
 			visible = false

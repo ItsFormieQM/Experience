@@ -1,12 +1,15 @@
 _x = 624
 _y = 0
+
 loaded = false
 goto_x = 0
 goto_y = 0
 move_l = false
-moe_r = false
+move_r = false
 move_u = false
 move_d = false
+if !instance_exists(obj_camera_cutscene)
+	instance_create(x,y,obj_camera_cutscene)
 sp = 2.5
 image_speed = 0
 dir = 0

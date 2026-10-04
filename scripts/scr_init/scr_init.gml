@@ -1,5 +1,5 @@
 function scr_init(){
-	
+	global.cutscene = false
 	global.osflavor = pointer_null
 	global.msg = []
 	global.xx_offset = []
@@ -21,6 +21,10 @@ function scr_init(){
 	global.lv = 1
 	global.oldtime = 0
 	global.oldlv = 0
+	global.actors = []
+	for (var i = 0; i <= 12; i++) {
+		global.actors[i] = noone
+	}
 	global.oldroom = ""
 	enum Flag {
 		On_School = 0,

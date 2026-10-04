@@ -34,7 +34,8 @@ if !global.flag[Flag.On_Battle] {
 			chars = []
 			count++
 			if count >= array_length(global.msg) {
-				instance_destroy()	
+				instance_destroy()
+				exit
 			}	
 			else {
 				test_string = global.msg[count]
@@ -62,6 +63,7 @@ if !global.flag[Flag.On_Battle] {
 			distance = 0
 			fade_rate = 0.02
 			ran = false
+			event_user(0)
 		}
 	}
 	if alpha >= 0 && fade{
@@ -103,6 +105,7 @@ if !global.flag[Flag.On_Battle] {
 		count++
 		if count >= array_length(global.msg) {
 			instance_destroy()	
+			exit
 		}	
 	
 		else {
@@ -130,6 +133,7 @@ if !global.flag[Flag.On_Battle] {
 		if instance_exists(obj_interactable) {
 			obj_interactable.can_move = true	
 		}	
+		event_user(0)
 	}
 	
 }

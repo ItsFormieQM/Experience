@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_toriel_talk1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.08036281,
+  "exportDir":"",
+  "name":"snd_toriel_talk1",
+  "parent":{
+    "name":"Toriel Files",
+    "path":"folders/Files/Toriel Files.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_toriel_talk1.wav",
+  "volume":1.0,
+}

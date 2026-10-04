@@ -1,0 +1,87 @@
+if !global.flag[Flag.On_Battle] {
+	if !jump_state {
+		image_speed = 0
+	}
+	
+	if move_l {
+		x -= sp
+		image_speed = sp / 2
+		dir = Left
+		if !noclip {
+			if place_meeting(x - 1,y,obj_wall) {
+				x += sp
+			}
+		}
+	}
+	if move_r {
+		x += sp
+		image_speed = sp / 2
+		dir = Right
+		if !noclip {
+			if place_meeting(x + 1,y,obj_wall) {
+				x -= sp
+			}
+		}
+	}
+	if move_u {
+		y -= sp
+		image_speed = sp / 2
+		dir = Up
+		if !noclip {
+			if place_meeting(x,y - 1,obj_wall) {
+				y += sp
+			}
+		}
+	}
+	if move_d {
+		y += sp
+		image_speed = sp / 2
+		dir = Down
+		if !noclip {
+			if place_meeting(x,y + 1,obj_wall) {
+				y -= sp	
+			}
+		}
+	}
+	
+	if !moving && !jump_state {
+		ran = false
+		image_index = 0		
+	}	
+	else if moving {
+		if !ran {
+			ran = true
+			image_index = 1
+		}
+	}
+
+	if !removed_variable_1 && !jump_state {
+		switch dir {
+			case Up:
+				sprite_index = spr_mainchara_u
+				break
+			case Down:
+				sprite_index = spr_mainchara_d
+				break
+			case Left:
+				sprite_index = spr_mainchara_l
+				break
+			case Right:
+				sprite_index = spr_mainchara_r
+				break
+			default:
+				break
+		}
+	}
+}
+
+if !global.cutscene {
+	instance_destroy()
+	obj_mainchara.visible = true
+	for (var i = 0; i < array_length(global.actors); i++) {
+		if global.actors[i] == id {
+			global.actors[i] = noone
+			break
+		}
+	}
+}

@@ -117,3 +117,18 @@ if instance_exists(obj_battle_controller) && obj_battle_controller.begin_counter
 	alarm[0] = 10
 	
 }
+if global.cutscene {
+	visible = false
+	
+	if !instance_exists(obj_mainchara_actor) {
+		actor = instance_create(x,y,obj_mainchara_actor)
+		for (var i = 0; i < array_length(global.actors); i++) {
+			if global.actors[i] == noone {
+				global.actors[i] = actor
+				break
+			}
+		}
+	}
+	x = global.actors[0].x
+	y = global.actors[0].y
+}

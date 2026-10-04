@@ -204,6 +204,16 @@ if timer >= delay && !stop_draw {
 						break
 					case 5:
 						snd = snd_floweytalk1
+						break
+					case 6:
+						snd = snd_floweytalk2
+						break
+					case 7:
+						snd = snd_toriel_talk1
+						break
+					case 8:
+						snd = snd_sans_talk1
+						break
 					default:
 						break
 				}	
@@ -223,12 +233,12 @@ if timer >= delay && !stop_draw {
 									)
 						index += 7
 						switch compare {
-							case 0:
+							case 1:
 								font = fnt_main
 								show_debug_message("font main")
 								break
-							case 1:
-								
+							case 2:
+								font = fnt_sans
 								break
 							default:
 								break
@@ -297,18 +307,21 @@ if timer >= delay && !stop_draw {
 		show_debug_message("true")
 		canplay = false
 	}	
-	playtxt = true
-	if playtxt {
-		if string_char_at(test_str,index) != " " && string_char_at(test_str,index) != "  " {
-			if !stop_draw {
-
-				if snd != noone {
-					typersnd_play(snd)
+	playtxt = !playtxt
+	
+	if string_char_at(test_str,index) != " " && string_char_at(test_str,index) != "  " {
+		if !stop_draw {
+			if snd == typer_sound.flowery {
+				if playtxt {
+					handle = typersnd_play(snd,handle)
 				}
-				
 			}
-			
+			else if snd != noone {
+				handle = typersnd_play(snd,handle)
+			}
+				
 		}
+			
 	}
 }
 
