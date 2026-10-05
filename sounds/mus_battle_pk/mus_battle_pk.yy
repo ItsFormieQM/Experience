@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"mus_battle_pk",
   "parent":{
-    "name":"Music",
-    "path":"folders/SFX/Music.yy",
+    "name":"Battle",
+    "path":"folders/SFX/Music/Battle.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

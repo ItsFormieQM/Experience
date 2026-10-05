@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"mus_battle_jevil",
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"Battle",
+    "path":"folders/SFX/Music/Battle.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

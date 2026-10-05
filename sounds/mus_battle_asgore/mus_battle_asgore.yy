@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"mus_battle_ttt",
+  "%Name":"mus_battle_asgore",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":71.42699,
+  "duration":154.08327,
   "exportDir":"",
-  "name":"mus_battle_ttt",
+  "name":"mus_battle_asgore",
   "parent":{
     "name":"Battle",
     "path":"folders/SFX/Music/Battle.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mus_battle_ttt.wav",
+  "soundFile":"mus_battle_asgore.ogg",
   "volume":1.0,
 }
