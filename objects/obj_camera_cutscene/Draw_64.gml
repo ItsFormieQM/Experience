@@ -1,1 +1,1 @@
-draw_text(0,45,$"X: {x}, Y: {y}")
+//draw_text(0,45,$"X: {x}, Y: {y}")

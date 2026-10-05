@@ -59,5 +59,10 @@ if string_char_at(test_string,1) == "^" && string_char_at(test_string,2) == "+" 
 else {
 	snd = snd_txt1	
 }
+choicer_text = ""
+choicer_choices = []
+choice_pos_map = [
+	
+] // struct
 scr_facechoice(noone)
 event_user(0)

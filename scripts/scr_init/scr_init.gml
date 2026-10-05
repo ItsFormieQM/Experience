@@ -1,7 +1,9 @@
 function scr_init(){
+	audio_channel_num(256)
 	global.cutscene = false
 	global.osflavor = pointer_null
 	global.msg = []
+	global.choice = -1
 	global.xx_offset = []
 	global.xx_offset_spriter = []
 	global.yy_offset_spriter = []

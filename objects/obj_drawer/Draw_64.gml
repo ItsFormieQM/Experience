@@ -24,10 +24,8 @@ test_str = string_replace_all(test_str, "{C}", global.name)
 var last_char = string_char_at(test_str, string_length(test_str))
 draw_set_font(font)
 var scale = 2
-if !is_choicer {
-	timer++
-	snd_timer++
-}
+timer++
+snd_timer++
 if string_char_at(test_str,index) == "  " {
 	timer = delay
 	snd_delay = delay
@@ -64,6 +62,34 @@ if timer >= delay && !stop_draw {
 
 	if string_char_at(test_str, index) == "#" {
 		// Give points
+		if string_char_at(test_str, index + 1) == "C" {
+			var idk = false
+			is_choicer = true
+			index += 2
+			var ii = index + 3 
+			var choicer_str = ""
+			for (var i = ii; i <= string_length(test_string); i++) {
+				
+				if string_char_at(test_string, i) != " " {
+					if string_char_at(test_string,i) == "_" {
+						test_string = string_delete(test_string,i,1)
+						test_string = string_insert(" ",test_string,i)
+					}
+					choicer_str += string_char_at(test_string,i)
+					
+				}
+				else {
+					if string_length(choicer_str) != 0 {
+						array_push(choicer_choices,choicer_str)
+						show_debug_message(choicer_choices)
+					}
+					choicer_str = ""
+				}
+			}
+			show_debug_message(test_string)
+			
+			
+		}
 		if string_char_at(test_str, index + 1) == "G" {
 			if string_char_at(test_str, index + 2) == "P" {
 				if (string_char_at(test_str, index + 3) == "+" || string_char_at(test_str, index + 3) == "-") &&
@@ -213,6 +239,9 @@ if timer >= delay && !stop_draw {
 						break
 					case 8:
 						snd = snd_sans_talk1
+						break
+					case 999:
+						snd = noone
 						break
 					default:
 						break
@@ -456,9 +485,20 @@ for (var i = 1; i <= string_length(test); i++) {
 	}
 	
 	if !gaster {
+		var deviationx = 55
+		var deviationy = 123.5
 		draw_text_ext_transformed_colour(
-			_x + 55,_y + 122.5,char,1,999,scale,scale,0,colour,colour,colour,colour,alpha
+			_x + deviationx,_y + deviationy,char,1,999,scale,scale,0,colour,colour,colour,colour,alpha
 		)
+		if is_choicer {
+			if array_length(choicer_choices) != 0 {
+				for (var k = 0; k < array_length(choicer_choices); k++) {
+					if char == string_char_at(choicer_choices[k],1) {
+						array_push(choice_pos_map,{xpos: _x + deviationx, ypos: _y + deviationy})
+					}
+				}
+			}
+		}
 		_x += (string_width(char) * scale) + distance
 	}
 	else {
@@ -499,9 +539,23 @@ if instance_exists(obj_dialogue) && !global.flag[Flag.On_Battle] {
 		visible = true
 	}
 }
-
-if is_choicer {
-	
+if is_choicer && stop_draw{
+	if !instance_exists(obj_choicer) {
+		var cleaned = []
+		for (var i = 0; i < array_length(choice_pos_map); i++) {
+			var unique = true
+			for (var k = 0; k < array_length(cleaned); k++) {
+				if choice_pos_map[i].xpos == cleaned[k].xpos && choice_pos_map[i].ypos == cleaned[k].ypos {
+					unique = false
+				}
+			}
+			if unique {
+				array_push(cleaned,choice_pos_map[i])
+			}
+		}
+		show_debug_message(cleaned)
+		instance_create(0,0,obj_choicer,{positionmap: cleaned})
+	}
 }
 
 

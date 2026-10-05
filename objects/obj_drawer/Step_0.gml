@@ -1,5 +1,8 @@
 
 if !global.flag[Flag.On_Battle] {
+	if is_choicer {
+		exit
+	}
 	if global.interacted && skippable{
 		
 		playtxt = false

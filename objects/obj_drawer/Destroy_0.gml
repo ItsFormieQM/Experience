@@ -4,8 +4,15 @@ if room == room_gaster {
 	
 }
 if instance_exists(obj_dialogue) {
-	with obj_dialogue {
-		visible = true
+	if !instance_exists(obj_choicer) {
+		with obj_dialogue {
+			visible = true
+		}
+	}
+	else {
+		with obj_choicer {
+			
+		}
 	}
 }
 if global.facechoice != noone {

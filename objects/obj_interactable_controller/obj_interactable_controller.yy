@@ -31,7 +31,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"dialogue_type","filters":[],"listItems":[],"multiselect":false,"name":"dialogue_type","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"dialogue_type","filters":[],"listItems":[],"multiselect":false,"name":"dialogue_type","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"choicer_1","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"reward_points","filters":[],"listItems":[],"multiselect":false,"name":"reward_points","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"reward_items","filters":[],"listItems":[],"multiselect":false,"name":"reward_items","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"award_sound","filters":[
