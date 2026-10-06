@@ -21,4 +21,6 @@ if global.facechoice != noone {
 	}
 }
 plot++
-global.canmove = true
+if !is_choicer {
+	global.canmove = true
+}

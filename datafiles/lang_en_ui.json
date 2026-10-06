@@ -46,6 +46,9 @@
 	"choicer_3_1":"#t000^000#fnt001^002^W* Thank ^RYOU^W for participating!/E",
 	"choicer_4_1":"#t000^000#fnt001^002* You felt relieved that it^/  didn't freeze the entire^/  game./E",
 	"choicer_5_1":"#t000^000#fnt001^002^W* Thank ^RYOU^W for participating!/E",
+	
+	"choicer_1_2":"#t000^000#fnt001^002* (This little bird wants to^/  carry you across.)/E",
+	"choicer_2_2":"#t000^000#fnt001^002* (Accept the bird's offer?)^/^/ #C        Get_ride    No        /E ",
 	"used_item_heroin_1":"* You took Heroin.",
 	"used_item_heroin_2":"* You feel a bit tired and relaxed.",
 	"used_item_heroin_3":"* Movement is down by 50%!",

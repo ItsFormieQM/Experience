@@ -386,6 +386,45 @@ function scr_get_txt(_msc, ui = false){
 				global.xx_offset[index] = 68
 				global.yy_offset[index] = 960 / 2 + 85
 				break
+			case "choicer_test_2":
+				index = -1
+				if global.choice == 0 {
+					index++
+					global.msg[index] = result.choicer_1_2
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					
+					index++
+					global.msg[index] = result.choicer_5_1
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					global.choice = -1
+					break
+				}
+				else if global.choice == 1 {
+					index++
+					global.msg[index] = result.choicer_2_1
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					
+					index++
+					global.msg[index] = result.choicer_3_1
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					global.choice = -1
+					break
+				}
+				
+				index++
+				global.msg[index] = result.choicer_1_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.choicer_2_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
 			default:
 				index = 0
 				global.msg[index] = "* What a dirty hacker we got here./E"

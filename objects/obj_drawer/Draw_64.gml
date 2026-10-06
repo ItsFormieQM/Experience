@@ -86,6 +86,21 @@ if timer >= delay && !stop_draw {
 					choicer_str = ""
 				}
 			}
+			for (var i = 0; i < array_length(choicer_choices);i++) {
+				if string_char_at(choicer_choices[i],1) == "^" {
+					array_delete(choicer_choices,i,1)
+					i--
+				}
+				if string_char_at(choicer_choices[i],1) == "/" {
+					array_delete(choicer_choices,i,1)
+					i--
+				}
+				if string_char_at(choicer_choices[i],1) == "#" {
+					array_delete(choicer_choices,i,1)
+					i--
+				}
+				
+			}
 			show_debug_message(test_string)
 			
 			
