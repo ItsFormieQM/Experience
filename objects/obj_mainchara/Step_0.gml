@@ -6,7 +6,7 @@ if !global.flag[Flag.On_Battle] {
 		sp = 4
 	}
 	else {
-		sp = 2.5
+		sp = 3
 	}
 	if global.canmove {
 	
@@ -17,51 +17,51 @@ if !global.flag[Flag.On_Battle] {
 			}
 			if global.a_held {
 				x -= sp
-				image_speed = sp / 2
+				image_speed = floor(sp / 2) 
 				dir = Left
 				if !noclip
 					if place_meeting(x - 1,y,obj_wall) {
 			
 						x += sp
-				
+						
 			
 					}
 		
 			}
 			else if global.d_held {
 				x += sp
-				image_speed = sp / 2
+				image_speed = floor(sp / 2) 
 				dir = Right
 				if !noclip
 					if place_meeting(x + 1,y,obj_wall) {
 						x -= sp
-				
+						
 			
 					}
 		
 			}
 			if global.w_held {
 				y -= sp
-				image_speed = sp / 2
+				image_speed = floor(sp / 2) 
 				dir = Up
 				if !noclip
 					if place_meeting(x,y - 1,obj_wall) {
 			
 						y += sp
-				
+						
 			
 					}
 		
 			}
 			else if global.s_held {
 				y += sp
-				image_speed = sp / 2
+				image_speed = floor(sp / 2) 
 				dir = Down
 				if !noclip
 					if place_meeting(x,y + 1,obj_wall) {
 			
 						y -= sp
-				
+						
 			
 					}
 		

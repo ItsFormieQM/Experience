@@ -41,6 +41,7 @@ function scr_init(){
 		Is_Arrested,
 		Arrested_Count,
 		On_Battle,
+		On_RealBattle,
 		COUNT
 	}
 	global.flags_name = [
@@ -55,7 +56,8 @@ function scr_init(){
 		"Stamina",
 		"Is_Arrested",
 		"Arrested_Count",
-		"On_Battle"
+		"On_Battle",
+		"On_RealBattle",
 	]
 	global.flag = array_create(Flag.COUNT,false)
 	#region set flags to default

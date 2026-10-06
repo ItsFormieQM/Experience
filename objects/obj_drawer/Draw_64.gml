@@ -81,11 +81,12 @@ if timer >= delay && !stop_draw {
 				else {
 					if string_length(choicer_str) != 0 {
 						array_push(choicer_choices,choicer_str)
-						show_debug_message(choicer_choices)
+						
 					}
 					choicer_str = ""
 				}
 			}
+			show_debug_message(choicer_choices)
 			for (var i = 0; i < array_length(choicer_choices);i++) {
 				if string_char_at(choicer_choices[i],1) == "^" {
 					array_delete(choicer_choices,i,1)
@@ -101,6 +102,7 @@ if timer >= delay && !stop_draw {
 				}
 				
 			}
+			show_debug_message(choicer_choices)
 			show_debug_message(test_string)
 			
 			

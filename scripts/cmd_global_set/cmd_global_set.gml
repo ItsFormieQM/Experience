@@ -1,4 +1,4 @@
-function cmd_global_variable_set_value(variable, value){
+function cmd_global_set(variable, value){
 	if variable_global_exists(variable) {
 		if string_canbe_int(value) {
 			value = real(value)

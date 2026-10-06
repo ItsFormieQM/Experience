@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"cmd_global_variable_set_value",
+  "%Name":"cmd_global_get",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"cmd_global_variable_set_value",
+  "name":"cmd_global_get",
   "parent":{
     "name":"Commands",
     "path":"folders/Console/Commands.yy",

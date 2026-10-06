@@ -1,4 +1,7 @@
-if position_meeting(mouse_x,mouse_y,self) && (!obj_mainchara.jump_state && !instance_exists(obj_drawer) && !instance_exists(obj_fade_warp)){
+if !instance_exists(obj_mainchara) {
+	exit
+}
+if instance_exists(obj_mainchara) && position_meeting(mouse_x,mouse_y,self) && (!obj_mainchara.jump_state && !instance_exists(obj_drawer) && !instance_exists(obj_fade_warp)){
 	hovered = true
 	if global.l_click {
 		opened = !opened
