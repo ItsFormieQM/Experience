@@ -5,7 +5,7 @@ var scale = 2
 draw_sprite_ext(
 	spr_small_heart,
 	0,
-	_x - 45,
+	_x - 35,
 	_y + 25,
 	scale,
 	scale,

@@ -1,5 +1,6 @@
 function scr_init(){
 	audio_channel_num(256)
+	global.true_battle = true
 	global.cutscene = false
 	global.osflavor = pointer_null
 	global.msg = []

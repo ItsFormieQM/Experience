@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"mus_battle_hd",
   "parent":{
-    "name":"Battle",
-    "path":"folders/SFX/Music/Battle.yy",
+    "name":"True Battle",
+    "path":"folders/SFX/Music/True Battle.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

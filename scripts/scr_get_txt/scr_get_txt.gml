@@ -425,6 +425,83 @@ function scr_get_txt(_msc, ui = false){
 				global.xx_offset[index] = 68
 				global.yy_offset[index] = 960 / 2 + 85
 				break
+			case "gaster_what_1":
+				index = -1
+				index++
+				global.msg[index] = result.gaster_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_3
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_4
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_5
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_6
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_7
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_8
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_9
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_10
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_11
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_12
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_13
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_14
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_15
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
 			default:
 				index = 0
 				global.msg[index] = "* What a dirty hacker we got here./E"

@@ -18,6 +18,9 @@ if place_meeting(x,y,obj_mainchara) {
 			global.choice = -1
 			alarm[0] = 60 * 23
 			active = true
+			var _x = obj_mainchara.x - 12
+			var _y = obj_mainchara.y - 70
+			sp = (distance_to_point(_x,_y)) / 70
 			sprite_index = spr_carrybird_fly
 		}
 			

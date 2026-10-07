@@ -261,6 +261,7 @@ if timer >= delay && !stop_draw {
 						snd = noone
 						break
 					default:
+						snd = noone
 						break
 				}	
 			}
@@ -383,6 +384,12 @@ for (var i = 1; i <= string_length(test); i++) {
 			_y += string_height(char) * scale + 14
 			_x = _x_offset
 			i++
+			if string_char_at(test,i) == " " {
+				i++
+			}
+			if string_char_at(test,i) == " " {
+				i++
+			}
 			continue
 		} 
 		else if future_char_2 == "R" { 
@@ -502,8 +509,11 @@ for (var i = 1; i <= string_length(test); i++) {
 	}
 	
 	if !gaster {
-		var deviationx = 55
-		var deviationy = 123.5
+		var cam = view_camera[0]
+		var camw = camera_get_view_width(cam)
+		scale = (surface_get_width(application_surface) / camw)
+		var deviationx = 45
+		var deviationy = 124.5
 		draw_text_ext_transformed_colour(
 			_x + deviationx,_y + deviationy,char,1,999,scale,scale,0,colour,colour,colour,colour,alpha
 		)

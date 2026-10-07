@@ -1,6 +1,6 @@
 function instance_create(_x,_y,_obj,vars = noone, high_priority = false,console = false){
 	if console {
-		var handle instance_create_layer(_x,_y,"Instances",_obj)
+		var handle = instance_create_layer(_x,_y,"Instances",_obj)
 		return handle
 	}
 	if !high_priority {

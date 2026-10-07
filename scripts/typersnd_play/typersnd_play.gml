@@ -37,7 +37,9 @@ function typersnd_play(typersnd = noone,handle = noone){
 				default:
 					typersnd = snd_wngdng1
 					break
+				
 			}
+			break
 		case typer_sound.flowery:
 			
 			rand = irandom_range(1,3)
@@ -61,6 +63,7 @@ function typersnd_play(typersnd = noone,handle = noone){
 					
 					break
 			}
+			break
 		default:
 			break
 	}

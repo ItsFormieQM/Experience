@@ -1,5 +1,5 @@
 if place_meeting(x,y,obj_mainchara) && !ran {
-	pause(60)
+	
 	global.cutscene = true
 	ran = true
 	
@@ -18,7 +18,7 @@ if instance_exists(global.actors[0]) && ran {
 		executed = true
 		
 		with obj_camera_cutscene {
-			move_cam(Left,0.05, other.delay - 60)
+			move_cam(other.dir,0.05, other.delay - 60)
 		}
 	}
 	

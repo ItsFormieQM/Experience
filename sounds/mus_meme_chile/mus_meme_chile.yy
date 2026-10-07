@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"mus_meme_chile",
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"Music",
+    "path":"folders/SFX/Music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

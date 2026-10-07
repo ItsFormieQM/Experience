@@ -2,8 +2,10 @@ move_l = false
 move_r = false
 move_u = false
 move_d = false
+cammoving = false
+sp = 0
 move_cam = function(dir,_sp,frames) {
-	other.sp = _sp
+	sp = _sp
 	switch dir {
 		case Up:
 			move_u = true
@@ -21,4 +23,6 @@ move_cam = function(dir,_sp,frames) {
 			return -1
 	}
 	alarm[0] = frames
+	cammoving = true
+	show_debug_message("yo its supposed to move but i guess not")
 }

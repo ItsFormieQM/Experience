@@ -1,4 +1,8 @@
 function cmd_battle_start(_song = noone,_enemy_type = "none", _volume = 1, _pit = 1){
+	if global.true_battle {
+		instance_create(0,0,obj_battleicon)
+		return "oh this is emotional"
+	}
 	global.msg = []
 	var cam = view_camera[0]
 	var camx = camera_get_view_x(cam)
