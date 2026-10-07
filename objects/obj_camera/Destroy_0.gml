@@ -1,0 +1,1 @@
+instance_create(obj_mainchara.x,obj_mainchara.y,obj_camera)

@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"mus_battle_finale_loop",
+  "%Name":"mus_truebattle_finale_loop",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -12,7 +12,7 @@
   "conversionMode":0,
   "duration":60.633106,
   "exportDir":"",
-  "name":"mus_battle_finale_loop",
+  "name":"mus_truebattle_finale_loop",
   "parent":{
     "name":"True Battle",
     "path":"folders/SFX/Music/True Battle.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mus_battle_finale_loop.ogg",
+  "soundFile":"mus_truebattle_finale_loop.ogg",
   "volume":1.0,
 }

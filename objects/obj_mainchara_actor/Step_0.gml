@@ -79,9 +79,10 @@ if !global.cutscene {
 	instance_destroy()
 	obj_mainchara.visible = true
 	for (var i = 0; i < array_length(global.actors); i++) {
-		if global.actors[i] == id {
+		if global.actors[i].actor == id {
 			global.actors[i] = noone
 			break
 		}
 	}
+	show_debug_message(global.actors)
 }

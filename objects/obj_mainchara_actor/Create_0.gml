@@ -12,7 +12,7 @@ image_speed = 0
 dir = 0
 ran = false
 
-noclip = false
+noclip = true
 alpha = 1
 colour = 1
 removed_variable_1 = false

@@ -8,8 +8,8 @@ move_l = false
 move_r = false
 move_u = false
 move_d = false
-if !instance_exists(obj_camera_cutscene)
-	instance_create(x,y,obj_camera_cutscene)
+if !instance_exists(obj_camera)
+	instance_create(x,y,obj_camera)
 sp = 2.5
 image_speed = 0
 dir = 0

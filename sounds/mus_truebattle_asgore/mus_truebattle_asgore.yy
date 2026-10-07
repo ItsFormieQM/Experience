@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"mus_battle_asgore",
+  "%Name":"mus_truebattle_asgore",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -12,7 +12,7 @@
   "conversionMode":0,
   "duration":154.08327,
   "exportDir":"",
-  "name":"mus_battle_asgore",
+  "name":"mus_truebattle_asgore",
   "parent":{
     "name":"True Battle",
     "path":"folders/SFX/Music/True Battle.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mus_battle_asgore.ogg",
+  "soundFile":"mus_truebattle_asgore.ogg",
   "volume":1.0,
 }

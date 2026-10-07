@@ -7,7 +7,7 @@ function scr_truebattle_battlegroup(type){
 	}
 	switch type {
 		case BattleGroup.Asgore:
-			global.true_battle_music = mus_battle_asgore
+			global.true_battle_music = mus_play(mus_truebattle_asgore)
 			global.true_battle_enemies = obj_test_enemy // PLACEHOLDER CHILL
 			break
 		default:

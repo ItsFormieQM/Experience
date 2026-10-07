@@ -28,6 +28,7 @@ if !global.flag[Flag.On_Battle] {
 					}
 		
 			}
+			
 			else if global.d_held {
 				x += sp
 				image_speed = floor(sp / 2) 
@@ -124,11 +125,18 @@ if global.cutscene {
 		actor = instance_create(x,y,obj_mainchara_actor)
 		for (var i = 0; i < array_length(global.actors); i++) {
 			if global.actors[i] == noone {
-				global.actors[i] = actor
+				global.actors[i] = {actor_name: Actors.Kris, actor: actor}
 				break
 			}
 		}
 	}
-	x = global.actors[0].x
-	y = global.actors[0].y
+	for (var i = 0; i < array_length(global.actors); i++) {
+		if global.actors[i].actor_name == Actors.Kris {
+			x = global.actors[i].actor
+			y = global.actors[i].actor
+		}
+	}
+}
+enum Actors {
+	Kris
 }

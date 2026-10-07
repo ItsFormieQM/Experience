@@ -7,21 +7,21 @@ if !global.flag[Flag.On_Battle] && !global.cutscene {
 	var tx = x - (cam_w / 2)
 	var ty = y - (cam_h / 2)
 
-	tx = clamp(tx,0,room_width - cam_w)
-	if instance_exists(obj_carrybird) {
-		if !obj_carrybird.active {
-			ty = clamp(ty,0,room_height - cam_h)
-		}
-		else {
-			ty = cam_y
-		}
-	}
-	else {
-		ty = clamp(ty,0,room_height - cam_h)
-	}
+	//tx = clamp(tx,0,room_width - cam_w)
+	//if instance_exists(obj_carrybird) {
+	//	if !obj_carrybird.active {
+	//		ty = clamp(ty,0,room_height - cam_h)
+	//	}
+	//	else {
+	//		ty = cam_y
+	//	}
+	//}
+	//else {
+	//	ty = clamp(ty,0,room_height - cam_h)
+	//}
 	
 
-	camera_set_view_pos(cam,floor(tx),floor(ty))
+	//camera_set_view_pos(cam,floor(tx),floor(ty))
 	with obj_dialogue {
 		cam = view_camera[0]
 		x = camera_get_view_x(cam) + 320
@@ -51,9 +51,9 @@ if !global.flag[Flag.On_Battle] && !global.cutscene {
 		x = camera_get_view_x(cam) + self_x
 		y = camera_get_view_y(cam) + self_y
 	}
-	with obj_camera_cutscene {
-		x = camera_get_view_x(cam) + other.x
-		y = camera_get_view_y(cam) + other.y
+	with obj_camera {
+		x = other.x - (sprite_width / 2)
+		y = other.y - (sprite_height / 2)
 	}
 }
 move_l = false

@@ -24,3 +24,6 @@ plot++
 if !is_choicer {
 	global.canmove = true
 }
+if instance_exists(obj_cutscene_controller) {
+	obj_cutscene_controller.con = plot
+}
