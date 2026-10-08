@@ -15,7 +15,7 @@ cam = view_camera[0]
 camx = camera_get_view_x(cam)
 camy = camera_get_view_y(cam)
 ///@desc Starts a conversation
-///@param {real} type The indentifier of the conversation
+///@param {real} type The identifier of the conversation
 cutscene_start_dialogue = function(type) {
 	cmd_dialogue_play(type)
 	return
@@ -31,6 +31,10 @@ cutscene_walk = function(instance, dir, sp, delay) {
 		cutscene_walk(dir,sp,delay)
 	}
 }
+///@desc Moves the camera to a specified location.
+///@param {real} dir The direction to move in.
+///@param {real} timeinframes How many frames before stopping.
+///@param {real} camspeed The speed to move in.
 cutscene_move_camera = function(dir, timeinframes, camspeed) {
 	_dir = dir
 	_time = timeinframes
@@ -40,5 +44,17 @@ cutscene_move_camera = function(dir, timeinframes, camspeed) {
 	}
 	return
 }
-
+///@desc Locks the camera to an object.
+///@param {Id.Instance} to_an_instance The direction to move in.
+cutscene_follow_camera = function(to_an_instance) {
+	with obj_camera {
+		follow_cam(to_an_instance)
+	}
+}
+///@desc Unlocks the camera from an object.
+cutscene_unfollow_camera = function() {
+	with obj_camera {
+		unfollow_cam()
+	}
+}
 #endregion

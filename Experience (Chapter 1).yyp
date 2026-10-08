@@ -187,6 +187,7 @@
     {"id":{"name":"cmd_toggle_room_persistence","path":"scripts/cmd_toggle_room_persistence/cmd_toggle_room_persistence.yy",},},
     {"id":{"name":"cmd_tp","path":"scripts/cmd_tp/cmd_tp.yy",},},
     {"id":{"name":"cmd_volume_set","path":"scripts/cmd_volume_set/cmd_volume_set.yy",},},
+    {"id":{"name":"cutscene_get_actor_instance","path":"scripts/cutscene_get_actor_instance/cutscene_get_actor_instance.yy",},},
     {"id":{"name":"draw_macro","path":"scripts/draw_macro/draw_macro.yy",},},
     {"id":{"name":"file_create","path":"scripts/file_create/file_create.yy",},},
     {"id":{"name":"file_length","path":"scripts/file_length/file_length.yy",},},

@@ -104,7 +104,7 @@ function scr_init(){
 	global.maxhp = [90]
 	global.hp[0] = 90
 	global.maxhp[0] = global.hp[0]
-	if os_type == os_windows || os_type == os_linux || os_type == os_macosx || os_type == os_browser{
+	if os_type == os_windows || os_type == os_linux || os_type == os_macosx {
 		global.osflavor = PC	
 	}
 	else if os_type == os_android || os_type == os_ios {

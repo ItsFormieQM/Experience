@@ -4,20 +4,20 @@ if global.cutscene {
 if cammoving {
 	if move_l {
 		x -= sp
-		show_debug_message("im moving!")
+		
 	}
 	if move_r {
-		x += sp
-		show_debug_message("im moving!")
+		x += sp 
+		
 	}
 	if move_u {
 		y -= sp
-		show_debug_message("im moving!")
+		
 	}
 	if move_d {
 		
 		y += sp
-		show_debug_message("im moving!")
+		
 	}
 	
 }
@@ -40,8 +40,9 @@ if keyboard_check_pressed(ord("7")) {
 }
 if !global.cutscene {
 	if used {
-		instance_destroy()
-		exit
+		used = false
+		following = false
+		sp = 0
 	}
 }
 move_towards_point(_x, _y, _sp)

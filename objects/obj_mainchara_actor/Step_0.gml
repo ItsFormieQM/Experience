@@ -78,6 +78,8 @@ if !global.flag[Flag.On_Battle] {
 if !global.cutscene {
 	instance_destroy()
 	obj_mainchara.visible = true
+	obj_mainchara.x = x
+	obj_mainchara.y = y
 	for (var i = 0; i < array_length(global.actors); i++) {
 		if global.actors[i].actor == id {
 			global.actors[i] = noone

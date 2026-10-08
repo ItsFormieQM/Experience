@@ -81,6 +81,7 @@
     {"name":"cmd_toggle_room_persistence","order":20,"path":"scripts/cmd_toggle_room_persistence/cmd_toggle_room_persistence.yy",},
     {"name":"cmd_tp","order":19,"path":"scripts/cmd_tp/cmd_tp.yy",},
     {"name":"cmd_volume_set","order":11,"path":"scripts/cmd_volume_set/cmd_volume_set.yy",},
+    {"name":"cutscene_get_actor_instance","order":82,"path":"scripts/cutscene_get_actor_instance/cutscene_get_actor_instance.yy",},
     {"name":"file_length","order":34,"path":"scripts/file_length/file_length.yy",},
     {"name":"fill_rectangle","order":73,"path":"scripts/fill_rectangle/fill_rectangle.yy",},
     {"name":"pause","order":61,"path":"scripts/pause/pause.yy",},
