@@ -12,7 +12,7 @@ sp = 2.5
 image_speed = 0
 dir = 0
 ran = false
-
+switched_sprite = false
 noclip = true
 alpha = 1
 colour = 1
@@ -44,6 +44,15 @@ cutscene_walk = function(dir,_sp,frames) {
 	moving = true
 	alarm[1] = frames
 } 
+cutscene_set_sprite = function(sprite,spriteframe,delay=-1) {
+	alarm[0] = delay
+	switched_sprite = true
+	sprite_index = sprite
+	image_index = spriteframe
+}
+cutscene_reset_spr = function() {
+	alarm[0] = 1
+}
 moving = false
 
 

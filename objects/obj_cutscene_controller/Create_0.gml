@@ -106,6 +106,23 @@ cutscene_actor_set_pos = function(actor_handle,_x,_y,relative) {
 		}
 	}
 }
+///@desc Sets an actor's sprite to a specified one, along with setting what frame of the sprite to display.
+///@param {Id.Instance} actor_handle The instance ID for the specific actor.
+///@param {Id.Sprite} sprite The sprite to use.
+///@param {real} sprite_frame The frame of the set sprite to display.
+///@param {real} delay Optional. How many frames before it gets reset to the default sprites.
+cutscene_actor_set_sprite = function(actor_handle,sprite,sprite_frame,delay=-1) {
+	with actor_handle {
+		cutscene_set_sprite(sprite,sprite_frame,delay)
+	}
+}
+///@desc Resets an actor's sprite.
+///@param {Id.Instance} actor_handle The instance ID for the specific actor.
+cutscene_actor_reset_sprite = function(actor_handle) {
+	with actor_handle {
+		cutscene_reset_spr()
+	}
+}
 enum Actor_Emotion {
 	ExclamationMark
 }

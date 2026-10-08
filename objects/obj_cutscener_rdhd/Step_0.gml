@@ -27,7 +27,7 @@ if instance_exists(kris_actor) && ran {
 		
 		with obj_cutscene_controller {
 			cutscene_actor_set_pos(kris_actor,0,-10,true)
-			cutscene_walk(kris_actor,Down,0.1,60)
+			cutscene_walk(kris_actor,Down,1,20)
 			cutscene_follow_camera(obj_mainchara_actor,0.5)
 			
 			mus_fade(35,0)
@@ -49,6 +49,7 @@ if instance_exists(kris_actor) && ran {
 				var kris_actor = cutscene_get_actor_instance(Actors.Kris)
 				
 				cutscene_actor_show_emotion(kris_actor,Actor_Emotion.ExclamationMark,60)
+				
 			})
 			var alarm2 = time_source_create(time_source_game,120 + 60 * 2,time_source_units_frames,function() {
 				if !global.cutscene {

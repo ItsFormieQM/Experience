@@ -55,7 +55,7 @@ if !global.flag[Flag.On_Battle] {
 		}
 	}
 
-	if !removed_variable_1 && !jump_state {
+	if !switched_sprite && !jump_state {
 		switch dir {
 			case Up:
 				sprite_index = spr_mainchara_u
