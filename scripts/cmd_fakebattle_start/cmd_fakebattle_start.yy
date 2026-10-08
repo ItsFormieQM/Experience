@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cmd_fakebattle_start",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cmd_fakebattle_start",
+  "parent":{
+    "name":"Commands",
+    "path":"folders/Console/Commands.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

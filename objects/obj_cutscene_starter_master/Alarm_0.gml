@@ -7,3 +7,4 @@ for (var i = 0; i < array_length(alarms); i++) {
 	
 }
 alarms = []
+mus_fade(60,1)

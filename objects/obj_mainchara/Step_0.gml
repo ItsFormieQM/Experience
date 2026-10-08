@@ -10,7 +10,7 @@ if !global.flag[Flag.On_Battle] {
 	}
 	if global.canmove {
 	
-		if !removed_variable_1 {
+		if !global.cutscene {
 			if global.interacted_f {
 				global.run = !global.run
 	
@@ -108,6 +108,7 @@ else if !instance_exists(obj_battle_controller){
 	var delay = 1
 	if mov_append_tmr >= delay {
 		array_push(movement_frames,{x_pos: x, y_pos: y, sprite: sprite_index, sprite_indice: image_index, alpha: 0.5})
+		
 		mov_append_tmr = 0
 	}
 }

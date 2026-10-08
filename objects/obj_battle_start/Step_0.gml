@@ -8,6 +8,11 @@ if start && !instance_exists(obj_battle_controller)  {
 	with obj_kris_centerer {
 		other.center_x = x + (sprite_get_width(sprite_index) / 2 - sprite_get_xoffset(sprite_index)) * image_xscale
 		other.center_y = y + (sprite_get_height(sprite_index) / 2 - sprite_get_yoffset(sprite_index)) * image_yscale
+		if !other.calc {
+			other.sp = point_distance(x,y,other.center_x,other.center_y) + 0.5
+			show_debug_message($"SP {other.sp}")
+			other.calc = true
+		}
 		
 	}
 	with obj_enemy_centerer {

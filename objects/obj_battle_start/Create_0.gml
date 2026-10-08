@@ -1,4 +1,5 @@
 global.flag[Flag.On_Battle] = true
+
 var cam = view_camera[0]
 var camx = camera_get_view_x(cam)
 var camy = camera_get_view_y(cam)
@@ -21,6 +22,7 @@ timer = 0
 center_x = 0
 center_y = 0
 enemy_sp = sp
+calc = false
 scr_fadeout(global.current_mus,300,0)
 obj_mainchara.sprite_index = spr_kris_fall
 alarm[0] = 18

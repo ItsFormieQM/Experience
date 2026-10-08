@@ -1,7 +1,5 @@
 if keyboard_check_pressed(ord("Q")) {
-	with all {
-		instance_destroy()
-	}
+
 	cmd_restart()
 }
 //else if keyboard_check_pressed(ord("6")) {
