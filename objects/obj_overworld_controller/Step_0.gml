@@ -1,5 +1,8 @@
 if keyboard_check_pressed(ord("Q")) {
-	game_restart()	
+	with all {
+		instance_destroy()
+	}
+	cmd_restart()
 }
 //else if keyboard_check_pressed(ord("6")) {
 //	if instance_exists(obj_mainchara) {

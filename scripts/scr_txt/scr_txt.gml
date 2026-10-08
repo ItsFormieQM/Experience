@@ -1,4 +1,4 @@
-function scr_get_txt(_msc, ui = false){
+function scr_txt(_msc, ui = false){
 	
 	global.msg = []
 	global.xx_offset = []
@@ -499,6 +499,18 @@ function scr_get_txt(_msc, ui = false){
 				
 				index++
 				global.msg[index] = result.gaster_15
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "kris_talk_1":
+				index = -1
+				index++
+				global.msg[index] = result.kris_talk_1_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.kris_talk_1_2
 				global.xx_offset[index] = 68
 				global.yy_offset[index] = 960 / 2 + 85
 				break

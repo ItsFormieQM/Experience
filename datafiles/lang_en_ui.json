@@ -66,4 +66,6 @@
 	"used_item_heroin_1":"* You took Heroin.",
 	"used_item_heroin_2":"* You feel a bit tired and relaxed.",
 	"used_item_heroin_3":"* Movement is down by 50%!",
+	"kris_talk_1_1":"#t999^000#fnt001^003^A* Glad no one's around to annoy^/  me./E",
+	"kris_talk_1_2":"#t999^000#fnt001^003^A* I've got to go home.../E",
 }

@@ -13,7 +13,7 @@ _y = 0
 _sp = 0
 used = false
 to_an_object = noone
-
+smoothness = 0
 move_cam = function(dir,_sp,frames) {
 	switch dir {
 		case Left:
@@ -33,9 +33,11 @@ move_cam = function(dir,_sp,frames) {
 	other.alarm[0] = frames
 	other.cammoving = true
 }
-follow_cam = function(to_an_object) {
+follow_cam = function(to_an_object,_smoothness) {
+	other.smoothness = _smoothness
 	other.to_an_object = to_an_object
 	other.following = true
+	
 }
 unfollow_cam = function() {
 	other.following = false

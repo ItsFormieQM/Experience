@@ -33,7 +33,7 @@ if string_char_at(test_str,index) == "  " {
 if global.held_x {
 	timer += delay / 2
 	snd_timer += delay / 2
-	show_debug_message("ran")
+	
 }
 
 if buffer {

@@ -4,7 +4,7 @@ function scr_gettext(name, _json = "lang_en_ui.json"){
 		_json += ".json"
 	}
 	if !file_exists(_json) {
-		show_debug_message("oh shit fix ts first!")
+		
 		return {}
 	}
 	var _name = name

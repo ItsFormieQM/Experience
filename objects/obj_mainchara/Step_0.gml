@@ -118,31 +118,7 @@ if instance_exists(obj_battle_controller) && obj_battle_controller.begin_counter
 	alarm[0] = 10
 	
 }
-if global.cutscene {
-	visible = false
-	
-	if !instance_exists(obj_mainchara_actor) {
-		_actor = instance_create(x,y,obj_mainchara_actor)
-		for (var i = 0; i < array_length(global.actors); i++) {
-			if global.actors[i] == noone {
-				global.actors[i] = {actor_name: Actors.Kris, actor: _actor}
-				show_debug_message(global.actors)
-				break
-			}
-		}
-		for (var i = 0; i < array_length(global.actors); i++) {
-			if global.actors[i].actor_name == Actors.Kris {
-				x = global.actors[i].actor
-				y = global.actors[i].actor
-				break
-			}
-		}
-	}
-	
-}
-else {
-	
-}
+
 enum Actors {
 	Kris
 }

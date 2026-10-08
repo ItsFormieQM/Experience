@@ -39,6 +39,6 @@ if !ran_1 && obj_battle_controller.begin_counter_attack {
 		instance_create_layer(320,200,"Instances",obj_battle_border)
 		
 	}
-	show_debug_message("ran")
+	
 	ran_1 = true
 }

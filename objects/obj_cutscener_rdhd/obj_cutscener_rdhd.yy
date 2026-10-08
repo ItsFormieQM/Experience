@@ -1,20 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cutscene_starter",
+  "%Name":"obj_cutscener_rdhd",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_cutscene_starter",
+  "name":"obj_cutscener_rdhd",
   "overriddenProperties":[],
   "parent":{
     "name":"Experience (Chapter 1)",
     "path":"Experience (Chapter 1).yyp",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_cutscene_starter_master",
+    "path":"objects/obj_cutscene_starter_master/obj_cutscene_starter_master.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +34,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_mus_manager",
-    "path":"sprites/spr_mus_manager/spr_mus_manager.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -10,7 +10,7 @@ if (place_meeting(x,y,obj_mainchara) && !obj_mainchara.occupied) || force_run{
 		}
 		interact_counter++
 		snd_play(open_sound)
-		scr_get_txt(dialogue_type,true)
+		scr_txt(dialogue_type,true)
 		instance_create(0,0,obj_drawer)
 		obj_mainchara.image_index = 0
 		can_move = false

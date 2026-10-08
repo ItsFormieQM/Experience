@@ -60,3 +60,28 @@ move_l = false
 move_r = false
 move_u = false
 move_d = false
+if global.cutscene {
+	visible = false
+	
+	if !instance_exists(obj_mainchara_actor) {
+		_actor = instance_create(x,y,obj_mainchara_actor)
+		for (var i = 0; i < array_length(global.actors); i++) {
+			if global.actors[i] == noone {
+				global.actors[i] = {actor_name: Actors.Kris, actor: _actor}
+				show_debug_message(global.actors)
+				break
+			}
+		}
+		
+	}
+	var kris_actor = cutscene_get_actor_instance(Actors.Kris)
+	x = round(kris_actor.x)
+	y = round(kris_actor.y)
+	//show_debug_message($"X: {kris_actor.x}")
+	//show_debug_message($"Y: {kris_actor.y}")
+	//show_debug_message($"MAINCHARA: {x}")
+	//show_debug_message($"MAINCHARA: {y}")
+}
+else {
+	
+}

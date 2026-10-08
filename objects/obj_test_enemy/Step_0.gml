@@ -39,7 +39,7 @@ if !ran_1 && instance_exists(obj_battle_controller) && obj_battle_controller.beg
 	if !instance_exists(obj_battle_border) {
 		instance_create_layer(320,200,"Instances",obj_battle_border)
 	}
-	show_debug_message("ran")
+	
 	ran_1 = true
 }
 if instance_exists(obj_battle_controller) {

@@ -14,6 +14,7 @@ con = 0
 cam = view_camera[0]
 camx = camera_get_view_x(cam)
 camy = camera_get_view_y(cam)
+global.canmove = false
 ///@desc Starts a conversation
 ///@param {real} type The identifier of the conversation
 cutscene_start_dialogue = function(type) {
@@ -46,9 +47,10 @@ cutscene_move_camera = function(dir, timeinframes, camspeed) {
 }
 ///@desc Locks the camera to an object.
 ///@param {Id.Instance} to_an_instance The direction to move in.
-cutscene_follow_camera = function(to_an_instance) {
+///@param {real} smoothness How smooth the camera moves.
+cutscene_follow_camera = function(to_an_instance,smoothness) {
 	with obj_camera {
-		follow_cam(to_an_instance)
+		follow_cam(to_an_instance,smoothness)
 	}
 }
 ///@desc Unlocks the camera from an object.
@@ -56,5 +58,55 @@ cutscene_unfollow_camera = function() {
 	with obj_camera {
 		unfollow_cam()
 	}
+}
+///@desc Sets the specified actor to the specified direction.
+///@param {Id.Instance} actor_handle The instance ID for the specific actor.
+///@param {String} Use the direction macros! The direction to set at.
+cutscene_actor_set_direction = function(actor_handle,dir) {
+	with actor_handle {
+		self.dir = dir
+	}
+}
+///@desc Sets the specified actor's real playable object alternate to the specified direction. This is different than 'cutscene_actor_set_direction' because it changes the direction of the actual playable object rather than the actor's.
+///@param {Id.Instance} actor_handle The instance ID for the specific actor.
+///@param {String} Use the direction macros! The direction to set at.
+cutscene_real_set_direction = function(actor_handle,dir) {
+	with actor_handle {
+		realobject.dir = dir
+	}
+}
+///@desc Sets the specified actor's real playable object alternate to the specified direction. This is different than 'cutscene_actor_set_direction' because it changes the direction of the actual playable object rather than the actor's.
+///@param {Id.Instance} actor_handle The instance ID for the specific actor.
+///@param {real} emotion Use the enum Actor_Emotion to set the emotion! The emotion to display.
+///@param {real} delay The amount of time before destroying the emotion.
+cutscene_actor_show_emotion = function(actor_handle,emotion,_delay) {
+	var emote = noone
+	switch emotion {
+		case Actor_Emotion.ExclamationMark:
+			emote = instance_create(0,0,obj_actoremotion_exclamation,{actor: actor_handle, delay: _delay})
+			break
+		default:
+			return
+	}
+}
+///@desc Sets an actor's x and y coordinates to the specified amount. It can be absolute or relative to itself.
+///@param {Id.Instance} actor_handle The instance ID for the specific actor.
+///@param {real} x The x coordinate to set.
+///@param {real} y The y coordinate to set.
+///@param {bool} relative Whether to offset or set to the room coordinates.
+cutscene_actor_set_pos = function(actor_handle,_x,_y,relative) {
+	with actor_handle {
+		if relative {
+			x += _x
+			y += _y
+		}
+		else {
+			x = _x
+			y = _y
+		}
+	}
+}
+enum Actor_Emotion {
+	ExclamationMark
 }
 #endregion

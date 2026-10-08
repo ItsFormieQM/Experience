@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"event_cutscene_rdhd",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"event_cutscene_rdhd",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Cutscenes/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

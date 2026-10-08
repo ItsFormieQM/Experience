@@ -6,6 +6,12 @@ if place_meeting(x,y,obj_mainchara) && !ran {
 		master_cutscener = instance_create(0,0,obj_cutscene_controller)
 	}
 }
+if spawned {
+	ran = true
+	if !instance_exists(obj_cutscene_controller) {
+		master_cutscener = instance_create(0,0,obj_cutscene_controller)
+	}
+}
 if instance_exists(kris_actor) && ran {
 	
 	if !executed {
@@ -47,12 +53,11 @@ if global.cutscene {
 	with obj_cutscene_controller {
 		if con >= 1 {
 			//cutscene_move_camera()
-			show_debug_message("ran")
+			
 			other.alarm[0] = 100
 			con = 0
-			with obj_camera {
-				fo
-			}
+			
+			cutscene_follow_camera(obj_mainchara,0.05)
 		}
 	}
 }

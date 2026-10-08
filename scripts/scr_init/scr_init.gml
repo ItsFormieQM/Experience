@@ -1,5 +1,6 @@
 function scr_init(){
 	audio_channel_num(256)
+	global.start_room = room_deped_hallway_down
 	global.true_battle_battlegroup = 0
 	global.true_battle = true
 	global.cutscene = false
@@ -44,7 +45,8 @@ function scr_init(){
 		Arrested_Count,
 		On_Battle,
 		On_RealBattle,
-		COUNT
+		Story_IntroStart,
+		COUNT,
 	}
 	global.flags_name = [
 		"On_School",
@@ -60,6 +62,7 @@ function scr_init(){
 		"Arrested_Count",
 		"On_Battle",
 		"On_RealBattle",
+		"Story_IntroStart",
 	]
 	global.flag = array_create(Flag.COUNT,false)
 	#region set flags to default
@@ -72,7 +75,7 @@ function scr_init(){
 	global.flag[Flag.Stamina] = 0
 	global.flag[Flag.Arrested_Count] = 0
 	global.flag[Flag.On_Battle] = false
-	
+	global.flag[Flag.Story_IntroStart] = true
 	#endregion
 	// Create 5 save directories
 	for (var i = 1; i <= 5; i++) {

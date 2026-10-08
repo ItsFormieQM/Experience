@@ -7,6 +7,7 @@ move_l = false
 move_r = false
 move_u = false
 move_d = false
+realobject = obj_mainchara
 sp = 2.5
 image_speed = 0
 dir = 0
@@ -16,7 +17,7 @@ noclip = true
 alpha = 1
 colour = 1
 removed_variable_1 = false
-
+depth = obj_camera.depth - 1
 jump_state = false
 rot = 0
 image_xscale = obj_mainchara.image_xscale
