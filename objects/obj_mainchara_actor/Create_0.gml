@@ -7,6 +7,10 @@ move_l = false
 move_r = false
 move_u = false
 move_d = false
+upspr = spr_mainchara_u
+downspr = spr_mainchara_d
+leftspr = spr_mainchara_l
+rightspr = spr_mainchara_r
 realobject = obj_mainchara
 sp = 2.5
 image_speed = 0
@@ -22,6 +26,17 @@ jump_state = false
 rot = 0
 image_xscale = obj_mainchara.image_xscale
 image_yscale = obj_mainchara.image_yscale
+insert_self = function() {
+	for (var i = 0; i < array_length(global.actors); i++) {
+		if global.actors[i] == noone {
+			global.actors[i] = id
+			break
+		}
+	}
+}
+if realobject == noone {
+	insert_self()
+}
 cutscene_walk = function(dir,_sp,frames) {
 	other.sp = _sp
 	
@@ -53,7 +68,29 @@ cutscene_set_sprite = function(sprite,spriteframe,delay=-1) {
 cutscene_reset_spr = function() {
 	alarm[0] = 1
 }
+cutscene_set_direction_spr = function(up=noone,down=noone,left=noone,right=noone) {
+	if up != noone {
+		upspr = up
+	}
+	if down != noone {
+		downspr = down
+	}
+	if left != noone
+		leftspr = left
+	if right != noone 
+		rightspr = right
+}
+cutscene_reset_direction_spr = function() {
+	upspr = spr_mainchara_u
+	downspr = spr_mainchara_d
+	leftspr = spr_mainchara_l
+	rightspr = spr_mainchara_r
+}
 moving = false
-
+rgbed = false
+rgb_combined = c_white
+cutscene_set_rgb = function(r=0,g=0,b=0){
+	rgb_combined = make_colour_rgb(r,g,b)
+}
 
 

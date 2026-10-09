@@ -121,5 +121,9 @@ if instance_exists(obj_battle_controller) && obj_battle_controller.begin_counter
 }
 
 enum Actors {
-	Kris
+	Kris,
+	Frisk,
+	Pink,
+	Susie,
+	Noelle,
 }

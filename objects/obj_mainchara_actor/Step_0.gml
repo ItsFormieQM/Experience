@@ -58,16 +58,16 @@ if !global.flag[Flag.On_Battle] {
 	if !switched_sprite && !jump_state {
 		switch dir {
 			case Up:
-				sprite_index = spr_mainchara_u
+				sprite_index = upspr
 				break
 			case Down:
-				sprite_index = spr_mainchara_d
+				sprite_index = downspr
 				break
 			case Left:
-				sprite_index = spr_mainchara_l
+				sprite_index = leftspr
 				break
 			case Right:
-				sprite_index = spr_mainchara_r
+				sprite_index = rightspr
 				break
 			default:
 				break

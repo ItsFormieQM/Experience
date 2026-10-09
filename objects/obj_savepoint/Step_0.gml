@@ -1,3 +1,6 @@
+if !visible {
+	exit
+}
 if place_meeting(x,y,obj_mainchara) && !global.flag[Flag.On_Battle] {
 	with obj_save_menu {
 		if visible {

@@ -1,4 +1,4 @@
-if place_meeting(x,y,obj_mainchara) && !global.flag[Flag.On_Battle]{
+if place_meeting(x,y,obj_mainchara) && !global.cutscene && !global.flag[Flag.On_Battle]{
 	if !ran {
 		global.canmove = false
 		instance_create_layer(0,0,"TECHNICAL",obj_fade_warp)
