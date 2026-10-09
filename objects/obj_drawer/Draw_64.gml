@@ -41,7 +41,7 @@ if buffer {
 	timer = delay
 }
 
-if timer >= delay && !stop_draw {
+if timer / global.deltatime >= delay && !stop_draw {
 	index++
 	
 	if string_char_at(test_str, index) == "/" {
@@ -55,7 +55,11 @@ if timer >= delay && !stop_draw {
 		else if string_char_at(test_str, index + 1) == "E" {
 			stop_draw = true
 			stop_snd = true
-			skippable = true
+			if !is_choicer
+				alarm[0] = 10
+			else {
+				skippable = true
+			}
 			index += 2
 		}
 	}

@@ -14,6 +14,8 @@ _sp = 0
 used = false
 to_an_object = noone
 smoothness = 0
+ran = false
+lockin = false
 move_cam = function(dir,_sp,frames) {
 	switch dir {
 		case Left:
@@ -42,4 +44,9 @@ follow_cam = function(to_an_object,_smoothness) {
 unfollow_cam = function() {
 	other.following = false
 	_sp = 0
+	other.smoothness = 0
+	ran = false
+	lockin = false
+	to_an_object = noone
+	smoothness = undefined
 }

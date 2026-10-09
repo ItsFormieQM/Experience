@@ -6,7 +6,7 @@ if !global.flag[Flag.On_Battle] {
 		sp = 4
 	}
 	else {
-		sp = 3
+		sp = 3 
 	}
 	if global.canmove {
 	
@@ -16,13 +16,13 @@ if !global.flag[Flag.On_Battle] {
 	
 			}
 			if global.a_held {
-				x -= sp
-				image_speed = floor(sp / 2) 
+				x -= sp / global.deltatime
+				image_speed = floor(sp / (global.deltatime * 2)) 
 				dir = Left
 				if !noclip
 					if place_meeting(x - 1,y,obj_wall) {
 			
-						x += sp
+						x += sp / global.deltatime
 						
 			
 					}
@@ -30,38 +30,38 @@ if !global.flag[Flag.On_Battle] {
 			}
 			
 			else if global.d_held {
-				x += sp
-				image_speed = floor(sp / 2) 
+				x += sp / global.deltatime
+				image_speed = floor(sp / (global.deltatime * 2)) 
 				dir = Right
 				if !noclip
 					if place_meeting(x + 1,y,obj_wall) {
-						x -= sp
+						x -= sp / global.deltatime
 						
 			
 					}
 		
 			}
 			if global.w_held {
-				y -= sp
-				image_speed = floor(sp / 2) 
+				y -= sp / global.deltatime
+				image_speed = floor(sp / (global.deltatime * 2)) 
 				dir = Up
 				if !noclip
 					if place_meeting(x,y - 1,obj_wall) {
 			
-						y += sp
+						y += sp / global.deltatime
 						
 			
 					}
 		
 			}
 			else if global.s_held {
-				y += sp
-				image_speed = floor(sp / 2) 
+				y += sp / global.deltatime 
+				image_speed = floor(sp / (global.deltatime * 2)) 
 				dir = Down
 				if !noclip
 					if place_meeting(x,y + 1,obj_wall) {
 			
-						y -= sp
+						y -= sp / global.deltatime
 						
 			
 					}
@@ -106,7 +106,7 @@ else if !instance_exists(obj_battle_controller){
 		mov_append_tmr = 0.01
 	}
 	var delay = 1
-	if mov_append_tmr >= delay {
+	if mov_append_tmr / global.deltatime >= delay {
 		array_push(movement_frames,{x_pos: x, y_pos: y, sprite: sprite_index, sprite_indice: image_index, alpha: 0.5})
 		
 		mov_append_tmr = 0

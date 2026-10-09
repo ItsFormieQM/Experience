@@ -38,7 +38,7 @@ cutscene_walk = function(instance, dir, sp, delay) {
 ///@param {real} camspeed The speed to move in.
 cutscene_move_camera = function(dir, timeinframes, camspeed) {
 	_dir = dir
-	_time = timeinframes
+	_time = timeinframes * global.deltatime
 	_cs = camspeed
 	with obj_camera {
 		move_cam(other._dir,other._cs,other._time)

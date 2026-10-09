@@ -5,7 +5,7 @@ function scr_item_effects(_item){
 		case Item.invalid:
 			break
 		case Item.drug_heroin:
-			scr_txt("use_item_heroin",true)
+			scr_text("use_item_heroin",true)
 			break
 		default:
 			break

@@ -51,10 +51,7 @@ if !global.flag[Flag.On_Battle] && !global.cutscene {
 		x = camera_get_view_x(cam) + self_x
 		y = camera_get_view_y(cam) + self_y
 	}
-	with obj_camera {
-		x = other.x - (sprite_width / 2)
-		y = other.y - (sprite_height / 2)
-	}
+	
 }
 move_l = false
 move_r = false

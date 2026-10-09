@@ -76,9 +76,9 @@ if !global.flag[Flag.On_Battle] {
 }
 
 if !global.cutscene {
-	
+	instance_destroy()
 	//obj_mainchara.x = x
 	//obj_mainchara.y = y
-	
+
 	show_debug_message(global.actors)
 }

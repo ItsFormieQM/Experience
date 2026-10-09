@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cmd_room_speed",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cmd_room_speed",
+  "parent":{
+    "name":"Commands",
+    "path":"folders/Console/Commands.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

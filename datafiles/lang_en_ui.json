@@ -66,6 +66,9 @@
 	"used_item_heroin_1":"* You took Heroin.",
 	"used_item_heroin_2":"* You feel a bit tired and relaxed.",
 	"used_item_heroin_3":"* Movement is down by 50%!",
-	"kris_talk_1_1":"#t999^000#fnt001^003^A* Glad no one's around to annoy^/  me./E",
-	"kris_talk_1_2":"#t999^000#fnt001^003^A* I've got to go home.../E",
+	"kris_talk_1_1":"#t001^000#fnt001^003^A* Glad no one's around to annoy^/  me./E",
+	"kris_talk_1_2":"#t001^000#fnt001^003^A* I've got to go home.../E",
+	"kris_talk_2_1":"#t001^000#fnt001^003^A* What the fuck did I just see?!^/^040^002* Was that a toddler I think?/E",
+	"kris_talk_2_2":"#t001^000#fnt001^003^A* A toddler in high school is ^/  just fucking ridiculous.^/^020^002* Hmm.../E",
+	"kris_talk_2_3":"#t001^000#fnt001^003^A* Well, they disappeared^/  instantly.^/^040^002* I guess it's nothing.../E",
 }

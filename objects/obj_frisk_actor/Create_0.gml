@@ -11,7 +11,7 @@ upspr = spr_frisk_u
 downspr = spr_frisk_d
 leftspr = spr_frisk_l
 rightspr = spr_frisk_r
-realobject = obj_mainchara
+realobject = noone
 sp = 2.5
 image_speed = 0
 dir = 0
@@ -24,15 +24,16 @@ removed_variable_1 = false
 depth = obj_camera.depth - 1
 jump_state = false
 rot = 0
-image_xscale = obj_mainchara.image_xscale
-image_yscale = obj_mainchara.image_yscale
+image_xscale *= 2
+image_yscale *= 2
 insert_self = function() {
 	for (var i = 0; i < array_length(global.actors); i++) {
 		if global.actors[i] == noone {
-			global.actors[i] = id
+			global.actors[i] = {actor_name: Actors.Frisk, actor: id}
 			break
 		}
 	}
+	show_debug_message(global.actors)
 }
 if realobject == noone {
 	insert_self()
@@ -92,5 +93,5 @@ rgb_combined = c_white
 cutscene_set_rgb = function(r=0,g=0,b=0){
 	rgb_combined = make_colour_rgb(r,g,b)
 }
-
+sprite_index = downspr
 

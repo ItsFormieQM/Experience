@@ -12,8 +12,8 @@
     "path":"Experience (Chapter 1).yyp",
   },
   "parentObjectId":{
-    "name":"obj_mainchara_actor",
-    "path":"objects/obj_mainchara_actor/obj_mainchara_actor.yy",
+    "name":"obj_frisk_actor",
+    "path":"objects/obj_frisk_actor/obj_frisk_actor.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

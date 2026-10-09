@@ -1,5 +1,5 @@
 if keyboard_check_pressed(ord("Q")) {
-
+	time_source_reconfigure(time_source_global, 1, time_source_units_frames, function() {}, [], -1)
 	cmd_restart()
 }
 //else if keyboard_check_pressed(ord("6")) {

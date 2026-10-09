@@ -27,8 +27,8 @@ function scr_init(){
 	global.oldtime = 0
 	global.oldlv = 0
 	global.actors = []
-	for (var i = 0; i <= 12; i++) {
-		global.actors[i] = noone
+	for (var i = 1; i <= 128; i++) {
+		global.actors[i-1] = noone
 	}
 	global.oldroom = ""
 	enum Flag {

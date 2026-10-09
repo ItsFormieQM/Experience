@@ -34,3 +34,43 @@ if !global.cutscene {
 		sp = 0
 	}
 }
+
+if following && !is_undefined(smoothness) && instance_exists(to_an_object){
+	
+	var _target_x = to_an_object.x - (sprite_width / 2)
+	var _target_y = to_an_object.y - (sprite_height / 2)
+	var _dir = point_direction(x,y,_target_x,_target_y)
+	var _dist = point_distance(x, y, _target_x, _target_y) 
+	
+	if !ran {
+		if _dist == 0 {
+			smoothness = (4)
+		} else {
+			smoothness = clamp(smoothness * 10, 1, _dist - 1) 
+		}
+		ran = true
+	}
+	
+	if !lockin {
+		if _dist <= smoothness {
+			x = _target_x
+			y = _target_y
+			lockin = true
+			speed = 0
+		}
+		else {
+			move_towards_point(_target_x,_target_y,smoothness / global.deltatime)
+		}
+	}
+	
+	if lockin {
+		x = _target_x
+		y = _target_y
+		speed = 0
+		
+		if _dist > smoothness + 2 {
+			lockin = false
+		}
+	}
+}
+

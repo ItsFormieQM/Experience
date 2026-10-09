@@ -12,7 +12,7 @@ downspr = spr_mainchara_d
 leftspr = spr_mainchara_l
 rightspr = spr_mainchara_r
 realobject = obj_mainchara
-sp = 2.5
+sp = 2.5 / global.deltatime
 image_speed = 0
 dir = 0
 ran = false
@@ -29,7 +29,7 @@ image_yscale = obj_mainchara.image_yscale
 insert_self = function() {
 	for (var i = 0; i < array_length(global.actors); i++) {
 		if global.actors[i] == noone {
-			global.actors[i] = id
+			global.actors[i] = {actor_name: Actors.Kris, actor: id}
 			break
 		}
 	}
@@ -38,7 +38,7 @@ if realobject == noone {
 	insert_self()
 }
 cutscene_walk = function(dir,_sp,frames) {
-	other.sp = _sp
+	other.sp = _sp / global.deltatime
 	
 	switch dir {
 		case Up:
@@ -57,10 +57,10 @@ cutscene_walk = function(dir,_sp,frames) {
 			return -1
 	}
 	moving = true
-	alarm[1] = frames
+	alarm[1] = frames * global.deltatime
 } 
 cutscene_set_sprite = function(sprite,spriteframe,delay=-1) {
-	alarm[0] = delay
+	alarm[0] = delay * global.deltatime
 	switched_sprite = true
 	sprite_index = sprite
 	image_index = spriteframe
@@ -92,5 +92,6 @@ rgb_combined = c_white
 cutscene_set_rgb = function(r=0,g=0,b=0){
 	rgb_combined = make_colour_rgb(r,g,b)
 }
+sprite_index = downspr
 
 
