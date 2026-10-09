@@ -20,7 +20,7 @@ else if keyboard_check_pressed(ord("1")) && !global.flag[Flag.On_Battle] {
 		
 	}
 	
-}	
+}
 if room == room_deped_hallway_down {
 	if instance_exists(obj_choicer) {
 		ran = false

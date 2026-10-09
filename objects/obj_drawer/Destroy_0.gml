@@ -20,10 +20,13 @@ if global.facechoice != noone {
 		instance_destroy(global.facechoice)
 	}
 }
-plot++
 if !is_choicer {
 	global.canmove = true
 }
 if instance_exists(obj_cutscene_controller) {
-	obj_cutscene_controller.con = plot
+	with obj_cutscene_controller {
+		con++
+		con = floor(con)
+	}
+	
 }

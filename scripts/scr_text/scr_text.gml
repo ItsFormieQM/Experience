@@ -544,13 +544,57 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 					global.msg[index] = result.cutscene_start_intro_2
 					global.xx_offset[index] = 68
 					global.yy_offset[index] = 960 / 2 + 85
+					index++
+					global.msg[index] = result.cutscene_start_intro_3
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					index++
+					global.msg[index] = result.cutscene_start_intro_4
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+				}
+				else if con == 2 {
+					con++
+				}
+				else if con == 3 {
+					index++
+					global.msg[index] = result.cutscene_start_intro_5
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					index++
+					global.msg[index] = result.cutscene_start_intro_6
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					index++
+					global.msg[index] = result.cutscene_start_intro_7
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
 				}
 				break
+			case "savepoint_deped_hallway_down_introstart":
+					index = -1
+					index++
+					global.msg[index] = result[$ "savepoint_deped_hallway_down_intro_" + string(index+1)]
+					
+					index++
+					global.msg[index] = result[$ "savepoint_deped_hallway_down_intro_" + string(index+1)]
+					index++
+					global.msg[index] = result[$ "savepoint_deped_hallway_down_intro_" + string(index+1)]
+					for (var i = 0; i < array_length(global.msg); i++) {
+						global.xx_offset[i] = 68
+						global.yy_offset[i] = 960 / 2 + 85
+					}
+					show_debug_message("dialoguer")
+					show_debug_message(global.xx_offset)
+					show_debug_message(global.yy_offset)
+					show_debug_message(global.msg)
+					break
 			default:
 				index = 0
 				global.msg[index] = "* What a dirty hacker we got here./E"
 				global.xx_offset[index] = 68
 				global.yy_offset[index] = 960 / 2 + 85
+				
 				break
 				
 		}	 

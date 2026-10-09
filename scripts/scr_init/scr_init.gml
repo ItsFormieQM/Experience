@@ -1,5 +1,6 @@
 function scr_init(){
 	audio_channel_num(256)
+	
 	global.start_room = room_deped_hallway_down
 	global.true_battle_battlegroup = 0
 	global.true_battle = true
@@ -32,20 +33,22 @@ function scr_init(){
 	}
 	global.oldroom = ""
 	enum Flag {
-		On_School = 0,
-		Dream_World,
-		School_Type,
-		Days_Awoke,
-		Is_Sick,
-		Days_Sick,
-		Has_Drugs_Inside,
-		Took_Drugs,
-		Stamina,
-		Is_Arrested,
-		Arrested_Count,
-		On_Battle,
-		On_RealBattle,
-		Story_IntroStart,
+		On_School = 0, // 0
+		Dream_World, // 1
+		School_Type, // 2
+		Days_Awoke, // 3
+		Is_Sick, // 4
+		Days_Sick, // 5
+		Has_Drugs_Inside, // 6
+		Took_Drugs, // 7
+		Stamina, // 8
+		Is_Arrested, // 9
+		Arrested_Count, // 10
+		On_Battle, // 11
+		On_RealBattle, // 12
+		Story_IntroStart, // 13
+		Can_DialogueFastSkip, // 14
+		Story_LeftIntroRoom, // 15
 		COUNT,
 	}
 	global.flags_name = [
@@ -63,6 +66,8 @@ function scr_init(){
 		"On_Battle",
 		"On_RealBattle",
 		"Story_IntroStart",
+		"Can_DialogueFastSkip",
+		"Story_LeftIntroRoom",
 	]
 	global.flag = array_create(Flag.COUNT,false)
 	#region set flags to default

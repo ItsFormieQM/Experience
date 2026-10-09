@@ -72,5 +72,14 @@
 	"kris_talk_2_2":"#t001^000#fnt001^003^A* A toddler in high school is ^/  just fucking ridiculous.^/^020^002* Hmm.../E",
 	"kris_talk_2_3":"#t001^000#fnt001^003^A* Well, they disappeared^/  instantly.^/^040^002* I guess it's nothing.../E",
 	"cutscene_start_intro_1":"#t001^000#fnt001^003^A* What the fuck...^/^020^002* Who are you?!/E",
-	"cutscene_start_intro_2":"#t000^000#fnt001^003^W* Is that...^/^040^002* ^AKris Dreemurr^W?/E",
+	"cutscene_start_intro_2":"#t000^000#fnt001^003^P* Human...^/^020^002* Are you perhaps?^/^040^002* ^AKris Dreemurr^P?/E",
+	"cutscene_start_intro_3":"#t999^000#fnt001^002^A* (What ^030^002the ^030^002actual ^040^002FUCK!?)^/^040^002* (HOW DOES THIS RANDOM CHICK^/  KNOW ME?!!)/E",
+	"cutscene_start_intro_4":"#t001^000#fnt001^002^A* Uhm, yeah?^/^040^002* The name's Kris Dreemurr.^/^040^002* Nice to meet you./E",
+	"cutscene_start_intro_5":"#t001^000#fnt001^002^A* Wait, ^020^002don't run!/E",
+	"cutscene_start_intro_6":"#t999^000#fnt001^002^A* (Ah shit.)^/^060^002* (I guess I scared that^/  chick off.)/E",
+	"cutscene_start_intro_7":"#t999^000#fnt001^002^A* (Well.)^/^040^002* (I'll just get the fuck out^/  of here)./E",
+	"savepoint_deped_hallway_down_intro_1":"^000#t000^000#fnt001^002* The experience you had with^/  that random person along with^/  the birds chirping was absurd./E",
+	"savepoint_deped_hallway_down_intro_2":"^000#t000^000#fnt001^002* But with how absurd the^/  situation was./E",
+	"savepoint_deped_hallway_down_intro_3":"^000#t000^000#fnt001^002^W* It filled with you with a^/  strange feeling of ^PTsundere^W?/E"
+
 }

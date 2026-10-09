@@ -30,7 +30,7 @@ if string_char_at(test_str,index) == "  " {
 	timer = delay
 	snd_delay = delay
 }
-if global.held_x {
+if global.held_x && global.flag[Flag.Can_DialogueFastSkip]{
 	timer += delay / 2
 	snd_timer += delay / 2
 	
@@ -301,7 +301,9 @@ if timer / global.deltatime >= delay && !stop_draw {
 	}
 	
 	if string_char_at(test_str, index) == "^" {
-		
+		if string_char_at(test_str,index+1) == "/" {
+			
+		}
 		if string_char_at(test_str, index + 1) == "D" {
 			if string_char_at(test_str, index + 2) == "T" {
 				if string_canbe_int(string_char_at(test_str, index + 3)) &&
@@ -359,7 +361,6 @@ if timer / global.deltatime >= delay && !stop_draw {
 		canplay = false
 	}	
 	playtxt = !playtxt
-	
 	if string_char_at(test_str,index) != " " && string_char_at(test_str,index) != "  " {
 		if !stop_draw {
 			if snd == typer_sound.flowery {
@@ -372,8 +373,8 @@ if timer / global.deltatime >= delay && !stop_draw {
 			}
 				
 		}
-			
 	}
+	
 }
 
 var test = visible_text
@@ -451,8 +452,8 @@ for (var i = 1; i <= string_length(test); i++) {
 			continue
 		}
 		else if future_char_2 == "P" { 
-			colour = c_purple
-			draw_set_colour(c_purple)
+			colour = make_colour_rgb(254, 150, 224)
+			draw_set_colour(colour)
 			i++
 			continue
 		}
@@ -510,6 +511,7 @@ for (var i = 1; i <= string_length(test); i++) {
 			i++
 			continue
 		}
+		
 	}
 	
 	if !gaster {
@@ -531,6 +533,7 @@ for (var i = 1; i <= string_length(test); i++) {
 			}
 		}
 		_x += (string_width(char) * scale) + distance
+		
 	}
 	else {
 		var _text = char
@@ -558,6 +561,7 @@ for (var i = 1; i <= string_length(test); i++) {
 		)
 		
 		_x += (string_width(char) * scale) + distance
+		
 	}
 	
 }

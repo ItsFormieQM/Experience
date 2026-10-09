@@ -9,6 +9,11 @@ if place_meeting(x,y,obj_mainchara) && !global.flag[Flag.On_Battle] {
 	}
 	
 	if global.interacted && !ran && !instance_exists(obj_drawer) {
+		if room == global.start_room {
+			if !global.flag[Flag.Story_LeftIntroRoom] {
+				empty = false	
+			}
+		}
 		obj_mainchara.image_index = 0
 		global.hp[0] = global.maxhp[0]
 		if empty {
