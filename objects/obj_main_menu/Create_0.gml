@@ -16,9 +16,10 @@ erase_file = function(file) {
 loaded = false
 save_files_list = function() {
 	var save_files_found = []
+	var file = noone
 	for (var i = 1; i <= max_save_files; i++) {
 		global.save_folder = game_save_id + $"save{i}/"
-		var file = file_find_first(global.save_folder + "savedata.txt", fa_none)
+		file = file_find_first(global.save_folder + "savedata.txt", fa_none)
 		if file == "" {
 			array_push(save_files_found,{location: noone})
 			file_find_next()
