@@ -3,7 +3,7 @@ function scr_enemy_init(_enemyg = "none"){
 	global.enemy_instance_arr = []
 	switch _enemyg {
 		case "none":
-			scr_text("battle_test_1_1",true)
+			SCR_TEXT("battle_test_1_1",true)
 			global.enemies[0] = obj_test_enemy
 			
 			break

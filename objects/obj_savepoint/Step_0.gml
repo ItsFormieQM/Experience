@@ -18,7 +18,7 @@ if place_meeting(x,y,obj_mainchara) && !global.flag[Flag.On_Battle] {
 			snd_play(snd_heal,1.2)
 			exit
 		}
-		scr_text(dialogue_type,true)
+		SCR_TEXT(dialogue_type,true)
 		instance_create(0,0,obj_drawer)
 		obj_mainchara.image_index = 0
 		ran = true

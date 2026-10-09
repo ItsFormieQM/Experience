@@ -214,6 +214,7 @@
     {"name":"spr_mus_manager","order":12,"path":"sprites/spr_mus_manager/spr_mus_manager.yy",},
     {"name":"spr_numbers_yellow","order":16,"path":"sprites/spr_numbers_yellow/spr_numbers_yellow.yy",},
     {"name":"spr_numbers","order":20,"path":"sprites/spr_numbers/spr_numbers.yy",},
+    {"name":"spr_pink_d_black","order":7,"path":"sprites/spr_pink_d_black/spr_pink_d_black.yy",},
     {"name":"spr_pink_d","order":6,"path":"sprites/spr_pink_d/spr_pink_d.yy",},
     {"name":"spr_pink_l_black","order":1,"path":"sprites/spr_pink_l_black/spr_pink_l_black.yy",},
     {"name":"spr_pink_r_black","order":3,"path":"sprites/spr_pink_r_black/spr_pink_r_black.yy",},

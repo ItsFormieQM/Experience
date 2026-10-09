@@ -12,6 +12,6 @@ if place_meeting(x,y,obj_mainchara) && !global.flag[Flag.On_Battle] && !instance
 		obj_mainchara.x -= force
 	}
 	obj_mainchara.image_index = 0
-	scr_text(dialogue_type,true)
+	SCR_TEXT(dialogue_type,true)
 	instance_create(0,0,obj_drawer)
 }

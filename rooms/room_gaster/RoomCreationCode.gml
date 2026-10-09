@@ -1,1 +1,1 @@
-scr_text("gaster_start")
+SCR_TEXT("gaster_start")

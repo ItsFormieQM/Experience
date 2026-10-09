@@ -1,4 +1,4 @@
-function scr_text(_msc, ui = false){
+function SCR_TEXT(_msc, ui = false,con = 0){
 	
 	global.msg = []
 	global.xx_offset = []
@@ -530,6 +530,21 @@ function scr_text(_msc, ui = false){
 				global.msg[index] = result.kris_talk_2_3
 				global.xx_offset[index] = 68
 				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "cutscene_introstart":
+				index = -1
+				if con == 0 {
+					index++
+					global.msg[index] = result.cutscene_start_intro_1
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+				}
+				else if con == 1 {
+					index++
+					global.msg[index] = result.cutscene_start_intro_2
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+				}
 				break
 			default:
 				index = 0

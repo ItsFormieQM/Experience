@@ -71,4 +71,6 @@
 	"kris_talk_2_1":"#t001^000#fnt001^003^A* What the fuck did I just see?!^/^040^002* Was that a toddler I think?/E",
 	"kris_talk_2_2":"#t001^000#fnt001^003^A* A toddler in high school is ^/  just fucking ridiculous.^/^020^002* Hmm.../E",
 	"kris_talk_2_3":"#t001^000#fnt001^003^A* Well, they disappeared^/  instantly.^/^040^002* I guess it's nothing.../E",
+	"cutscene_start_intro_1":"#t001^000#fnt001^003^A* What the fuck...^/^020^002* Who are you?!/E",
+	"cutscene_start_intro_2":"#t000^000#fnt001^003^W* Is that...^/^040^002* ^AKris Dreemurr^W?/E",
 }
