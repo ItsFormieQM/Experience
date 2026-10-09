@@ -24,8 +24,7 @@ removed_variable_1 = false
 depth = obj_camera.depth - 1
 jump_state = false
 rot = 0
-image_xscale *= 2
-image_yscale *= 2
+
 insert_self = function() {
 	for (var i = 0; i < array_length(global.actors); i++) {
 		if global.actors[i] == noone {

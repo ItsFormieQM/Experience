@@ -29,16 +29,10 @@ if instance_exists(kris_actor) && ran {
 		
 		with obj_cutscene_controller {
 			var pink_actor = cutscene_actor_create(obj_pink_actor,0,0)
-			var frisk_actor = cutscene_actor_create(obj_frisk_actor,0,0)
-			cutscene_actor_set_direction_sprites(
-				frisk_actor,
-				spr_frisk_u_black,
-				spr_frisk_d_black,
-				spr_frisk_l_black,
-				spr_frisk_r_black
-			)
-			cutscene_actor_set_pos(frisk_actor,30,50,true)
-			cutscene_actor_set_pos(pink_actor,90,234,false)
+			
+			
+			cutscene_actor_set_pos(pink_actor,315,220,false)
+			cutscene_actor_set_direction(pink_actor,Left)
 			cutscene_fade(0.008,false)
 			cutscene_actor_set_pos(kris_actor,0,-85,true)
 			cutscene_walk(kris_actor,Down,1.5,60)
@@ -67,8 +61,7 @@ if instance_exists(kris_actor) && ran {
 					exit
 				}
 				var kris_actor = cutscene_get_actor_instance(Actors.Kris)
-				var frisk_actor = cutscene_get_actor_instance(Actors.Frisk)
-				cutscene_walk(frisk_actor,Down,1,5)
+				
 				
 				cutscene_actor_show_emotion(kris_actor,Actor_Emotion.ExclamationMark,100)
 			})
@@ -77,7 +70,8 @@ if instance_exists(kris_actor) && ran {
 					exit
 				}
 				var kris_actor = cutscene_get_actor_instance(Actors.Kris)
-				var frisk_actor = cutscene_get_actor_instance(Actors.Frisk)	
+				var pink_actor = cutscene_get_actor_instance(Actors.Pink)
+				
 				cutscene_unfollow_camera()
 			})
 			var alarm3 = time_source_create(time_source_game,(120 + 60 * 3 + 120) * global.deltatime,time_source_units_frames,function() {
@@ -85,10 +79,8 @@ if instance_exists(kris_actor) && ran {
 					exit
 				}
 				var kris_actor = cutscene_get_actor_instance(Actors.Kris)
-				var frisk_actor = cutscene_get_actor_instance(Actors.Frisk)	
-				cutscene_actor_set_pos(frisk_actor,72,234,false)
-				
-				cutscene_follow_camera(frisk_actor,0.5)
+				var pink_actor = cutscene_get_actor_instance(Actors.Pink)
+				cutscene_follow_camera(obj_pink_actor,0.5)
 				
 				
 			})
@@ -97,9 +89,7 @@ if instance_exists(kris_actor) && ran {
 					exit
 				}
 				
-				var frisk_actor = cutscene_get_actor_instance(Actors.Frisk)	
 				
-				cutscene_walk(frisk_actor,Up,0.7,300)
 				
 			})
 			var alarm5 = time_source_create(time_source_game,(120 + 60 * 5 + 135 + 165) * global.deltatime,time_source_units_frames,function() {
@@ -107,16 +97,16 @@ if instance_exists(kris_actor) && ran {
 					exit
 				}
 				
-				var frisk_actor = cutscene_get_actor_instance(Actors.Frisk)	
 				
-				cutscene_actor_set_visibility(frisk_actor,false)
+				
+			
 				
 			})
 			var alarm6 = time_source_create(time_source_game,(120 + 60 * 5 + 135 + 175 + 70) * global.deltatime,time_source_units_frames,function() {
 				if !global.cutscene {
 					exit
 				}
-				cutscene_start_dialogue("kris_talk_2")
+				cutscene_start_dialogue("test_1")
 				
 			})
 			array_push(other.alarms,alarm0)
