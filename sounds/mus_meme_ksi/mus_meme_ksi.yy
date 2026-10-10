@@ -15,7 +15,7 @@
   "name":"mus_meme_ksi",
   "parent":{
     "name":"Music",
-    "path":"folders/SFX/Music.yy",
+    "path":"folders/Real/SFX/Music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

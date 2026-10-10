@@ -6,7 +6,7 @@
   "name":"pth_number_indicator",
   "parent":{
     "name":"Paths",
-    "path":"folders/Paths.yy",
+    "path":"folders/Real/Paths.yy",
   },
   "points":[
     {"speed":100.0,"x":334.0,"y":288.0,},

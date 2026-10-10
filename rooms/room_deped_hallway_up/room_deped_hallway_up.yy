@@ -130,7 +130,7 @@
   "name":"room_deped_hallway_up",
   "parent":{
     "name":"Normal",
-    "path":"folders/Rooms/SCHOOL/Normal.yy",
+    "path":"folders/Real/Rooms/SCHOOL/Normal.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

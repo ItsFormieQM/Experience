@@ -15,7 +15,7 @@
   "name":"snd_flowery_vn2",
   "parent":{
     "name":"Flowery Files",
-    "path":"folders/Files/Flowery Files.yy",
+    "path":"folders/Real/Files/Flowery Files.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

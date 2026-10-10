@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_gettext",
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"Dialogue",
+    "path":"folders/Real/Scripts/Dialogue.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

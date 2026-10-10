@@ -15,7 +15,7 @@
   "name":"snd_txt2",
   "parent":{
     "name":"Normal",
-    "path":"folders/SFX/Talk/Normal.yy",
+    "path":"folders/Real/SFX/Talk/Normal.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

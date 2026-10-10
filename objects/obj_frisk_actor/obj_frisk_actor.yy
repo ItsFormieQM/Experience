@@ -9,8 +9,8 @@
   "name":"obj_frisk_actor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"Objects",
+    "path":"folders/Real/Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_mainchara_actor",

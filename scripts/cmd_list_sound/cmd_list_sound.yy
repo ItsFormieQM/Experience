@@ -6,7 +6,7 @@
   "name":"cmd_list_sound",
   "parent":{
     "name":"Commands",
-    "path":"folders/Console/Commands.yy",
+    "path":"folders/Real/Console/Commands.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

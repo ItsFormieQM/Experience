@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_damage",
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"SFX",
+    "path":"folders/Real/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

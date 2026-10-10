@@ -14,7 +14,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
-    "path":"folders/Objects.yy",
+    "path":"folders/Real/Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_master_enemy",

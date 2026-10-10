@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_get_custom_roomname",
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"Scripts",
+    "path":"folders/Real/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

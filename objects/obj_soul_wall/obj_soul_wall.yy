@@ -9,8 +9,8 @@
   "name":"obj_soul_wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"Objects",
+    "path":"folders/Real/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

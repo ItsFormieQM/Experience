@@ -6,7 +6,7 @@
   "name":"event_cutscene_rdhd",
   "parent":{
     "name":"Scripts",
-    "path":"folders/Cutscenes/Scripts.yy",
+    "path":"folders/Real/Cutscenes/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

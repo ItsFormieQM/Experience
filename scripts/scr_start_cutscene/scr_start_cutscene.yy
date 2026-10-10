@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_start_cutscene",
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"Scripts",
+    "path":"folders/Real/Cutscenes/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

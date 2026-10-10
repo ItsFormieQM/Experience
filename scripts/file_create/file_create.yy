@@ -6,7 +6,7 @@
   "name":"file_create",
   "parent":{
     "name":"Helpers",
-    "path":"folders/Scripts/Helpers.yy",
+    "path":"folders/Real/Scripts/Helpers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

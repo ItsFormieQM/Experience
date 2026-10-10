@@ -133,7 +133,7 @@
   "name":"room_luzaro_beach_wharf",
   "parent":{
     "name":"LUZARO",
-    "path":"folders/Rooms/LUZARO.yy",
+    "path":"folders/Real/Rooms/LUZARO.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

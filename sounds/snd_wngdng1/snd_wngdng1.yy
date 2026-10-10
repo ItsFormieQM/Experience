@@ -15,7 +15,7 @@
   "name":"snd_wngdng1",
   "parent":{
     "name":"Sounds",
-    "path":"folders/Files/Gaster Files/Sounds.yy",
+    "path":"folders/Real/Files/Gaster Files/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

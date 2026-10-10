@@ -6,7 +6,7 @@
   "name":"cmd_global_get",
   "parent":{
     "name":"Commands",
-    "path":"folders/Console/Commands.yy",
+    "path":"folders/Real/Console/Commands.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"pth_enemy_shaker",
   "parent":{
     "name":"Paths",
-    "path":"folders/Paths.yy",
+    "path":"folders/Real/Paths.yy",
   },
   "points":[],
   "precision":4,

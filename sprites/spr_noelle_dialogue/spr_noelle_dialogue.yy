@@ -88,7 +88,7 @@
   "origin":4,
   "parent":{
     "name":"Sprites",
-    "path":"folders/Objects/Characters/Noelle/Sprites.yy",
+    "path":"folders/Real/Objects/Characters/Noelle/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

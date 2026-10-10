@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"Pink",
-    "path":"folders/Gooner Files/Pink.yy",
+    "path":"folders/Real/Gooner Files/Pink.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

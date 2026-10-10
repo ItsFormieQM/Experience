@@ -29,7 +29,7 @@
   "name":"room_start",
   "parent":{
     "name":"START",
-    "path":"folders/Rooms/START.yy",
+    "path":"folders/Real/Rooms/START.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

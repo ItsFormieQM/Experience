@@ -15,7 +15,7 @@
   "name":"mus_battle_ttt",
   "parent":{
     "name":"Battle",
-    "path":"folders/SFX/Music/Battle.yy",
+    "path":"folders/Real/SFX/Music/Battle.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

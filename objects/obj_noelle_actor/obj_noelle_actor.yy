@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Noelle",
-    "path":"folders/Objects/Characters/Noelle.yy",
+    "path":"folders/Real/Objects/Characters/Noelle.yy",
   },
   "parentObjectId":null,
   "persistent":false,

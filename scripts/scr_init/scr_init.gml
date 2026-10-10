@@ -1,6 +1,7 @@
 function scr_init(){
 	audio_channel_num(256)
-	
+	randomise()
+	global.dream_world_entrychance = 3
 	global.start_room = room_deped_hallway_down
 	global.true_battle_battlegroup = 0
 	global.true_battle = true
@@ -49,6 +50,9 @@ function scr_init(){
 		Story_IntroStart, // 13
 		Can_DialogueFastSkip, // 14
 		Story_LeftIntroRoom, // 15
+		Story_DaysPassed, // 16
+		Game_Seed, // 17
+		Story_Sleeping, // 18
 		COUNT,
 	}
 	global.flags_name = [
@@ -68,6 +72,9 @@ function scr_init(){
 		"Story_IntroStart",
 		"Can_DialogueFastSkip",
 		"Story_LeftIntroRoom",
+		"Story_DaysPassed",
+		"Game_Seed",
+		"Story_Sleeping",
 	]
 	global.flag = array_create(Flag.COUNT,false)
 	#region set flags to default
@@ -81,6 +88,9 @@ function scr_init(){
 	global.flag[Flag.Arrested_Count] = 0
 	global.flag[Flag.On_Battle] = false
 	global.flag[Flag.Story_IntroStart] = true
+	global.flag[Flag.Story_DaysPassed] = 1
+	global.flag[Flag.]
+	global.flag[Flag.Game_Seed] = random_get_seed()
 	#endregion
 	// Create 5 save directories
 	for (var i = 1; i <= 5; i++) {

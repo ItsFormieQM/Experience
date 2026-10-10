@@ -15,7 +15,7 @@
   "name":"mus_truebattle_asgore",
   "parent":{
     "name":"True Battle",
-    "path":"folders/SFX/Music/True Battle.yy",
+    "path":"folders/Real/SFX/Music/True Battle.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

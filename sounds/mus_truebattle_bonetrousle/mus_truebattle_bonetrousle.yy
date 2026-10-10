@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"mus_bonetrousle",
+  "%Name":"mus_truebattle_bonetrousle",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -12,15 +12,15 @@
   "conversionMode":0,
   "duration":57.685623,
   "exportDir":"",
-  "name":"mus_bonetrousle",
+  "name":"mus_truebattle_bonetrousle",
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"True Battle",
+    "path":"folders/Real/SFX/Music/True Battle.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mus_bonetrousle.ogg",
+  "soundFile":"mus_truebattle_bonetrousle.ogg",
   "volume":1.0,
 }

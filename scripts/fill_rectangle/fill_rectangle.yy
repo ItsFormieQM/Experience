@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"fill_rectangle",
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"Commands",
+    "path":"folders/Real/Console/Commands.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

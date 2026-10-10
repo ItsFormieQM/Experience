@@ -14,7 +14,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"System",
-    "path":"folders/Objects/System.yy",
+    "path":"folders/Real/Objects/System.yy",
   },
   "parentObjectId":null,
   "persistent":true,

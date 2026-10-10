@@ -111,7 +111,7 @@
   "name":"fnt_hp",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "path":"folders/Real/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

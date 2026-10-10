@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"cutscene_get_actor_instance",
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"Manipulation",
+    "path":"folders/Real/Cutscenes/Scripts/Manipulation.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -15,7 +15,7 @@
   "name":"mus_field_hd",
   "parent":{
     "name":"Music",
-    "path":"folders/SFX/Music.yy",
+    "path":"folders/Real/SFX/Music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

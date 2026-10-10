@@ -15,7 +15,7 @@
   "name":"snd_flowery_jarona",
   "parent":{
     "name":"Flowery",
-    "path":"folders/Objects/Characters/Flowery.yy",
+    "path":"folders/Real/Objects/Characters/Flowery.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

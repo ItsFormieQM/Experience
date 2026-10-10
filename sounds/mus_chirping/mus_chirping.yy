@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"mus_chirping",
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"Music",
+    "path":"folders/Real/SFX/Music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

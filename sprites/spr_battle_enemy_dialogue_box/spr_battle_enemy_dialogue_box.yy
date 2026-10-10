@@ -44,8 +44,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"Sprites",
+    "path":"folders/Real/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

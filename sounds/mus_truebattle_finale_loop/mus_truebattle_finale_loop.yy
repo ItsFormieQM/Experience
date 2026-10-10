@@ -15,7 +15,7 @@
   "name":"mus_truebattle_finale_loop",
   "parent":{
     "name":"True Battle",
-    "path":"folders/SFX/Music/True Battle.yy",
+    "path":"folders/Real/SFX/Music/True Battle.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

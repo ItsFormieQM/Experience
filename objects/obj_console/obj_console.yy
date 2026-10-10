@@ -15,7 +15,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Console",
-    "path":"folders/Console.yy",
+    "path":"folders/Real/Console.yy",
   },
   "parentObjectId":null,
   "persistent":true,

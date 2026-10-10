@@ -18,7 +18,7 @@
   "name":"room_battle",
   "parent":{
     "name":"REAL WORLD",
-    "path":"folders/Rooms/REAL WORLD.yy",
+    "path":"folders/Real/Rooms/REAL WORLD.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

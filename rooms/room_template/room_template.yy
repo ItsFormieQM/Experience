@@ -15,7 +15,7 @@
   "name":"room_template",
   "parent":{
     "name":"TEMPLATE",
-    "path":"folders/Rooms/TEMPLATE.yy",
+    "path":"folders/Real/Rooms/TEMPLATE.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

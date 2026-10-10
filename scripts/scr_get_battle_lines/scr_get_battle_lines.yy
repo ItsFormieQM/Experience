@@ -6,7 +6,7 @@
   "name":"scr_get_battle_lines",
   "parent":{
     "name":"Dialogue",
-    "path":"folders/Scripts/Dialogue.yy",
+    "path":"folders/Real/Scripts/Dialogue.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

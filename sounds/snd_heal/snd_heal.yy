@@ -15,7 +15,7 @@
   "name":"snd_heal",
   "parent":{
     "name":"SFX",
-    "path":"folders/SFX.yy",
+    "path":"folders/Real/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

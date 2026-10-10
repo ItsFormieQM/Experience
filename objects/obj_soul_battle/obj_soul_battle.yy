@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Soul",
-    "path":"folders/Soul.yy",
+    "path":"folders/Real/Soul.yy",
   },
   "parentObjectId":null,
   "persistent":false,

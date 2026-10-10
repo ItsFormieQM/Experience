@@ -120,7 +120,7 @@
   "name":"fnt_battle",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "path":"folders/Real/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

@@ -15,7 +15,7 @@
   "name":"snd_toriel_talk1",
   "parent":{
     "name":"Toriel Files",
-    "path":"folders/Files/Toriel Files.yy",
+    "path":"folders/Real/Files/Toriel Files.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
