@@ -29,6 +29,7 @@ function scr_init(){
 	global.oldtime = 0
 	global.oldlv = 0
 	global.actors = []
+	global.dialogue_autoskip = false
 	for (var i = 1; i <= 128; i++) {
 		global.actors[i-1] = noone
 	}
@@ -59,6 +60,7 @@ function scr_init(){
 		Game_WeatherTimer,// 22
 		COUNT,
 	}
+
 	global.flags_name = [
 		"On_School",
 		"Dream_World",

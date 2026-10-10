@@ -1,6 +1,7 @@
 playtxt = false
 sndhandle = noone
 handle = noone
+advance = false
 show_debug_message("instantiate drwawer")
 is_choicer = false
 buffer = true

@@ -1,5 +1,9 @@
 ///@desc Stuff
 #region Variables
+gc_enable(false)
+
+
+
 global.cutscene = true
 moving_cam = false
 cam_move_speed = 0

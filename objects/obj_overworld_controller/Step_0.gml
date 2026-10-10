@@ -40,9 +40,7 @@ if room == room_deped_hallway_down {
 		}
 	}
 }
-if room == room_luzaro_beach_wharf {
-	
-}
+
 if global.flag[Flag.Story_Sleeping] {
 	if !dream_init {
 		dream_init = true

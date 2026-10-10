@@ -10,3 +10,7 @@ for (var i = 0; i < array_length(global.actors); i++) {
 	}
 }
 show_debug_message(global.actors)
+gc_enable(true)
+cutscene_dialogue_autoskip(false)
+
+

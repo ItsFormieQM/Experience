@@ -13,3 +13,4 @@ weatherlen *= 60
 weatherlen *= 60
 global.flag[Flag.Game_WeatherTimer] = weatherlen
 alarm[0] = weatherlen
+show_debug_message("weathers ticking son: " + string(weatherlen))
