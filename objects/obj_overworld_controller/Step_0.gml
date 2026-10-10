@@ -44,5 +44,11 @@ if room == room_luzaro_beach_wharf {
 	
 }
 if global.flag[Flag.Story_Sleeping] {
-	
+	if !dream_init {
+		dream_init = true
+		alarm[1] = 200
+	}
+}
+else {
+	dream_init = false
 }

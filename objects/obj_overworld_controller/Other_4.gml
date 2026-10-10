@@ -5,3 +5,12 @@ if room == global.start_room {
 		global.flag[Flag.Story_IntroStart] = false
 	}
 }
+if !scr_in_school(room) {
+	global.flag[Flag.On_School] = false
+	if !global.flag[Flag.Story_IntroStart] {
+		global.flag[Flag.Story_LeftIntroRoom] = true
+	}
+}
+else {
+	global.flag[Flag.On_School] = true
+}
