@@ -57,7 +57,9 @@ function scr_init(){
 		Story_DreamWorld_EntryChance, // 19
 		Story_Route, // 20
 		Story_Weather, // 21
-		Game_WeatherTimer,// 22
+		Game_WeatherTimer, // 22
+		Story_IntroKrisHouse_Cutscene, // 23
+		Player_Running,
 		COUNT,
 	}
 
@@ -85,24 +87,25 @@ function scr_init(){
 		"Story_Route",
 		"Story_Weather",
 		"Game_WeatherTimer",
+		"Story_IntroKrisHouse_Cutscene",
+		"Player_Running",
 	]
 	#region set flags to default
 	global.flag = array_create(Flag.COUNT,false)
+	global.flag[Flag.Story_IntroStart] = true
 	global.flag[Flag.On_School] = true
-	//global.flag[Flag.Dream_World] = false
 	global.flag[Flag.School_Type] = School_Type.Normal
 	global.flag[Flag.Days_Awoke] = 0
-	//global.flag[Flag.Is_Sick] = false
 	global.flag[Flag.Days_Sick] = 0
 	global.flag[Flag.Stamina] = 0
 	global.flag[Flag.Arrested_Count] = 0
-	global.flag[Flag.On_Battle] = false
-	global.flag[Flag.Story_IntroStart] = true
 	global.flag[Flag.Story_DaysPassed] = 1
 	global.flag[Flag.Story_DreamWorld_EntryChance] = 2
 	global.flag[Flag.Game_Seed] = random_get_seed()
 	global.flag[Flag.Story_Route] = Route.Normal
 	global.flag[Flag.Story_Weather] = Weather.Sunny
+	global.flag[Flag.Story_IntroKrisHouse_Cutscene] = true
+	
 	#endregion
 	// Create 5 save directories
 	for (var i = 1; i <= 5; i++) {

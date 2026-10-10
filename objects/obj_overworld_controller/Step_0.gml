@@ -17,9 +17,7 @@ else if keyboard_check_pressed(ord("1")) && !global.flag[Flag.On_Battle] {
 			room_goto(room_test)
 			alarm[0] = 5
 		}
-		
 	}
-	
 }
 if room == room_deped_hallway_down {
 	if instance_exists(obj_choicer) {
@@ -31,7 +29,6 @@ if room == room_deped_hallway_down {
 			pause(60)
 			cmd_dialogue_play("choicer_test_1")
 		}
-			
 	}
 	else if global.choice == 1 {
 		if !ran {

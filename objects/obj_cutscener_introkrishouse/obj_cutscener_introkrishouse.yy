@@ -1,21 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cutscener_krisintro_gohome",
+  "%Name":"obj_cutscener_introkrishouse",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_cutscener_krisintro_gohome",
+  "name":"obj_cutscener_introkrishouse",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Real/Objects.yy",
+    "name":"Experience (Chapter 1)",
+    "path":"Experience (Chapter 1).yyp",
   },
   "parentObjectId":{
-    "name":"obj_cutscener_rdhd",
-    "path":"objects/obj_cutscener_rdhd/obj_cutscener_rdhd.yy",
+    "name":"obj_cutscener_krisintro_gohome",
+    "path":"objects/obj_cutscener_krisintro_gohome/obj_cutscener_krisintro_gohome.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

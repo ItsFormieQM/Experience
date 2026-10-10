@@ -2,7 +2,7 @@ if !global.flag[Flag.On_Battle] {
 	if !jump_state {
 		image_speed = 0
 	}
-	if global.run {
+	if global.flag[Flag.Player_Running] {
 		sp = 4
 	}
 	else {
@@ -12,7 +12,7 @@ if !global.flag[Flag.On_Battle] {
 	
 		if !global.cutscene {
 			if global.interacted_f {
-				global.run = !global.run
+				global.flag[Flag.Player_Running] = !global.flag[Flag.Player_Running]
 	
 			}
 			if global.a_held {

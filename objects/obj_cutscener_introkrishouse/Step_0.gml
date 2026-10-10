@@ -32,19 +32,14 @@ if instance_exists(kris_actor) && ran {
 			})
 			other.alarm1 = time_source_create(time_source_game,120 * 2,time_source_units_frames,function() {
 				cutscene_fade(0.05,false)
-				
-				alarm[0] = 1
-				
-			})
-			other.alarm2 = time_source_create(time_source_game,(120 * 4),time_source_units_frames,function(_id) {
 				room_goto(room_kris_house_entry)
+				other.alarm[0] = 1
 			})
-			
 			array_push(other.alarms,other.alarm0)
 			array_push(other.alarms,other.alarm1)
 			time_source_start(other.alarm0)
 			time_source_start(other.alarm1)
-			time_source_start(other.alarm2)
+			
 			
 		}
 		
