@@ -2,6 +2,7 @@ function scr_init(){
 	audio_channel_num(256)
 	randomise()
 	
+	global.chapter = string(1)
 	global.start_room = room_deped_hallway_down
 	global.true_battle_battlegroup = 0
 	global.true_battle = true

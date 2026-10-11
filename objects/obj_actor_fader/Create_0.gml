@@ -1,10 +1,10 @@
-if reversed {
-	image_alpha = 0
-}
-show_debug_message("spawned fader")
-depth = layer_get_depth("TECHNICAL")
-var cam = view_camera[0]
-var camx = camera_get_view_x(cam)
-var camy = camera_get_view_y(cam)
-x = camx * 1.5
-y = camy * 2.5
+image_alpha = 1
+rate = 0.03 / global.deltatime
+ran = false
+fadeout_rate = 0.05 / global.deltatime
+done = false
+buggy_room = global.buggy_room
+i = 0
+fadeout = false
+x = -666
+y = -666

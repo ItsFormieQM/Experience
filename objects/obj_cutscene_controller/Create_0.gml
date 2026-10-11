@@ -2,7 +2,7 @@
 #region Variables
 gc_enable(false)
 
-
+global.flag[Flag.Can_DialogueFastSkip] = false
 
 global.cutscene = true
 moving_cam = false

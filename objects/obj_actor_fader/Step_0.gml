@@ -1,14 +1,9 @@
-if reversed {
-	image_alpha += incrementor
-	if image_alpha >= 1 {
-		instance_destroy()
-		exit
-	}
-}
-else {
+if image_alpha > 0 {
 	image_alpha -= incrementor
-	if image_alpha <= 0 {
-		instance_destroy()
-		exit
-	}
 }
+
+
+if image_alpha <= 0 {
+	instance_destroy()
+}
+

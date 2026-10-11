@@ -5,6 +5,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_cutscener_krisintro_gohome",
@@ -14,8 +15,8 @@
     "path":"folders/Real/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_cutscener_rdhd",
-    "path":"objects/obj_cutscener_rdhd/obj_cutscener_rdhd.yy",
+    "name":"obj_cutscene_starter_master",
+    "path":"objects/obj_cutscene_starter_master/obj_cutscene_starter_master.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

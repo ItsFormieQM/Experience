@@ -6,3 +6,5 @@ done = false
 buggy_room = global.buggy_room
 i = 0
 fadeout = false
+x = -666
+y = -666

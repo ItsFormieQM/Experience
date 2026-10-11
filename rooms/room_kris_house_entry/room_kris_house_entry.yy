@@ -8,10 +8,15 @@
   "instanceCreationOrder":[
     {"name":"inst_5681379C","path":"rooms/room_kris_house_entry/room_kris_house_entry.yy",},
     {"name":"inst_64EC7E20","path":"rooms/room_kris_house_entry/room_kris_house_entry.yy",},
+    {"name":"inst_10EAD548","path":"rooms/room_kris_house_entry/room_kris_house_entry.yy",},
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"TECHNICAL","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"TECHNICAL","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"TECHNICAL","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v4","%Name":"inst_10EAD548","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_10EAD548","objectId":{"name":"obj_warp_marker","path":"objects/obj_warp_marker/obj_warp_marker.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_warp_marker","path":"objects/obj_warp_marker/obj_warp_marker.yy",},"propertyId":{"name":"slot","path":"objects/obj_warp_marker/obj_warp_marker.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"-1",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1728.0,"y":256.0,},
+      ],"layers":[],"name":"TECHNICAL","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_5681379C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5681379C","objectId":{"name":"obj_mus_manager","path":"objects/obj_mus_manager/obj_mus_manager.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mus_manager","path":"objects/obj_mus_manager/obj_mus_manager.yy",},"propertyId":{"name":"music","path":"objects/obj_mus_manager/obj_mus_manager.yy",},"resource":{"name":"mus_kris_home","path":"sounds/mus_kris_home/mus_kris_home.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"mus_kris_home",},
