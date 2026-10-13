@@ -242,6 +242,7 @@
     {"name":"snd_none","order":10,"path":"sounds/snd_none/snd_none.yy",},
     {"name":"snd_notice","order":6,"path":"sounds/snd_notice/snd_notice.yy",},
     {"name":"snd_openchest","order":5,"path":"sounds/snd_openchest/snd_openchest.yy",},
+    {"name":"snd_phonecall","order":20,"path":"sounds/snd_phonecall/snd_phonecall.yy",},
     {"name":"snd_ran","order":18,"path":"sounds/snd_ran/snd_ran.yy",},
     {"name":"snd_sans_talk1","order":20,"path":"sounds/snd_sans_talk1/snd_sans_talk1.yy",},
     {"name":"snd_saved","order":19,"path":"sounds/snd_saved/snd_saved.yy",},

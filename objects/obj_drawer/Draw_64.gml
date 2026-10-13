@@ -583,11 +583,13 @@ for (var i = 1; i <= string_length(test); i++) {
 			if array_length(choicer_choices) != 0 {
 				for (var k = 0; k < array_length(choicer_choices); k++) {
 					if char == string_char_at(choicer_choices[k],1) {
+						
 						array_push(choice_pos_map,{xpos: _x + deviationx, ypos: _y + deviationy})
 					}
 				}
 			}
 		}
+		
 		_x += (string_width(char) * scale) + distance
 		
 	}

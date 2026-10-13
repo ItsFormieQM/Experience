@@ -646,7 +646,15 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 				//cmd_sleep(1)
 				break
 				
-				
+			case "board_work_1":
+				index = -1
+				index++
+				global.msg[index] = result[$$"school_classroom_board_{index+1}"]
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}
+				break
 			default:
 				index = 0
 				global.msg[index] = "* What a dirty hacker we got here./E"

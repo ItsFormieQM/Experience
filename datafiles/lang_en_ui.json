@@ -87,5 +87,6 @@
 	"classroom_rm4_papers_1":"^W#t000^000#fnt001^002* A bunch of old documents.^/^010^002* They all have the same title.^/^010^002* ^YSchool Funding Reports.^W/E",
 	"classroom_rm4_keyboard_1":"#t000^000#fnt001^002* A dusty old keyboard.^/^010^002* It looks like it came from^/  the 1980's./E",
 	"clock_time_1":"#t000^000#fnt001^002^W* The clock reads ^Y4PM^W.^/^040^002* But it looks like it's^Y^/  1PM^W outside?/E",
-	"flower_description_1":"#t000^000#fnt001^002* This pretty flower is^/  badly left unmaintained.^/^020^002* Yet it stands./E"
+	"flower_description_1":"#t000^000#fnt001^002* This pretty flower is^/  badly left unmaintained.^/^020^002* Yet it stands./E",
+	"school_classroom_board_1":"#t000^000#fnt001^002* Select one to write?^/ #C                Gooner ^/          Goon         Twin        /E ",
 }
