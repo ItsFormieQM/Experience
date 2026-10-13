@@ -1,0 +1,1 @@
+obj_mainchara.visible = true

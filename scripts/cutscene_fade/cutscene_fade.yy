@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cutscene_fade",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cutscene_fade",
+  "parent":{
+    "name":"Manipulation",
+    "path":"folders/Real/Cutscenes/Scripts/Manipulation.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

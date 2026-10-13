@@ -1,0 +1,46 @@
+if !visible {
+	exit
+}
+if place_meeting(x,y,obj_mainchara) && !global.flag[Flag.On_Battle] {
+	with obj_save_menu {
+		if visible {
+			exit
+		}
+	}
+	
+	if global.interacted && !ran && !instance_exists(obj_drawer) {
+		if room == global.start_room {
+			if !global.flag[Flag.Story_LeftIntroRoom] {
+				empty = false	
+			}
+		}
+		obj_mainchara.image_index = 0
+		global.hp[0] = global.maxhp[0]
+		if empty {
+			with obj_save_menu {
+				visible = true
+			}
+			snd_play(snd_heal,1.2)
+			exit
+		}
+		SCR_TEXT(dialogue_type,true)
+		instance_create(0,0,obj_drawer)
+		obj_mainchara.image_index = 0
+		ran = true
+		
+		snd_play(snd_heal,1.2)
+	}
+	
+	
+}
+if ran && !instance_exists(obj_drawer) {
+	ran = false
+	with obj_save_menu {
+		visible = true
+		global.canmove = false
+		savepoint_id = other.warp_marker_slot
+	}
+}
+global.interacted = false
+
+

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cutscene_get_actor_instance",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cutscene_get_actor_instance",
+  "parent":{
+    "name":"Manipulation",
+    "path":"folders/Real/Cutscenes/Scripts/Manipulation.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,1 @@
+draw_text(0,280,$"LAYER: {layer_get_name(layer)}")

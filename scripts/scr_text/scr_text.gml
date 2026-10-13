@@ -1,0 +1,660 @@
+function SCR_TEXT(_msc, ui = false,con = 0){
+	
+	global.msg = []
+	global.xx_offset = []
+	global.yy_offset = []
+	if !ui {
+		var json = "lang_en.json"
+		var result = scr_read_json(json)
+		var index = 0
+		switch _msc {
+			case "gaster_start":
+				global.msg[index] = string_upper(result.gaster)
+				global.xx_offset[index] = 1280 / 2 - 220
+				global.yy_offset[index] = 960 / 2 - 500
+			
+				index = 1
+				global.msg[index] = string_upper(result.gaster_1)
+				global.xx_offset[index] = 1280 / 2 - 220
+				global.yy_offset[index] = 960 / 2 - 500
+				break
+			
+			case "gaster_start_2":
+				index = 0
+				global.msg[index] = string_upper(result.gaster_2) // EXCELLENT
+				global.xx_offset[index] = 1280 / 2 - 220
+				global.yy_offset[index] = 960 / 2 - 500
+			
+				index = 1
+				global.msg[index] = string_upper(result.gaster_3) // TRULY EXCELLENT
+				global.xx_offset[index] = 1280 / 2 - 200
+				global.yy_offset[index] = 960 / 2 - 500
+			
+				index = 2
+				global.msg[index] = string_upper(result.gaster_4) // SHALL WE BEGIN?
+				global.xx_offset[index] = 1280 / 2 - 200
+				global.yy_offset[index] = 960 / 2 - 500
+				break
+			case "story":
+				index = 0
+				global.msg[index] = result.start_1
+				global.xx_offset[index] = 20
+				global.yy_offset[index] = 960 / 2 + 120
+			
+				index = 1
+				global.msg[index] = result.start_2
+				global.xx_offset[index] = 20
+				global.yy_offset[index] = 960 / 2 + 120
+				index = 2
+				global.msg[index] = result.start_3
+				global.xx_offset[index] = 20
+				global.yy_offset[index] = 960 / 2 + 120
+			
+				index = 3
+				global.msg[index] = result.start_4
+				global.xx_offset[index] = 20
+				global.yy_offset[index] = 960 / 2 + 120
+			
+				index = 4
+				global.msg[index] = result.start_5
+				global.xx_offset[index] = 20
+				global.yy_offset[index] = 960 / 2 + 120
+			
+				index = 5
+				global.msg[index] = result.start_6
+				global.xx_offset[index] = 20
+				global.yy_offset[index] = 960 / 2 + 120
+			
+				index++
+				global.msg[index] = result.start_7
+				global.xx_offset[index] = 20
+				global.yy_offset[index] = 960 / 2 + 120
+			
+				index++
+				global.msg[index] = result.start_8
+				global.xx_offset[index] = 20
+				global.yy_offset[index] = 960 / 2 + 120
+			
+				index++
+				global.msg[index] = result.start_9
+				global.xx_offset[index] = 20
+				global.yy_offset[index] = 960 / 2 + 120
+			
+				index++
+				global.msg[index] = result.start_10
+				global.xx_offset[index] = 20
+				global.yy_offset[index] = 960 / 2 + 120
+			
+				index = 11 - 1
+				global.msg[index] = result.start_11
+				global.xx_offset[index] = 20
+				global.yy_offset[index] = 960 / 2 + 90
+				break
+			default:
+				index = 0
+				global.msg[index] = "* What a dirty hacker we got here./E"
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+		}
+	}
+	else {
+		var json = "lang_en_ui.json"
+		var result = scr_read_json(json)
+		var index = 0
+		switch _msc {
+			case "test_1":
+				index = 0
+				global.msg[index] = result.test_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 1
+				global.msg[index] = result.test_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 2
+				global.msg[index] = result.test_3
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 3
+				global.msg[index] = result.test_4
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 4
+				global.msg[index] = result.test_5
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 5
+				global.msg[index] = result.test_6
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 6
+				global.msg[index] = result.test_7
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "test_2":
+				index = 0
+				global.msg[index] = result.test_1_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 1
+				global.msg[index] = result.test_1_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 2
+				global.msg[index] = result.test_1_3
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 3
+				global.msg[index] = result.test_1_4
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 4
+				global.msg[index] = result.test_1_5
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 5
+				global.msg[index] = result.test_1_6
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 6
+				global.msg[index] = result.test_1_7
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 7
+				global.msg[index] = result.test_1_8
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 8
+				global.msg[index] = result.test_1_9
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "use_item_heroin":
+				index = 0
+				global.msg[index] = result.used_item_heroin_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 1
+				global.msg[index] = result.used_item_heroin_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 2
+				global.msg[index] = result.used_item_heroin_3
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "flowery_test_yap_1":
+				index = 0
+				global.msg[index] = result.flowery_test_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index = 1
+				global.msg[index] = result.flowery_test_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "noelle_test":
+				index = 0
+				global.msg[index] = result.noelle_test_1
+				
+				
+				index = 1
+				global.msg[index] = result.noelle_test_2
+				
+				
+				index = 2
+				global.msg[index] = result.noelle_test_3
+				
+				
+				index = 3
+				global.msg[index] = result.noelle_test_4
+				
+				for (var i = 0; i <= index; i++) {
+					global.xx_offset[i] = 68 + 220
+					global.yy_offset[i] = 960 / 2 + 85
+					global.xx_offset_spriter[i] = (70) - 24
+					global.yy_offset_spriter[i] = (350) - 20
+				}
+				break
+			case "battle_test_1_1":
+				index = 0
+				global.msg[index] = result.test_battle_1
+				global.xx_offset[index] = 68 - 90
+				global.yy_offset[index] = 960 / 2 + (235 - 61)
+				break
+			case "savepoint_wharf_1":
+				index = -1
+				index += 1
+				global.msg[index] = result.savepoint_wharf_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index += 1
+				global.msg[index] = result.savepoint_wharf_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index += 1
+				global.msg[index] = result.savepoint_wharf_3
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "door_locked_1":
+				index = -1
+				index++
+				global.msg[index] = result.door_locked_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "door_locked_1_deped":
+				index = -1
+				index++
+				global.msg[index] = result.door_locked_1_deped
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "deped_kris_refusal_warp_1":
+				index = -1
+				index++
+				global.msg[index] = result.deped_kris_refusal_warp_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "deped_classroom_room4_savepoint_1":
+				index = -1
+				index++
+				global.msg[index] = result.savepoint_deped_classroom_room4_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				
+				index++
+				global.msg[index] = result.savepoint_deped_classroom_room4_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+			
+				index++
+				global.msg[index] = result.savepoint_deped_classroom_room4_3
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "test_toriel_1":
+				index = -1
+				index++
+				global.msg[index] = result.test_toriel_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				
+				index++
+				global.msg[index] = result.test_toriel_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+			
+				index++
+				global.msg[index] = result.test_toriel_3
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.test_toriel_4
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.test_toriel_5
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.test_toriel_6
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.test_toriel_7
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "sans_test_1":
+				index = -1
+				index++
+				global.msg[index] = result.sans_test_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "choicer_test_1":
+				index = -1
+				if global.choice == 0 {
+					index++
+					global.msg[index] = result.choicer_4_1
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					
+					index++
+					global.msg[index] = result.choicer_5_1
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					global.choice = -1
+					break
+				}
+				else if global.choice == 1 {
+					index++
+					global.msg[index] = result.choicer_2_1
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					
+					index++
+					global.msg[index] = result.choicer_3_1
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					global.choice = -1
+					break
+				}
+				
+				index++
+				global.msg[index] = result.choicer_1_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "choicer_test_2":
+				index = -1
+				if global.choice == 0 {
+					index++
+					global.msg[index] = result.choicer_1_2
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					
+					index++
+					global.msg[index] = result.choicer_5_1
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					global.choice = -1
+					break
+				}
+				else if global.choice == 1 {
+					index++
+					global.msg[index] = result.choicer_2_1
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					
+					index++
+					global.msg[index] = result.choicer_3_1
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					global.choice = -1
+					break
+				}
+				
+				index++
+				global.msg[index] = result.choicer_1_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.choicer_2_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "gaster_what_1":
+				index = -1
+				index++
+				global.msg[index] = result.gaster_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_3
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_4
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_5
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_6
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_7
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_8
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_9
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_10
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_11
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_12
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_13
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_14
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.gaster_15
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "kris_talk_1":
+				index = -1
+				index++
+				global.msg[index] = result.kris_talk_1_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.kris_talk_1_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "kris_talk_2":
+				index = -1
+				index++
+				global.msg[index] = result.kris_talk_2_1
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.kris_talk_2_2
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				index++
+				global.msg[index] = result.kris_talk_2_3
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				break
+			case "cutscene_introstart":
+				index = -1
+				if con == 0 {
+					index++
+					global.msg[index] = result.cutscene_start_intro_1
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+				}
+				if con == 1 {
+					index++
+					global.msg[index] = result.cutscene_start_intro_2
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					index++
+					global.msg[index] = result.cutscene_start_intro_3
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					index++
+					global.msg[index] = result.cutscene_start_intro_4
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+				}
+				if con == 2 {
+					con++
+				}
+				if con == 3 {
+					index++
+					global.msg[index] = result.cutscene_start_intro_5
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					index++
+					global.msg[index] = result.cutscene_start_intro_6
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+					index++
+					global.msg[index] = result.cutscene_start_intro_7
+					global.xx_offset[index] = 68
+					global.yy_offset[index] = 960 / 2 + 85
+				}
+				break
+			case "savepoint_deped_hallway_down_introstart":
+					index = -1
+					index++
+					global.msg[index] = result[$ "savepoint_deped_hallway_down_intro_" + string(index+1)]
+					
+					index++
+					global.msg[index] = result[$ "savepoint_deped_hallway_down_intro_" + string(index+1)]
+					index++
+					global.msg[index] = result[$ "savepoint_deped_hallway_down_intro_" + string(index+1)]
+					for (var i = 0; i < array_length(global.msg); i++) {
+						global.xx_offset[i] = 68
+						global.yy_offset[i] = 960 / 2 + 85
+					}
+					
+					break
+			case "toriel_tokris_intro":
+				index = -1
+				index++
+				var cam = view_camera[0]
+				var display_scale = (surface_get_width(application_surface) / camera_get_view_width(cam))
+				var finalx = (round((((88 * 4) + 0) * display_scale)) / display_scale)
+				var finaly = 960 /2 + 85
+				global.msg[index] = result[$ $"toriel_tokris_intro_{index+1}"]
+				for (var i = 0; i < array_length(global.msg); i++) {
+					
+					global.xx_offset[i] = finalx
+					global.yy_offset[i] = finaly
+					global.xx_offset_spriter[i] = 35 + (sprite_get_width(spr_toriel_face_dialogue_normal) / 4)
+					global.yy_offset_spriter[i] = 175 * 2
+				}
+				break
+			case "computer_description_1":
+				index = -1
+				index++
+				global.msg[index] = result[$ $"classroom_rm4_computer_{index+1}"]
+				index++
+				global.msg[index] = result[$ $"classroom_rm4_computer_{index+1}"]
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}
+				break
+			case "keyboard_description_1":
+				index = -1
+				index++
+				global.msg[index] = result[$ $"classroom_rm4_keyboard_{index+1}"]
+				
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}
+				break
+			case "school_papers_1":
+				index = -1
+				index++
+				global.msg[index] = result[$ $"classroom_rm4_papers_{index+1}"]
+				
+				
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}
+				break
+			case "clock_time_1":
+				index = -1
+				index++
+				global.msg[index] = result[$ $"clock_time_{index+1}"]
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}
+				break
+			case "flower_description_1":
+				index = -1
+				index++
+				global.msg[index] = result[$ $"flower_description_{index+1}"]
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}
+				//cmd_sleep(1)
+				break
+				
+				
+			default:
+				index = 0
+				global.msg[index] = "* What a dirty hacker we got here./E"
+				global.xx_offset[index] = 68
+				global.yy_offset[index] = 960 / 2 + 85
+				
+				break
+				
+		}	 
+	}
+}

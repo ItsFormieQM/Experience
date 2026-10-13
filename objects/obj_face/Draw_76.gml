@@ -1,0 +1,1 @@
+depth = obj_dialogue.depth - 500

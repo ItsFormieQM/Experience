@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"pause",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"pause",
+  "parent":{
+    "name":"Commands",
+    "path":"folders/Real/Console/Commands.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
