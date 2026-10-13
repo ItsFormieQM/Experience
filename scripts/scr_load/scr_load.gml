@@ -72,4 +72,5 @@ function scr_load(){
 	}
 	instance_create(obj_mainchara.x,obj_mainchara.y,obj_warp, {target_marker_slot: wm_slot, target_room: rm, is_onload: true})
 	random_set_seed(global.flag[Flag.Game_Seed],true)
+	
 }

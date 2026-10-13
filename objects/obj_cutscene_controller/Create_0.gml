@@ -57,6 +57,11 @@ cutscene_follow_camera = function(to_an_instance,smoothness) {
 		follow_cam(to_an_instance,smoothness)
 	}
 }
+cutscene_coordinate_follow_camera = function(_x,_y,smoothness) {
+	with obj_camera {
+		ext_follow_cam(_x,_y,smoothness)
+	}
+}
 ///@desc Unlocks the camera from an object.
 cutscene_unfollow_camera = function() {
 	with obj_camera {

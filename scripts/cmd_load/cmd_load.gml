@@ -11,7 +11,7 @@ function cmd_load(file = 1){
 		file = 1
 	}
 	
-	global.save_folder = game_save_id + $"save{file}/"
-	scr_load()
+	global.save_folder = $"{game_save_id}Chapter {global.chapter}/save{file}/"
+	scr_load()  
 	return 0
 }

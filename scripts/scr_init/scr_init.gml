@@ -108,14 +108,16 @@ function scr_init(){
 	global.flag[Flag.Story_IntroKrisHouse_Cutscene] = true
 	
 	#endregion
+	// Create this shit first
+	if !directory_exists($"Chapter {global.chapter}")
 	// Create 5 save directories
 	for (var i = 1; i <= 5; i++) {
-		if !directory_exists($"save{i}") {
-			directory_create($"save{i}")
+		if !directory_exists($"Chapter {global.chapter}/save{i}") {
+			directory_create($"Chapter {global.chapter}/save{i}")
 		}
 	}
 	
-	global.save_folder = game_save_id + "save1/"
+	global.save_folder = $"{game_save_id}Chapter {global.chapter}/save{i}/"
 	// CONTROLS
 	global.w = "W"
 	global.a = "A"
@@ -147,7 +149,7 @@ function scr_init(){
 	else if os_type == os_switch || os_type == os_switch2 {
 		global.osflavor = SwitchNX
 	}
-	
+	global.file_number = 1
 	#region Macros
 	#macro PC "PC"
 	#macro Mobile "Mobile"

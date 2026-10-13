@@ -39,15 +39,17 @@ if visible {
 		
 			if file_exists(file) {
 				cmd_load(index + 1)
+				global.file_number = index + 1
 			}
 			else {
-				global.save_folder = game_save_id + $"save{index + 1}/"
+				global.save_folder = $"{game_save_id}Chapter {global.chapter}/save{index+1}/"
+				show_debug_message(global.save_folder)
 				var larper = instance_create_layer(0,0,"TECHNICAL",obj_fade_warp)
 				larper.image_alpha = 1
 				larper.rate = 0.05
 				larper.fadeout_rate = 0.05
 				room_goto(global.start_room)
-				
+				global.file_number = index + 1
 			}
 			loaded = true
 			show_debug_message(file)

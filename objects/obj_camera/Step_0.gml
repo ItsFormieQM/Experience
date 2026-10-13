@@ -39,6 +39,10 @@ if following && !is_undefined(smoothness) && instance_exists(to_an_object){
 	
 	var _target_x = to_an_object.x - (sprite_width / 2)
 	var _target_y = to_an_object.y - (sprite_height / 2)
+	if _x != 0 && _y != 0 {
+		_target_x = _x
+		_target_y = _y
+	}
 	var _dir = point_direction(x,y,_target_x,_target_y)
 	var _dist = point_distance(x, y, _target_x, _target_y) 
 	

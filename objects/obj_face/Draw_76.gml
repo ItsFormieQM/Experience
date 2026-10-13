@@ -1,1 +1,2 @@
-depth = obj_dialogue.depth - 500
+//draw_self()
+depth = obj_drawer.depth - 200

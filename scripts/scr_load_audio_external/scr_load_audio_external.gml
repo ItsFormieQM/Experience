@@ -1,5 +1,6 @@
 function scr_load_audio_external(){
 	global.external_mus = []
+	exit
 	var handle = noone
 	var mus_folder = working_directory + "music/"
 	

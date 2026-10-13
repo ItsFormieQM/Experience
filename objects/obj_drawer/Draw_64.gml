@@ -1,4 +1,3 @@
-
 for (var i = index; i <= string_length(startsnd); i++) {
 	if string_char_at(startsnd,i) == "S" &&
 		string_char_at(startsnd,i + 1) == "P" &&
@@ -46,7 +45,30 @@ if timer / global.deltatime >= delay && !stop_draw {
 	index++
 	
 	if string_char_at(test_string, index) == "/" {
-		if string_char_at(test_string,index+1) == "H" {
+		if string_char_at(test_string,index+1) == "S" {
+			if string_canbe_int(string_char_at(test_string,index+2)) &&
+				string_canbe_int(string_char_at(test_string,index+3)) && 
+				string_canbe_int(string_char_at(test_string,index+4)) {
+				var cmp = floor(real(string_char_at(test_string,index+2) +
+							string_char_at(test_string,index+3) +
+							string_char_at(test_string,index+4)
+						))
+				
+				
+				switch cmp {
+					case 0:
+						snd_play(snd_phonecall,1.1)
+						//audio_play_sound(snd_phonecall,91,false)
+						break
+					default:
+						break
+				
+				}
+				index += 5
+			}
+		
+		}
+		else if string_char_at(test_string,index+1) == "H" {
 			halt = true
 			index += 2
 		}
@@ -189,13 +211,13 @@ if timer / global.deltatime >= delay && !stop_draw {
 									)
 						switch compare {
 							case 0:
-								snd_play(snd_notice)
+								snd_play(snd_notice,1)
 								break
 							case 1:
-								snd_play(snd_openchest)
+								snd_play(snd_openchest,1)
 								break
 							case 2:
-								snd_play(snd_award_1)
+								snd_play(snd_award_1,1)
 								break
 							default:
 								break

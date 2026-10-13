@@ -646,15 +646,50 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 				//cmd_sleep(1)
 				break
 				
-			case "board_work_1":
+			case "kris_home_landline_1":
 				index = -1
 				index++
-				global.msg[index] = result[$$"school_classroom_board_{index+1}"]
+				global.msg[index] = result[$$"kris_house_entry_landline_1_{index+1}"]
+				index++
+				global.msg[index] = result[$$"kris_house_entry_landline_1_{index+1}"]
+				index++
+				global.msg[index] = result[$$"kris_house_entry_landline_1_{index+1}"]
 				for (var i = 0; i < array_length(global.msg); i++) {
 					global.xx_offset[i] = 68
 					global.yy_offset[i] = 960 / 2 + 85
 				}
 				break
+			case "kris_home_tv_1":
+				index = -1
+				index++
+				global.msg[index] = result[$$"kris_house_entry_tv_1_{index+1}"]
+				
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}
+				break
+			case "kris_home_chair_1":
+				index = -1
+				index++
+				global.msg[index] = result[$$"kris_house_entry_chair_1_{index+1}"]
+				
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}
+				break
+			case "kris_home_intro_1":
+				index = -1
+				index++
+				global.msg[index] = result[$$"kris_house_intro_{index+1}"]
+				
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}
+				break
+				
 			default:
 				index = 0
 				global.msg[index] = "* What a dirty hacker we got here./E"

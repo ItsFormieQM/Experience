@@ -18,7 +18,8 @@ save_files_list = function() {
 	var save_files_found = []
 	var file = noone
 	for (var i = 1; i <= max_save_files; i++) {
-		global.save_folder = game_save_id + $"save{i}/"
+		global.save_folder = $"{game_save_id}Chapter {global.chapter}/save{i}/"
+		show_debug_message(global.save_folder)
 		file = file_find_first(global.save_folder + "savedata.txt", fa_none)
 		if file == "" {
 			array_push(save_files_found,{location: noone})

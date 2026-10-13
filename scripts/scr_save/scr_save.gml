@@ -1,5 +1,6 @@
 function scr_save(savepoint_id){
 	var filename = global.save_folder + "savedata.txt"
+	show_debug_message(filename)
 	if file_exists(filename) {
 		file_delete(filename)
 	}

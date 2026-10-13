@@ -49,4 +49,13 @@ unfollow_cam = function() {
 	lockin = false
 	to_an_object = noone
 	smoothness = undefined
+	_x = 0
+	_y = 0
+}
+ext_follow_cam = function(_x,_y,_smoothness) {
+	other.smoothness = _smoothness
+	other._x = _x
+	other._y = _y
+	other.following = true
+	
 }
