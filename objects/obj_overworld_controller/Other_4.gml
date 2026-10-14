@@ -5,6 +5,30 @@ if room == global.start_room {
 		instance_create(0,0,obj_cutscener_rdhd,{spawned: true})
 		global.flag[Flag.Story_IntroStart] = false
 	}
+	
+}
+if room == room_deped_hallway_down {
+	if !global.flag[Flag.Story_IntroKrisHouse_Cutscene] {
+		for (var i = 0; i < array_length(global.warper_slot); i++) {
+			if global.warper_slot[i].slot == 1 {
+				with global.warper_slot[i]._id {
+					y = 465
+				}
+				break
+			}
+			
+		}
+		for (var i = 0; i < array_length(global.warper_slot); i++) {
+			if global.warper_slot[i].slot == 2 {
+				
+				with global.warper_slot[i]._id {
+					instance_destroy()
+				}
+				break
+			}
+			
+		}
+	}
 }
 if room == room_black {
 	if global.prev_room == room_deped_hallway_down {

@@ -1,4 +1,4 @@
-var incrementor = 0.1
+var incrementor = 0.2 / 2
 if image_alpha > 0 {
 	image_alpha -= incrementor
 }

@@ -1,6 +1,7 @@
 function scr_init(){
 	audio_channel_num(256)
 	randomise()
+	global.mus_list = []
 	global.skip_trueb_intro = true
 	global.drawer_info = []
 	global.chapter = string(1)
@@ -151,6 +152,7 @@ function scr_init(){
 		global.osflavor = SwitchNX
 	}
 	global.file_number = 1
+	global.warper_slot = []
 	#region Macros
 	#macro PC "PC"
 	#macro Mobile "Mobile"

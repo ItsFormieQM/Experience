@@ -1,4 +1,5 @@
-start_y = y
-wave_height = 8
-wave_speed = 2
-timer_angle = 0
+
+
+x = obj_fightbt_true.x + 8
+y = obj_fightbt_true.y + 14
+obj_fightbt_true.image_index = 1
