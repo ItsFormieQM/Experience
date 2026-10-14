@@ -83,8 +83,8 @@ if !global.flag[Flag.On_Battle] {
 	}
 
 	if !removed_variable_1 && !jump_state {
-		if dir == Left {
-			sprite_index = spr_mainchara_l
+		if dir == Down {
+			sprite_index = spr_mainchara_d
 		}
 		if dir == Right {
 			sprite_index = spr_mainchara_r
@@ -92,9 +92,12 @@ if !global.flag[Flag.On_Battle] {
 		if dir == Up {
 			sprite_index = spr_mainchara_u
 		}
-		if dir == Down {
-			sprite_index = spr_mainchara_d
+		if dir == Left {
+			sprite_index = spr_mainchara_l
 		}
+		
+		
+		
 		
 		
 	}

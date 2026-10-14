@@ -235,6 +235,15 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 					global.yy_offset_spriter[i] = (350) - 20
 				}
 				break
+			case "test_npc_1":
+				global.msg[0] = scr_gettext("test_npc_1")
+				global.msg[1] = scr_gettext("test_npc_2")
+				for (var i = 0; i <= index; i++) {
+					global.xx_offset[i] = 68 + 220
+					global.yy_offset[i] = 960 / 2 + 85
+			
+				}
+				break
 			case "battle_test_1_1":
 				index = 0
 				global.msg[index] = result.test_battle_1

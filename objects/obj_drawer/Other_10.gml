@@ -42,7 +42,7 @@ for (var i = 1; i <= string_length(test_string); i++) {
 	}
 }
 if global.facechoice != noone {
-	global.facechoice = instance_create((camx + x) + global.xx_offset_spriter[count], (camy + y) + global.yy_offset_spriter[count], global.facechoice, {emotion: expression}, true)
+	global.facechoice = instance_create_layer((camx + x) + global.xx_offset_spriter[count], (camy + y) + global.yy_offset_spriter[count],"TECHNICAL",global.facechoice, {emotion: expression})
 	show_debug_message("KEPT SPAWNING WTF")
 
 }

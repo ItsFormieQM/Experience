@@ -1,6 +1,7 @@
 function scr_init(){
 	audio_channel_num(256)
 	randomise()
+	global.skip_trueb_intro = true
 	global.drawer_info = []
 	global.chapter = string(1)
 	global.start_room = room_deped_hallway_down
@@ -193,7 +194,10 @@ function scr_init(){
 		drug_cocaine,
 		drug_heroin,
 	}
-	
+	enum BattleGroup {
+		Little_Timmy,
+		Tough_Timmy
+	}
 	#endregion
 	var filename = global.save_folder + "savedata.txt"
 	show_debug_message("DEFAULT SAVE FOLDER: " + filename)

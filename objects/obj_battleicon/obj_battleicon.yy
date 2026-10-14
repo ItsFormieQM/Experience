@@ -36,5 +36,5 @@
     "path":"sprites/spr_blcon/spr_blcon.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

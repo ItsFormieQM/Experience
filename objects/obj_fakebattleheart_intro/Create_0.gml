@@ -15,7 +15,7 @@ mychoicey = (yy + 223 * 2)
 //	mychoicex = (xx + 156)
 //	mychoicey = (yy + 116)
 //}
-spdr = (distance_to_point(mychoicex, mychoicey) / (17)) / 2
+spdr = round((distance_to_point(mychoicex, mychoicey) / (17)) / 2) + 2
 move_towards_point(mychoicex, mychoicey, spdr)
 snd_play(snd_battlefall)
 //if (FL_TypeHeartTransition == HeartTransitionType.QuickBattle)
