@@ -39,6 +39,9 @@
         "GMSprite",
       ],"listItems":[],"multiselect":false,"name":"tp_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"warper_slot","filters":[],"listItems":[],"multiselect":false,"name":"warper_slot","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"snd","filters":[
+        "GMSound",
+      ],"listItems":[],"multiselect":false,"name":"snd","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

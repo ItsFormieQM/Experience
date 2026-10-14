@@ -1,6 +1,8 @@
 function scr_init(){
 	audio_channel_num(256)
 	randomise()
+	global.text = []
+	dump_text("lang_en_ui.json")
 	global.mus_list = []
 	global.skip_trueb_intro = true
 	global.drawer_info = []
