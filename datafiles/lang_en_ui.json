@@ -100,5 +100,5 @@
 	"kris_house_hallway_door_1_1":"#t000^000#fnt001^002* (It's locked...)/E",
 	"kris_house_hallway_plant_1_1":"#t000^000#fnt001^002* It's a plant.^/^020^002* A cactus.../E",
 	"kris_house_hallway_plant_1_2":"#t000^000#fnt001^002* It looks like it's about to^/  bloom into 5 pieces of^/  pretty fruits!/E",
-	"debug_instachoicer":"$C              67/E",
+	"debug_instachoicer":"$C               67^/             99/E",
 }

@@ -11,7 +11,13 @@ for (var i = 1; i <= string_length(test_string); i++) {
 	var camw = camera_get_view_width(cam)
 	scale = (surface_get_width(application_surface) / camw)
 	if char == "^" {
-		if char_1 == "Y" {
+		if char_1 == "/" {
+			_y += string_height(char) * scale + 14
+			_x = 68
+			i++
+			continue
+		}
+		else if char_1 == "Y" {
 			draw_set_colour(c_yellow)
 			i++
 			continue
@@ -32,9 +38,11 @@ for (var i = 1; i <= string_length(test_string); i++) {
 		scale,
 		0
 	)
+	
 	if !ran {
 		show_debug_message(_x + deviationx)
 		show_debug_message(_y + deviationy)
+		show_debug_message(choice_pos_map)
 		ran = true
 	}
 	_x += string_width(char) * scale

@@ -1,1 +1,0 @@
-obj_player = obj_mainchara
