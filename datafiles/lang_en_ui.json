@@ -95,5 +95,6 @@
 	"kris_house_entry_chair_1_1":"#t000^000#fnt001^002* A brown chair.^/^010^002* It's covered with fluffy^/  pieces of white fur./E",
 	"kris_house_intro_1":"#t001^000#fnt001^002^A* Hmm...^/^030^002* Mom's not here yet.^/^010^002* I hope there's food inside./E",
 	"test_npc_1":"#t000^000#fnt001^002* Why are you here?^/^040^002* This place is a nightmare^/  to live in./E",
-	"test_npc_2":"#t000^000#fnt001^002* The world around us is^/  cruel and evil am I right?/E"
+	"test_npc_2":"#t000^000#fnt001^002* The world around us is^/  cruel and evil am I right?/E",
+	"kris_house_hallway_drawer_1_1":"#t000^000#fnt001^002* This is a drawer.^/^020^002* It's locked somehow.^/^020^002* Sucks to suck.../E",
 }

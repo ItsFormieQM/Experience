@@ -1,6 +1,7 @@
 function scr_init(){
 	audio_channel_num(256)
 	randomise()
+	global.prev_mus = noone
 	global.text = []
 	dump_text("lang_en_ui.json")
 	global.mus_list = []

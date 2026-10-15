@@ -1,6 +1,7 @@
 if place_meeting(x,y,obj_mainchara) && !global.cutscene && !global.flag[Flag.On_Battle]{
 	if !ran {
 		if snd != noone {
+			audio_stop_sound(snd)
 			snd_play(snd,1.2)
 		}
 		global.canmove = false

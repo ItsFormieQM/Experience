@@ -172,6 +172,7 @@
     {"name":"cutscene_fade","order":5,"path":"scripts/cutscene_fade/cutscene_fade.yy",},
     {"name":"cutscene_get_actor_instance","order":6,"path":"scripts/cutscene_get_actor_instance/cutscene_get_actor_instance.yy",},
     {"name":"draw_macro","order":14,"path":"scripts/draw_macro/draw_macro.yy",},
+    {"name":"external_audio","order":31,"path":"scripts/external_audio/external_audio.yy",},
     {"name":"file_length","order":30,"path":"scripts/file_length/file_length.yy",},
     {"name":"fill_rectangle","order":32,"path":"scripts/fill_rectangle/fill_rectangle.yy",},
     {"name":"folder_get_file_count","order":19,"path":"scripts/folder_get_file_count/folder_get_file_count.yy",},
