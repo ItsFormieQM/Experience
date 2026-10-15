@@ -2,6 +2,7 @@ function cmd_battle_start(_enemy_type = 0){
 	if global.true_battle {
 		scr_truebattle_setup(_enemy_type)
 		instance_create(0,0,obj_battleicon)
+		
 		return "oh this is emotional"
 	}
 	//global.msg = []

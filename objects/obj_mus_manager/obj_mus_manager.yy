@@ -35,6 +35,7 @@
     {"$GMObjectProperty":"v2","%Name":"fade_in","filters":[],"listItems":[],"multiselect":false,"name":"fade_in","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"fade_amount","filters":[],"listItems":[],"multiselect":false,"name":"fade_amount","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1000","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"external","filters":[],"listItems":[],"multiselect":false,"name":"external","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varDescription":"Tick the box to True if the audio file is external or else a crash will occur!","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"pitch","filters":[],"listItems":[],"multiselect":false,"name":"pitch","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

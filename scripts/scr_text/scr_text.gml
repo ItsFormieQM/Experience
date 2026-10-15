@@ -707,6 +707,28 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 					global.yy_offset[i] = 960 / 2 + 85
 				}
 				break
+			case "kris_home_hallway_plant_1":
+				index = -1
+				index++
+				global.msg[index] = result[$$"kris_house_hallway_plant_1_{index+1}"]
+				index++
+				global.msg[index] = result[$$"kris_house_hallway_plant_1_{index+1}"]
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}
+				break
+			case "goon_1":
+				index = -1
+				index++
+				global.msg[index] = result[$"debug_instachoicer"]
+				
+				
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}
+				break
 			default:
 				index = 0
 				global.msg[index] = "* What a dirty hacker we got here./E"

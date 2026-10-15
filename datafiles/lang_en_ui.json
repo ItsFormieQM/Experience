@@ -97,4 +97,8 @@
 	"test_npc_1":"#t000^000#fnt001^002* Why are you here?^/^040^002* This place is a nightmare^/  to live in./E",
 	"test_npc_2":"#t000^000#fnt001^002* The world around us is^/  cruel and evil am I right?/E",
 	"kris_house_hallway_drawer_1_1":"#t000^000#fnt001^002* This is a drawer.^/^020^002* It's locked somehow.^/^020^002* Sucks to suck.../E",
+	"kris_house_hallway_door_1_1":"#t000^000#fnt001^002* (It's locked...)/E",
+	"kris_house_hallway_plant_1_1":"#t000^000#fnt001^002* It's a plant.^/^020^002* A cactus.../E",
+	"kris_house_hallway_plant_1_2":"#t000^000#fnt001^002* It looks like it's about to^/  bloom into 5 pieces of^/  pretty fruits!/E",
+	"debug_instachoicer":"$C              67/E",
 }

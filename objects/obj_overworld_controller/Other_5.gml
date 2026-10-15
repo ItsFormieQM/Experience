@@ -13,6 +13,3 @@ if room == room_deped_hallway_down {
 		//}
 	}
 }
-if room == room_krisroom_house {
-	mus_external_free(handle)
-}

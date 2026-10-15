@@ -1,21 +1,15 @@
-for (var i = index; i <= string_length(startsnd); i++) {
-	if string_char_at(startsnd,i) == "S" &&
-		string_char_at(startsnd,i + 1) == "P" &&
-		string_char_at(startsnd,i + 2) == "S" {
-		i += 4
-		if string_char_at(startsnd,i) == "{" {
-			for (var j = i; i <= string_length(startsnd); j++) {
-				startsnd += string_char_at(startsnd,i)
-				if string_char_at(startsnd,i) == "}" {
-				
-					break
-				}
-			}
-			break	
-		}
+var chars = []
+for (var i = 1; i <= string_length(test_string); i++) {
+	chars[i-1] = string_char_at(test_string,i)
+}
+if chars[0] == "$" {
+	if chars[1] == "C" {
+		var instachoicer = instance_create(0,0,obj_instawriter_choicer,{test_string: other.test_string})
+		
+		visible = false
+		exit
 	}
 }
-
 startsnd = asset_get_index(startsnd)
 
 var _sett = draw_get_settings()

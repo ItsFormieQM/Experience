@@ -32,10 +32,7 @@ if room == room_deped_hallway_down {
 	}
 }
 if room == room_krisroom_house {
-	scr_fadeout(global.current_mus,60,0)
-	handle = mus_external_load("flowercore.ogg")
-	show_debug_message($"HANDLER: {handle}")
-	mus_external_play(handle)
+	
 }
 if room == room_black {
 	if global.prev_room == room_deped_hallway_down {

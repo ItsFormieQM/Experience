@@ -12,6 +12,8 @@ function scr_get_custom_roomname(rm){
 			return "Classroom - Room 4 (Plh)"
 		case room_kris_house_entry:
 			return "Home - Lobby"
+		case room_krisroom_house:
+			return "Home - Hallway"
 		default:
 			return "Unknown"
 	}

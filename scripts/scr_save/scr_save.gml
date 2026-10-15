@@ -21,7 +21,7 @@ function scr_save(savepoint_id){
 	file_text_write_real(file,obj_mainchara.y)
 	file_text_writeln(file)
 	
-	// custom room, unused line 4
+	// custom room name, ion think ts is unused btw
 	file_text_write_string(file,scr_get_custom_roomname(room))
 	file_text_writeln(file)
 	
