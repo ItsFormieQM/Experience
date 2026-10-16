@@ -7,5 +7,5 @@ function dump_text(json) {
 	var buffer = buffer_load(json)
 	var content = buffer_read(buffer,buffer_string)
 	buffer_delete(buffer)
-	global.text = json_parse(content)
+	return json_parse(content)
 }

@@ -7,3 +7,47 @@ if global.interacted {
 if global.interacted_x {
 	show_debug_message("CHOICER IS INSTA")
 }
+if stopit {
+	lowest = 0
+	highest = array_length(choice_pos_map) - 1
+	if global.w_press {
+		if index != lowest {
+			index = lowest
+		}
+		else {
+			index = highest
+		}
+	}
+	else if global.s_press {
+		if index != highest {
+			index = highest
+		}
+		else {
+			index = lowest
+		}
+	}
+	else if global.a_press {
+		index--
+		if index <= -1 {
+			index += 2
+		}
+	}
+	else if global.d_press {
+		index++
+		if index > highest {
+			index -= 2
+		}
+	}
+	
+	myx = choice_pos_map[index].x_pos
+	myy = choice_pos_map[index].y_pos
+	if keyboard_check_pressed(vk_anykey) {
+		show_debug_message(myx)
+		show_debug_message(myy)
+	}
+}
+if keyboard_check_pressed(vk_anykey) {
+	show_debug_message($"STOPIT STATE: {stopit ? "True":"False"}")
+	show_debug_message(myx)
+	show_debug_message(myy)
+}

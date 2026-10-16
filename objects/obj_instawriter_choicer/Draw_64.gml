@@ -10,6 +10,13 @@ for (var i = 1; i <= string_length(test_string); i++) {
 	var cam = view_camera[0]
 	var camw = camera_get_view_width(cam)
 	scale = (surface_get_width(application_surface) / camw)
+	if char == "/" {
+		if char_1 == "E" {
+			stopit = true
+			i++
+			continue
+		}
+	}
 	if char == "^" {
 		if char_1 == "/" {
 			_y += string_height(char) * scale + 14
@@ -28,7 +35,28 @@ for (var i = 1; i <= string_length(test_string); i++) {
 			continue
 		}
 	}
-	
+	if !stopit {
+		show_debug_message("fuck")
+		if char != " " {
+			if found {
+				array_push(choice_pos_map,{x_pos: _x + deviationx, y_pos: _y + deviationy})
+				found = false
+			}
+		}
+		else {
+			found = true
+		}
+	}
+	else {
+		if !itdid {
+			
+			myx = choice_pos_map[0].x_pos
+			myy = choice_pos_map[0].y_pos
+			
+			itdid = true
+			
+		}
+	}
 	
 	draw_text_transformed(
 		_x + deviationx,
@@ -39,14 +67,29 @@ for (var i = 1; i <= string_length(test_string); i++) {
 		0
 	)
 	
-	if !ran {
-		show_debug_message(_x + deviationx)
-		show_debug_message(_y + deviationy)
-		show_debug_message(choice_pos_map)
-		ran = true
-	}
+	
 	_x += string_width(char) * scale
 }
-
+if !ran {
+	
+	show_debug_message(_x + deviationx)
+	show_debug_message(_y + deviationy)
+	show_debug_message(choice_pos_map)
+	
+	ran = true
+}
 _x = 68
 _y = 960 / 2 + 85
+
+var _scale = 2
+draw_sprite_ext(
+	spr_small_heart,
+	0,
+	myx - 35,
+	myy + 25,
+	_scale,
+	_scale,
+	0,
+	c_white,
+	1
+)

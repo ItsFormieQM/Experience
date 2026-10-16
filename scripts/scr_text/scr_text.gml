@@ -3,104 +3,10 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 	global.msg = []
 	global.xx_offset = []
 	global.yy_offset = []
-	if !ui {
-		var json = "lang_en.json"
-		var result = scr_read_json(json)
-		var index = 0
-		switch _msc {
-			case "gaster_start":
-				global.msg[index] = string_upper(result.gaster)
-				global.xx_offset[index] = 1280 / 2 - 220
-				global.yy_offset[index] = 960 / 2 - 500
-			
-				index = 1
-				global.msg[index] = string_upper(result.gaster_1)
-				global.xx_offset[index] = 1280 / 2 - 220
-				global.yy_offset[index] = 960 / 2 - 500
-				break
-			
-			case "gaster_start_2":
-				index = 0
-				global.msg[index] = string_upper(result.gaster_2) // EXCELLENT
-				global.xx_offset[index] = 1280 / 2 - 220
-				global.yy_offset[index] = 960 / 2 - 500
-			
-				index = 1
-				global.msg[index] = string_upper(result.gaster_3) // TRULY EXCELLENT
-				global.xx_offset[index] = 1280 / 2 - 200
-				global.yy_offset[index] = 960 / 2 - 500
-			
-				index = 2
-				global.msg[index] = string_upper(result.gaster_4) // SHALL WE BEGIN?
-				global.xx_offset[index] = 1280 / 2 - 200
-				global.yy_offset[index] = 960 / 2 - 500
-				break
-			case "story":
-				index = 0
-				global.msg[index] = result.start_1
-				global.xx_offset[index] = 20
-				global.yy_offset[index] = 960 / 2 + 120
-			
-				index = 1
-				global.msg[index] = result.start_2
-				global.xx_offset[index] = 20
-				global.yy_offset[index] = 960 / 2 + 120
-				index = 2
-				global.msg[index] = result.start_3
-				global.xx_offset[index] = 20
-				global.yy_offset[index] = 960 / 2 + 120
-			
-				index = 3
-				global.msg[index] = result.start_4
-				global.xx_offset[index] = 20
-				global.yy_offset[index] = 960 / 2 + 120
-			
-				index = 4
-				global.msg[index] = result.start_5
-				global.xx_offset[index] = 20
-				global.yy_offset[index] = 960 / 2 + 120
-			
-				index = 5
-				global.msg[index] = result.start_6
-				global.xx_offset[index] = 20
-				global.yy_offset[index] = 960 / 2 + 120
-			
-				index++
-				global.msg[index] = result.start_7
-				global.xx_offset[index] = 20
-				global.yy_offset[index] = 960 / 2 + 120
-			
-				index++
-				global.msg[index] = result.start_8
-				global.xx_offset[index] = 20
-				global.yy_offset[index] = 960 / 2 + 120
-			
-				index++
-				global.msg[index] = result.start_9
-				global.xx_offset[index] = 20
-				global.yy_offset[index] = 960 / 2 + 120
-			
-				index++
-				global.msg[index] = result.start_10
-				global.xx_offset[index] = 20
-				global.yy_offset[index] = 960 / 2 + 120
-			
-				index = 11 - 1
-				global.msg[index] = result.start_11
-				global.xx_offset[index] = 20
-				global.yy_offset[index] = 960 / 2 + 90
-				break
-			default:
-				index = 0
-				global.msg[index] = "* What a dirty hacker we got here./E"
-				global.xx_offset[index] = 68
-				global.yy_offset[index] = 960 / 2 + 85
-				break
-		}
-	}
-	else {
+	
+	if true {
 		var json = "lang_en_ui.json"
-		var result = scr_read_json(json)
+		var result = global.text
 		var index = 0
 		switch _msc {
 			case "test_1":

@@ -1,6 +1,6 @@
 function mus_external_load(filename = noone){
 	
-	
+	exit
 	var mus_folder = working_directory + $"music/{filename}"
 	show_debug_message(mus_folder)
 	var handle = audio_create_stream(mus_folder)
@@ -10,6 +10,7 @@ function mus_external_load(filename = noone){
 	
 }
 function mus_external_free(handle = noone) {
+	exit
 	if handle == noone {
 		return -1
 	}
@@ -17,10 +18,11 @@ function mus_external_free(handle = noone) {
 	audio_destroy_stream(handle)
 }
 function mus_external_play(handle,vol=1,pitch=1) {
-	
+	exit
 	mus_play(handle,true,pitch,vol)
 }
 function mus_is_external(mus) {
+	exit
 	var asset = audio_sound_get_asset(mus)
 	if asset == undefined {
 		return
