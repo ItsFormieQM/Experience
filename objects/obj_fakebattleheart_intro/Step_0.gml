@@ -1,6 +1,6 @@
-if (abs((x - mychoicex)) < speed && abs((y - mychoicey)) < speed)
-{
+
+if point_distance(x,y,mychoicex,mychoicey) <= spdr {
+	speed = 0
 	x = mychoicex
 	y = mychoicey
-	speed = 0
 }

@@ -1,4 +1,13 @@
 if place_meeting(x,y,obj_mainchara) && !global.cutscene && !global.flag[Flag.On_Battle]{
+	var chancer = irandom_range(0,100)
+	//if !secret {
+	//	if chancer >= 0 {
+	//		show_debug_message($"CHANCER: {chancer}")
+	//		cmd_warp(room_dih,1)
+	//		secret = true
+			
+	//	}
+	//}
 	if !ran {
 		if snd != noone {
 			audio_stop_sound(snd)

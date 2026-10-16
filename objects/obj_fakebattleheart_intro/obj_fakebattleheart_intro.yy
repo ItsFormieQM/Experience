@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_small_heart",
-    "path":"sprites/spr_small_heart/spr_small_heart.yy",
+    "name":"spr_small_heart_battler",
+    "path":"sprites/spr_small_heart_battler/spr_small_heart_battler.yy",
   },
   "spriteMaskId":null,
   "visible":true,

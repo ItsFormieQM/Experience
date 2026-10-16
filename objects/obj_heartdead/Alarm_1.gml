@@ -1,5 +1,6 @@
-snd_play(snd_break)
+snd_play(snd_break2)
 visible = false
+instance_destroy()
 instance_create((x - 2), y, obj_heartshard)
 instance_create(x, (y + 3), obj_heartshard)
 instance_create((x + 2), (y + 6), obj_heartshard)

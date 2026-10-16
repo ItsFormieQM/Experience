@@ -2,29 +2,35 @@ var cam = view_camera[0]
 xx = camera_get_view_x(cam)
 yy = camera_get_view_y(cam)
 mode = 0
-alarm[0] = 0
-mychoicex = (xx + 20 * 2)
-mychoicey = (yy + 223 * 2) 
+var cam = view_camera[0]
+xx = camera_get_view_x(cam)
+yy = camera_get_view_y(cam)
+mode = 0
+mychoicex = 40 + xx
+mychoicey = 446 + yy
 //if (room == room_area1_2 || room == room_tundra_paproom)
 //{
 //	mychoicex = (xx + 154)
 //	mychoicey = (yy + 156)
 //}
-//if (room == room_water_undynefinal || room == room_water_undynefinal2 || room == room_water_undynefinal3 || room == room_fire1)
+//if (room == room_water_undynefinal)
 //{
-//	mychoicex = (xx + 156)
-//	mychoicey = (yy + 116)
+//	mychoicex = (xx + 154)
+//	mychoicey = (yy + 110)
 //}
-spdr = round((distance_to_point(mychoicex, mychoicey) / (17)) / 2) + 2
+spdr = (distance_to_point(mychoicex, mychoicey) / (17)) / 2
 move_towards_point(mychoicex, mychoicey, spdr)
-snd_play(snd_battlefall)
+
 //if (FL_TypeHeartTransition == HeartTransitionType.QuickBattle)
 //{
-//	x = xstart
-//	y = ystart
 //	mychoicex = (xx + 154)
 //	mychoicey = (yy + 156)
 //	spdr = (distance_to_point(mychoicex, mychoicey) / 8)
 //	move_towards_point(mychoicex, mychoicey, spdr)
-//	snd_play(snd_battlefall)
 //}
+//mychoicex = (xx + (20 * 2))
+//mychoicey = (yy + (223 * 2))
+//spdr = round((distance_to_point(mychoicex, mychoicey) / (17)) / 2) 
+//move_towards_point(mychoicex, mychoicey, spdr)
+snd_play(snd_battlefall)
+

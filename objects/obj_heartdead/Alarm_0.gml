@@ -1,3 +1,4 @@
+
 alarm[1] = 40 * 2
 snd_play(snd_break)
 sprite_index = spr_heartbreak

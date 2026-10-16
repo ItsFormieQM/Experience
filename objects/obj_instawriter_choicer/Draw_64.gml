@@ -10,6 +10,7 @@ for (var i = 1; i <= string_length(test_string); i++) {
 	var cam = view_camera[0]
 	var camw = camera_get_view_width(cam)
 	scale = (surface_get_width(application_surface) / camw)
+	
 	if char == "/" {
 		if char_1 == "E" {
 			stopit = true
@@ -57,7 +58,10 @@ for (var i = 1; i <= string_length(test_string); i++) {
 			
 		}
 	}
-	
+	if char == "_" {
+		
+		char = " "
+	}
 	draw_text_transformed(
 		_x + deviationx,
 		_y + deviationy,

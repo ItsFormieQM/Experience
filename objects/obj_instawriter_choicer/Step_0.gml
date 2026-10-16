@@ -2,6 +2,7 @@ if global.interacted {
 	instance_destroy()
 	instance_destroy(obj_drawer)
 	global.interacted = false
+	global.choice = index
 	exit
 }
 if global.interacted_x {
@@ -27,15 +28,25 @@ if stopit {
 		}
 	}
 	else if global.a_press {
-		index--
-		if index <= -1 {
-			index += 2
+		if index != lowest {
+			index--
+			if index <= -1 {
+				index += 2
+			}
+		}
+		else {
+			index++
 		}
 	}
 	else if global.d_press {
-		index++
-		if index > highest {
-			index -= 2
+		if index != lowest {
+			index++
+			if index > highest {
+				index -= 2
+			}
+		}
+		else {
+			index += 2
 		}
 	}
 	
@@ -46,8 +57,8 @@ if stopit {
 		show_debug_message(myy)
 	}
 }
-if keyboard_check_pressed(vk_anykey) {
-	show_debug_message($"STOPIT STATE: {stopit ? "True":"False"}")
-	show_debug_message(myx)
-	show_debug_message(myy)
-}
+//if keyboard_check_pressed(vk_anykey) {
+//	show_debug_message($"STOPIT STATE: {stopit ? "True":"False"}")
+//	show_debug_message(myx)
+//	show_debug_message(myy)
+//}

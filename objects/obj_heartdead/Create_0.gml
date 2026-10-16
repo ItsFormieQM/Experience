@@ -12,7 +12,10 @@ dingus = 0
 currentvol = 1
 heartcon = 0
 hearttimer = 0
+
 with obj_overworld_controller {
-	other.x = playerx
+	other.x = playerx 
 	other.y = playery
 }
+show_debug_message($"heartx: {x}")
+show_debug_message($"hearty: {y}")
