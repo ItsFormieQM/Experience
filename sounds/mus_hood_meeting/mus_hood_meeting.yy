@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"mus_hood_meeting",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":24.0,
+  "exportDir":"",
+  "name":"mus_hood_meeting",
+  "parent":{
+    "name":"Original Music i guess",
+    "path":"folders/Original Music i guess.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_hood_meeting.ogg",
+  "volume":1.0,
+}
