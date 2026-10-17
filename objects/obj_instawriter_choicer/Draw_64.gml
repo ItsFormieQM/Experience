@@ -19,6 +19,7 @@ for (var i = 1; i <= string_length(test_string); i++) {
 		}
 	}
 	if char == "^" {
+		found = false
 		if char_1 == "/" {
 			_y += string_height(char) * scale + 14
 			_x = 68

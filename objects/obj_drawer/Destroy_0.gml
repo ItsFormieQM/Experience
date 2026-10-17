@@ -20,8 +20,8 @@ if global.facechoice != noone {
 		instance_destroy(global.facechoice)
 	}
 }
-if !is_choicer {
-	global.canmove = true
+with obj_overworld_controller {
+	alarm[2] = 3
 }
 if instance_exists(obj_cutscene_controller) {
 	with obj_cutscene_controller {

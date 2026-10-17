@@ -28,22 +28,28 @@ if stopit {
 		}
 	}
 	else if global.a_press {
-		if index != lowest {
+		if index != lowest && index != highest{
 			index--
 			if index <= -1 {
 				index += 2
 			}
+		}
+		else if index == highest {
+			index -= 2
 		}
 		else {
 			index++
 		}
 	}
 	else if global.d_press {
-		if index != lowest {
+		if index != lowest && index != highest {
 			index++
 			if index > highest {
 				index -= 2
 			}
+		}
+		else if index == highest{
+			index--
 		}
 		else {
 			index += 2
@@ -52,10 +58,7 @@ if stopit {
 	
 	myx = choice_pos_map[index].x_pos
 	myy = choice_pos_map[index].y_pos
-	if keyboard_check_pressed(vk_anykey) {
-		show_debug_message(myx)
-		show_debug_message(myy)
-	}
+	
 }
 //if keyboard_check_pressed(vk_anykey) {
 //	show_debug_message($"STOPIT STATE: {stopit ? "True":"False"}")

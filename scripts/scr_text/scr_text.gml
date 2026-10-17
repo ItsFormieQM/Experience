@@ -624,16 +624,40 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 					global.yy_offset[i] = 960 / 2 + 85
 				}
 				break
-			case "goon_1":
+			
+			case "kris_house_entry_landline_call_1":
 				index = -1
-				index++
-				global.msg[index] = result[$"debug_instachoicer"]
-				
-				
+				if con == 0 {
+					index++
+					global.msg[index] = result[$$"kris_house_entry_landline_1_{index + 3}"]
+					index++
+					global.msg[index] = result[$$"kris_house_entry_landline_1_{index + 3}"]
+					index++
+					global.msg[index] = result[$$"kris_house_entry_landline_1_{index + 3}"]
+					index++
+					global.msg[index] = result[$$"kris_house_entry_landline_1_{index + 3}"]
+					index++
+					global.msg[index] = result[$$"kris_house_entry_landline_1_{index + 3}"]
+				}
+				else if con == 1 {
+					index++
+					global.msg[index] = result[$$"kris_house_entry_landline_1_{index + 8}"]
+					index++
+					global.msg[index] = result[$$"kris_house_entry_landline_1_{index + 8}"]
+					index++
+					global.msg[index] = result[$$"kris_house_entry_landline_1_{index + 8}"]
+					index++
+					global.msg[index] = result[$$"kris_house_entry_landline_1_{index + 8}"]
+					index++
+					global.msg[index] = result[$$"kris_house_entry_landline_1_{index + 8}"]
+					
+				}
+				show_debug_message(global.msg)
 				for (var i = 0; i < array_length(global.msg); i++) {
 					global.xx_offset[i] = 68
 					global.yy_offset[i] = 960 / 2 + 85
 				}
+				show_debug_message(global.xx_offset)
 				break
 			default:
 				index = 0

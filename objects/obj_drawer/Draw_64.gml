@@ -1,15 +1,17 @@
 var chars = []
-for (var i = 1; i <= string_length(test_string); i++) {
-	chars[i-1] = string_char_at(test_string,i)
+if string_length(test_string) <= 0 {
+	instance_destroy()
 }
-if chars[0] == "$" {
-	if chars[1] == "C" {
-		var instachoicer = instance_create(0,0,obj_instawriter_choicer,{test_string: other.test_string})
-		
-		visible = false
-		exit
+for (var i = 1; i <= string_length(test_string); i++) {
+	if string_char_at(test_string,i) == "$" {
+		if string_char_at(test_string,i+1) == "C" {
+			var instachoicer = instance_create(0,0,obj_instawriter_choicer,{test_string: other.test_string})
+			visible = false
+			exit
+		}
 	}
 }
+
 startsnd = asset_get_index(startsnd)
 
 var _sett = draw_get_settings()
