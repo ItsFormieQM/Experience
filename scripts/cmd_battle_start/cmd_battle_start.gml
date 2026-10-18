@@ -1,6 +1,7 @@
 function cmd_battle_start(_enemy_type = 0){
+	_enemy_type = real(_enemy_type)
 	if global.true_battle {
-		scr_truebattle_setup(_enemy_type)
+		global.battlegroup = _enemy_type
 		instance_create(0,0,obj_battleicon)
 		
 		return "oh this is emotional"

@@ -107,6 +107,7 @@
     {"name":"obj_joystick","order":38,"path":"objects/obj_joystick/obj_joystick.yy",},
     {"name":"obj_jump_tester","order":24,"path":"objects/obj_jump_tester/obj_jump_tester.yy",},
     {"name":"obj_kris_centerer","order":10,"path":"objects/obj_kris_centerer/obj_kris_centerer.yy",},
+    {"name":"obj_kris_house_landline","order":50,"path":"objects/obj_kris_house_landline/obj_kris_house_landline.yy",},
     {"name":"obj_kris_refrain","order":46,"path":"objects/obj_kris_refrain/obj_kris_refrain.yy",},
     {"name":"obj_main_menu","order":62,"path":"objects/obj_main_menu/obj_main_menu.yy",},
     {"name":"obj_mainchara_actor","order":1,"path":"objects/obj_mainchara_actor/obj_mainchara_actor.yy",},

@@ -21,5 +21,10 @@ if global.interacted {
 	
 	instance_destroy()
 }
+if !ran {
+	show_debug_message(_x)
+	show_debug_message(_x)
+	ran = true
+}
 _x = positionmap[index].xpos
 _y = positionmap[index].ypos

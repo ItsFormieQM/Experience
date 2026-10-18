@@ -159,6 +159,7 @@
     {"id":{"name":"obj_joystick","path":"objects/obj_joystick/obj_joystick.yy",},},
     {"id":{"name":"obj_jump_tester","path":"objects/obj_jump_tester/obj_jump_tester.yy",},},
     {"id":{"name":"obj_kris_centerer","path":"objects/obj_kris_centerer/obj_kris_centerer.yy",},},
+    {"id":{"name":"obj_kris_house_landline","path":"objects/obj_kris_house_landline/obj_kris_house_landline.yy",},},
     {"id":{"name":"obj_kris_refrain","path":"objects/obj_kris_refrain/obj_kris_refrain.yy",},},
     {"id":{"name":"obj_main_menu","path":"objects/obj_main_menu/obj_main_menu.yy",},},
     {"id":{"name":"obj_mainchara_actor","path":"objects/obj_mainchara_actor/obj_mainchara_actor.yy",},},

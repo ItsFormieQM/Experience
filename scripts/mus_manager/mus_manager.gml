@@ -24,3 +24,6 @@ function snd_fade(snd,frames,vol) {
 	var milliseconds = (frames / 60) * 1000
 	audio_sound_gain(snd,vol,milliseconds)
 }
+function mus_pause(mus_handle) {
+	audio_pause_sound(mus_handle)
+}

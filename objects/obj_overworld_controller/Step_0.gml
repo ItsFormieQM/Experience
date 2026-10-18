@@ -40,14 +40,16 @@ if room == room_deped_hallway_down {
 	}
 }
 if room == room_kris_house_entry {
-	if global.choice == 0 {
-		global.choice = -1
-		cmd_dialogue_play("kris_house_entry_landline_call_1",true,0)
-	}
-	else if global.choice == 1 {
-		global.choice = -1
-		cmd_dialogue_play("kris_house_entry_landline_call_1",true,1)
-	}
+	//if global.choice == 0 {
+	//	global.choice = -1
+	//	cmd_dialogue_play("kris_house_entry_landline_call_1",true,0)
+	//	subchoice = -1
+	//}
+	//else if global.choice == 1 {
+	//	global.choice = -1
+	//	subchoice = -2
+	//	cmd_dialogue_play("kris_house_entry_landline_call_1",true,1)
+	//}
 }
 if global.flag[Flag.Story_Sleeping] {
 	if !dream_init {

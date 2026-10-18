@@ -1,5 +1,5 @@
 ran = false
-
+subchoice = -1
 layer_depth("Background",60100)
 if room == global.start_room {
 	if global.flag[Flag.Story_IntroStart] {

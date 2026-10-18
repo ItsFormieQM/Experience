@@ -652,6 +652,14 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 					global.msg[index] = result[$$"kris_house_entry_landline_1_{index + 8}"]
 					
 				}
+				else if con == 3 {
+					index++
+					global.msg[index] = result[$$"kris_house_entry_landline_1_{index + 13}"]
+					index++
+					global.msg[index] = result[$$"kris_house_entry_landline_1_{index + 13}"]
+					index++
+					global.msg[index] = result[$$"kris_house_entry_landline_1_{index + 13}"]
+				}
 				show_debug_message(global.msg)
 				for (var i = 0; i < array_length(global.msg); i++) {
 					global.xx_offset[i] = 68
