@@ -108,26 +108,8 @@ if !global.flag[Flag.On_Battle] {
 		
 	}
 }
-else if !instance_exists(obj_battle_controller){
-	mov_append_tmr++
-	if buffer {
-		buffer = false
-		mov_append_tmr = 0.01
-	}
-	var delay = 1
-	if mov_append_tmr / global.deltatime >= delay {
-		array_push(movement_frames,{x_pos: x, y_pos: y, sprite: sprite_index, sprite_indice: image_index, alpha: 0.5})
-		
-		mov_append_tmr = 0
-	}
-}
-if instance_exists(obj_battle_controller) && obj_battle_controller.begin_counter_attack && !heart_show_ran {
-	heart_show = true
-	heart_show_ran = true
-	instance_create(x,y,obj_soul_battle,{},true)
-	alarm[0] = 10
-	
-}
+
+
 
 enum Actors {
 	Kris,

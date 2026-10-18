@@ -4,7 +4,8 @@ handle = noone
 halt = false
 advance = false
 stopit = false
-obj_mainchara.image_index = 0
+if instance_exists(obj_mainchara)
+	obj_mainchara.image_index = 0
 show_debug_message("instantiate drwawer")
 is_choicer = false
 buffer = true

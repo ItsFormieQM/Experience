@@ -55,3 +55,15 @@ if !scr_in_school(room) {
 else {
 	global.flag[Flag.On_School] = true
 }
+if global.prev_room == room_battle {
+	for (var i = 0; i < array_length(global.rooms); i++) {
+		if room == global.rooms[i].room_index {
+			var persistency = global.rooms[i].persistence
+			if persistency == false {
+				room_persistent = false
+			}
+			break
+		}
+	}
+	obj_mainchara.visible = true
+}

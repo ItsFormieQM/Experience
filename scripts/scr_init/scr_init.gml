@@ -1,7 +1,13 @@
 function scr_init(){
 	audio_channel_num(256)
 	randomise()
-	
+	global.rooms = []
+	var rm = room_first 
+	while rm != -1 {
+		var info = room_get_info(rm)
+		array_push(global.rooms,{room_index: rm, persistence: info.persistent})
+		rm = room_next(rm)
+	}
 	global.prev_mus = noone
 	global.text = dump_text("lang_en_ui.json")
 	global.mus_list = []

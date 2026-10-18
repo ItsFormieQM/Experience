@@ -30,7 +30,7 @@ if (clap > 2 / 2)
 	{
 		instance_create((obj_mainchara.x ), (obj_mainchara.y), obj_fakebattleheart_intro,{},true)
 		heartdraw = 0
-		obj_mainchara.depth = 100
+		obj_mainchara.visible = false
 	}
 }
 else
