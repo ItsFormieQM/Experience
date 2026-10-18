@@ -148,8 +148,9 @@ function scr_init(){
 	global.run = false
 	global.flag[Flag.On_Battle] = false
 	global.hp = []
-	global.maxhp = [90]
-	global.hp[0] = 90
+	global.maxhp = []
+	
+	global.hp[0] = 20
 	global.maxhp[0] = global.hp[0]
 	if os_type == os_windows || os_type == os_linux || os_type == os_macosx {
 		global.osflavor = PC	

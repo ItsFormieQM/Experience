@@ -45,6 +45,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_sans","order":1,"path":"fonts/fnt_sans/fnt_sans.yy",},
+    {"name":"fnt_truebattle_name","order":65,"path":"fonts/fnt_truebattle_name/fnt_truebattle_name.yy",},
     {"name":"obj_actbt_true","order":1,"path":"objects/obj_actbt_true/obj_actbt_true.yy",},
     {"name":"obj_actor_emotion_master","order":48,"path":"objects/obj_actor_emotion_master/obj_actor_emotion_master.yy",},
     {"name":"obj_actor_fader","order":57,"path":"objects/obj_actor_fader/obj_actor_fader.yy",},

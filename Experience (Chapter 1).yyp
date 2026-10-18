@@ -75,7 +75,7 @@
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"lang_en_battle.json","CopyToMask":-1,"filePath":"datafiles","name":"lang_en_battle.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"lang_en_ui.json","CopyToMask":-1,"filePath":"datafiles","name":"lang_en_ui.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"lang_en.json","CopyToMask":-1,"filePath":"datafiles/language/Cebuano","name":"lang_en.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"ceb_ui.json","CopyToMask":-1,"filePath":"datafiles/language/Cebuano","name":"ceb_ui.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"flowercore.ogg","CopyToMask":-1,"filePath":"datafiles/music","name":"flowercore.ogg","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"mus_core.ogg","CopyToMask":-1,"filePath":"datafiles/music","name":"mus_core.ogg","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
@@ -92,6 +92,7 @@
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},},
     {"id":{"name":"fnt_sans","path":"fonts/fnt_sans/fnt_sans.yy",},},
     {"id":{"name":"fnt_test","path":"fonts/fnt_test/fnt_test.yy",},},
+    {"id":{"name":"fnt_truebattle_name","path":"fonts/fnt_truebattle_name/fnt_truebattle_name.yy",},},
     {"id":{"name":"obj_actbt_true","path":"objects/obj_actbt_true/obj_actbt_true.yy",},},
     {"id":{"name":"obj_actor_emotion_master","path":"objects/obj_actor_emotion_master/obj_actor_emotion_master.yy",},},
     {"id":{"name":"obj_actor_fader","path":"objects/obj_actor_fader/obj_actor_fader.yy",},},
