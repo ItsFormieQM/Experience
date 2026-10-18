@@ -36,4 +36,26 @@ draw_text((290 + (global.maxhp[0] * 1.2)), 400, string_hash_to_newline(((hpwrite
 draw_set_colour(c_white)
 draw_set_font(use_font)
 draw_text(xx, yy, string_hash_to_newline("Kris"))
+var maxwidth = 0
+//for (i = 0; i < 3; i++) {
+//	if (global.monster[i] == true) {
+//		var name = global.monstername[i]
+		
+//		var width = (string_length(name) * 16)
+//		if (width > maxwidth)
+//			maxwidth = width
+//	}
+//}
+//var xwrite = (190 + maxwidth)
+//for (i = 0; i < 3; i++) {
+//	if (global.monster[i] == true) {
+//		draw_set_color(c_red)
+//		var lineheight = 32
+//		var y_start = 280
+		
+//		draw_rectangle(xwrite, (y_start + (i * lineheight)), (xwrite + 100), ((y_start + (i * lineheight)) + 16), false)
+//		draw_set_color(c_lime)
+//		draw_rectangle(xwrite, (y_start + (i * lineheight)), (xwrite + ((global.monsterhp[i] / global.monstermaxhp[i]) * 100)), ((y_start + (i * lineheight)) + 16), false)
+//	}
+//}
 draw_set_font(oldfnt)

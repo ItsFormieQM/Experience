@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cam_abstractions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cam_abstractions",
+  "parent":{
+    "name":"Helpers",
+    "path":"folders/Real/Scripts/Helpers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

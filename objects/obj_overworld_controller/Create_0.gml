@@ -19,3 +19,11 @@ die = function() {
 	pause(80)
 	room_goto(room_gameover)
 }
+enum Inventory_State {
+	off,
+	active_firstchoice,
+	active_secondchoice
+}
+inventory_state = Inventory_State.off
+inventory_index_first = 0
+inventory_index_second = 0

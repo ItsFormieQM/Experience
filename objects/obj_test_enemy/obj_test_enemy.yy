@@ -17,8 +17,8 @@
     "path":"folders/Real/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_master_enemy",
-    "path":"objects/obj_master_enemy/obj_master_enemy.yy",
+    "name":"obj_enemyparent",
+    "path":"objects/obj_enemyparent/obj_enemyparent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

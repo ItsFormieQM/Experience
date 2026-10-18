@@ -2,12 +2,25 @@ if keyboard_check_pressed(ord("Q")) {
 	time_source_reconfigure(time_source_global, 1, time_source_units_frames, function() {}, [], -1)
 	cmd_restart()
 }
+if global.interacted_c {
+	if inventory_state == Inventory_State.off {
+		inventory_state = Inventory_State.active_firstchoice
+		if inventory_state == Inventory_State.active_firstchoice {
+			snd_play(snd_menu_move,1.2)
+		}
+	}
+	else {
+		inventory_state = Inventory_State.off
+		global.canmove = true
+	}
+}
+if inventory_state {
+	global.canmove = false
+	if global.s_press {
+		
+	}
+}
 
-//else if keyboard_check_pressed(ord("6")) {
-//	if instance_exists(obj_mainchara) {
-//		instance_create(obj_mainchara.x - 30, obj_mainchara.y,obj_vaporized)
-//	}
-//}
 else if keyboard_check_pressed(ord("1")) && !global.flag[Flag.On_Battle] {
 	if global.canmove {
 		if room >= room_test {
