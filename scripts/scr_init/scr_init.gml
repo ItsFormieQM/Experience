@@ -14,6 +14,7 @@ function scr_init(){
 	global.skip_trueb_intro = true
 	global.drawer_info = []
 	global.chapter = string(1)
+	global.show_dialoguebox = true
 	global.start_room = room_deped_hallway_down
 	global.true_battle_battlegroup = 0
 	global.true_battle = true

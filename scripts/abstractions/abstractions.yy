@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"cam_abstractions",
+  "%Name":"abstractions",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"cam_abstractions",
+  "name":"abstractions",
   "parent":{
     "name":"Helpers",
     "path":"folders/Real/Scripts/Helpers.yy",

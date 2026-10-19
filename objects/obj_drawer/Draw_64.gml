@@ -14,7 +14,7 @@ for (var i = 1; i <= string_length(test_string); i++) {
 
 startsnd = asset_get_index(startsnd)
 
-var _sett = draw_get_settings()
+
 test_string = string_replace_all(test_string, "{c}", global.name)
 test_string = string_replace_all(test_string, "{C}", global.name)
 var last_char = string_char_at(test_string, string_length(test_string))
@@ -326,6 +326,9 @@ if timer / global.deltatime >= delay && !stop_draw {
 						break
 					case 8:
 						snd = snd_sans_talk1
+						break
+					case 9:
+						snd = snd_txtsus
 						break
 					case 999:
 						snd = noone

@@ -3,7 +3,7 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 	global.msg = []
 	global.xx_offset = []
 	global.yy_offset = []
-	
+	global.show_dialoguebox = true
 	if true {
 		var json = "lang_en_ui.json"
 		var result = global.text
@@ -558,7 +558,7 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 					global.xx_offset[i] = 68
 					global.yy_offset[i] = 960 / 2 + 85
 				}
-				//cmd_sleep(1)
+				
 				break
 				
 			case "kris_home_landline_1":
@@ -623,6 +623,18 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 					global.xx_offset[i] = 68
 					global.yy_offset[i] = 960 / 2 + 85
 				}
+				break
+			case "gameover_1":
+				index = -1
+				index++
+				global.msg[index] = result[$$"gameover_1_{index+1}"]
+				index++
+				global.msg[index] = result[$$"gameover_1_{index+1}"]
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 245
+					global.yy_offset[i] = 960 / 2 + 60
+				}
+				global.show_dialoguebox = false
 				break
 			
 			case "kris_house_entry_landline_call_1":

@@ -12,10 +12,14 @@ if (place_meeting(x,y,obj_mainchara) && !obj_mainchara.occupied) || force_run{
 		snd_play(open_sound)
 		SCR_TEXT(dialogue_type,true,_convo)
 		instance_create(0,0,obj_drawer)
-		obj_mainchara.image_index = 0
+		if instance_exists(obj_mainchara) {
+			obj_mainchara.image_index = 0
+		}
 		can_move = false
 		show_debug_message("ran???/")
-		obj_dialogue.visible = true
+		if instance_exists(obj_dialogue) && global.show_dialoguebox {
+			obj_dialogue.visible = true
+		}
 		force_run = false
 	}
 	if instance_exists(obj_drawer) {
