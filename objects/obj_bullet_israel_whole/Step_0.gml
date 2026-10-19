@@ -31,7 +31,3 @@ else if move_southwest {
 	x -= sp
 	y += sp
 }
-if x <= -100 {
-	instance_destroy()
-	
-}

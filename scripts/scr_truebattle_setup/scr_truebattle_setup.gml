@@ -12,12 +12,9 @@ function scr_truebattle_setup(type){
 		default:
 			mus_pause(global.current_mus)
 			global.true_battle_music = mus_play(mus_flowercore,true,1,1.2)
-			global.true_battle_enemies[0] = obj_testmonster // PLACEHOLDER CHILL
+			global.true_battle_enemies[0] = instance_create(216,136,obj_truebattle_enemy_froggit) // PLACEHOLDER CHILL
 			show_debug_message("so it rans")
 			break
 	}
-	for (var i = 0; i < array_length(global.true_battle_enemies); i++) {
-		var instance = instance_create(320,176,global.true_battle_enemies[i],{},true)
-		global.true_battle_enemies[i] = {_id: instance, _obj: instance.object_index}
-	}
+	
 }
