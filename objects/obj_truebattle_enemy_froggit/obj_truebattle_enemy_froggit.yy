@@ -11,7 +11,10 @@
     "name":"Experience (Chapter 1)",
     "path":"Experience (Chapter 1).yyp",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_enemyparent_true",
+    "path":"objects/obj_enemyparent_true/obj_enemyparent_true.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

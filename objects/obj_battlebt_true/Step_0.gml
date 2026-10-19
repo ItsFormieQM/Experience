@@ -25,6 +25,7 @@ if !ran {
 					y = other.y + 14
 				}
 				obj_fightbt_true.image_index = 1
+				global.command = BattleTrue_Commands.Fight
 				obj_actbt_true.image_index = 0
 				obj_itembt_true.image_index = 0
 				obj_sparebt_true.image_index = 0
@@ -38,6 +39,7 @@ if !ran {
 				}
 				obj_fightbt_true.image_index = 0
 				obj_actbt_true.image_index = 1
+				global.command = BattleTrue_Commands.Act
 				obj_itembt_true.image_index = 0
 				obj_sparebt_true.image_index = 0
 			}
@@ -51,6 +53,7 @@ if !ran {
 				obj_fightbt_true.image_index = 0
 				obj_actbt_true.image_index = 0
 				obj_itembt_true.image_index = 1
+				global.command = BattleTrue_Commands.Item
 				obj_sparebt_true.image_index =0
 			}
 			break
@@ -64,6 +67,7 @@ if !ran {
 				obj_actbt_true.image_index = 0
 				obj_itembt_true.image_index = 0
 				obj_sparebt_true.image_index = 1
+				global.command = BattleTrue_Commands.Spare
 			}
 			break
 	}

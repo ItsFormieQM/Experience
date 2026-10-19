@@ -1,4 +1,4 @@
-
+global.selected = noone
 scr_truebattle_setup(global.battlegroup)
 instance_create(0,0,obj_battlebt_true)
 obj_heart.x = x + 8
@@ -9,4 +9,6 @@ for (var i = 0; i < array_length(global.msg); i++) {
 	global.xx_offset[i] = 64
 	global.yy_offset[i] = 420
 }
-instance_create(0,0,obj_drawer)
+drawer = instance_create(0,0,obj_drawer)
+during_round = false
+global.flag[Flag.Can_DialogueFastSkip] = false

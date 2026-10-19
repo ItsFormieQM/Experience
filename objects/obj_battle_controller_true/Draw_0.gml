@@ -31,7 +31,7 @@ draw_set_color(c_yellow)
 draw_rectangle(275, 400, (275 + (global.hp[0] * 1.2)), 420,false)
 draw_set_color(c_white)
 
-hpwrite = string(global.hp[0])
+var hpwrite = string(global.hp[0])
 draw_text((290 + (global.maxhp[0] * 1.2)), 400, string_hash_to_newline(((hpwrite + " / ") + string(global.maxhp[0]))))
 draw_set_colour(c_white)
 draw_set_font(use_font)
@@ -58,4 +58,46 @@ var maxwidth = 0
 //		draw_rectangle(xwrite, (y_start + (i * lineheight)), (xwrite + ((global.monsterhp[i] / global.monstermaxhp[i]) * 100)), ((y_start + (i * lineheight)) + 16), false)
 //	}
 //}
+if global.selected == BattleTrue_Commands.Fight
+{
+	for (i = 0; i < array_length(global.true_battle_enemies); i++)
+	{
+		if (global.true_battle_enemies[i] != noone)
+		{
+			var name = global.true_battle_enemyname[i]
+			//if (global.language == "ja")
+			//{
+			//	var width = 0
+			//	for (var j = 1; j <= strlen(name); j++)
+			//	{
+			//		var ch = ord(string_char_at(name, j))
+			//		if (ch == 32 || ch >= 65377)
+			//			width += 13
+			//		else if (ch < 8192)
+			//			width += 16
+			//		else
+			//			width += 26
+			//	}
+			//}
+			//else
+			var width = string_length(name) * 16
+			if (width > maxwidth)
+				maxwidth = width
+		}
+	}
+	var xwrite = (190 + maxwidth)
+	for (i = 0; i < array_length(global.true_battle_enemies); i++)
+	{
+		if (global.true_battle_enemyname[i] != noone)
+		{
+			draw_set_color(c_red)
+			var lineheight = 32
+			var y_start = 280
+			
+			draw_rectangle(xwrite, (y_start + (i * lineheight)), (xwrite + 100), ((y_start + (i * lineheight)) + 16), false)
+			draw_set_color(c_lime)
+			draw_rectangle(xwrite, (y_start + (i * lineheight)), (xwrite + ((global.true_battle_enemyhp[i]._hp / global.true_battle_enemyhp[i]._maxhp) * 100)), ((y_start + (i * lineheight)) + 16), false)
+		}
+	}
+}
 draw_set_font(oldfnt)

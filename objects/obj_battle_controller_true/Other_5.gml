@@ -1,0 +1,1 @@
+global.flag[Flag.Can_DialogueFastSkip] = true

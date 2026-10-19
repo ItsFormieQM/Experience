@@ -1,5 +1,18 @@
 function scr_truebattle_setup(type){
 	global.true_battle_enemies = []
+	global.true_battle_enemyhp = []
+	global.true_battle_enemyname = []
+	for (var i = 0; i < 3; i++) {
+		global.true_battle_enemies[i] = noone
+		global.true_battle_enemyname[i] = noone
+	}
+	enum BattleTrue_Commands {
+		Fight,
+		Act,
+		Item,
+		Spare
+	}
+	global.command = BattleTrue_Commands.Fight
 	global.true_battle_music = noone
 	type = real(type)
 	switch type {

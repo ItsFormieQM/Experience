@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemyparent",
+  "%Name":"obj_enemyparent_true",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_enemyparent",
+  "name":"obj_enemyparent_true",
   "overriddenProperties":[],
   "parent":{
     "name":"Experience (Chapter 1)",
