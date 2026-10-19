@@ -1,5 +1,5 @@
 draw_self()
-
+var scale = 1
 for (var i = 1; i <= string_length(test_string); i++) {
 	char_1 = string_char_at(test_string,i)
 	char_2 = string_char_at(test_string,i+1)
@@ -23,11 +23,18 @@ for (var i = 1; i <= string_length(test_string); i++) {
 							)
 					switch cmp {
 						case 0:
-							
+							font = fnt_main
+							break
+						default:
+							break
 					}
 					i += 4
 					continue					
 				}
 		}
 	}
+	draw_text_transformed_colour(_x,_y,char_1,scale,scale,0,colour,colour,colour,colour,alpha)
+	_x += string_width(char_1) * scale
 }
+_x = xstart
+_y = ystart
