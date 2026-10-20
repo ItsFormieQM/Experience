@@ -97,6 +97,7 @@
     {"name":"obj_follow_system","order":33,"path":"objects/obj_follow_system/obj_follow_system.yy",},
     {"name":"obj_frisk_actor","order":60,"path":"objects/obj_frisk_actor/obj_frisk_actor.yy",},
     {"name":"obj_gameover","order":38,"path":"objects/obj_gameover/obj_gameover.yy",},
+    {"name":"obj_general_marker","order":87,"path":"objects/obj_general_marker/obj_general_marker.yy",},
     {"name":"obj_heart_appear","order":6,"path":"objects/obj_heart_appear/obj_heart_appear.yy",},
     {"name":"obj_heart","order":18,"path":"objects/obj_heart/obj_heart.yy",},
     {"name":"obj_heartdead","order":41,"path":"objects/obj_heartdead/obj_heartdead.yy",},

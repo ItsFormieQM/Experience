@@ -149,6 +149,7 @@
     {"id":{"name":"obj_follow_system","path":"objects/obj_follow_system/obj_follow_system.yy",},},
     {"id":{"name":"obj_frisk_actor","path":"objects/obj_frisk_actor/obj_frisk_actor.yy",},},
     {"id":{"name":"obj_gameover","path":"objects/obj_gameover/obj_gameover.yy",},},
+    {"id":{"name":"obj_general_marker","path":"objects/obj_general_marker/obj_general_marker.yy",},},
     {"id":{"name":"obj_heart_appear","path":"objects/obj_heart_appear/obj_heart_appear.yy",},},
     {"id":{"name":"obj_heart","path":"objects/obj_heart/obj_heart.yy",},},
     {"id":{"name":"obj_heartdead","path":"objects/obj_heartdead/obj_heartdead.yy",},},

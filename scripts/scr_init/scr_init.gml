@@ -72,7 +72,8 @@ function scr_init(){
 		Story_Weather, // 21
 		Game_WeatherTimer, // 22
 		Story_IntroKrisHouse_Cutscene, // 23
-		Player_Running,
+		Player_Running, //24
+		Story_RefusedSOUL, // 25
 		COUNT,
 	}
 
@@ -102,6 +103,7 @@ function scr_init(){
 		"Game_WeatherTimer",
 		"Story_IntroKrisHouse_Cutscene",
 		"Player_Running",
+		"Story_RefusedSOUL",
 	]
 	#region set flags to default
 	global.flag = array_create(Flag.COUNT,false)
@@ -118,6 +120,7 @@ function scr_init(){
 	global.flag[Flag.Story_Route] = Route.Normal
 	global.flag[Flag.Story_Weather] = Weather.Sunny
 	global.flag[Flag.Story_IntroKrisHouse_Cutscene] = true
+	global.flag[Flag.Story_RefusedSOUL] = 0
 	
 	#endregion
 	// Create this shit first

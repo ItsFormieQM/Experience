@@ -67,3 +67,9 @@ if global.prev_room == room_battle {
 	}
 	obj_mainchara.visible = true
 }
+if global.flag[Flag.Story_RefusedSOUL] >= 1 {
+	if global.prev_room == room_gameover {
+		instance_destroy(refused_state_markerinst)
+		room_persistent = false
+	}
+}

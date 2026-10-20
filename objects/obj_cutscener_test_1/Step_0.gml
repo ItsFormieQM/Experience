@@ -45,7 +45,7 @@ if instance_exists(kris_actor) && ran {
 		//cutscene_actor_show_emotion(kris_actor,Actor_Emotion.ExclamationMark,120)	
 		var pink_actor = cutscene_get_actor_instance(Actors.Pink)
 		
-		cutscene_follow_camera(camloc[0],10)
+		cutscene_follow_camera(camloc[0],2)
 		
 		
 		var alarm0 = time_source_create(time_source_game,1,time_source_units_frames,function() {
@@ -96,7 +96,7 @@ if instance_exists(kris_actor) && ran {
 		time_source_start(alarm2)
 		time_source_start(alarm3)
 		time_source_start(alarm3_1)
-		
+		executed = true
 		
 	}
 	

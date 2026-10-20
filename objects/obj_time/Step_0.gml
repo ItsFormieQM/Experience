@@ -9,4 +9,7 @@ if global.interacted_f {
 	inst = choose(gooner1,gooner2,gooner3)
 	inst.print("SONION")
 }
+if keyboard_check_pressed(vk_numpad1) {
+	cmd_kill()
+}
 window_set_fullscreen(global.is_fs)

@@ -8,6 +8,7 @@ handle = noone
 playerx = 320
 playery = 240
 subchoice = -1
+refused_state_markerinst = noone
 die = function() {
 	var cam = view_camera[0]
 	var camx = camera_get_view_x(cam)
@@ -16,7 +17,14 @@ die = function() {
 	snd_play(snd_damage,1.2)
 	playerx = obj_mainchara.x - camx
 	playery = obj_mainchara.y - camy
-	pause(80)
+	var delay = 100
+	if global.flag[Flag.Story_RefusedSOUL] >= 1 {
+		delay = irandom_range(45,80)
+		room_persistent = true
+		refused_state_markerinst = instance_create(obj_mainchara.x,obj_mainchara.y,obj_warp_marker,{slot: -666})
+	}
+	
+	pause(delay)
 	room_goto(room_gameover)
 }
 enum Inventory_State {

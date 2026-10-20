@@ -9,10 +9,11 @@ if room != room_dih {
 	for (var i = 0; i < array_length(global.warp_list); i++) {
 		if global.warp_list[i].slot == slot {
 			reference_pointer = global.warp_list[i].ref_pointer
+			break
 		}
 	}
-	var target_center_x = (reference_pointer.bbox_left + reference_pointer.bbox_right) / 2
-	var target_center_y = (reference_pointer.bbox_top + reference_pointer.bbox_bottom) / 2
+	var target_center_x = reference_pointer.x
+	var target_center_y = reference_pointer.y
 	obj_mainchara.x = target_center_x
 	obj_mainchara.y = target_center_y
 	instance_destroy()
