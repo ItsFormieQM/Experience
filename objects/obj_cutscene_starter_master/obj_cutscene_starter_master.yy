@@ -14,7 +14,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
-    "path":"folders/Real/Objects.yy",
+    "path":"folders/Real/Cutscenes/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

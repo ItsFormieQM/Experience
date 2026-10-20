@@ -65,7 +65,9 @@ if global.prev_room == room_battle {
 			break
 		}
 	}
-	obj_mainchara.visible = true
+	if instance_exists(obj_mainchara) {
+		obj_mainchara.visible = true
+	}
 }
 if global.flag[Flag.Story_RefusedSOUL] >= 1 {
 	if global.prev_room == room_gameover {

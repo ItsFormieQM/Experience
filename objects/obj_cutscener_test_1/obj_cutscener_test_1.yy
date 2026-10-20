@@ -12,8 +12,8 @@
   "name":"obj_cutscener_test_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"Objects",
+    "path":"folders/Real/Cutscenes/Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_cutscene_starter_master",

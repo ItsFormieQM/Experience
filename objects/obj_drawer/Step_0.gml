@@ -5,7 +5,7 @@ if !global.flag[Flag.On_Battle] {
 	if is_choicer {
 		exit
 	}
-	if !global.dialogue_autoskip && !global.flag[Flag.On_RealBattle]{
+	if !global.dialogue_autoskip {
 		if global.interacted && skippable{
 		
 			playtxt = false

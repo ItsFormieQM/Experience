@@ -111,10 +111,3 @@ if !global.flag[Flag.On_Battle] {
 
 
 
-enum Actors {
-	Kris,
-	Frisk,
-	Pink,
-	Susie,
-	Noelle,
-}

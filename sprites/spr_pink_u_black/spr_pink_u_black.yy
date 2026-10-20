@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Pink",
-    "path":"folders/Real/Gooner Files/Pink.yy",
+    "name":"Movement",
+    "path":"folders/Real/Gooner Files/Pink/Movement.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

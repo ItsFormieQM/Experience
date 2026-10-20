@@ -1,6 +1,7 @@
-with obj_mainchara {
-	sprite_index = spr_kris_fall
-}
+mus_fade(0,30)
+//with obj_mainchara {
+//	sprite_index = spr_kris_fall
+//}
 arrived = false
 global.flag[Flag.On_Battle] = true
 obj_mainchara.noclip = true
@@ -12,4 +13,8 @@ with obj_mainchara {
 	show_debug_message(spdr)
 	move_towards_point(tx,ty,spdr)
 }
+hero_aura_arrays = [
+	
+]
+
 	

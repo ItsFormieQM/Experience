@@ -33,7 +33,7 @@ cutscene_start_dialogue = function(type,convo=0) {
 cutscene_walk = function(instance, dir, sp, delay) {
 	delay = abs(delay)
 	with instance {
-		cutscene_walk(dir,sp,delay)
+		self.cutscene_walk(dir,sp,delay)
 	}
 }
 ///@desc Moves the camera to a specified location.
@@ -119,7 +119,5 @@ cutscene_actor_reset_sprite = function(actor_handle) {
 		cutscene_reset_spr()
 	}
 }
-enum Actor_Emotion {
-	ExclamationMark
-}
+// duplicate code kept so shit doesnt break hopefully
 #endregion

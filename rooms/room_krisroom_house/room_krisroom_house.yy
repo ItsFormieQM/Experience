@@ -73,8 +73,8 @@
   ],
   "name":"room_krisroom_house",
   "parent":{
-    "name":"Kris",
-    "path":"folders/Real/Rooms/HOUSE/Kris.yy",
+    "name":"Experience (Chapter 1)",
+    "path":"Experience (Chapter 1).yyp",
   },
   "parentRoom":null,
   "physicsSettings":{

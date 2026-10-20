@@ -73,7 +73,8 @@ function scr_init(){
 		Game_WeatherTimer, // 22
 		Story_IntroKrisHouse_Cutscene, // 23
 		Player_Running, //24
-		Story_RefusedSOUL, // 25
+		Story_RefusedSOUL,// 25
+		Story_DeathCount, // 26
 		COUNT,
 	}
 
@@ -104,6 +105,7 @@ function scr_init(){
 		"Story_IntroKrisHouse_Cutscene",
 		"Player_Running",
 		"Story_RefusedSOUL",
+		"Story_DeathCount"
 	]
 	#region set flags to default
 	global.flag = array_create(Flag.COUNT,false)
@@ -121,6 +123,7 @@ function scr_init(){
 	global.flag[Flag.Story_Weather] = Weather.Sunny
 	global.flag[Flag.Story_IntroKrisHouse_Cutscene] = true
 	global.flag[Flag.Story_RefusedSOUL] = 0
+	global.flag[Flag.Story_DeathCount] = 0
 	
 	#endregion
 	// Create this shit first
@@ -219,3 +222,12 @@ function scr_init(){
 	show_debug_message("DEFAULT SAVE FOLDER: " + filename)
 	
 }
+exception_unhandled_handler(function(ex) {
+    show_debug_message("================== LOGIC ERROR ===================")
+    show_debug_message(ex.longMessage)
+    show_debug_message("==================================================")
+	cmd_save_cmd_history()
+    show_message(ex.longMessage)
+	game_end(-111)
+    return 1
+})

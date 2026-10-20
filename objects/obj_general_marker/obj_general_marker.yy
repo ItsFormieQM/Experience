@@ -32,5 +32,5 @@
     "path":"sprites/spr_mus_manager_centered/spr_mus_manager_centered.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

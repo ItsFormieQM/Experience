@@ -41,18 +41,18 @@ if instance_exists(kris_actor) && ran {
 		
 		
 		
-		
+		mus_play(mus_ruins)
 		//cutscene_actor_show_emotion(kris_actor,Actor_Emotion.ExclamationMark,120)	
 		var pink_actor = cutscene_get_actor_instance(Actors.Pink)
 		
-		cutscene_follow_camera(camloc[0],2)
 		
 		
+		cutscene_actor_set_pos(kris_actor,0,-450,true)
 		var alarm0 = time_source_create(time_source_game,1,time_source_units_frames,function() {
 			var kris_actor = cutscene_get_actor_instance(Actors.Kris)
 			var pink_actor = cutscene_get_actor_instance(Actors.Pink)
-			cutscene_actor_set_visibility(kris_actor,false)
-			cutscene_actor_set_sprite(pink_actor,spr_pink_suprised,0)
+			//cutscene_actor_set_visibility(kris_actor,false)
+			//cutscene_actor_set_sprite(pink_actor,spr_pink_suprised,0)
 			cutscene_walk(pink_actor,Left,10,10)
 			
 		})
@@ -61,28 +61,37 @@ if instance_exists(kris_actor) && ran {
 			var pink_actor = cutscene_get_actor_instance(Actors.Pink)
 			cutscene_actor_set_direction(pink_actor,Right)
 			cutscene_actor_reset_sprite(pink_actor)
-			
+			cutscene_actor_show_emotion(pink_actor,Actor_Emotion.Thinking,120)
+			cutscene_actor_walk(kris_actor,Down,4,110)
 			
 		
 			
 		})
-		var alarm2 = time_source_create(time_source_game,121 + 120*2,time_source_units_frames,function() {
+		var alarm2 = time_source_create(time_source_game,110 + 60 + 60*1,time_source_units_frames,function() {
 			var kris_actor = cutscene_get_actor_instance(Actors.Kris)
-			
-			
-			
+			cutscene_actor_set_direction(kris_actor,Left)
 			
 		})
-		var alarm3_1 = time_source_create(time_source_game,120 + 120*3,time_source_units_frames,function() {
+		var alarm3_1 = time_source_create(time_source_game,110 + 60*2 + 60*1,time_source_units_frames,function() {
+			var pink_actor = cutscene_get_actor_instance(Actors.Pink)
+			var kris_actor = cutscene_get_actor_instance(Actors.Kris)
 			
+			cutscene_walk(pink_actor,Right,3,47)
 			
 			
 		})
 		
-		var alarm3 = time_source_create(time_source_game,121 + 120*3,time_source_units_frames,function() {
+		var alarm3 = time_source_create(time_source_game,110 + 60*3+55,time_source_units_frames,function() {
 			var kris_actor = cutscene_get_actor_instance(Actors.Kris)
+			var pink_actor = cutscene_get_actor_instance(Actors.Pink)
+			cutscene_actor_set_sprite(pink_actor,spr_pink_kiss_normal,1,-999)
 			
-			
+			var kissheart = cutscene_create_object_marker(pink_actor.x + 40, pink_actor.y - 30)
+			with kissheart {
+				sprite_index = spr_heart_kiss
+				vspeed = -3
+				friction = 0.2
+			}
 			
 			
 		})

@@ -15,16 +15,26 @@ die = function() {
 	var camy = camera_get_view_y(cam)
 	audio_stop_all()
 	snd_play(snd_damage,1.2)
-	playerx = obj_mainchara.x - camx
-	playery = obj_mainchara.y - camy
+	
+	var dc = global.flag[Flag.Story_DeathCount]
+	global.flag[Flag.Story_DeathCount]++
+	if room != room_battle {
+		playerx = obj_mainchara.x - camx
+		playery = obj_mainchara.y - camy
+	}
+	else {
+		playerx = obj_heart.x - camx
+		playery = obj_heart.y - camy
+	}
 	var delay = 100
 	if global.flag[Flag.Story_RefusedSOUL] >= 1 {
-		delay = irandom_range(45,80)
+		delay = clamp(delay,10,irandom_range(45,80) - dc)
 		room_persistent = true
 		refused_state_markerinst = instance_create(obj_mainchara.x,obj_mainchara.y,obj_warp_marker,{slot: -666})
 	}
 	
 	pause(delay)
+	
 	room_goto(room_gameover)
 }
 enum Inventory_State {
@@ -32,6 +42,7 @@ enum Inventory_State {
 	active_firstchoice,
 	active_secondchoice
 }
+depth = layer_get_depth("TECHNICAL")
 inventory_state = Inventory_State.off
 inventory_index_first = 0
 inventory_index_second = 0

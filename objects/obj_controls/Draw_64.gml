@@ -1,9 +1,4 @@
-//if global.osflavor == Mobile {
-//	if !instance_exists(obj_joystick) {
-//		instance_create(0,0,obj_joystick_border)
-//		instance_create_depth(0,0,-1,obj_joystick)
-//	}
-//}
+
 if global.osflavor == PC || os_type == os_gxgames{
 	global.w_held = keyboard_check(ord(global.w)) || keyboard_check(vk_up)
 	global.w_press = keyboard_check_pressed(ord(global.w)) || keyboard_check_pressed(vk_up)

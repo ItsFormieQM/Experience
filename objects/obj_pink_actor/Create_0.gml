@@ -12,6 +12,7 @@ downspr = spr_pink_d
 leftspr = spr_pink_l
 rightspr = spr_pink_r
 realobject = noone
+kissing = false
 sp = 2.5
 image_speed = 0
 dir = 0
@@ -91,6 +92,9 @@ rgbed = false
 rgb_combined = c_white
 cutscene_set_rgb = function(r=0,g=0,b=0){
 	rgb_combined = make_colour_rgb(r,g,b)
+}
+kiss = function() {
+	kissing = true
 }
 sprite_index = downspr
 
