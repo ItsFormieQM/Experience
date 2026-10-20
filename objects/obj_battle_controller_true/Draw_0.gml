@@ -24,15 +24,15 @@ draw_set_color(c_white)
 var namewidth = string_width(string_hash_to_newline("Kris"))
 
 draw_text((xx + namewidth), 400, string_hash_to_newline(("   LV " + string(global.lv))))
-
+var hpbarscale = 0.5
 draw_set_color(c_red)
-draw_rectangle(275, 400, (275 + (global.maxhp[0] * 1.2)), 420,false)
+draw_rectangle(275, 400, (275 + (global.maxhp[0] * hpbarscale)), 420,false)
 draw_set_color(c_yellow)
-draw_rectangle(275, 400, (275 + (global.hp[0] * 1.2)), 420,false)
+draw_rectangle(275, 400, (275 + (global.hp[0] * hpbarscale)), 420,false)
 draw_set_color(c_white)
 
 var hpwrite = string(global.hp[0])
-draw_text((290 + (global.maxhp[0] * 1.2)), 400, string_hash_to_newline(((hpwrite + " / ") + string(global.maxhp[0]))))
+draw_text((290 + (global.maxhp[0] * hpbarscale)), 400, string_hash_to_newline(((hpwrite + " / ") + string(global.maxhp[0]))))
 draw_set_colour(c_white)
 draw_set_font(use_font)
 draw_text(xx, yy, string_hash_to_newline("Kris"))

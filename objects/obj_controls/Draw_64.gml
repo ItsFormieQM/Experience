@@ -4,7 +4,7 @@
 //		instance_create_depth(0,0,-1,obj_joystick)
 //	}
 //}
-if global.osflavor == PC {
+if global.osflavor == PC || os_type == os_gxgames{
 	global.w_held = keyboard_check(ord(global.w)) || keyboard_check(vk_up)
 	global.w_press = keyboard_check_pressed(ord(global.w)) || keyboard_check_pressed(vk_up)
 	global.a_held = keyboard_check(ord(global.a)) || keyboard_check(vk_left)

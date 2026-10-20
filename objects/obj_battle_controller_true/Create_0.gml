@@ -12,3 +12,4 @@ for (var i = 0; i < array_length(global.msg); i++) {
 drawer = instance_create(0,0,obj_drawer)
 during_round = false
 global.flag[Flag.Can_DialogueFastSkip] = false
+mainchara_doing = false

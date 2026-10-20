@@ -1,18 +1,20 @@
-if global.d_press {
-	bt++
-	ran = false
-	if bt >= 4 {
-		bt = 0
+if global.selected == noone {
+	if global.d_press {
+		bt++
+		ran = false
+		if bt >= 4 {
+			bt = 0
+		}
+		snd_play(snd_menu_move,1)
 	}
-	snd_play(snd_menu_move,1)
-}
-else if global.a_press {
-	ran = false
-	bt-- 
-	if bt <= -1 {
-		bt = 3
+	else if global.a_press {
+		ran = false
+		bt-- 
+		if bt <= -1 {
+			bt = 3
+		}
+		snd_play(snd_menu_move,1)
 	}
-	snd_play(snd_menu_move,1)
 }
 if !ran {
 	ran = true

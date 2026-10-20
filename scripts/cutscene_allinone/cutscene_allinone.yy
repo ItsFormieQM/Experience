@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"cutscene_actor_set_direction_sprites",
+  "%Name":"cutscene_allinone",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"cutscene_actor_set_direction_sprites",
+  "name":"cutscene_allinone",
   "parent":{
     "name":"Manipulation",
     "path":"folders/Real/Cutscenes/Scripts/Manipulation.yy",

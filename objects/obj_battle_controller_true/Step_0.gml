@@ -1,4 +1,9 @@
-if global.interacted {
+if global.interacted && !mainchara_doing {
+	if global.selected == BattleTrue_Commands.Fight {
+		fighter = instance_create(320,320,obj_truebattle_attacker,{},true)
+		mainchara_doing = true
+		instance_destroy(instadrawer)
+	}
 	if global.command == BattleTrue_Commands.Fight {
 		snd_play(snd_select,1.2)
 		global.selected = BattleTrue_Commands.Fight
@@ -13,8 +18,9 @@ if global.interacted {
 		show_debug_message(global.true_battle_enemies)
 		
 	}
+	
 }
-else if global.interacted_x && !during_round {
+else if global.interacted_x && !during_round && !mainchara_doing {
 	if global.selected != noone {
 		global.msg = []
 		global.msg[0] = "#t001^002* Test blocks the way!/E"

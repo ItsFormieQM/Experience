@@ -151,7 +151,7 @@ function scr_init(){
 	global.hp = []
 	global.maxhp = []
 	
-	global.hp[0] = 20
+	global.hp[0] = 100
 	global.maxhp[0] = global.hp[0]
 	if os_type == os_windows || os_type == os_linux || os_type == os_macosx {
 		global.osflavor = PC	
