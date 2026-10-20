@@ -49,7 +49,7 @@ function cutscene_unfollow_camera() {
 }
 ///@desc Sets the specified actor to the specified direction.
 ///@param {Id.Instance} actor_handle The instance ID for the specific actor.
-///@param {String} Use the direction macros! The direction to set at.
+///@param {String} dir Use the direction macros! The direction to set at.
 function cutscene_actor_set_direction(actor_handle,dir) {
 	with actor_handle {
 		self.dir = dir
@@ -185,4 +185,8 @@ function cutscene_fade(_incrementor, _reversed){
 	else {
 		show_debug_message("false")
 	}
+}
+function cutscene_create_camera_marker(_x = x,_y = y) {
+	var handle = instance_create(_x,_y,obj_cutscene_camera_marker)
+	return handle
 }

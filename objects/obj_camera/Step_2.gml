@@ -1,3 +1,5 @@
+x = floor(x)
+y = floor(y)
 if !global.cutscene && !global.flag[Flag.On_Battle] {
 	x = obj_mainchara.x - (sprite_width / 2)
 	y = obj_mainchara.y - (sprite_height / 2)
@@ -10,7 +12,7 @@ if !global.cutscene && !global.flag[Flag.On_Battle] {
 	var ty = y - (cam_h / 2)
 	tx = clamp(tx,0,room_width - cam_w)
 	ty = clamp(ty,0,room_height - cam_h)
-	camera_set_view_pos(cam,tx,ty)
+	camera_set_view_pos(cam,floor(tx),floor(ty))
 	
 }
 if following && !is_undefined(smoothness){

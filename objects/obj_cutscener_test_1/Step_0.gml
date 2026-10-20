@@ -1,4 +1,5 @@
 var kris_actor = cutscene_get_actor_instance(Actors.Kris)
+
 if place_meeting(x,y,obj_mainchara) && !ran {
 	
 	ran = true
@@ -11,7 +12,7 @@ if spawned {
 	if !instance_exists(obj_cutscene_controller) {
 		master_cutscener = instance_create(0,0,obj_cutscene_controller)
 		instance_create(0,0,obj_dialogue)
-		mus_play(mus_festival,true,1)
+ 
 		
 		//global.msg = []
 		//global.msg[0] = "#t001^002#fnt001^A* Player, what the actual fuck^/  are you making me do.../E"
@@ -29,31 +30,37 @@ if instance_exists(kris_actor) && ran {
 	
 	if !executed {
 		mus_fade(0,1)
-		cutscene_actor_create(obj_pink_actor,kris_actor.x - 90,kris_actor.y)
+		camloc = []
+		camloc[0] = cutscene_create_camera_marker(floor(kris_actor.x),floor(kris_actor.y+5000))
+		cutscene_actor_create(obj_pink_actor,kris_actor.x - 90,kris_actor.y - 20)
 		alarms = []
 		dir = Left
 		sp = 2
 		
 		obj_mainchara.dir = dir
 		
-		executed = true
+		
 		
 		
 		//cutscene_actor_show_emotion(kris_actor,Actor_Emotion.ExclamationMark,120)	
+		var pink_actor = cutscene_get_actor_instance(Actors.Pink)
+		
+		cutscene_follow_camera(camloc[0],10)
 		
 		
-		cutscene_follow_camera(kris_actor,10)
-		
-		
-		var alarm0 = time_source_create(time_source_game,121,time_source_units_frames,function() {
-		var kris_actor = cutscene_get_actor_instance(Actors.Kris)
-			
+		var alarm0 = time_source_create(time_source_game,1,time_source_units_frames,function() {
+			var kris_actor = cutscene_get_actor_instance(Actors.Kris)
+			var pink_actor = cutscene_get_actor_instance(Actors.Pink)
+			cutscene_actor_set_visibility(kris_actor,false)
+			cutscene_actor_set_sprite(pink_actor,spr_pink_suprised,0)
+			cutscene_walk(pink_actor,Left,10,10)
 			
 		})
-		var alarm1 = time_source_create(time_source_game,121 + 120,time_source_units_frames,function() {
+		var alarm1 = time_source_create(time_source_game,60,time_source_units_frames,function() {
 			var kris_actor = cutscene_get_actor_instance(Actors.Kris)
-			
-	
+			var pink_actor = cutscene_get_actor_instance(Actors.Pink)
+			cutscene_actor_set_direction(pink_actor,Right)
+			cutscene_actor_reset_sprite(pink_actor)
 			
 			
 		
