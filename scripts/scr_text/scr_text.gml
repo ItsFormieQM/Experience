@@ -636,7 +636,16 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 				}
 				global.show_dialoguebox = false
 				break
-			
+			case "xslash_test_1":
+				index = -1
+				index++
+				global.msg[index] = result[$$"xslash_act_1_kris"]
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}
+				
+				break
 			case "kris_house_entry_landline_call_1":
 				index = -1
 				if con == 0 {

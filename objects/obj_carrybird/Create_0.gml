@@ -11,3 +11,4 @@ _ogx = x
 _ogy = y
 timer = 0
 scr_depth()
+arrivedtoogpos = false

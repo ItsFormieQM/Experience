@@ -43,7 +43,7 @@ if !ran {
 		var _x = obj_mainchara.x - 12
 		var _y = obj_mainchara.y - 70
 		move_towards_point(_x,_y,sp)
-		if distance_to_point(_x,_y) <= sp {
+		if point_distance(x,y,_x,_y) <= sp {
 			sp = 0
 			alarm[2] = 30
 			alarm[1] = 160 + 30
@@ -59,7 +59,7 @@ if moveup {
 if movesomewhere {
 	if dir == Left {
 		sp = 2
-		x -= sp
+		x += sp
 		obj_mainchara.x = (x + 12) + random_range(-0.5,0.5)
 		obj_mainchara.y = (y + 70) + random_range(-3,3)
 	}
@@ -73,15 +73,17 @@ if timer >= 60 * 22 {
 	var _x = _ogx
 	var _y = _ogy
 	move_towards_point(_x,_y,sp)
-	if distance_to_point(_x,_y) <= sp {
+	arrivedtoogpos = true
+	
+}
+if arrivedtoogpos {
+	if point_distance(x,y,xstart,ystart) <= sp {
 		sp = 0
-		x = _x
-		y = _y
+		x = xstart
+		y = ystart
 		timer = 0
-	}
-	if timer == 0 {
-		sp = 0
-		move_towards_point(_x,_y,sp)
+		speed = 0
+		arrivedtoogpos = false
 	}
 }
 if movedown {

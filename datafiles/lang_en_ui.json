@@ -115,4 +115,5 @@
 	"kris_house_hallway_plant_1_2":"#t000^000#fnt001^002* It looks like it's about to^/  bloom into 5 pieces of^/  pretty fruits!/E",
 	"gameover_1_1":"#t009^000#fnt001^005Kris this isn't your fate.../E",
 	"gameover_1_2":"#t009^000#fnt001^005Kris, ^020^005get up!/E",
+	"xslash_act_1_kris":"#t000^000#fnt001^002* Kris used X-Slash.^/^020^002* The enemy's ATTACK went up^/  greatly!/E"
 }

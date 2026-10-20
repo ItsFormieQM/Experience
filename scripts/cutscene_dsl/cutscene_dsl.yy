@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"cutscene_allinone",
+  "%Name":"cutscene_dsl",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"cutscene_allinone",
+  "name":"cutscene_dsl",
   "parent":{
     "name":"Manipulation",
     "path":"folders/Real/Cutscenes/Scripts/Manipulation.yy",
