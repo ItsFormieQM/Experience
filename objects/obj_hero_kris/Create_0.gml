@@ -1,0 +1,1 @@
+sprite_index = obj_mainchara.sprite_index

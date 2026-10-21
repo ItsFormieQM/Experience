@@ -103,6 +103,7 @@
     {"name":"obj_heart","order":17,"path":"objects/obj_heart/obj_heart.yy",},
     {"name":"obj_heartdead","order":44,"path":"objects/obj_heartdead/obj_heartdead.yy",},
     {"name":"obj_heartshard","order":47,"path":"objects/obj_heartshard/obj_heartshard.yy",},
+    {"name":"obj_hero_kris","order":97,"path":"objects/obj_hero_kris/obj_hero_kris.yy",},
     {"name":"obj_hp_bar","order":59,"path":"objects/obj_hp_bar/obj_hp_bar.yy",},
     {"name":"obj_instawriter_choicer","order":28,"path":"objects/obj_instawriter_choicer/obj_instawriter_choicer.yy",},
     {"name":"obj_instawriter","order":80,"path":"objects/obj_instawriter/obj_instawriter.yy",},

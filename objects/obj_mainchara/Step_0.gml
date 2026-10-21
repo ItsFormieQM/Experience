@@ -101,11 +101,6 @@ if !global.flag[Flag.On_Battle] {
 		if dir == Left {
 			sprite_index = spr_mainchara_l
 		}
-		
-		
-		
-		
-		
 	}
 }
 

@@ -2,7 +2,7 @@
 with obj_mainchara {
 	
 	if point_distance(x,y,tx,ty) <= spdr && !other.arrived{
-		other.visible = false
+		other.stop_aura = true
 		speed = 0
 		image_index = 0
 		sprite_index = spr_kris_battle_start
@@ -15,9 +15,14 @@ with obj_mainchara {
 		snd_play(snd_impact,1.2)
 		x = tx
 		y = ty
-		with other {
-			instance_destroy()
-		}
+		
+	}
+	
+	
+}
+if arrived {
+	if array_length(hero_aura_arrays) <= 0 {
+		instance_destroy()
 	}
 	
 }

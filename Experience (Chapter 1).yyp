@@ -158,6 +158,7 @@
     {"id":{"name":"obj_heart","path":"objects/obj_heart/obj_heart.yy",},},
     {"id":{"name":"obj_heartdead","path":"objects/obj_heartdead/obj_heartdead.yy",},},
     {"id":{"name":"obj_heartshard","path":"objects/obj_heartshard/obj_heartshard.yy",},},
+    {"id":{"name":"obj_hero_kris","path":"objects/obj_hero_kris/obj_hero_kris.yy",},},
     {"id":{"name":"obj_hp_bar","path":"objects/obj_hp_bar/obj_hp_bar.yy",},},
     {"id":{"name":"obj_instawriter_choicer","path":"objects/obj_instawriter_choicer/obj_instawriter_choicer.yy",},},
     {"id":{"name":"obj_instawriter","path":"objects/obj_instawriter/obj_instawriter.yy",},},
