@@ -1,1 +1,1 @@
-sprite_index = obj_mainchara.sprite_index
+sprite_index = spr_mainchara_r_uc

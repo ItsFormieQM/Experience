@@ -4,12 +4,23 @@ mus_fade(30,0)
 //}
 
 arrived = false
+kris_obj = obj_mainchara
 global.flag[Flag.On_Battle] = true
-obj_mainchara.noclip = true
-with obj_mainchara {
+kris_obj.noclip = true
+hero_kris = instance_create(kris_obj.x,kris_obj.y,obj_hero_kris)
+with hero_kris {
+	image_xscale = other.kris_obj.image_xscale
+	image_yscale = other.kris_obj.image_yscale
+	x = other.kris_obj.x
+	y = other.kris_obj.y
+
+}
+kris_obj.visible = false
+kris_obj = hero_kris
+with kris_obj {
 	
-	tx = obj_kris_centerer.x + 35
-	ty = obj_kris_centerer.y + 10
+	tx = 80 
+	ty = 130 
 	spdr = 0
 	spdr = point_distance(x,y,tx,ty) / 20
 	show_debug_message(spdr)

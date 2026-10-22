@@ -12,3 +12,4 @@ _ogy = y
 timer = 0
 scr_depth()
 arrivedtoogpos = false
+touched = false

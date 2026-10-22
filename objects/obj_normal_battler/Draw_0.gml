@@ -1,5 +1,5 @@
 
-with obj_mainchara {
+with kris_obj {
 	if !other.stop_aura {
 		array_push(other.hero_aura_arrays,{xpos: x, ypos: y, sprite: sprite_index, frame: image_index, alpha: 0.65, xscale: image_xscale, yscale: image_yscale})
 	}

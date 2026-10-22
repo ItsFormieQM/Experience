@@ -1,10 +1,10 @@
 if active {
 	timer++
 }
-if place_meeting(x,y,obj_mainchara) {
+if place_meeting(x,y,obj_mainchara) || touched {
 	if !active && global.interacted && !instance_exists(obj_drawer){
 		cmd_dialogue_play("choicer_test_2")
-		
+		touched = true
 	}
 	if instance_exists(obj_choicer) {
 		choiced = false

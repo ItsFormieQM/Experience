@@ -1,3 +1,3 @@
-with obj_mainchara {
+with kris_obj  {
 	
 }

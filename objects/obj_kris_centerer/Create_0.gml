@@ -1,6 +1,2 @@
-
-self_x = 54
-self_y = 192
-x = self_x
-y = self_y
+instance_destroy()
 visible = false

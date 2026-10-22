@@ -1,5 +1,5 @@
 
-with obj_mainchara {
+with kris_obj {
 	
 	if point_distance(x,y,tx,ty) <= spdr && !other.arrived{
 		other.stop_aura = true
