@@ -31,7 +31,7 @@ if room == room_deped_hallway_down {
 		}
 	}
 }
-if room == room_krisroom_house {
+if room == room_kris_house_upstairs_hallway {
 	
 }
 if room == room_black {
@@ -67,6 +67,13 @@ if global.prev_room == room_battle {
 	}
 	if instance_exists(obj_mainchara) {
 		obj_mainchara.visible = true
+	}
+}
+if room == room_black {
+	if global.prev_room == room_kris_house_krisroom {
+		global.flag[Flag.Story_Sleeping] = true
+		dream_init = true
+		alarm[1] = 200
 	}
 }
 if global.flag[Flag.Story_RefusedSOUL] >= 1 {

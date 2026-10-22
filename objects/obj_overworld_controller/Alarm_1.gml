@@ -30,6 +30,7 @@ if floor(global.flag[Flag.Story_DaysPassed]) % 2 == 0 {
 				
 															)
 		}
+		
 		global.flag[Flag.Story_DreamWorld_EntryChance] = clamp(global.flag[Flag.Story_DreamWorld_EntryChance],0,100)
 	}
 }
@@ -38,3 +39,6 @@ if dream_init {
 		
 	}
 }
+show_debug_message("HOLD UP IT COOKED")
+cmd_tp(320,240)
+cmd_kill()

@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":479,
   "bbox_left":0,
-  "bbox_right":1075,
+  "bbox_right":639,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"13749354-9a64-45df-ab3c-07aa37a4c2e5","name":"13749354-9a64-45df-ab3c-07aa37a4c2e5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"21393899-5519-4a6c-8752-b31b082c0b48","name":"21393899-5519-4a6c-8752-b31b082c0b48","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":480,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"c2185f99-c4be-422a-b9b5-58410a90c0ac","blendMode":0,"displayName":"default","isLocked":false,"name":"c2185f99-c4be-422a-b9b5-58410a90c0ac","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"6c93d851-4ad4-4d74-a320-f07adfaa7df9","blendMode":0,"displayName":"default","isLocked":false,"name":"6c93d851-4ad4-4d74-a320-f07adfaa7df9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_kris_house_krisroom",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"13749354-9a64-45df-ab3c-07aa37a4c2e5","path":"sprites/spr_kris_house_krisroom/spr_kris_house_krisroom.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"324e362f-bf0b-4ced-bda2-26656bc128fe","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"21393899-5519-4a6c-8752-b31b082c0b48","path":"sprites/spr_kris_house_krisroom/spr_kris_house_krisroom.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0a4317fc-f391-40a8-a395-6c31593f8c35","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":1076,
+  "width":640,
 }

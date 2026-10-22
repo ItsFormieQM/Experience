@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_warp_maker",
-    "path":"sprites/spr_warp_maker/spr_warp_maker.yy",
+    "name":"spr_warp_marker_centered",
+    "path":"sprites/spr_warp_marker_centered/spr_warp_marker_centered.yy",
   },
   "spriteMaskId":null,
   "visible":true,

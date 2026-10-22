@@ -8,6 +8,10 @@ function scr_init(){
 		array_push(global.rooms,{room_index: rm, persistence: info.persistent})
 		rm = room_next(rm)
 	}
+	instance_create(0,0,obj_mus_manager_new)
+	
+	global.music = []
+	global.played_music = []
 	global.prev_mus = noone
 	global.text = dump_text("lang_en_ui.json")
 	global.mus_list = []
@@ -223,6 +227,8 @@ function scr_init(){
 	
 }
 exception_unhandled_handler(function(ex) {
+	snd_play(snd_error)
+	
     show_debug_message("================== LOGIC ERROR ===================")
     show_debug_message(ex.longMessage)
     show_debug_message("==================================================")

@@ -8,6 +8,9 @@ if global.interacted {
 if global.interacted_x {
 	show_debug_message("CHOICER IS INSTA")
 }
+if keyboard_check_pressed(vk_anykey) {
+	show_debug_message(choice_pos_map)
+}
 if stopit {
 	lowest = 0
 	highest = array_length(choice_pos_map) - 1
@@ -60,8 +63,3 @@ if stopit {
 	myy = choice_pos_map[index].y_pos
 	
 }
-//if keyboard_check_pressed(vk_anykey) {
-//	show_debug_message($"STOPIT STATE: {stopit ? "True":"False"}")
-//	show_debug_message(myx)
-//	show_debug_message(myy)
-//}

@@ -77,13 +77,25 @@ if !global.flag[Flag.On_Battle] {
 	}
 	if !global.canmove || (!global.w_held && !global.a_held && !global.s_held && !global.d_held && !jump_state) {
 		ran = false
-		image_index = 0
-		image_speed = 0
+		if sprite_index == spr_mainchara_l || sprite_index == spr_mainchara_r {
+			if floor(image_index) % 2 == 0 {
+				image_index = 0
+				image_speed = 0
+			}
+			
+		}
+		else {
+			if floor(image_index) % 2 == 0 {
+				image_index = 0
+				image_speed = 0
+			}
+		}
 		previnp = noone
 	}	
 	else if global.canmove {
 		if !ran {
 			ran = true
+			image_index = 0
 			image_index = 1
 		}
 	}

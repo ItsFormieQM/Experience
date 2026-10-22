@@ -116,5 +116,8 @@
 	"gameover_1_1":"#t009^000#fnt001^005Kris this isn't your fate.../E",
 	"gameover_1_2":"#t009^000#fnt001^005Kris, ^020^005get up!/E",
 	"xslash_act_1_kris":"#t000^000#fnt001^002* Kris used X-Slash.^/^020^002* The enemy's ATTACK went up^/  greatly!/E",
-	"menu_information":"INFORMATION"
+	"menu_information":"INFORMATION",
+	"kris_house_myroom_bed_mybed_1_1":"#t000^000#fnt001^002* It's your bed.^/^010^002* Do you want to sleep in it?^/#C         Yes         No /E",
+	"kris_house_myroom_bed_mybed_1_2":"#t000^000#fnt001^002* You took a nap^010.../E",
+	"kris_house_myroom_drawer_1_1":"#t000^000#fnt001^002* (It's your drawer.)^/^005^002* (There's nothing inside.)/E"
 }

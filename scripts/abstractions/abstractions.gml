@@ -48,3 +48,8 @@ function draw_set_settings(oldsett) {
 	draw_set_valign(oldsett[3])
 }
 #endregion
+function i_exists(obj) {
+	if instance_exists(obj)
+		return true
+	return false
+}
