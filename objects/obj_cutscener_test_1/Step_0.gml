@@ -12,17 +12,6 @@ if spawned {
 	if !instance_exists(obj_cutscene_controller) {
 		master_cutscener = instance_create(0,0,obj_cutscene_controller)
 		instance_create(0,0,obj_dialogue)
- 
-		
-		//global.msg = []
-		//global.msg[0] = "#t001^002#fnt001^A* Player, what the actual fuck^/  are you making me do.../E"
-		//global.msg[1] = "#t001^002#fnt001^A* Oh wait, ^020^002this is a debug room^/  let me guess?/E"
-		//global.msg[2] = "#t001^008#fnt001^A* ..............................^/  ......................./E"
-		//for (var i = 0; i < array_length(global.msg); i++) {
-		//	global.xx_offset[i] = 68
-		//	global.yy_offset[i] = 960 / 2 + 85
-		//}
-		//instance_create(0,0,obj_drawer)
 	}
 	
 }
