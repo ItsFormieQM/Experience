@@ -10,7 +10,7 @@ with kris_obj {
 		image_speed = 0.5
 		other.arrived = true
 		image_speed = 1.25
-		
+		array_delete(other.hero_aura_arrays,array_length(other.hero_aura_arrays) - 1, 1)
 		snd_play(snd_bstart,1.2)
 		snd_play(snd_impact,1.2)
 		x = tx

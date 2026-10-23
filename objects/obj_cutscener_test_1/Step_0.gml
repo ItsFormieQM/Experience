@@ -29,90 +29,54 @@ if spawned {
 if instance_exists(kris_actor) && ran {
 	
 	if !executed {
-		mus_fade(0,1)
-		camloc = []
-		camloc[0] = cutscene_create_camera_marker(floor(kris_actor.x),floor(kris_actor.y+5000))
-		cutscene_actor_create(obj_pink_actor,kris_actor.x - 90,kris_actor.y - 20)
-		alarms = []
-		dir = Left
-		sp = 2
-		
-		obj_mainchara.dir = dir
-		
-		
-		
-		mus_play(mus_ruins)
-		//cutscene_actor_show_emotion(kris_actor,Actor_Emotion.ExclamationMark,120)	
-		var pink_actor = cutscene_get_actor_instance(Actors.Pink)
-		
-		
-		
-		cutscene_actor_set_pos(kris_actor,0,-450,true)
-		var alarm0 = time_source_create(time_source_game,1,time_source_units_frames,function() {
+		executed = true
+		cutscene_walk(kris_actor,Left,2.5,40)
+		var gasterer = cutscene_actor_create(obj_gaster_actor,kris_actor.x,kris_actor.y - 380)
+		var alarm1 = time_source_create(time_source_game,41,time_source_units_frames,function(){
 			var kris_actor = cutscene_get_actor_instance(Actors.Kris)
-			var pink_actor = cutscene_get_actor_instance(Actors.Pink)
-			//cutscene_actor_set_visibility(kris_actor,false)
-			//cutscene_actor_set_sprite(pink_actor,spr_pink_suprised,0)
-			cutscene_walk(pink_actor,Left,10,10)
-			
+			cutscene_walk(kris_actor,Up,1.95,40)
+			cutscene_move_camera(Up,40,6)
 		})
-		var alarm1 = time_source_create(time_source_game,60,time_source_units_frames,function() {
-			var kris_actor = cutscene_get_actor_instance(Actors.Kris)
-			var pink_actor = cutscene_get_actor_instance(Actors.Pink)
-			cutscene_actor_set_direction(pink_actor,Right)
-			cutscene_actor_reset_sprite(pink_actor)
-			cutscene_actor_show_emotion(pink_actor,Actor_Emotion.Thinking,120)
-			cutscene_actor_walk(kris_actor,Down,4,110)
-			
-		
-			
+		var alarm2 = time_source_create(time_source_game,41+40,time_source_units_frames,function(){
+			mus_play(mus_meeting_flower,true,1,0.85)
 		})
-		var alarm2 = time_source_create(time_source_game,110 + 60 + 60*1,time_source_units_frames,function() {
-			var kris_actor = cutscene_get_actor_instance(Actors.Kris)
-			cutscene_actor_set_direction(kris_actor,Left)
-			
-		})
-		var alarm3_1 = time_source_create(time_source_game,110 + 60*2 + 60*1,time_source_units_frames,function() {
-			var pink_actor = cutscene_get_actor_instance(Actors.Pink)
-			var kris_actor = cutscene_get_actor_instance(Actors.Kris)
-			
-			cutscene_walk(pink_actor,Right,3,47)
-			
-			
-		})
-		
-		var alarm3 = time_source_create(time_source_game,110 + 60*3+55,time_source_units_frames,function() {
-			var kris_actor = cutscene_get_actor_instance(Actors.Kris)
-			var pink_actor = cutscene_get_actor_instance(Actors.Pink)
-			cutscene_actor_set_sprite(pink_actor,spr_pink_kiss_normal,1,-999)
-			
-			var kissheart = cutscene_create_object_marker(pink_actor.x + 40, pink_actor.y - 30)
-			with kissheart {
-				sprite_index = spr_heart_kiss
-				vspeed = -3
-				friction = 0.2
+		var alarm3 = time_source_create(time_source_game,41+45,time_source_units_frames,function(){
+			global.msg = []
+			var index = 0
+			global.msg[index] = scr_gettext("gasterer_1")
+			index++
+			global.msg[index] = scr_gettext("gasterer_2")
+			index++
+			global.msg[index] = scr_gettext("gasterer_3")
+			index++
+			global.msg[index] = scr_gettext("gasterer_4")
+			for (var i = 0; i < array_length(global.msg); i++) {
+				global.xx_offset[i] = 68
+				global.yy_offset[i] = 960 / 2 + 85
 			}
-			
-			
+			instance_create(0,0,obj_drawer)
 		})
-		array_push(alarms,alarm0)
-		array_push(alarms,alarm1)
-		array_push(alarms,alarm2)
-		array_push(alarms,alarm3)
-		array_push(alarms,alarm3_1)
-		time_source_start(alarm0)
+		array_push(other.alarms,alarm1)
+		array_push(other.alarms,alarm2)
+		array_push(other.alarms,alarm3)
+		
 		time_source_start(alarm1)
 		time_source_start(alarm2)
 		time_source_start(alarm3)
-		time_source_start(alarm3_1)
-		executed = true
 		
 	}
 	
 }
 if global.cutscene {
 	with obj_cutscene_controller {
-		
+		if con == 1 {
+			con = 1.1
+			var gaster_actor = cutscene_get_actor_instance(Actors.Frisk)
+			instance_destroy(gaster_actor)
+			other.alarm[0] = 60
+			cutscene_follow_camera(kris_actor,0.6)
+			cutscene_real_set_direction(kris_actor,Up)
+		}
 	}
 }
 visible = !global.cutscene

@@ -1,1 +1,2 @@
-sprite_index = spr_mainchara_r_uc
+sprite_index = spr_mainchara_r
+image_speed = 0

@@ -19,17 +19,19 @@ kris_obj.visible = false
 kris_obj = hero_kris
 with kris_obj {
 	
-	tx = 80 
-	ty = 130 
+	tx = 80 + round(sprite_width * 1.8) + camx_ab
+	ty = 212 + camy_ab
 	spdr = 0
 	spdr = point_distance(x,y,tx,ty) / 20
+	show_debug_message(tx)
 	show_debug_message(spdr)
 	move_towards_point(tx,ty,spdr)
 }
 hero_aura_arrays = [
 	
 ]
-stop_aura = false
+
+stop_aura = true
 var idealx = camx_ab
 var idealy = camy_ab
 instance_create(idealx+x,idealy+y,obj_battle_default_bg)

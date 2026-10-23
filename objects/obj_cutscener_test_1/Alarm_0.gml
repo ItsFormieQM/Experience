@@ -7,12 +7,13 @@ for (var i = 0; i < array_length(alarms); i++) {
 		time_source_destroy(alarms[i],true)
 	}
 }
+cutscene_unfollow_camera()
 alarms = []
 
-mus_fade(60,1)
+mus_fade(20,0)
+mus_play(mus_flowercore,1,1,0.85)
+mus_fade(1,0)
+mus_fade(60,0.8)
 // Inherit the parent event
 instance_destroy()
 
-with obj_cutscene_controller {
-	cutscene_unfollow_camera()
-}
