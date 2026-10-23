@@ -330,6 +330,9 @@ if timer / global.deltatime >= delay && !stop_draw {
 					case 9:
 						snd = snd_txtsus
 						break
+					case 10:
+						snd = snd_txtral
+						break
 					case 999:
 						snd = noone
 						break
@@ -370,9 +373,6 @@ if timer / global.deltatime >= delay && !stop_draw {
 	}
 	
 	if string_char_at(test_string, index) == "^" {
-		if string_char_at(test_string,index+1) == "/" {
-			
-		}
 		if string_char_at(test_string, index + 1) == "D" {
 			if string_char_at(test_string, index + 2) == "T" {
 				if string_canbe_int(string_char_at(test_string, index + 3)) &&

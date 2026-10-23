@@ -1,6 +1,8 @@
 function scr_depth()
 {
 	
-	//depth = 1 - (y + sprite_height)
+	if variable_instance_exists(id,"depthstart") {
+		depth = depthstart - (y + sprite_height)
+	}
 	
 }

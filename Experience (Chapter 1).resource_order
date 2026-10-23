@@ -315,6 +315,7 @@
     {"name":"snd_saved","order":19,"path":"sounds/snd_saved/snd_saved.yy",},
     {"name":"snd_select","order":11,"path":"sounds/snd_select/snd_select.yy",},
     {"name":"snd_suslaugh","order":93,"path":"sounds/snd_suslaugh/snd_suslaugh.yy",},
+    {"name":"snd_txtral","order":110,"path":"sounds/snd_txtral/snd_txtral.yy",},
     {"name":"snd_txtsus","order":73,"path":"sounds/snd_txtsus/snd_txtsus.yy",},
     {"name":"snd_vaporized","order":24,"path":"sounds/snd_vaporized/snd_vaporized.yy",},
     {"name":"snd_wngdng2","order":1,"path":"sounds/snd_wngdng2/snd_wngdng2.yy",},

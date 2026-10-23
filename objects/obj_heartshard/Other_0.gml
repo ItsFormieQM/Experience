@@ -1,2 +1,2 @@
 instance_destroy()
-exit
+show_debug_message("heartydead")

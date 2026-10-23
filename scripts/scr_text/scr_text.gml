@@ -626,13 +626,25 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 				break
 			case "gameover_1":
 				index = -1
-				index++
-				global.msg[index] = result[$$"gameover_1_{index+1}"]
-				index++
-				global.msg[index] = result[$$"gameover_1_{index+1}"]
-				for (var i = 0; i < array_length(global.msg); i++) {
-					global.xx_offset[i] = 245
-					global.yy_offset[i] = 960 / 2 + 60
+				if con == 0 {
+					index++
+					global.msg[index] = result[$$"gameover_1_{index+1}"]
+					index++
+					global.msg[index] = result[$$"gameover_1_{index+1}"]
+					for (var i = 0; i < array_length(global.msg); i++) {
+						global.xx_offset[i] = 245
+						global.yy_offset[i] = 960 / 2 + 60
+					}
+				}
+				else if con == 1 {
+					index++
+					global.msg[index] = result[$$"gameover_2_{index+1}"]
+					index++
+					global.msg[index] = result[$$"gameover_2_{index+1}"]
+					for (var i = 0; i < array_length(global.msg); i++) {
+						global.xx_offset[i] = 245
+						global.yy_offset[i] = 960 / 2 + 60
+					}
 				}
 				global.show_dialoguebox = false
 				break

@@ -402,6 +402,7 @@
     {"id":{"name":"snd_txt1","path":"sounds/snd_txt1/snd_txt1.yy",},},
     {"id":{"name":"snd_txt2","path":"sounds/snd_txt2/snd_txt2.yy",},},
     {"id":{"name":"snd_txtnoelle","path":"sounds/snd_txtnoelle/snd_txtnoelle.yy",},},
+    {"id":{"name":"snd_txtral","path":"sounds/snd_txtral/snd_txtral.yy",},},
     {"id":{"name":"snd_txtsus","path":"sounds/snd_txtsus/snd_txtsus.yy",},},
     {"id":{"name":"snd_vaporized","path":"sounds/snd_vaporized/snd_vaporized.yy",},},
     {"id":{"name":"snd_wngdng1","path":"sounds/snd_wngdng1/snd_wngdng1.yy",},},
