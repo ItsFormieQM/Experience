@@ -1,4 +1,5 @@
 playtxt = false
+knifity = false
 sndhandle = noone
 handle = noone
 halt = false

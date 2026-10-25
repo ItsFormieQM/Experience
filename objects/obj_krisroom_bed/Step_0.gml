@@ -7,7 +7,7 @@ if place_meeting(x,y,obj_mainchara) {
 		var darkner = instance_create(0,0,obj_fader_menu)
 		with darkner {
 			incrementor = -0.01
-			depth = layer_get_depth("Instances") - obj_mainchara.depth
+			layer_add_instance("Instances",id)
 		}
 		global.choice = -1
 		alarm[0] = 150

@@ -1,7 +1,5 @@
 if !global.flag[Flag.On_Battle] {
-	if !jump_state {
-		image_speed = 0
-	}
+	
 	
 	if move_l {
 		x -= sp
@@ -44,35 +42,22 @@ if !global.flag[Flag.On_Battle] {
 		}
 	}
 	
-	if !moving && !jump_state {
+	if !moving {
 		ran = false
-		image_index = 0		
+		if floor(image_index) % 2 == 0 {
+			image_index = 0
+			image_speed = 0
+		}
+		
 	}	
-	else if moving {
+	else {
 		if !ran {
 			ran = true
 			image_index = 1
 		}
 	}
 
-	if !switched_sprite && !jump_state {
-		switch dir {
-			case Up:
-				sprite_index = upspr
-				break
-			case Down:
-				sprite_index = downspr
-				break
-			case Left:
-				sprite_index = leftspr
-				break
-			case Right:
-				sprite_index = rightspr
-				break
-			default:
-				break
-		}
-	}
+	
 }
 
 if !global.cutscene {

@@ -254,4 +254,6 @@ enum Actors {
 	Pink,
 	Susie,
 	Noelle,
+	Gaster,
+	Aqua
 }

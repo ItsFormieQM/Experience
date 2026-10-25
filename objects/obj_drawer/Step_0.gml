@@ -1,13 +1,13 @@
 if !global.cutscene {
 	advance = false
 }
-if !global.flag[Flag.On_Battle] {
+if true {
 	if is_choicer {
 		exit
 	}
 	if !global.dialogue_autoskip {
-		if global.interacted && skippable{
-		
+		if global.interacted && skippable && global.dialogue_enable_progress{
+			show_debug_message("how tf")
 			playtxt = false
 			buffer = true
 			global.interacted = false
@@ -39,6 +39,7 @@ if !global.flag[Flag.On_Battle] {
 				snd_delay = 5
 				chars = []
 				count++
+				count = floor(count)
 				if count >= array_length(global.msg) {
 					instance_destroy()
 					exit
@@ -107,6 +108,7 @@ if !global.flag[Flag.On_Battle] {
 			snd_delay = 5
 			chars = []
 			count++
+			count = floor(count)
 			if count >= array_length(global.msg) {
 				instance_destroy()	
 				exit
@@ -171,6 +173,7 @@ if !global.flag[Flag.On_Battle] {
 				snd_delay = 5
 				chars = []
 				count++
+				count = floor(count)
 				if count >= array_length(global.msg) {
 					instance_destroy()
 					exit
@@ -240,6 +243,7 @@ if !global.flag[Flag.On_Battle] {
 				snd_delay = 5
 				chars = []
 				count++
+				count = floor(count)
 				if count >= array_length(global.msg) {
 					instance_destroy()	
 					exit

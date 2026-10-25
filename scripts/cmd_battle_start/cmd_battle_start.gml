@@ -4,7 +4,7 @@ function cmd_battle_start(_enemy_type = 0,_song = mus_battle_rkb,_pit = 1, _volu
 		global.battlegroup = _enemy_type
 		instance_create(0,0,obj_battleicon)
 		
-		return "oh this is emotional"
+		return ""
 	}
 	global.msg = []
 	var cam = view_camera[0]

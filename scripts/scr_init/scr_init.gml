@@ -47,6 +47,7 @@ function scr_init(){
 	global.oldlv = 0
 	global.actors = []
 	global.dialogue_autoskip = false
+	global.dialogue_enable_progress = true
 	for (var i = 1; i <= 128; i++) {
 		global.actors[i-1] = noone
 	}

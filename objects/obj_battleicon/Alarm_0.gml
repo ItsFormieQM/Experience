@@ -3,7 +3,7 @@
 //FL_KilledLast = false
 //FL_BoredLast = false
 //global.entrance = 0
-obj_mainchara.depth = -600
+obj_mainchara.depth = 600
 battle = 1
 //if (room == room_asghouse1)
 //	battle = 2

@@ -13,7 +13,7 @@ with hero_kris {
 	image_yscale = other.kris_obj.image_yscale
 	x = other.kris_obj.x
 	y = other.kris_obj.y
-
+	depth = layer_get_depth("Instances") - 100
 }
 kris_obj.visible = false
 kris_obj = hero_kris
@@ -34,6 +34,9 @@ hero_aura_arrays = [
 stop_aura = true
 var idealx = camx_ab
 var idealy = camy_ab
-instance_create(idealx+x,idealy+y,obj_battle_default_bg)
+var bg = instance_create(idealx+x,idealy+y,obj_battle_default_bg)
+with bg {
+	depth = layer_get_depth("Instances") - 50
+}
 
 	

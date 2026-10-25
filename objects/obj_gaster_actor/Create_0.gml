@@ -24,11 +24,11 @@ removed_variable_1 = false
 depth = obj_camera.depth - 1
 jump_state = false
 rot = 0
-
+actorid = Actors.Gaster
 insert_self = function() {
 	for (var i = 0; i < array_length(global.actors); i++) {
 		if global.actors[i] == noone {
-			global.actors[i] = {actor_name: Actors.Frisk, actor: id}
+			global.actors[i] = {actor_name: actorid, actor: id}
 			break
 		}
 	}

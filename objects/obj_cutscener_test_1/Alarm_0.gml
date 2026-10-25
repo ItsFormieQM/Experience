@@ -14,6 +14,10 @@ mus_fade(20,0)
 mus_play(mus_flowercore,1,1,0.85)
 mus_fade(1,0)
 mus_fade(60,0.8)
+audio_stop_sound(mus_pirate_dojo)
 // Inherit the parent event
+if i_exists(obj_general_marker) {
+	instance_destroy(obj_general_marker)
+}
 instance_destroy()
 

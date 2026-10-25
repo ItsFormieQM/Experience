@@ -19,6 +19,10 @@ function _camh(){
 	var result = camera_get_view_height(cam)
 	return result
 }
+function cam_setpos_ab(_x,_y) {
+	var cam = view_camera[0]
+	camera_set_view_pos(cam,_x,_y)
+}
 #macro camx_ab _camx()
 #macro camy_ab _camy()
 #macro camw_ab _camw()
@@ -48,6 +52,20 @@ function draw_set_settings(oldsett) {
 	draw_set_valign(oldsett[3])
 }
 #endregion
+///@desc WIP abstraction. Aims to replicate the 'len' function in python to use one global abstraction.
+///@param {any} input Input arrays or strings for now.
+function len(input) {
+	if is_array(input) {
+		return array_length(input)
+	}
+	else if is_string(input) {
+		return string_length(input)
+	}
+	return undefined
+}
+function i_destroy() {
+	return instance_destroy()
+}
 function i_exists(obj) {
 	if instance_exists(obj)
 		return true

@@ -13,3 +13,4 @@ drawer = instance_create(0,0,obj_drawer)
 during_round = false
 global.flag[Flag.Can_DialogueFastSkip] = false
 mainchara_doing = false
+global.dialogue_enable_progress = false

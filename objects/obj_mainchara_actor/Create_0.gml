@@ -26,10 +26,11 @@ jump_state = false
 rot = 0
 image_xscale = obj_mainchara.image_xscale
 image_yscale = obj_mainchara.image_yscale
+actorid = Actors.Gaster
 insert_self = function() {
 	for (var i = 0; i < array_length(global.actors); i++) {
 		if global.actors[i] == noone {
-			global.actors[i] = {actor_name: Actors.Kris, actor: id}
+			global.actors[i] = {actor_name: actorid, actor: id}
 			break
 		}
 	}
@@ -39,7 +40,7 @@ if realobject == noone {
 }
 cutscene_walk = function(dir,_sp,frames) {
 	other.sp = _sp / global.deltatime
-	
+	switched_sprite = false
 	switch dir {
 		case Up:
 			move_u = true
@@ -59,8 +60,9 @@ cutscene_walk = function(dir,_sp,frames) {
 	moving = true
 	alarm[1] = frames * global.deltatime
 } 
+onetimeanim = false
 cutscene_set_sprite = function(sprite,spriteframe,delay=-1) {
-	alarm[0] = delay * global.deltatime
+	
 	switched_sprite = true
 	sprite_index = sprite
 	image_index = spriteframe

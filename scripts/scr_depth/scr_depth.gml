@@ -1,8 +1,12 @@
-function scr_depth()
+function scr_depth(reset = false)
 {
-	
-	if variable_instance_exists(id,"depthstart") {
-		depth = depthstart - (y + sprite_height)
-	}
-	
+	//if !reset
+	//	if variable_instance_exists(id,"depthstart") {
+	//		depth = depthstart - (y + sprite_height)
+	//	}
+	//else {
+	//	if variable_instance_exists(id,"depthstart") {
+	//		depth = depthstart
+	//	}
+	//}
 }

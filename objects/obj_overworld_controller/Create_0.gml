@@ -28,7 +28,7 @@ die = function() {
 	}
 	var delay = 100
 	if global.flag[Flag.Story_RefusedSOUL] >= 1 {
-		delay = clamp(delay,10,irandom_range(45,80) - dc)
+		delay = clamp(delay,10,irandom_range(45,80) - clamp(dc,0,20))
 		room_persistent = true
 		refused_state_markerinst = instance_create(obj_mainchara.x,obj_mainchara.y,obj_warp_marker,{slot: -666})
 	}
@@ -43,6 +43,3 @@ enum Inventory_State {
 	active_secondchoice
 }
 depth = layer_get_depth("TECHNICAL")
-inventory_state = Inventory_State.off
-inventory_index_first = 0
-inventory_index_second = 0

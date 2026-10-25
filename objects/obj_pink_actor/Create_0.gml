@@ -25,11 +25,11 @@ removed_variable_1 = false
 depth = obj_camera.depth - 1
 jump_state = false
 rot = 0
-
+name = Actors.Pink
 insert_self = function() {
 	for (var i = 0; i < array_length(global.actors); i++) {
 		if global.actors[i] == noone {
-			global.actors[i] = {actor_name: Actors.Pink, actor: id}
+			global.actors[i] = {actor_name: name, actor: id}
 			break
 		}
 	}
@@ -60,11 +60,16 @@ cutscene_walk = function(dir,_sp,frames) {
 	moving = true
 	alarm[1] = frames
 } 
+newspr = noone
+newsprframe = noone
 cutscene_set_sprite = function(sprite,spriteframe,delay=-1) {
-	alarm[0] = delay
 	switched_sprite = true
-	sprite_index = sprite
-	image_index = spriteframe
+	newspr = sprite
+	newsprframe = spriteframe
+	sprite_index = newspr
+	image_index = newsprframe
+	show_debug_message($"ITS FUCKING SET: {sprite_get_name(sprite_index)}")
+	
 }
 cutscene_reset_spr = function() {
 	alarm[0] = 1

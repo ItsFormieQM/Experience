@@ -9,6 +9,10 @@ else if obj_name == obj_pink_actor {
 	myw = actor.x / 6 + 60
 	myh = actor.y / 6 + 123
 }
+else {
+	myw = actor.x
+	myh = actor.y
+}
 
 x = myw
 y = myh

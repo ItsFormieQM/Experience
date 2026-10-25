@@ -21,10 +21,10 @@ while (i < string_length("Kris")) {
 	}
 }
 draw_set_color(c_white)
-var namewidth = string_width(string_hash_to_newline("Kris"))
+var namewidth = string_width("Kris")
 
-draw_text((xx + namewidth), 400, string_hash_to_newline(("   LV " + string(global.lv))))
-var hpbarscale = 0.5
+draw_text((xx + namewidth), 400, ("   LV " + string(global.lv)))
+var hpbarscale = 0.25
 draw_set_color(c_red)
 draw_rectangle(275, 400, (275 + (global.maxhp[0] * hpbarscale)), 420,false)
 draw_set_color(c_yellow)
@@ -32,10 +32,10 @@ draw_rectangle(275, 400, (275 + (global.hp[0] * hpbarscale)), 420,false)
 draw_set_color(c_white)
 
 var hpwrite = string(global.hp[0])
-draw_text((290 + (global.maxhp[0] * hpbarscale)), 400, string_hash_to_newline(((hpwrite + " / ") + string(global.maxhp[0]))))
+draw_text((290 + (global.maxhp[0] * hpbarscale)), 400, ((hpwrite + " / ") + string(global.maxhp[0])))
 draw_set_colour(c_white)
 draw_set_font(use_font)
-draw_text(xx, yy, string_hash_to_newline("Kris"))
+draw_text(xx, yy, "Kris")
 var maxwidth = 0
 //for (i = 0; i < 3; i++) {
 //	if (global.monster[i] == true) {
@@ -65,21 +65,7 @@ if global.selected == BattleTrue_Commands.Fight
 		if (global.true_battle_enemies[i] != noone)
 		{
 			var name = global.true_battle_enemyname[i]
-			//if (global.language == "ja")
-			//{
-			//	var width = 0
-			//	for (var j = 1; j <= strlen(name); j++)
-			//	{
-			//		var ch = ord(string_char_at(name, j))
-			//		if (ch == 32 || ch >= 65377)
-			//			width += 13
-			//		else if (ch < 8192)
-			//			width += 16
-			//		else
-			//			width += 26
-			//	}
-			//}
-			//else
+			
 			var width = string_length(name) * 16
 			if (width > maxwidth)
 				maxwidth = width

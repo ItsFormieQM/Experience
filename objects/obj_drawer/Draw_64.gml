@@ -1,4 +1,7 @@
 var chars = []
+if !string_ends_with(test_string,"/E") {
+	test_string += "/E"
+}
 if string_length(test_string) <= 0 {
 	instance_destroy()
 }
@@ -459,6 +462,7 @@ draw_set_halign(fa_left)
 draw_set_valign(fa_top)
 
 for (var i = 1; i <= string_length(test); i++) {
+	knifity = false
 	var char = string_char_at(test, i)
 	if char == "^" {
 		var future_char_2 = string_char_at(test, i + 1)
@@ -473,7 +477,27 @@ for (var i = 1; i <= string_length(test); i++) {
 				i++
 			}
 			continue
-		} 
+		}
+		else if future_char_2 == "." {
+			var deviationx = 45
+			var deviationy = 124.5
+			knifity = true
+			if knifity {
+				draw_sprite_ext(
+					spr_aqua_knife_dlg,
+					0,
+					_x + deviationx + 60,
+					(_y + deviationy) + 55,
+					3.2,
+					3.2,
+					0,
+					c_white,
+					1
+				)
+			}
+			i++
+			continue
+		}
 		else if future_char_2 == "R" { 
 			colour = c_red
 			draw_set_colour(c_red) 
@@ -600,6 +624,7 @@ for (var i = 1; i <= string_length(test); i++) {
 		draw_text_ext_transformed_colour(
 			_x + deviationx,_y + deviationy,char,1,999,scale,scale,0,colour,colour,colour,colour,alpha
 		)
+		
 		if is_choicer {
 			if array_length(choicer_choices) != 0 {
 				for (var k = 0; k < array_length(choicer_choices); k++) {

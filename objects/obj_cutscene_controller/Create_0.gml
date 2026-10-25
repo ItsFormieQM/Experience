@@ -1,7 +1,7 @@
 ///@desc Stuff
 #region Variables
 gc_enable(false)
-
+gc_collect()
 global.flag[Flag.Can_DialogueFastSkip] = false
 
 global.cutscene = true

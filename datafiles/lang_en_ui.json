@@ -28,6 +28,7 @@
 	"gameover_1_2":"#t010^000#fnt001^005^DT0018Kris...^/^020^005Please don't^/give up!/E",
 	"gameover_2_1":"#t009^000#fnt001^005^DT0018Kris, ^010^005is that^/all you got?/E",
 	"gameover_2_2":"#t009^000#fnt001^005^DT0018Kris, ^020^005get up!/E",
+	"gameover_3_1":"#t009^000#fnt001^005^DT0018Kris, ^020^00!/E",
 	"gaster_1":"#t004^000#fnt001^002* Oh, ^020^002it's you./E",
 	"gaster_10":"#t004^000#fnt001^002^W* It ended ^Rhorribly into^/  disaster^W./E",
 	"gaster_11":"#t004^000#fnt001^002* Everything that I laid out^/  to happen, ^040^002didn't happen./E",
@@ -120,8 +121,4 @@
 	"used_item_heroin_2":"* You feel a bit tired and relaxed.",
 	"used_item_heroin_3":"* Movement is down by 50%!",
 	"xslash_act_1_kris":"#t000^000#fnt001^002* Kris used X-Slash.^/^020^002* The enemy's ATTACK went up^/  greatly!/E",
-	"gasterer_1":"#t004^000#fnt001^003^W* So we meet again^/  ^YDelta-Traveler^W./E",
-	"gasterer_2":"#t004^000#fnt001^003* I hope your travels were^/  interesting to say the least./E",
-	"gasterer_3":"#t004^000#fnt001^003* ...^/^020^002* I already know you're gonna^/  ask me for my name./E",
-	"gasterer_4":"#t004^000#fnt001^003* But that's boring so I'll just^/  head out./E",
 }

@@ -10,7 +10,7 @@
   "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":24.0,
+  "duration":34.909092,
   "exportDir":"",
   "name":"mus_hood_meeting",
   "parent":{

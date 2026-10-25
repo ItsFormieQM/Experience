@@ -2,37 +2,19 @@ if keyboard_check_pressed(ord("Q")) {
 	time_source_reconfigure(time_source_global, 1, time_source_units_frames, function() {}, [], -1)
 	cmd_restart()
 }
-if global.interacted_c {
-	if inventory_state == Inventory_State.off {
-		inventory_state = Inventory_State.active_firstchoice
-		if inventory_state == Inventory_State.active_firstchoice {
-			snd_play(snd_menu_move,1.2)
-		}
-	}
-	else {
-		inventory_state = Inventory_State.off
-		global.canmove = true
-	}
-}
-if inventory_state {
-	global.canmove = false
-	if global.s_press {
-		
-	}
-}
 
-else if keyboard_check_pressed(ord("1")) && !global.flag[Flag.On_Battle] {
-	if global.canmove {
-		if room >= room_test {
-			var inst = instance_create(-1000,-1000,obj_battle_test,{_song: mus_battle_files, _enemy_type: "none", _volume: 1.5})
-			inst.force_run = true
-		}
-		else {
-			room_goto(room_test)
-			alarm[0] = 5
-		}
-	}
-}
+//else if keyboard_check_pressed(ord("1")) && !global.flag[Flag.On_Battle] {
+//	if global.canmove {
+//		if room >= room_test {
+//			var inst = instance_create(-1000,-1000,obj_battle_test,{_song: mus_battle_files, _enemy_type: "none", _volume: 1.5})
+//			inst.force_run = true
+//		}
+//		else {
+//			room_goto(room_test)
+//			alarm[0] = 5
+//		}
+//	}
+//}
 
 if room == room_deped_hallway_down {
 	if instance_exists(obj_choicer) {
