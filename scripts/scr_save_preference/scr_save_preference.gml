@@ -5,5 +5,6 @@ function scr_save_preference(){
 	}
 	ini_open(fname)
 	ini_write_real("Settings","Fullscreen",global.is_fs)
+	ini_write_string("Settings","Profanity",global.setting_profanity ? "ON":"OFF")
 	ini_close()
 }

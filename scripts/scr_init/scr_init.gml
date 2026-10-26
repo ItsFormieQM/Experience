@@ -51,6 +51,7 @@ function scr_init(){
 	for (var i = 1; i <= 128; i++) {
 		global.actors[i-1] = noone
 	}
+	global.setting_profanity = false
 	global.oldroom = ""
 	enum Flag {
 		On_School = 0, // 0
@@ -80,6 +81,7 @@ function scr_init(){
 		Player_Running, //24
 		Story_RefusedSOUL,// 25
 		Story_DeathCount, // 26
+		Story_DayState, // 27
 		COUNT,
 	}
 
@@ -110,10 +112,13 @@ function scr_init(){
 		"Story_IntroKrisHouse_Cutscene",
 		"Player_Running",
 		"Story_RefusedSOUL",
-		"Story_DeathCount"
+		"Story_DeathCount",
+		"Story_DayState"
+		
 	]
 	#region set flags to default
 	global.flag = array_create(Flag.COUNT,false)
+	
 	global.flag[Flag.Story_IntroStart] = true
 	global.flag[Flag.On_School] = true
 	global.flag[Flag.School_Type] = School_Type.Normal
@@ -129,7 +134,7 @@ function scr_init(){
 	global.flag[Flag.Story_IntroKrisHouse_Cutscene] = true
 	global.flag[Flag.Story_RefusedSOUL] = 0
 	global.flag[Flag.Story_DeathCount] = 0
-	
+	global.flag[Flag.Story_DayState] = DayState.Evening
 	#endregion
 	// Create this shit first
 	if !directory_exists($"Chapter {global.chapter}")
@@ -201,11 +206,6 @@ function scr_init(){
 		invalid = -1,
 		air = 0,
 		
-		// Guns
-		gun_glock = 999,
-		gun_ar = 1000,
-		gun_revolver = 1001,
-		
 		// Food Items
 		food_steak,
 		food_apple,
@@ -221,6 +221,15 @@ function scr_init(){
 	enum BattleGroup {
 		Little_Timmy,
 		Tough_Timmy
+	}
+	enum DayState {
+		Morning,
+		MidDay,
+		Evening,
+		PreNight,
+		Night,
+		Midnight,
+		
 	}
 	#endregion
 	var filename = global.save_folder + "savedata.txt"

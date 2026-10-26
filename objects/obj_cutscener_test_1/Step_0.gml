@@ -73,10 +73,10 @@ if instance_exists(kris_actor) && ran {
 			var pink_actor = cutscene_actor_create(obj_pink_actor,camx_ab - 150,kris_actor.y)
 			cutscene_actor_set_direction_sprites(
 				pink_actor,
-				spr_pink_u_black,
-				spr_pink_d_black,
-				spr_pink_l_black,
-				spr_pink_r_black
+				spr_pink_u,
+				spr_pink_d,
+				spr_pink_l,
+				spr_pink_r
 			)
 			cutscene_actor_set_direction_sprites(
 				kris_actor,
@@ -97,17 +97,17 @@ if instance_exists(kris_actor) && ran {
 		})
 		var alarm4 = time_source_create(time_source_game,41+21+40,time_source_units_frames,function(){
 			
-			mus_play(mus_japan,1,1.25)
+			mus_play(mus_japan_cafe,2,1)
 			var pink_actor = cutscene_get_actor_instance(Actors.Pink)
-			cutscene_actor_set_sprite(pink_actor,spr_pink_mad_lr_black,0)
+			cutscene_actor_set_sprite(pink_actor,spr_pink_mad_lr,0)
 			with pink_actor {
 				image_speed = 1
 			}
 			
-			audio_sound_set_track_position(global.current_mus,14.3)
+			//audio_sound_set_track_position(global.current_mus,14.3)
 			global.msg = []
 			var index = 0
-			global.msg[index] = "#t000^000#fnt001^002^.   Hey, ^010^002yellow idiot!"
+			global.msg[index] = "#t000^000#fnt001^002* Hey, ^010^002yellow idiot!"
 			index++
 			global.msg[index] = "#t000^000#fnt001^002* I... ^010^002have something to tell you."
 			index++
@@ -148,11 +148,11 @@ if global.cutscene {
 			if count == 1 {
 				count += 0.1
 				
-				cutscene_actor_set_sprite(pink,spr_pink_sad_lr_black,0)
+				cutscene_actor_set_sprite(pink,spr_pink_sad_lr,0)
 			}
 			else if count == 6 {
 				count += 0.1
-				cutscene_actor_set_sprite(pink,spr_pink_peacesign_black,0)
+				cutscene_actor_set_sprite(pink,spr_pink_peacesign,0)
 				snd_play(snd_pink_mew,1.2)
 			}
 		}
@@ -182,7 +182,7 @@ if global.cutscene {
 			var alarm1 = time_source_create(time_source_game,50,time_source_units_frames,function(){
 				var pink = cutscene_get_actor_instance(Actors.Pink)
 				var gaster = cutscene_actor_create(obj_gaster_actor,camx_ab - 200,pink.y)
-				cutscene_actor_set_sprite(pink,spr_pink_suprised_black,0)
+				cutscene_actor_set_sprite(pink,spr_pink_suprised,0)
 				snd_play(snd_pink_gasp,1.2)
 				with pink {
 					image_xscale *= -1
@@ -191,7 +191,7 @@ if global.cutscene {
 				snd_play(snd_driving,1.2)
 			})
 			var alarm2 = time_source_create(time_source_game,120,time_source_units_frames,function(){
-				mus_play(mus_pirate_dojo,1,1,0.9)
+				mus_fade(100,1)
 			})
 			var alarm3 = time_source_create(time_source_game,50+33,time_source_units_frames,function(){
 				var pink = cutscene_get_actor_instance(Actors.Pink)

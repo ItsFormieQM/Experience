@@ -195,7 +195,7 @@ if global.cutscene {
 		else if con == 4 {
 			con += 0.1
 			cutscene_follow_camera(kris_actor,0.5)
-			other.alarm[0] = 150 * global.deltatime
+			other.alarm[0] = 200
 		}
 	}
 }

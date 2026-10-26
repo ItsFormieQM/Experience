@@ -75,7 +75,7 @@ function cutscene_real_set_direction(actor_handle,dir) {
 	}
 }
 
-///@desc Sets an actor's x and y coordinates to the specified amount. It can be absolute or relative to itself.
+///@desc Sets an actor's x and y coordinates to the specified amount. It can be absolute (false) or relative (true) to itself.
 ///@param {Id.Instance} actor_handle The instance ID for the specific actor.
 ///@param {real} x The x coordinate to set.
 ///@param {real} y The y coordinate to set.

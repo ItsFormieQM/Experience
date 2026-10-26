@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_mus_manager",
-    "path":"sprites/spr_mus_manager/spr_mus_manager.yy",
+    "name":"spr_interactable",
+    "path":"sprites/spr_interactable/spr_interactable.yy",
   },
   "spriteMaskId":null,
   "visible":true,

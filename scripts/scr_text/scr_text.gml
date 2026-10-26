@@ -665,12 +665,19 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 					index++
 					global.msg[index] = result[$$"kris_house_myroom_bed_mybed_1_{index+1}"]
 				}
-				else {
+				else if con == 1 {
 					index++
+					global.msg[index] = result[$$"kris_house_myroom_bed_mybed_1_{index+2}"]
 					index++
-					global.msg[index] = result[$$"kris_house_myroom_bed_mybed_1_{index+1}"]
+					global.msg[index] = result[$$"kris_house_myroom_bed_mybed_1_{index+2}"]
+					index++
+					global.msg[index] = result[$$"kris_house_myroom_bed_mybed_1_{index+2}"]
+					show_debug_message(global.msg)
 				}
-				
+				else if con == 2 {
+					index++
+					global.msg[index] = result[$$"kris_house_myroom_bed_mybed_1_{index+5}"]
+				}
 				for (var i = 0; i < array_length(global.msg); i++) {
 					global.xx_offset[i] = 68
 					global.yy_offset[i] = 960 / 2 + 85
@@ -686,6 +693,16 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 					global.yy_offset[i] = 960 / 2 + 85
 				}
 				
+				break
+			case "kris_house_entry_leave_1":
+				index = -1
+				index++
+				global.msg[index] = result[$$"kris_house_entry_leave_1_{index+1}"]
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}
+			
 				break
 			case "kris_house_entry_landline_call_1":
 				index = -1

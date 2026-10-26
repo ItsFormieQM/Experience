@@ -419,7 +419,7 @@ if global.cutscene {
 				var kris_larper = cutscene_get_actor_instance(Actors.Pink)
 				snd_play(snd_vaporized,2)
 			})
-			i += 60
+			i += 170
 			var alarm20 = time_source_create(time_source_game,i,time_source_units_frames,function(){
 				var kris_larper = cutscene_get_actor_instance(Actors.Pink)
 				cutscene_actor_set_direction_sprites(kris_larper,
@@ -430,6 +430,9 @@ if global.cutscene {
 				)
 				with kris_larper {
 					switched_sprite = false
+				}
+				with obj_cutscener_test_1_2 {
+					alarm[0] = 1
 				}
 				cutscene_walk(kris_larper,Right,3,10)
 			})

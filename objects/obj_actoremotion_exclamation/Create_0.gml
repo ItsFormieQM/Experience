@@ -1,5 +1,10 @@
 snd_play(snd_notice)
-obj_name = actor.object_index
+if i_exists(actor) {
+	obj_name = actor.object_index
+}
+else {
+	obj_name = noone
+}
 show_debug_message(obj_name)
 if obj_name == obj_mainchara_actor {
 	myw = (actor.sprite_width + actor.x) - 34.5
@@ -10,8 +15,8 @@ else if obj_name == obj_pink_actor {
 	myh = actor.y / 6 + 123
 }
 else {
-	myw = actor.x
-	myh = actor.y
+	myw = camx_ab
+	myh = camy_ab
 }
 
 x = myw

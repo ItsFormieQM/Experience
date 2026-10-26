@@ -2,6 +2,18 @@ var chars = []
 if !string_ends_with(test_string,"/E") {
 	test_string += "/E"
 }
+if !global.setting_profanity {
+	checkedforswear = true
+	test_string = string_replace_all(test_string,"fuck","hell")
+	test_string = string_replace_all(test_string,"shit","damn")
+	test_string = string_replace_all(test_string,"dumbass","idiot")
+	test_string = string_replace_all(test_string,"FUCK","HELL")
+	test_string = string_replace_all(test_string,"SHIT","DAMN")
+	test_string = string_replace_all(test_string,"DUMBASS","IDIOT")
+	test_string = string_replace_all(test_string,"Fuck","Hell")
+	test_string = string_replace_all(test_string,"Shit","Damn")
+	test_string = string_replace_all(test_string,"Dumbass","Idiot")
+}
 if string_length(test_string) <= 0 {
 	instance_destroy()
 }

@@ -24,7 +24,7 @@ function scr_truebattle_setup(type){
 			break
 		default:
 			mus_pause(global.current_mus)
-			global.true_battle_music = mus_play(mus_flowercore,true,1,1.2)
+			global.true_battle_music = mus_play(mus_battle_rkb,true,1,1.2)
 			global.true_battle_enemies[0] = instance_create(216,136,obj_truebattle_enemy_froggit) // PLACEHOLDER CHILL
 			show_debug_message("so it rans")
 			break

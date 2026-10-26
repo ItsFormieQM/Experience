@@ -10,6 +10,7 @@ if true {
 			show_debug_message("how tf")
 			playtxt = false
 			buffer = true
+			checkedforswear = false
 			global.interacted = false
 			if special_text {
 				fade = true

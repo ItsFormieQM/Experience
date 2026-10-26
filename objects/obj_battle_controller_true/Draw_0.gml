@@ -27,7 +27,7 @@ draw_text((xx + namewidth), 400, ("   LV " + string(global.lv)))
 var hpbarscale = 0.25
 draw_set_color(c_red)
 draw_rectangle(275, 400, (275 + (global.maxhp[0] * hpbarscale)), 420,false)
-draw_set_color(c_yellow)
+draw_set_color(c_aqua)
 draw_rectangle(275, 400, (275 + (global.hp[0] * hpbarscale)), 420,false)
 draw_set_color(c_white)
 
@@ -81,7 +81,7 @@ if global.selected == BattleTrue_Commands.Fight
 			var y_start = 280
 			
 			draw_rectangle(xwrite, (y_start + (i * lineheight)), (xwrite + 100), ((y_start + (i * lineheight)) + 16), false)
-			draw_set_color(c_lime)
+			draw_set_color(c_yellow)
 			draw_rectangle(xwrite, (y_start + (i * lineheight)), (xwrite + ((global.true_battle_enemyhp[i]._hp / global.true_battle_enemyhp[i]._maxhp) * 100)), ((y_start + (i * lineheight)) + 16), false)
 		}
 	}

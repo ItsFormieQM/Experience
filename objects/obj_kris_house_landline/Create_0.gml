@@ -13,6 +13,7 @@ called_police = false
 called_hospital = false
 ran = false
 talk = function(msc) {
+	room_persistent = true
 	switch msc {
 		case 0:
 			cmd_dialogue_play("kris_home_landline_1")
@@ -35,3 +36,4 @@ talk = function(msc) {
 			break
 	}
 }
+visible = true

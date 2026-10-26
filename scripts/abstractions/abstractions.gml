@@ -63,8 +63,11 @@ function len(input) {
 	}
 	return undefined
 }
+function lower(str) {
+	return string_lower(str)
+}
 function i_destroy() {
-	return instance_destroy()
+	instance_destroy()
 }
 function i_exists(obj) {
 	if instance_exists(obj)

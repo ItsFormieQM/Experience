@@ -5,6 +5,8 @@ handle = noone
 halt = false
 advance = false
 stopit = false
+checkedforswear = false
+show_debug_message($"PROFANITY SETTING: {global.setting_profanity ? "True":"False"}")
 if instance_exists(obj_mainchara)
 	obj_mainchara.image_index = 0
 show_debug_message("instantiate drwawer")
@@ -71,6 +73,7 @@ choicer_choices = []
 choice_pos_map = [] // struct
 font = fnt_main
 snd = noone
+ran = false
 scr_facechoice(noone)
 event_user(0)
 show_debug_message(test_string)

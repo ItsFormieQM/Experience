@@ -31,12 +31,15 @@ if room == room_deped_hallway_down {
 		}
 	}
 }
-if room == room_kris_house_upstairs_hallway {
-	
-}
+
 if room == room_black {
 	if global.prev_room == room_deped_hallway_down {
 		instance_create(0,0,obj_cutscener_krisintro_gohome,{spawned: true})
+	}
+	else if global.prev_room == room_kris_house_krisroom {
+		if global.flag[Flag.Story_Sleeping] {
+			
+		}
 	}
 }
 if room == room_kris_house_entry {

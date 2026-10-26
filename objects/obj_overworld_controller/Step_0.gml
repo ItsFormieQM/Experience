@@ -46,6 +46,7 @@ if room == room_kris_house_entry {
 	//	cmd_dialogue_play("kris_house_entry_landline_call_1",true,1)
 	//}
 }
+
 if global.flag[Flag.Story_Sleeping] {
 	if !dream_init {
 		dream_init = true

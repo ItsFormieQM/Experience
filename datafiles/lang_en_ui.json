@@ -10,7 +10,7 @@
 	"classroom_rm4_computer_2":"#t000^000#fnt001^002* You probably have one at^/  your own house too!/E",
 	"classroom_rm4_keyboard_1":"#t000^000#fnt001^002* A dusty old keyboard.^/^010^002* It looks like it came from^/  the 1980's./E",
 	"classroom_rm4_papers_1":"^W#t000^000#fnt001^002* A bunch of old documents.^/^010^002* They all have the same title.^/^010^002* ^YSchool Funding Reports.^W/E",
-	"clock_time_1":"#t000^000#fnt001^002^W* The clock reads ^Y4PM^W.^/^040^002* But it looks like it's^Y^/  1PM^W outside?/E",
+	"clock_time_1":"#t000^000#fnt001^002^W* The clock reads ^Y1PM^W.^/^020^002* But it looks like it's ^Y4PM^W^/  outside.../E",
 	"cutscene_start_intro_1":"#t001^000#fnt001^003^A* What the fuck...^/^020^002* Who are you?!/E",
 	"cutscene_start_intro_2":"#t000^000#fnt001^003^P* Human...^/^020^002* Are you perhaps?^/^040^002* ^AKris Dreemurr^P?/E",
 	"cutscene_start_intro_3":"#t999^000#fnt001^002^A* (What ^030^002the ^030^002actual ^040^002FUCK!?)^/^040^002* (HOW DOES THIS RANDOM CHICK^/  KNOW ME?!!)/E",
@@ -68,8 +68,12 @@
 	"kris_house_hallway_plant_1_2":"#t000^000#fnt001^002* It looks like it's about to^/  bloom into 5 pieces of^/  pretty fruits!/E",
 	"kris_house_intro_1":"#t001^000#fnt001^002^A* Hmm...^/^030^002* Mom's not here yet.^/^010^002* I hope there's food inside./E",
 	"kris_house_myroom_bed_mybed_1_1":"#t000^000#fnt001^002* It's your bed.^/^010^002* Do you want to sleep in it?^/#C         Yes         No /E",
-	"kris_house_myroom_bed_mybed_1_2":"#t000^000#fnt001^002* You took a nap^010.../E",
+	"kris_house_myroom_bed_mybed_1_2":"#t000^000#fnt001^002* You took a nap#F^020.../E",
+	"kris_house_myroom_bed_mybed_1_3":"#t000^000#fnt001^002#F* You felt your body being^/  relieved from the stress^020.../E",
+	"kris_house_myroom_bed_mybed_1_4":"#t000^000#fnt001^002#F* It felt so relieving that you^/  began dreaming^020.../E",
+	"kris_house_myroom_bed_mybed_1_5":"#t000^000#fnt001^002* It's too early to sleep...",
 	"kris_house_myroom_drawer_1_1":"#t000^000#fnt001^002* (It's your drawer.)^/^005^002* (There's nothing inside.)/E",
+	"kris_house_entry_leave_1_1":"#t001^000#fnt001^002^A* Too lazy...^/^020^002* I'd rather stay at home.../E",
 	"kris_talk_1_1":"#t001^000#fnt001^003^A* Glad no one's around to annoy^/  me./E",
 	"kris_talk_1_2":"#t001^000#fnt001^003^A* I've got to go home.../E",
 	"kris_talk_2_1":"#t001^000#fnt001^003^A* What the fuck did I just see?!^/^040^002* Was that a toddler I think?/E",
@@ -121,4 +125,5 @@
 	"used_item_heroin_2":"* You feel a bit tired and relaxed.",
 	"used_item_heroin_3":"* Movement is down by 50%!",
 	"xslash_act_1_kris":"#t000^000#fnt001^002* Kris used X-Slash.^/^020^002* The enemy's ATTACK went up^/  greatly!/E",
+	
 }

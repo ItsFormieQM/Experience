@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_mus_manager_centered",
-    "path":"sprites/spr_mus_manager_centered/spr_mus_manager_centered.yy",
+    "name":"spr_marker_cutscene",
+    "path":"sprites/spr_marker_cutscene/spr_marker_cutscene.yy",
   },
   "spriteMaskId":null,
   "visible":true,

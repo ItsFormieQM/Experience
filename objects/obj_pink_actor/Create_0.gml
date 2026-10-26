@@ -26,6 +26,7 @@ depth = obj_camera.depth - 1
 jump_state = false
 rot = 0
 name = Actors.Pink
+onetimeanim = false
 insert_self = function() {
 	for (var i = 0; i < array_length(global.actors); i++) {
 		if global.actors[i] == noone {
