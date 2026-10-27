@@ -1,4 +1,5 @@
 x = 320
+instance_destroy()
 self_x = x
 self_y = y - 0.1
 index = 1

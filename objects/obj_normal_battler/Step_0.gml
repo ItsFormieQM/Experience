@@ -10,11 +10,14 @@ with kris_obj {
 		image_speed = 0.5
 		other.arrived = true
 		image_speed = 1.25
-		array_delete(other.hero_aura_arrays,array_length(other.hero_aura_arrays) - 1, 1)
+		if len(other.hero_aura_arrays) > 0 {
+			array_delete(other.hero_aura_arrays,array_length(other.hero_aura_arrays) - 1, 1)
+		}
 		snd_play(snd_bstart,1.2)
 		snd_play(snd_impact,1.2)
 		x = tx
 		y = ty
+		other.alarm[0] = 30
 		
 	}
 	
@@ -22,7 +25,7 @@ with kris_obj {
 }
 if arrived {
 	if array_length(hero_aura_arrays) <= 0 {
-		instance_destroy()
+		
 	}
 	
 }

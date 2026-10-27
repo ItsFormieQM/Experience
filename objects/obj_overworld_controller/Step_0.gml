@@ -3,19 +3,6 @@ if keyboard_check_pressed(ord("Q")) {
 	cmd_restart()
 }
 
-//else if keyboard_check_pressed(ord("1")) && !global.flag[Flag.On_Battle] {
-//	if global.canmove {
-//		if room >= room_test {
-//			var inst = instance_create(-1000,-1000,obj_battle_test,{_song: mus_battle_files, _enemy_type: "none", _volume: 1.5})
-//			inst.force_run = true
-//		}
-//		else {
-//			room_goto(room_test)
-//			alarm[0] = 5
-//		}
-//	}
-//}
-
 if room == room_deped_hallway_down {
 	if instance_exists(obj_choicer) {
 		ran = false
@@ -35,16 +22,31 @@ if room == room_deped_hallway_down {
 	}
 }
 if room == room_kris_house_entry {
-	//if global.choice == 0 {
-	//	global.choice = -1
-	//	cmd_dialogue_play("kris_house_entry_landline_call_1",true,0)
-	//	subchoice = -1
-	//}
-	//else if global.choice == 1 {
-	//	global.choice = -1
-	//	subchoice = -2
-	//	cmd_dialogue_play("kris_house_entry_landline_call_1",true,1)
-	//}
+	
+	if global.flag[Flag.Story_DaysPassed] >= 2 && global.flag[Flag.Story_DayState] < DayState.Evening {
+		if !deletelazy {
+			for (var i = 0; i < len(global.interactable_controllerids); i++) {
+				if global.interactable_controllerids[i].slot == 1 {
+					if i_exists(global.interactable_controllerids[i]._id) {
+						with global.interactable_controllerids[i]._id {
+							instance_destroy()
+							other.deletelazy = true
+							
+							for (i = 0; i < len(global.warper_slot); i++) {
+								if global.warper_slot[i].slot == 1 {
+									with global.warper_slot[i]._id {
+										y += 60
+									}
+									break
+								}
+							}
+							break
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 if global.flag[Flag.Story_Sleeping] {

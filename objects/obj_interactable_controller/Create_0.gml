@@ -1,4 +1,6 @@
 // Inherit the parent event
+
+array_push(global.interactable_controllerids,{_id: id, slot: _id})
 can_move = true
 awarded = false
 interact_counter = 0

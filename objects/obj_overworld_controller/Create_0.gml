@@ -10,6 +10,7 @@ playery = 240
 subchoice = -1
 refused_state_markerinst = noone
 ran_sleep1 = false
+deletelazy = false
 die = function() {
 	var cam = view_camera[0]
 	var camx = camera_get_view_x(cam)

@@ -3,7 +3,7 @@
 gc_enable(false)
 gc_collect()
 global.flag[Flag.Can_DialogueFastSkip] = false
-
+functions = []
 global.cutscene = true
 moving_cam = false
 cam_move_speed = 0

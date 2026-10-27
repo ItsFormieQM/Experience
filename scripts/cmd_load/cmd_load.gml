@@ -2,6 +2,7 @@ function cmd_load(file = 1){
 	if !string_canbe_int(file) {
 		return -1
 	}
+	global.cutscene = false
 	file = integer_floor(real(file))
 	var max_save_files = 5
 	if file > max_save_files {

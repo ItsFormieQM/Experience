@@ -91,13 +91,27 @@ if instance_exists(kris_actor) && ran {
 		var alarm3_1 = time_source_create(time_source_game,41+16+40,time_source_units_frames,function(){
 		
 			var pink_actor = cutscene_get_actor_instance(Actors.Pink)
-			
+			var gooner = function() {
+				static i = 0
+				i++
+				static counter = 0
+				if counter >= 6 {
+					cutscene_function_remove(1)
+					return
+				}
+				if i >= 60 {
+					counter++
+					snd_play(snd_flowery_jarona)
+					i = 0
+				}
+			}	
+			cutscene_function_add(gooner,1)
 			
 		
 		})
 		var alarm4 = time_source_create(time_source_game,41+21+40,time_source_units_frames,function(){
 			
-			mus_play(mus_japan_cafe,2,1)
+			song[0] = new_mus_play(mus_japan_cafe,2,1)
 			var pink_actor = cutscene_get_actor_instance(Actors.Pink)
 			cutscene_actor_set_sprite(pink_actor,spr_pink_mad_lr,0)
 			with pink_actor {
@@ -147,7 +161,7 @@ if global.cutscene {
 			
 			if count == 1 {
 				count += 0.1
-				
+				cutscene_function_remove(1)
 				cutscene_actor_set_sprite(pink,spr_pink_sad_lr,0)
 			}
 			else if count == 6 {
@@ -158,10 +172,12 @@ if global.cutscene {
 		}
 		if con == 1 {
 			con = 1.1
-			mus_fade(75,0)
+			new_mus_fade(other.song[0],75,0)
 			
 			var alarm2 = time_source_create(time_source_game,120 + 30,time_source_units_frames,function(){
-				
+				with obj_cutscener_test_1 {
+					new_mus_toggle(song[0],true)
+				}
 				global.msg = []
 				var index = 0
 				global.msg[index] = "#t000^000#fnt001^002^P* Wait,^020^002 is it just me or is^/  something coming towards us^/  in this direction?/E"
@@ -191,7 +207,10 @@ if global.cutscene {
 				snd_play(snd_driving,1.2)
 			})
 			var alarm2 = time_source_create(time_source_game,120,time_source_units_frames,function(){
-				mus_fade(100,1)
+				with obj_cutscener_test_1 {
+					new_mus_toggle(song[0],false)
+					new_mus_fade(song[0],60,2)
+				}
 			})
 			var alarm3 = time_source_create(time_source_game,50+33,time_source_units_frames,function(){
 				var pink = cutscene_get_actor_instance(Actors.Pink)
@@ -200,6 +219,13 @@ if global.cutscene {
 					sprite_index = spr_realistic_explosion
 				}
 				snd_play(snd_realistic_explosion,1.2)
+				//var spinningmew = function() {
+				//	var pink_actor = cutscene_get_actor_instance(Actors.Pink)
+				//	with pink_actor {
+				//		direction = random_range(0,360)
+				//	}
+				//}
+				//cutscene_functionloop_add(spinningmew)
 				with pink {
 					hspeed = 18
 					vspeed = -18
@@ -236,7 +262,7 @@ if global.cutscene {
 		}
 		else if con == 3 {
 			with obj_cutscener_test_1 {
-				mus_fade(60,0)
+				new_mus_fade(song[0],60,0)
 				alarm[0] = 80
 			}
 			var gaster = cutscene_get_actor_instance(Actors.Gaster)

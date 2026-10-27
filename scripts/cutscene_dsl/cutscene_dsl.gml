@@ -243,6 +243,25 @@ function cutscene_instance_move_towards(instance_handle,_x,_y,sp) {
 		move_towards_point(_x,_y,sp)
 	}
 }
+///@desc Adds a function to be looped to the main cutscener controller object. Please note that your functions may not freeze execution unless a proper loop keyword is added (eg. 'for').
+///@param {any} function Recommended to pass a function variable. 
+///@param {real} id Set an ID so it can be freed easily.
+function cutscene_function_add(_function,__id) {
+	with obj_cutscene_controller {
+		array_push(functions,{func: _function, _id: __id})
+	}	
+}
+function cutscene_function_remove(_id) {
+	with obj_cutscene_controller {
+		for (var i = 0; i < len(functions); i++) {
+			if functions[i]._id == _id {
+				show_debug_message($"Function {functions[i].func}, with ID Number {functions[i]._id} has been deleted.")
+				array_delete(functions,i,1)	
+				
+			}	
+		}
+	}
+}
 enum Actor_Emotion {
 	ExclamationMark,
 	Thinking,

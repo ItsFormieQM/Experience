@@ -1,5 +1,6 @@
 function scr_init(){
 	audio_channel_num(256)
+	global.interactable_controllerids = []
 	randomise()
 	global.rooms = []
 	var rm = room_first 
@@ -9,7 +10,10 @@ function scr_init(){
 		rm = room_next(rm)
 	}
 	instance_create(0,0,obj_mus_manager_new)
-	
+	// Normal Battle
+	global.normalbattle_enemyinst = []
+	global.normalbattle_heroinst = []
+	// End of Table
 	global.music = []
 	global.played_music = []
 	global.prev_mus = noone

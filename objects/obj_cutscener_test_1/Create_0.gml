@@ -9,3 +9,4 @@ with obj_mainchara {
 	y = 3488
 }
 mus_fade(60,0)
+song = []
