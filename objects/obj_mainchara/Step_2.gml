@@ -27,26 +27,11 @@ if !global.flag[Flag.On_Battle] && !global.cutscene {
 		x = camera_get_view_x(cam) + 320
 		y = camera_get_view_y(cam) + self_y
 	}
-	with obj_bag {
-		x = camera_get_view_x(cam) + og_x
-		y = camera_get_view_y(cam) + og_y
-	}
-	with obj_kris_centerer {
-		x = camera_get_view_x(cam) + self_x
-		y = camera_get_view_y(cam) + self_y
-	}
-	with obj_enemy_centerer {
-		x = camera_get_view_x(cam) + self_x
-		y = camera_get_view_y(cam) + self_y
-	}
-	with obj_battle_ui_txtbox {
-		x = camera_get_view_x(cam) + self_x
-		y = camera_get_view_y(cam) + self_y
-	}
-	with obj_battle_ui_fight_kris {
-		x = camera_get_view_x(cam) + self_x
-		y = camera_get_view_y(cam) + self_y
-	}
+	
+	
+	
+	
+	
 	with obj_save_menu {
 		x = camera_get_view_x(cam) + self_x
 		y = camera_get_view_y(cam) + self_y
@@ -62,6 +47,7 @@ if global.cutscene {
 	
 	if !instance_exists(obj_mainchara_actor) {
 		_actor = instance_create(x,y,obj_mainchara_actor)
+		_actor.depth = depth
 		for (var i = 0; i < array_length(global.actors); i++) {
 			if global.actors[i] == noone {
 				global.actors[i] = {actor_name: Actors.Kris, actor: _actor}
@@ -69,11 +55,11 @@ if global.cutscene {
 				break
 			}
 		}
-		
+		_actor = cutscene_get_actor_instance(Actors.Kris)
+		x = round(_actor.x)
+		y = round(_actor.y)
 	}
-	var kris_actor = cutscene_get_actor_instance(Actors.Kris)
-	x = round(kris_actor.x)
-	y = round(kris_actor.y)
+	
 	//show_debug_message($"X: {kris_actor.x}")
 	//show_debug_message($"Y: {kris_actor.y}")
 	//show_debug_message($"MAINCHARA: {x}")

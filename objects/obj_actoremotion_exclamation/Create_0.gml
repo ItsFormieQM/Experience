@@ -8,7 +8,7 @@ else {
 show_debug_message(obj_name)
 if obj_name == obj_mainchara_actor {
 	myw = (actor.sprite_width + actor.x) - 34.5
-	myh = (actor.sprite_height + actor.y) - 123
+	myh = (actor.sprite_height + actor.y) - 130
 }
 else if obj_name == obj_pink_actor {
 	myw = actor.x / 6 + 60

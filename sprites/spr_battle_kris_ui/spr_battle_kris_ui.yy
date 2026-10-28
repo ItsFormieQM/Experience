@@ -12,19 +12,19 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"1213f46a-aaba-4dcf-beaa-987083f1356e","name":"1213f46a-aaba-4dcf-beaa-987083f1356e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"7de23e34-d65c-4b25-be7d-b029e13ddba3","name":"7de23e34-d65c-4b25-be7d-b029e13ddba3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"26bbe8cb-9447-426e-b1e5-fd84e9d3d5c9","name":"26bbe8cb-9447-426e-b1e5-fd84e9d3d5c9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"26825b9b-0594-4b32-880c-a473ca40ddb6","name":"26825b9b-0594-4b32-880c-a473ca40ddb6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"ba7d00cd-895d-4ec7-b5f9-587ba96087c8","name":"ba7d00cd-895d-4ec7-b5f9-587ba96087c8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"a5f18a3e-e2f4-4e83-8621-58e6b38cab9d","name":"a5f18a3e-e2f4-4e83-8621-58e6b38cab9d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1161bef4-c084-422a-ba4b-a2a7cd02f8c4","name":"1161bef4-c084-422a-ba4b-a2a7cd02f8c4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a7840f04-a03d-4980-8c4c-3c26684e5f5e","name":"a7840f04-a03d-4980-8c4c-3c26684e5f5e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a32dc0cb-5fa4-45d6-a723-049d0d77f9c5","name":"a32dc0cb-5fa4-45d6-a723-049d0d77f9c5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bbbf2e49-967b-488e-a866-dc3e70ee8c42","name":"bbbf2e49-967b-488e-a866-dc3e70ee8c42","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"170ece30-9bb3-4b86-b7b5-f5ff4cc03d55","name":"170ece30-9bb3-4b86-b7b5-f5ff4cc03d55","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"efdb134a-8e08-4924-b9cd-bae942983741","name":"efdb134a-8e08-4924-b9cd-bae942983741","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":71,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"30f89450-9c8a-4ccb-a7f9-d65c1654854a","blendMode":0,"displayName":"default","isLocked":false,"name":"30f89450-9c8a-4ccb-a7f9-d65c1654854a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"be6b09cc-7787-45f5-b9fa-64cee3da50eb","blendMode":0,"displayName":"default","isLocked":false,"name":"be6b09cc-7787-45f5-b9fa-64cee3da50eb","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_battle_kris_ui",
   "nineSlice":null,
@@ -74,23 +74,23 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1213f46a-aaba-4dcf-beaa-987083f1356e","path":"sprites/spr_battle_kris_ui/spr_battle_kris_ui.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"bcfd6a75-6cec-4460-a6d7-101eee85fb7b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1161bef4-c084-422a-ba4b-a2a7cd02f8c4","path":"sprites/spr_battle_kris_ui/spr_battle_kris_ui.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ff251f84-eb5d-44cf-9056-977ec63269be","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7de23e34-d65c-4b25-be7d-b029e13ddba3","path":"sprites/spr_battle_kris_ui/spr_battle_kris_ui.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"650d591f-3352-4744-9db9-fd7e08d0df70","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a7840f04-a03d-4980-8c4c-3c26684e5f5e","path":"sprites/spr_battle_kris_ui/spr_battle_kris_ui.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ae78b5de-0e71-47f0-85d7-ab6478a047e3","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"26bbe8cb-9447-426e-b1e5-fd84e9d3d5c9","path":"sprites/spr_battle_kris_ui/spr_battle_kris_ui.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c40f358f-60f7-4654-a529-d2b388973c78","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a32dc0cb-5fa4-45d6-a723-049d0d77f9c5","path":"sprites/spr_battle_kris_ui/spr_battle_kris_ui.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"60d34cfa-88a9-4ba7-93e7-3182c7a80b9b","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"26825b9b-0594-4b32-880c-a473ca40ddb6","path":"sprites/spr_battle_kris_ui/spr_battle_kris_ui.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2267eb4c-cbd1-4fa0-a333-e4e16cde3100","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bbbf2e49-967b-488e-a866-dc3e70ee8c42","path":"sprites/spr_battle_kris_ui/spr_battle_kris_ui.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"bcd50a69-e18b-41dc-993b-dc8ba13fb871","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ba7d00cd-895d-4ec7-b5f9-587ba96087c8","path":"sprites/spr_battle_kris_ui/spr_battle_kris_ui.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"42e8461a-3cef-4316-9fbe-bea8b4b9e3a9","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"170ece30-9bb3-4b86-b7b5-f5ff4cc03d55","path":"sprites/spr_battle_kris_ui/spr_battle_kris_ui.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b10709d5-33d0-4a06-8307-5d4e32548900","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a5f18a3e-e2f4-4e83-8621-58e6b38cab9d","path":"sprites/spr_battle_kris_ui/spr_battle_kris_ui.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"414b3157-8c10-492c-94e8-d8978ce08d88","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"efdb134a-8e08-4924-b9cd-bae942983741","path":"sprites/spr_battle_kris_ui/spr_battle_kris_ui.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8425df34-0a8b-449d-bddc-5857d8b1841f","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -3,6 +3,7 @@
   "%Name":"obj_susie_actor",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_susie_actor",
@@ -12,8 +13,8 @@
     "path":"folders/Susie.yy",
   },
   "parentObjectId":{
-    "name":"obj_frisk_actor",
-    "path":"objects/obj_frisk_actor/obj_frisk_actor.yy",
+    "name":"obj_pink_actor",
+    "path":"objects/obj_pink_actor/obj_pink_actor.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

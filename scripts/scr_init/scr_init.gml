@@ -191,6 +191,7 @@ function scr_init(){
 	#macro SwitchNX "Nintendo Switches"
 	#macro tsg time_source_game
 	#macro tsuf time_source_units_frames
+	#macro player obj_mainchara
 	#endregion
 	
 	#region Enums

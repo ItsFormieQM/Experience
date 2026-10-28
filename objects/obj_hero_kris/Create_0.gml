@@ -1,7 +1,8 @@
-sprite_index = spr_mainchara_r
+sprite_index = choose(spr_mainchara_r,spr_kris_fall)
 image_speed = 0
 setidle_pos = function() {
 	sprite_index = spr_kris_lw_battle_idle
 	image_speed = 1
 	image_index = 0
 }
+aura = []

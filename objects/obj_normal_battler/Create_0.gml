@@ -21,8 +21,8 @@ song = []
 array_push(global.normalbattle_heroinst,hero_kris)
 with kris_obj {
 	
-	tx = 50 + round(sprite_width * 1.8) + camx_ab
-	ty = 212 + camy_ab
+	tx = 35 + round(sprite_width * 1.8) + camx_ab
+	ty = 200 + camy_ab
 	spdr = 0
 	spdr = point_distance(x,y,tx,ty) / 20
 	show_debug_message(tx)
@@ -38,6 +38,7 @@ hero_aura_arrays = [
 //	}	
 //}	
 stop_aura = true
+
 var idealx = camx_ab
 var idealy = camy_ab
 var bg = instance_create(idealx+x,idealy+y,obj_battle_default_bg)

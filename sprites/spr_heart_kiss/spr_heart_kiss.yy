@@ -23,7 +23,7 @@
   ],
   "name":"spr_heart_kiss",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Experience (Chapter 1)",
     "path":"Experience (Chapter 1).yyp",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":6,
-    "yorigin":5,
+    "yorigin":8,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

@@ -125,5 +125,6 @@
 	"used_item_heroin_2":"* You feel a bit tired and relaxed.",
 	"used_item_heroin_3":"* Movement is down by 50%!",
 	"xslash_act_1_kris":"#t000^000#fnt001^002* Kris used X-Slash.^/^020^002* The enemy's ATTACK went up^/  greatly!/E",
-	"susie_dateruiner_1":"#t009^000#fnt001^002#F006#E010* Hey Lancer, ^020^002do you^/  know that yellow kid that came to school at the weekends?/E"
+	"susie_dateruiner_1":"#t009^000#fnt001^002#F006#E010* Hey Ralsei, ^010^002can you^/  show me more of that^/  healing spell you have?/E",
+	"susie_dateruiner_2":"#t009^000#fnt001^002#F006#E002* I really wanna learn^/  from you on how to do^/  support magic./E",
 }

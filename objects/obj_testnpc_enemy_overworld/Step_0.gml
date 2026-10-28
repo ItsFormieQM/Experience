@@ -1,4 +1,4 @@
-var player = obj_mainchara
+
 var dst = point_distance(x,y,player.x,player.y)
 var tdt = 210
 

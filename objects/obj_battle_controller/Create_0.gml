@@ -6,4 +6,16 @@ for (var i = 0; i < len(global.normalbattle_heroinst); i++) {
 	if i_exists(global.normalbattle_heroinst[i]) {
 		global.normalbattle_heroinst[i].setidle_pos()
 	}	
-}	
+}
+instance_create(x,y,obj_battle_ui_fight_kris,{},true)
+
+if i_exists(obj_drawer) {
+	instance_destroy(obj_drawer)
+}
+
+alarm[0] = 5
+bp = 0
+bpy = 152 
+intro = 1
+xx = camx_ab
+yy = camy_ab

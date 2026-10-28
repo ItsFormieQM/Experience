@@ -332,6 +332,14 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 				global.xx_offset[index] = 68
 				global.yy_offset[index] = 960 / 2 + 85
 				break
+			case "cutscener_test_battle":
+				global.msg = []
+				global.msg[0] = "#t001^002#fnt001^A* Fuck no, I have to fight this^/  enemy."
+				for (var i = 0; i < len(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}	
+				break
 			case "gaster_what_1":
 				index = -1
 				index++
@@ -700,6 +708,8 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 				display_scale = (surface_get_width(application_surface) / camw_ab)
 				finalx = (round((((88 * 4) + 0) * display_scale)) / display_scale)
 				finaly = 960 /2 + 85
+				global.msg[index] = result[$ $"susie_dateruiner_{index+1}"]
+				index++
 				global.msg[index] = result[$ $"susie_dateruiner_{index+1}"]
 				for (var i = 0; i < array_length(global.msg); i++) {
 					

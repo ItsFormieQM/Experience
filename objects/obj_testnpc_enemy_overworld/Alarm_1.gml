@@ -14,3 +14,4 @@ for (var i = 0; i < len(global.normalbattle_enemyinst); i++) {
 		global.normalbattle_enemyinst[i] = enemier
 	}
 }
+i_destroy()
