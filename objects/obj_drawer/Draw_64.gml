@@ -453,6 +453,11 @@ if timer / global.deltatime >= delay && !stop_draw {
 					
 				}
 			}
+			else if snd == snd_txtsus {
+				if playtxt {
+					handle = typersnd_play(snd,handle)
+				}
+			}
 			else if snd != noone {
 				handle = typersnd_play(snd,handle)
 				paused = false

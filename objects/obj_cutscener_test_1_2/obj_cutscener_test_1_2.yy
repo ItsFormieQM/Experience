@@ -12,12 +12,12 @@
   "name":"obj_cutscener_test_1_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Real/Cutscenes/Objects.yy",
+    "name":"Unused",
+    "path":"folders/Real/Cutscenes/Objects/Cutscenes/Unused.yy",
   },
   "parentObjectId":{
-    "name":"obj_cutscene_starter_master",
-    "path":"objects/obj_cutscene_starter_master/obj_cutscene_starter_master.yy",
+    "name":"obj_cutscener_starter_master",
+    "path":"objects/obj_cutscener_starter_master/obj_cutscener_starter_master.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

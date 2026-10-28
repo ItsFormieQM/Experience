@@ -12,6 +12,8 @@ function scr_facechoice(choice){
 		noelle,
 		flowery,
 		flowey,
+		susie,
+		ralsei
 	}
 	switch choice {
 		case facechoice.toriel: // toriel
@@ -21,8 +23,15 @@ function scr_facechoice(choice){
 			break
 		case facechoice.papyrus:
 			break
+		case facechoice.susie:
+			global.facechoice = obj_susie_face_dialogue
+			break
 		case facechoice.noelle:
 			global.facechoice = obj_noelle_face_dialogue
+			break
+		case facechoice.ralsei:
+			global.facechoice = obj_ralsei_face_dialogue
+			break
 		default:
 			break
 	}

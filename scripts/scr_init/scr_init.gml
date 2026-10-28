@@ -10,6 +10,7 @@ function scr_init(){
 		rm = room_next(rm)
 	}
 	instance_create(0,0,obj_mus_manager_new)
+	global.faceemotion = 0
 	// Normal Battle
 	global.normalbattle_enemyinst = []
 	global.normalbattle_heroinst = []
@@ -188,6 +189,8 @@ function scr_init(){
 	#macro PC "PC"
 	#macro Mobile "Mobile"
 	#macro SwitchNX "Nintendo Switches"
+	#macro tsg time_source_game
+	#macro tsuf time_source_units_frames
 	#endregion
 	
 	#region Enums

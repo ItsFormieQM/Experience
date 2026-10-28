@@ -188,6 +188,22 @@ function cutscene_get_actor_instance(name){
 	}
 	
 }
+///@desc Returns the instance handle for a specific actor.
+///@param {real} name Use the enum Actors.[actornamehere]!
+function cutscene_actor_get_instance(name){
+	var handle = noone
+	for (var i = 0; i < array_length(global.actors);i++) {
+		if global.actors[i] == noone {
+			continue
+		}
+		if global.actors[i].actor_name == name {
+			handle = global.actors[i].actor
+			
+			return handle
+		}
+	}
+	
+}
 ///@desc Does a fade animation. It always starts fading out but if the boolean 'reversed' is set to true, then it starts fading in.
 ///@param {real} incrementor The amount to increment or decrement depending on the 'reversed' boolean value. 
 ///@param {bool} reversed Whether to make it fade out (reversed = false) or fade in (reversed = true). Default is false.
@@ -257,7 +273,6 @@ function cutscene_function_remove(_id) {
 			if functions[i]._id == _id {
 				show_debug_message($"Function {functions[i].func}, with ID Number {functions[i]._id} has been deleted.")
 				array_delete(functions,i,1)	
-				
 			}	
 		}
 	}
@@ -274,5 +289,6 @@ enum Actors {
 	Susie,
 	Noelle,
 	Gaster,
-	Aqua
+	Aqua,
+	Ralsei
 }

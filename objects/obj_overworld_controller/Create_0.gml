@@ -11,6 +11,7 @@ subchoice = -1
 refused_state_markerinst = noone
 ran_sleep1 = false
 deletelazy = false
+school_day2 = false
 die = function() {
 	var cam = view_camera[0]
 	var camx = camera_get_view_x(cam)

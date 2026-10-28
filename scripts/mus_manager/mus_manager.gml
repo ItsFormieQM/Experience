@@ -35,10 +35,6 @@ function new_mus_set_loop(mus_struct,_bool) {
 	audio_sound_loop(mus_struct.mus,_bool)
 }
 function new_mus_free(mus_struct) {
-	if mus_struct == all {
-		audio_stop_all()
-		return
-	}
 	audio_stop_sound(mus_struct.mus)
 	
 }

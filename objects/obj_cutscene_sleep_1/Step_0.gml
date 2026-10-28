@@ -20,7 +20,8 @@ if instance_exists(kris_actor) && ran {
 	if !executed {
 		executed = true
 		
-		
+		song[0] = new_mus_play(mus_flashback_ex,0,0.8)
+		new_mus_fade(song[0],60,0.6)
 		cmd_dialogue_play("kris_house_myroom_bed_mybed_1",1,1)
 		
 	}

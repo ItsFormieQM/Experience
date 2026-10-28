@@ -4,6 +4,10 @@ if keyboard_check_pressed(ord("Q")) {
 }
 
 if room == room_deped_hallway_down {
+	if !school_day2 && global.flag[Flag.Story_DaysPassed] >= 2 {
+		school_day2 = true
+		instance_create(0,0,obj_cutscener_day2_school)
+	}
 	if instance_exists(obj_choicer) {
 		ran = false
 	}
@@ -20,6 +24,7 @@ if room == room_deped_hallway_down {
 			ran = true
 		}
 	}
+	
 }
 if room == room_kris_house_entry {
 	

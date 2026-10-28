@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Sleeping Cutscenes",
-    "path":"folders/Sleeping Cutscenes.yy",
+    "path":"folders/Real/Cutscenes/Objects/Cutscenes/Sleeping Cutscenes.yy",
   },
   "parentObjectId":{
     "name":"obj_cutscener_test_1",

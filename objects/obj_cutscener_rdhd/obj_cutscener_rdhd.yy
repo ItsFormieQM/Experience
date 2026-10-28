@@ -10,12 +10,12 @@
   "name":"obj_cutscener_rdhd",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Real/Cutscenes/Objects.yy",
+    "name":"Used",
+    "path":"folders/Real/Cutscenes/Objects/Cutscenes/Used.yy",
   },
   "parentObjectId":{
-    "name":"obj_cutscene_starter_master",
-    "path":"objects/obj_cutscene_starter_master/obj_cutscene_starter_master.yy",
+    "name":"obj_cutscener_starter_master",
+    "path":"objects/obj_cutscener_starter_master/obj_cutscener_starter_master.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

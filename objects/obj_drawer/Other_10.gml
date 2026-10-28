@@ -44,5 +44,9 @@ for (var i = 1; i <= string_length(test_string); i++) {
 if global.facechoice != noone {
 	global.facechoice = instance_create_layer((camx + x) + global.xx_offset_spriter[count], (camy + y) + global.yy_offset_spriter[count],"TECHNICAL",global.facechoice, {emotion: expression})
 	show_debug_message("KEPT SPAWNING WTF")
-
+	with global.facechoice {
+		if i_exists(obj_dialogue) {
+			depth = obj_dialogue.depth - 200
+		}
+	}
 }

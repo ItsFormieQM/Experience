@@ -57,5 +57,6 @@ global.flag[Flag.Story_DaysPassed]++
 if i_exists(obj_general_marker) {
 	instance_destroy(obj_general_marker)
 }
+new_mus_free(song[0])
 instance_destroy()
 

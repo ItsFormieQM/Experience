@@ -692,7 +692,32 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 					global.xx_offset[i] = 68
 					global.yy_offset[i] = 960 / 2 + 85
 				}
+				break
+			case "susie_dateruiner_1":
+				index = -1
+				index++
 				
+				display_scale = (surface_get_width(application_surface) / camw_ab)
+				finalx = (round((((88 * 4) + 0) * display_scale)) / display_scale)
+				finaly = 960 /2 + 85
+				global.msg[index] = result[$ $"susie_dateruiner_{index+1}"]
+				for (var i = 0; i < array_length(global.msg); i++) {
+					
+					// susie
+					global.xx_offset[i] = finalx - 34
+					global.yy_offset[i] = finaly
+					global.xx_offset_spriter[i] = (45.5 + (sprite_get_width(spr_susie_normal_face) / 4))
+					global.yy_offset_spriter[i] = (175 * 2) - 5
+					
+					// raly
+					//global.xx_offset[i] = finalx - 34
+					//global.yy_offset[i] = finaly
+					//global.xx_offset_spriter[i] = (45.5 + (sprite_get_width(spr_ralsei_face_dialogue) / 4))
+					//global.yy_offset_spriter[i] = (175 * 2) - 5
+				}
+				//if i_exists(obj_dialogue) {
+				//	instance_destroy(obj_dialogue)
+				//}
 				break
 			case "kris_house_entry_leave_1":
 				index = -1
