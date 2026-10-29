@@ -106,6 +106,7 @@
   "resources":[
     {"id":{"name":"fnt_battle","path":"fonts/fnt_battle/fnt_battle.yy",},},
     {"id":{"name":"fnt_hp","path":"fonts/fnt_hp/fnt_hp.yy",},},
+    {"id":{"name":"fnt_main_battletxt","path":"fonts/fnt_main_battletxt/fnt_main_battletxt.yy",},},
     {"id":{"name":"fnt_main_small","path":"fonts/fnt_main_small/fnt_main_small.yy",},},
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},},
     {"id":{"name":"fnt_sans","path":"fonts/fnt_sans/fnt_sans.yy",},},
@@ -170,6 +171,7 @@
     {"id":{"name":"obj_fightbt_true","path":"objects/obj_fightbt_true/obj_fightbt_true.yy",},},
     {"id":{"name":"obj_follow_system","path":"objects/obj_follow_system/obj_follow_system.yy",},},
     {"id":{"name":"obj_frisk_actor","path":"objects/obj_frisk_actor/obj_frisk_actor.yy",},},
+    {"id":{"name":"obj_froggit_actor","path":"objects/obj_froggit_actor/obj_froggit_actor.yy",},},
     {"id":{"name":"obj_gameover","path":"objects/obj_gameover/obj_gameover.yy",},},
     {"id":{"name":"obj_gameshaker","path":"objects/obj_gameshaker/obj_gameshaker.yy",},},
     {"id":{"name":"obj_gaster_actor","path":"objects/obj_gaster_actor/obj_gaster_actor.yy",},},

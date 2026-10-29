@@ -5,6 +5,7 @@ handle = noone
 halt = false
 advance = false
 stopit = false
+OVERRIDE_Y = 0
 checkedforswear = false
 show_debug_message($"PROFANITY SETTING: {global.setting_profanity ? "True":"False"}")
 if instance_exists(obj_mainchara)

@@ -23,6 +23,8 @@ with kris_obj {
 	
 	tx = 35 + round(sprite_width * 1.8) + camx_ab
 	ty = 200 + camy_ab
+	show_debug_message(tx)
+	show_debug_message(ty)
 	spdr = 0
 	spdr = point_distance(x,y,tx,ty) / 20
 	show_debug_message(tx)

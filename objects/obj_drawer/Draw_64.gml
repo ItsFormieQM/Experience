@@ -639,7 +639,7 @@ for (var i = 1; i <= string_length(test); i++) {
 		var deviationx = 45
 		var deviationy = 124.5
 		draw_text_ext_transformed_colour(
-			_x + deviationx,_y + deviationy,char,1,999,scale,scale,0,colour,colour,colour,colour,alpha
+			_x + deviationx,_y + deviationy+OVERRIDE_Y,char,1,999,scale,scale,0,colour,colour,colour,colour,alpha
 		)
 		
 		if is_choicer {

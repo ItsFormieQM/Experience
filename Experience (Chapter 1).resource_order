@@ -62,6 +62,7 @@
     {"name":"Sprites","order":1,"path":"folders/Susie/Sprites.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"fnt_main_battletxt","order":2,"path":"fonts/fnt_main_battletxt/fnt_main_battletxt.yy",},
     {"name":"fnt_sans","order":1,"path":"fonts/fnt_sans/fnt_sans.yy",},
     {"name":"fnt_truebattle_name","order":68,"path":"fonts/fnt_truebattle_name/fnt_truebattle_name.yy",},
     {"name":"obj_actbt_true","order":1,"path":"objects/obj_actbt_true/obj_actbt_true.yy",},
@@ -115,6 +116,7 @@
     {"name":"obj_fakebattleheart_intro","order":57,"path":"objects/obj_fakebattleheart_intro/obj_fakebattleheart_intro.yy",},
     {"name":"obj_follow_system","order":31,"path":"objects/obj_follow_system/obj_follow_system.yy",},
     {"name":"obj_frisk_actor","order":58,"path":"objects/obj_frisk_actor/obj_frisk_actor.yy",},
+    {"name":"obj_froggit_actor","order":147,"path":"objects/obj_froggit_actor/obj_froggit_actor.yy",},
     {"name":"obj_gameover","order":41,"path":"objects/obj_gameover/obj_gameover.yy",},
     {"name":"obj_gameshaker","order":133,"path":"objects/obj_gameshaker/obj_gameshaker.yy",},
     {"name":"obj_gaster_actor","order":109,"path":"objects/obj_gaster_actor/obj_gaster_actor.yy",},

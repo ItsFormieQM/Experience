@@ -1,5 +1,5 @@
 x = 320
-
+sel_smth = false
 self_x = x
 self_y = y - 0.1
 index = 1

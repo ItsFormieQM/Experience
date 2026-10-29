@@ -290,5 +290,6 @@ enum Actors {
 	Noelle,
 	Gaster,
 	Aqua,
-	Ralsei
+	Ralsei,
+	Froggit
 }

@@ -5,7 +5,7 @@ function mus_play(_mus = noone, loop = true, pitch = 1, vol = 1){
 	global.prev_mus = global.current_mus
 	global.current_mus_file = _mus
 	global.current_mus = audio_play_sound(_mus,90,loop,vol,0,pitch)
-	show_debug_message($"MUS: {global.current_mus}")
+	show_debug_message($"MUS: {audio_get_name(global.current_mus_file)}")
 }
 ///@desc Fades out the current playing music
 ///@param {real} Frames Eases out by specified frames 
