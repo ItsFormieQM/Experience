@@ -9,6 +9,7 @@ function scr_init(){
 		array_push(global.rooms,{room_index: rm, persistence: info.persistent})
 		rm = room_next(rm)
 	}
+	global.bdamagefont = font_add_sprite_ext(spr_dmg_goldnum, "0123456789+-%", 20, 0);
 	instance_create(0,0,obj_mus_manager_new)
 	global.faceemotion = 0
 	// Normal Battle

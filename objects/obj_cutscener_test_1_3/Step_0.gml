@@ -49,6 +49,8 @@ if global.cutscene {
 				with obj_cutscener_test_1_3 {
 					alarm[0] = 1
 					array_push(global.normalbattle_enemyinst,obj_testnpc_enemy_battle)
+					array_push(global.normalbattle_enemyinst,obj_testnpc_enemy_battle)
+					array_push(global.normalbattle_enemyinst,obj_testnpc_enemy_battle)
 					instance_create(0,0,obj_normal_battler)
 					show_debug_message(global.normalbattle_enemyinst)
 					show_debug_message($"LEN: {len(global.normalbattle_enemyinst)}")
@@ -56,6 +58,7 @@ if global.cutscene {
 						if object_exists(global.normalbattle_enemyinst[i]) {
 							var enemier = instance_create(froggit_actor.x,froggit_actor.y,global.normalbattle_enemyinst[i])
 							enemier.depth = obj_hero_kris.depth
+							
 							show_debug_message($"SPAWNED: {enemier.stats.name}")
 							global.normalbattle_enemyinst[i] = enemier
 						}

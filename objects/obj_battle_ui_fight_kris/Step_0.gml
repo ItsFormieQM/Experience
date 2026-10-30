@@ -32,7 +32,7 @@ if i_exists(obj_battle_controller) {
 				}
 				else if other.index_main == 1 {
 					sel_act = true
-					sel_act = 0
+					sel_act_index = 0
 				}
 				else if other.index_main == 2 {
 					sel_item = true
@@ -52,10 +52,18 @@ if i_exists(obj_battle_controller) {
 			}
 		}
 	}
-	if global.interacted_x {
+	if global.interacted_x && !obj_battle_controller.partyturn {
+		for (var i = 0; i < len(global.normalbattle_enemyinst); i++) {
+			with global.normalbattle_enemyinst[i] {
+				selected = false
+			}
+		}
 		with obj_drawer {
 			OVERRIDE_Y = 0
 			snd = snd_txt1
+		}
+		if i_exists(obj_enemy_highlighter) {
+			instance_destroy(obj_enemy_highlighter)
 		}
 		with obj_battle_controller {
 			sel_fight = false
@@ -70,7 +78,7 @@ if i_exists(obj_battle_controller) {
 			sel_defend_index = 0
 		}
 		sel_smth = false
-		
+		snd_play(snd_menu_move)
 	}
 	image_index = index_main+1
 }

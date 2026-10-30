@@ -1,0 +1,1 @@
+damage(random(stats.maxhp))

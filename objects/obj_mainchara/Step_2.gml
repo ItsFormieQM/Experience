@@ -55,11 +55,13 @@ if global.cutscene {
 				break
 			}
 		}
+		
+	}
+	if i_exists(_actor) {
 		_actor = cutscene_get_actor_instance(Actors.Kris)
 		x = round(_actor.x)
 		y = round(_actor.y)
 	}
-	
 	//show_debug_message($"X: {kris_actor.x}")
 	//show_debug_message($"Y: {kris_actor.y}")
 	//show_debug_message($"MAINCHARA: {x}")

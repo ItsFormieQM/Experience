@@ -1,6 +1,8 @@
 //cmd_battle_start(5)
-array_push(global.normalbattle_enemyinst,battle_object)
-
+var clmp = clamp(instance_number(object_index),1,3)
+repeat clmp {
+	array_push(global.normalbattle_enemyinst,battle_object)
+}
 mus_fade(1,0)
 alarm[3] = 120
 instance_create(0,0,obj_normal_battler)

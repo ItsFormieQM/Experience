@@ -21,14 +21,17 @@ if (point_distance(x,y,xstart,ystart) >= 1000 || place_meeting(x,y,obj_water)) &
 }
 if place_meeting(x,y,player) {
 	if !touched && chase && !tired {
-		touched = true
+		with object_index {
+			touched = true
+			
+			global.canmove = false
+			chase = false
+			speed = 0
+			image_speed = 0
+		}
 		snd_play(snd_tensionhorn)
 		alarm[2] = 16
 		alarm[1] = 40
-		global.canmove = false
-		chase = false
-		speed = 0
-		image_speed = 0
 	}
 }
 if giveup {

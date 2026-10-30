@@ -12,6 +12,7 @@ instance_create(x,y,obj_battle_ui_fight_kris,{},true)
 if i_exists(obj_drawer) {
 	instance_destroy(obj_drawer)
 }
+partyturn = false
 sel_fight = false
 sel_fight_index = 0
 sel_act = false

@@ -4,5 +4,7 @@ if battleintro {
 		speed = 0
 		x = xpos
 		y = ypos
+		xstart = xpos
+		ystart = ypos
 	}
 }

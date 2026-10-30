@@ -22,4 +22,20 @@ if len(aura) > 0 {
 		}
 	}
 }
+if selected {
+	if !i_exists(obj_enemy_highlighter) {
+		var highlighter = instance_create(x,y,obj_enemy_highlighter,{spr: sprite_index},true) 
+		with highlighter {
+			
+			owner = other.id
+		}
+	}
+}
+else {
+	if i_exists(obj_enemy_highlighter) {
+		if obj_enemy_highlighter.owner == id {
+			instance_destroy(obj_enemy_highlighter)
+		}
+	}
+}
 draw_self()
