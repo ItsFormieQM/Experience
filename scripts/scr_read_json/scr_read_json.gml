@@ -1,7 +1,7 @@
 function scr_read_json(_json){
 
 	if !file_exists(_json) {
-		show_debug_message("oh shit fix ts first!")
+		show_debug_message("oh son fix ts first!")
 		return {}
 		
 	}

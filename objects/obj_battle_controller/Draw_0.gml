@@ -41,16 +41,24 @@ if (sel_fight || sel_act || sel_spare) && !partyturn {
 	
 	if global.w_press {
 		sel_fight_index--
+		if len(global.normalbattle_enemyinst) >= 2 {
+			snd_play(snd_menu_move,1.2)
+		}
 	}
 	else if global.s_press {
 		sel_fight_index++
+		if len(global.normalbattle_enemyinst) >= 2 {
+			snd_play(snd_menu_move,1.2)
+		}
 	}
 	if sel_fight_index >= len(global.normalbattle_enemyinst) {
 		sel_fight_index = 0
 	}
+	
 	else if sel_fight_index <= -1 {
 		sel_fight_index = len(global.normalbattle_enemyinst)- 1
 	}
+	
 	var settings = draw_get_settings()
 	draw_set_colour(c_white)
 	draw_set_font(fnt_main_battletxt)

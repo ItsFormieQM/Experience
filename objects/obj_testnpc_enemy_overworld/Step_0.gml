@@ -1,4 +1,6 @@
-
+if global.flag[Flag.On_Battle] {
+	exit
+}
 var dst = point_distance(x,y,player.x,player.y)
 var tdt = 210
 

@@ -1,3 +1,5 @@
+hurtspr = spr_froggit_npc_hurt
+ogspr = sprite_index
 stats = {
 	name: "Test Froggit",
 	maxhp: 120,
@@ -9,6 +11,7 @@ stats = {
 actables = {
 	
 }
+
 shudder = false
 con = 0
 damage = function(dmg = -1) {
@@ -16,12 +19,14 @@ damage = function(dmg = -1) {
 	if dmg <= 0 {
 		dmg = 0
 	}
+	dmg = (dmg / stats.def) + irandom_range(stats.def-0.3321,stats.def+0.7953) 
 	shudder = true
 	alarm[1] = 1
 	stats.hp -= dmg
 	stats.hp = clamp(stats.hp,0,stats.maxhp)
+	
 	show_debug_message($"DAMAGE NUMBER: {dmg}")
-	var dmger = instance_create(bbox_left,y,obj_damage_writer,{damage: round(dmg)},true)
+	var dmger = instance_create(bbox_left+(sprite_width/2)-4,y,obj_damage_writer,{damage: round(dmg)},true)
 	snd_play(snd_enemy_damage,1.2)
 }
 shudder_amnt = 16
@@ -30,7 +35,7 @@ add_mercy = function(dmg = 0) {
 		dmg = 0
 	}
 	
-	var dmger = instance_create(bbox_left,y,obj_damage_writer,{damage: round(dmg)},true)
+	var dmger = instance_create(bbox_left+(sprite_width/2)-4,y,obj_damage_writer,{damage: round(dmg)},true)
 	with dmger {
 		type = 5
 	}

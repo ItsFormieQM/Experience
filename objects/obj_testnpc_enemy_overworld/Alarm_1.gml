@@ -1,5 +1,5 @@
 //cmd_battle_start(5)
-var clmp = clamp(instance_number(object_index),1,3)
+var clmp = clamp(instance_number(object_index),1,9999)
 repeat clmp {
 	array_push(global.normalbattle_enemyinst,battle_object)
 }
@@ -12,7 +12,7 @@ for (var i = 0; i < len(global.normalbattle_enemyinst); i++) {
 	if object_exists(global.normalbattle_enemyinst[i]) {
 		var enemier = instance_create(x,y,global.normalbattle_enemyinst[i])
 		enemier.depth = obj_hero_kris.depth
-		show_debug_message($"SPAWNED: {enemier.stats.name}")
+		show_debug_message($"SPAWNED: {enemier.stats.name}, {i+1}")
 		global.normalbattle_enemyinst[i] = enemier
 	}
 }

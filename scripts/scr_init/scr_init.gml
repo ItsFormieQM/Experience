@@ -15,6 +15,7 @@ function scr_init(){
 	// Normal Battle
 	global.normalbattle_enemyinst = []
 	global.normalbattle_heroinst = []
+	global.tp = 100
 	// End of Table
 	global.music = []
 	global.played_music = []
@@ -142,7 +143,7 @@ function scr_init(){
 	global.flag[Flag.Story_DeathCount] = 0
 	global.flag[Flag.Story_DayState] = DayState.Evening
 	#endregion
-	// Create this shit first
+	// Create this son first
 	if !directory_exists($"Chapter {global.chapter}")
 	// Create 5 save directories
 	for (var i = 1; i <= 5; i++) {

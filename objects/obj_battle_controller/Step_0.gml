@@ -9,8 +9,14 @@ if !partyturn {
 					image_index = 0
 					image_speed = 0
 				}
+				instance_create((x+camx_ab) + 150,(y+camy_ab) + 384,obj_atk_box,{},true)
+				with obj_battle_ui_fight_kris {
+					down()
+				}
+				show_debug_message("so?")
 			}
-			instance_create((x+camx_ab) + 150,(y+camy_ab) + 380,obj_atk_box,{},true)
+			
+			
 		}
 	}
 }

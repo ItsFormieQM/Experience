@@ -69,6 +69,9 @@ function lower(str) {
 function i_destroy() {
 	instance_destroy()
 }
+function sdm(str="") {
+	show_debug_message(str)
+}
 function i_exists(obj) {
 	if instance_exists(obj)
 		return true

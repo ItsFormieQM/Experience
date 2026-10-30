@@ -119,5 +119,5 @@ cutscene_actor_reset_sprite = function(actor_handle) {
 		cutscene_reset_spr()
 	}
 }
-// duplicate code kept so shit doesnt break hopefully
+// duplicate code kept so son doesnt break hopefully
 #endregion

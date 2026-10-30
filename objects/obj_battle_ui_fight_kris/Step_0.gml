@@ -1,8 +1,5 @@
-if i_exists(obj_battle_controller) {
-	with obj_battle_controller {
-		other.x = xx + 320
-		other.y = (camh_ab - bp) + yy
-	}
+if i_exists(obj_battle_controller) && !downstate {
+	
 	if !sel_smth {
 		if global.d_press {
 			index_main++
@@ -47,7 +44,7 @@ if i_exists(obj_battle_controller) {
 					sel_defend_index = 0
 				}
 				else {
-					show_error("shit smth broke at battle controller at line 46",true)
+					show_error("son smth broke at battle controller at line 46",true)
 				}
 			}
 		}

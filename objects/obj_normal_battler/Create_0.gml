@@ -38,7 +38,7 @@ hero_aura_arrays = [
 //	if i_exists(global.normalbattle_enemyinst) {
 //		global.normalbattle_enemyinst[i].battleintro()	
 //	}	
-//}	
+//}
 stop_aura = true
 
 var idealx = camx_ab

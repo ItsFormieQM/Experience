@@ -12,10 +12,19 @@ chose = false
 ran = false
 animtimer = 0
 anim_spr_arr = [{}]
-plskillmebro = false
+
 show_debug_message("spawned")
 linecounter = sprite_get_number(spr_kris_lw_battle_uiline)
 mainchara_doing = false
 index_main = 0
 index_fight = 0
+con = 0
+downstate = false
 max_indexmain_bt = 4
+down = function() {
+	downstate = true
+	alarm[0] = 1
+}
+vspeed = -30
+y = camh_ab+21
+friction = 2.4

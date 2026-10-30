@@ -10,3 +10,6 @@ giveup_calc = false
 tired = false
 battle_object = obj_testnpc_enemy_battle
 toofar = false
+if global.flag[Flag.On_Battle] {
+	instance_destroy()
+}

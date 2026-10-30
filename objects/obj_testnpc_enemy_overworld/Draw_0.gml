@@ -1,4 +1,6 @@
-
+if global.flag[Flag.On_Battle] {
+	exit
+}
 delay = 2
 time++
 if time >= delay {

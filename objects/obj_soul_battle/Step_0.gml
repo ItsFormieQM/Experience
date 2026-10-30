@@ -121,7 +121,7 @@ if instance_exists(obj_battle_border) && point_distance(x,y,obj_battle_border.x,
 		x = obj_battle_border.x
 		y = obj_battle_border.y
 	}
-	show_debug_message("holy shit its running")
+	show_debug_message("holy son its running")
 	canmove = true
 	stop_anim = true
 }
