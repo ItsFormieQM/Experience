@@ -42,7 +42,29 @@ function scr_load(){
 	
 		var wm_slot = file_text_read_real(file)
 		file_text_readln(file)
-	
+		var i = 0
+		while true {
+			var hp = file_text_read_real(file)
+				
+			file_text_readln(file)
+			if hp == floor(0) {
+				
+				break
+			}
+			
+			var maxhp = file_text_read_real(file)
+			file_text_readln(file)
+			
+			if maxhp == floor(0) {
+				
+				break
+			}
+			global.maxhp[i] = maxhp
+			global.hp[i] = hp
+			i++
+			
+		}
+		
 		file_text_close(file)
 	
 		filename = global.save_folder + "flags.json"

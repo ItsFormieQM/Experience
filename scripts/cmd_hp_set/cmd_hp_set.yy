@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_item_things",
+  "%Name":"cmd_hp_set",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_item_things",
+  "name":"cmd_hp_set",
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"Commands",
+    "path":"folders/Real/Console/Commands.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

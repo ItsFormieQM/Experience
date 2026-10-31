@@ -20,3 +20,8 @@ if !partyturn {
 		}
 	}
 }
+if global.hp[0] <= 0 {
+	cmd_kill()
+	global.flag[Flag.On_Battle] = false
+	instance_destroy()
+}

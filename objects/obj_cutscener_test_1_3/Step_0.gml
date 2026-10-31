@@ -19,7 +19,11 @@ if instance_exists(kris_actor) && ran {
 	
 	if !executed {
 		executed = true
-		var froggit_actor = cutscene_actor_create(obj_froggit_actor,kris_actor.x,kris_actor.y-110-340)
+		var clmpx = kris_actor.x
+		var clmpy = kris_actor.y-110-340 
+		clmpx = clamp(clmpx,0,room_width)
+		clmpy = clamp(clmpy,0,room_height)
+		var froggit_actor = cutscene_actor_create(obj_froggit_actor,clmpx,clmpy)
 		cutscene_walk(kris_actor,Up,4,70)
 		var alarm1 = time_source_create(tsg,70+50,tsuf,function(){
 			cutscene_move_camera(Up,110,4)

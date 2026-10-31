@@ -12,6 +12,8 @@ function scr_init(){
 	global.bdamagefont = font_add_sprite_ext(spr_dmg_goldnum, "0123456789+-%", 20, 0);
 	instance_create(0,0,obj_mus_manager_new)
 	global.faceemotion = 0
+	
+	
 	// Normal Battle
 	global.normalbattle_enemyinst = []
 	global.normalbattle_heroinst = []
@@ -187,6 +189,9 @@ function scr_init(){
 	}
 	global.file_number = 1
 	global.warper_slot = []
+	global.fonts = []
+	global.heroes = []
+	array_push(global.fonts,font_add_sprite_ext(fntspr_battlehp,"0123456789-+",6,2))
 	#region Macros
 	#macro PC "PC"
 	#macro Mobile "Mobile"
@@ -194,6 +199,7 @@ function scr_init(){
 	#macro tsg time_source_game
 	#macro tsuf time_source_units_frames
 	#macro player obj_mainchara
+	#macro fnt_battlehp_normal global.fonts[0]
 	#endregion
 	
 	#region Enums

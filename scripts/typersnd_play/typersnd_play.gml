@@ -69,10 +69,16 @@ function typersnd_play(typersnd = noone,handle = noone){
 	}
 	
 	if typersnd != noone {
-		if audio_exists(handle) {
-			audio_stop_sound(handle)
+		
+		
+		if typersnd == snd_txtsus {
+			handle = audio_play_sound(typersnd,1,false,0.5)
 		}
-		handle = audio_play_sound(typersnd,1,false,1.5)
+		else {
+			audio_stop_sound(typersnd)
+			handle = audio_play_sound(typersnd,1,false,1.5)
+		}
+		
 	}
 	return handle
 }

@@ -22,8 +22,14 @@ die = function() {
 	var dc = global.flag[Flag.Story_DeathCount]
 	global.flag[Flag.Story_DeathCount]++
 	if room != room_battle {
-		playerx = obj_mainchara.x - camx
-		playery = obj_mainchara.y - camy
+		if i_exists(obj_mainchara) {
+			playerx = obj_mainchara.x - camx
+			playery = obj_mainchara.y - camy
+		}
+		if i_exists(obj_hero_kris) {
+			playerx = obj_hero_kris.x-camy
+			playery = obj_hero_kris.y - camx
+		}
 	}
 	else {
 		playerx = obj_heart.x - camx

@@ -1,5 +1,5 @@
-function scr_item(_new,) constructor{
-	exit
+function Item() constructor{
+	
 }
 function check_item_type(type) {
 	

@@ -1,4 +1,4 @@
-x = 320
+
 sel_smth = false
 self_x = x
 self_y = y - 0.1
@@ -26,5 +26,5 @@ down = function() {
 	alarm[0] = 1
 }
 vspeed = -30
-y = camh_ab+21
+y = (camh_ab+21)+camy_ab
 friction = 2.4

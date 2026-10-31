@@ -10,7 +10,7 @@ for (var i = 0; i < len(global.normalbattle_heroinst); i++) {
 		global.normalbattle_heroinst[i].setidle_pos()
 	}	
 }
-instance_create(x,camy_ab+camh_ab,obj_battle_ui_fight_kris,{},true)
+instance_create((camw_ab/2)+camx_ab,camy_ab+camh_ab,obj_battle_ui_fight_kris,{},true)
 instance_create(0,0,obj_nb_tp,{},true)
 if i_exists(obj_drawer) {
 	instance_destroy(obj_drawer)
@@ -32,3 +32,5 @@ bpy = 152
 intro = 1
 xx = camx_ab
 yy = camy_ab
+permx = 0
+permxbool = false

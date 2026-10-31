@@ -7,4 +7,6 @@ setidle_pos = function() {
 	image_speed = 1
 	image_index = 0
 }
+
 aura = []
+array_push(global.heroes,id)

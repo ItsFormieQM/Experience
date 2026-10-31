@@ -33,10 +33,20 @@ function scr_save(savepoint_id){
 	file_text_write_real(file,global.lv)
 	file_text_writeln(file)
 	
-	// slot number of the nearest warp marker
+	// slot number of the nearest warp marker line 7
 	file_text_write_real(file,savepoint_id)
-	file_text_close(file)
+	file_text_writeln(file)
 	
+	// lines idk
+	for (var i = 0; i < len(global.hp) && i < len(global.maxhp); i++) {
+		file_text_write_real(file,global.hp[i])
+		file_text_writeln(file)
+		file_text_write_real(file,global.maxhp[i])
+		file_text_writeln(file)
+	}
+	file_text_write_string(file,"end of hp")
+	file_text_writeln(file)
+	file_text_close(file)
 	// FLAGS SAVING
 	filename = global.save_folder + "flags.json"
 	if file_exists(filename) {
