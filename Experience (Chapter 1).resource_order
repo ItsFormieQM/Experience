@@ -109,6 +109,7 @@
     {"name":"obj_debug_battle_tester","order":23,"path":"objects/obj_debug_battle_tester/obj_debug_battle_tester.yy",},
     {"name":"obj_dialogue","order":14,"path":"objects/obj_dialogue/obj_dialogue.yy",},
     {"name":"obj_door_warp","order":18,"path":"objects/obj_door_warp/obj_door_warp.yy",},
+    {"name":"obj_drawer","order":162,"path":"objects/obj_drawer/obj_drawer.yy",},
     {"name":"obj_dreamworld_entry","order":56,"path":"objects/obj_dreamworld_entry/obj_dreamworld_entry.yy",},
     {"name":"obj_enemy_centerer","order":8,"path":"objects/obj_enemy_centerer/obj_enemy_centerer.yy",},
     {"name":"obj_enemy_highlighter","order":4,"path":"objects/obj_enemy_highlighter/obj_enemy_highlighter.yy",},

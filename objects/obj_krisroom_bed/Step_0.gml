@@ -10,13 +10,15 @@ if place_meeting(x,y,obj_mainchara) {
 	}
 	if global.choice == 0 {
 		
-		var krissy = cutscene_get_actor_instance(Actors.Kris)
-		cutscene_actor_set_direction(krissy,Left)
+		var krissy = player
+		
+	
 		global.flag[Flag.Story_Sleeping] = true
-		darkner = instance_create(0,0,obj_fader_menu)
+		var darkner = instance_create(0,0,obj_fader_menu)
 		with darkner {
+			depth = krissy.depth - 20
 			incrementor = -0.01
-			layer_add_instance("Instances",id)
+			
 		}
 		global.choice = -2
 		alarm[0] = 210

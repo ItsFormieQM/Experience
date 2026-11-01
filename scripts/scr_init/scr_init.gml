@@ -60,7 +60,7 @@ function scr_init(){
 	for (var i = 1; i <= 128; i++) {
 		global.actors[i-1] = noone
 	}
-	global.setting_profanity = false
+	global.setting_profanity = true
 	global.oldroom = ""
 	enum Flag {
 		On_School = 0, // 0
@@ -187,6 +187,7 @@ function scr_init(){
 	else if os_type == os_switch || os_type == os_switch2 {
 		global.osflavor = SwitchNX
 	}
+	global.osflavor = Mobile
 	global.file_number = 1
 	global.warper_slot = []
 	global.fonts = []

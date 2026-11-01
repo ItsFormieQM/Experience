@@ -18,3 +18,4 @@ global.interacted_f = keyboard_check_pressed(ord(global.f))
 global.held_x = keyboard_check(ord(global._x))
 global.l_click = device_mouse_check_button_pressed(0,mb_left)
 global.l_held = device_mouse_check_button(0,mb_left)
+depth = layer_get_depth("TECHNICAL") - 999999999999999

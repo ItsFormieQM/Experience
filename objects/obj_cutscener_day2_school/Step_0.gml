@@ -40,6 +40,27 @@ if instance_exists(kris_actor) && ran {
 		var alarm4 = time_source_create(tsg,100+65+85+130,tsuf,function(){
 			var kris_actor = cutscene_actor_get_instance(Actors.Kris)
 			cutscene_move_camera(Right,150,4)
+			var killfunc = function() {
+				static con = 0
+				static exc = false
+				con++
+				if con >= 30 {
+					with obj_cutscener_day2_school {
+						if !exc {
+							exc = true
+							alarm[0] = 1
+						}
+						
+						if ran == false {
+							cmd_kill()
+							con = 0
+							cutscene_function_remove(0)
+						}
+					}
+					
+				}
+			}
+			cutscene_function_add(killfunc,0)
 		})
 		var alarm5 = time_source_create(tsg,100+65+85+260+100,tsuf,function(){
 			cmd_dialogue_play("susie_dateruiner_1")
