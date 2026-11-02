@@ -48,7 +48,7 @@ if (delaytimer >= delay)
         
         if (type == 5) damagemessage = "+" + string(damage) + "%";        
         if (type == 5 && damage < 0) damagemessage = string(damage) + "%";
-        
+        sdm(message)
         init = 1;
     }
     var _renderstretch = stretch / 2 * scale

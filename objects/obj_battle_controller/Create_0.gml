@@ -3,7 +3,7 @@ if instance_number(object_index) >= 2 {
 	instance_destroy()
 }
 if global.chapter == 1 {
-	song[0] = new_mus_play(mus_battle_ttt,1.5)
+	song[0] = new_mus_play(mus_battle_rb,1.5)
 }	
 for (var i = 0; i < len(global.normalbattle_heroinst); i++) {
 	if i_exists(global.normalbattle_heroinst[i]) {

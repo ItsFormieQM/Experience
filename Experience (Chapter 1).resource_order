@@ -387,7 +387,7 @@
     {"name":"spr_battle_default_bg","order":38,"path":"sprites/spr_battle_default_bg/spr_battle_default_bg.yy",},
     {"name":"spr_battle_enemy_dialogue_box","order":37,"path":"sprites/spr_battle_enemy_dialogue_box/spr_battle_enemy_dialogue_box.yy",},
     {"name":"spr_battle_kris_ui_anim","order":39,"path":"sprites/spr_battle_kris_ui_anim/spr_battle_kris_ui_anim.yy",},
-    {"name":"spr_battle_kris_ui_down","order":44,"path":"sprites/spr_battle_kris_ui_down/spr_battle_kris_ui_down.yy",},
+    {"name":"spr_battle_kris_ui_down","order":70,"path":"sprites/spr_battle_kris_ui_down/spr_battle_kris_ui_down.yy",},
     {"name":"spr_battle_kris_ui","order":40,"path":"sprites/spr_battle_kris_ui/spr_battle_kris_ui.yy",},
     {"name":"spr_battlemsg","order":150,"path":"sprites/spr_battlemsg/spr_battlemsg.yy",},
     {"name":"spr_battlename_kris","order":143,"path":"sprites/spr_battlename_kris/spr_battlename_kris.yy",},

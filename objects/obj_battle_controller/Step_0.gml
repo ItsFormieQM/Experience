@@ -8,7 +8,9 @@ if !partyturn {
 				partyturn_act_sel = false
 				partyturn_act = false
 				sel_act = false
-				method_call(global.actables[actenemindex].actables[sel_act_index].acted)
+				sdm(actenemindex)
+				sdm(global.normalbattle_enemyinst)
+				method_call(global.actables[actenemindex].actables[sel_act_index].acted,[global.normalbattle_enemyinst[actenemindex]])
 			}
 			if partyturn_act {
 				actenemindex = sel_fight_index

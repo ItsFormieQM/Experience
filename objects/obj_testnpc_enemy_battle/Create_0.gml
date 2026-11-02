@@ -1,5 +1,6 @@
 hurtspr = spr_froggit_npc_hurt
 ogspr = sprite_index
+
 stats = {
 	name: "Test Froggit",
 	maxhp: 120,
@@ -15,7 +16,9 @@ array_push(
 		_id: id, 
 		actables: [
 			new Act_Check("Check",0,none,["#t000^002^W* Test Froggit - AT:-666 DEF:67^/* Life's difficult for this enemy.^/* Try using the ^YMYSTIFY^W act?"]),
-			new Act_MercyAdders("Compliment",0,none,"#t000^002* Froggit didn't understand what you said,^/  ^020^002but was flattered anyway.") ]
+			new Act_MercyAdders("Compliment",0,99,none,["#t000^002* Froggit didn't understand what you said,^/  ^020^002but was flattered anyway."]),
+			new Act_Damagers("X-Insult",0,20,none,["#t000^002* You insulted the enemy.^/* The enemy was harmed!"],6) 
+		]
 	}
 )
 

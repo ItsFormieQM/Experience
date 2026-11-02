@@ -3,14 +3,22 @@ spec = 0;
 delaytimer = 0;
 delay = 2;
 active = 0;
+var fndsmth = false
 if !variable_instance_exists(self,"damage") {
 	damage = -1;
 }
+selfid = id
+var fnd = false
+selfobj = object_index
+
+
+
 bounces = 0;
 type = -1;
 mercytimer = 0;
 stretch = 0.2;
 stretchgo = 1;
+
 /*
 lightf = merge_color(c_purple, c_white, 0.6);
 lightb = merge_color(c_aqua, c_white, 0.5);
@@ -32,3 +40,16 @@ xx = camx_ab
 message_sprite = spr_battlemsg
 
 char = 0;
+with selfobj {
+	if id == other.selfid {
+		continue
+	}
+	if point_distance(x,y,other.x,other.y) <= (sprite_get_width(spr_numbers_yellow)+sprite_height)*2 {
+		fnd = true
+		other.y -= sprite_get_height(spr_numbers_yellow)
+		other.xstart = other.x
+		other.ystart = other.y
+		sdm("fro i won")
+		exit
+	}
+}	
