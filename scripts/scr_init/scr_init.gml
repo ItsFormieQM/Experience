@@ -12,12 +12,17 @@ function scr_init(){
 	global.bdamagefont = font_add_sprite_ext(spr_dmg_goldnum, "0123456789+-%", 20, 0);
 	instance_create(0,0,obj_mus_manager_new)
 	global.faceemotion = 0
-	
-	
+	display_set_timing_method(tm_sleep)
+	display_set_sleep_margin(30);
+
+	// 3. Re-request the 60 FPS cap
+	game_set_speed(60, gamespeed_fps);
+
 	// Normal Battle
 	global.normalbattle_enemyinst = []
 	global.normalbattle_heroinst = []
 	global.tp = 100
+	global.actables = []
 	// End of Table
 	global.music = []
 	global.played_music = []
@@ -60,7 +65,7 @@ function scr_init(){
 	for (var i = 1; i <= 128; i++) {
 		global.actors[i-1] = noone
 	}
-	global.setting_profanity = true
+	
 	global.oldroom = ""
 	enum Flag {
 		On_School = 0, // 0
@@ -91,6 +96,7 @@ function scr_init(){
 		Story_RefusedSOUL,// 25
 		Story_DeathCount, // 26
 		Story_DayState, // 27
+		Story_Day2Intro_School, // 28
 		COUNT,
 	}
 
@@ -122,7 +128,8 @@ function scr_init(){
 		"Player_Running",
 		"Story_RefusedSOUL",
 		"Story_DeathCount",
-		"Story_DayState"
+		"Story_DayState",
+		"Story_Day2Intro_School"
 		
 	]
 	#region set flags to default
@@ -141,6 +148,7 @@ function scr_init(){
 	global.flag[Flag.Story_Route] = Route.Normal
 	global.flag[Flag.Story_Weather] = Weather.Sunny
 	global.flag[Flag.Story_IntroKrisHouse_Cutscene] = true
+	global.flag[Flag.Story_Day2Intro_School] = true
 	global.flag[Flag.Story_RefusedSOUL] = 0
 	global.flag[Flag.Story_DeathCount] = 0
 	global.flag[Flag.Story_DayState] = DayState.Evening
@@ -187,7 +195,7 @@ function scr_init(){
 	else if os_type == os_switch || os_type == os_switch2 {
 		global.osflavor = SwitchNX
 	}
-	global.osflavor = Mobile
+	
 	global.file_number = 1
 	global.warper_slot = []
 	global.fonts = []
@@ -251,7 +259,13 @@ function scr_init(){
 	#endregion
 	var filename = global.save_folder + "savedata.txt"
 	show_debug_message("DEFAULT SAVE FOLDER: " + filename)
-	
+	// settings page
+	global.setting_profanity = true
+	global.ldm = false
+	if global.osflavor == Mobile {
+		global.ldm = true
+	}
+	// end of sp
 }
 exception_unhandled_handler(function(ex) {
 	snd_play(snd_error)

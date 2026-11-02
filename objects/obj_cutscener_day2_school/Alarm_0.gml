@@ -1,7 +1,7 @@
 global.cutscene = false
 ran = false
 executed = false
-
+global.flag[Flag.Story_Day2Intro_School] = false
 mus_fade(60,1)
 // Inherit the parent event
 instance_destroy()

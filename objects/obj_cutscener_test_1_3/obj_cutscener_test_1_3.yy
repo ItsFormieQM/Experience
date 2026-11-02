@@ -10,8 +10,8 @@
   "name":"obj_cutscener_test_1_3",
   "overriddenProperties":[],
   "parent":{
-    "name":"Unused",
-    "path":"folders/Real/Cutscenes/Objects/Cutscenes/Unused.yy",
+    "name":"Debug",
+    "path":"folders/Real/Cutscenes/Objects/Cutscenes/Debug.yy",
   },
   "parentObjectId":{
     "name":"obj_cutscener_test_1",

@@ -1,6 +1,9 @@
 if global.flag[Flag.On_Battle] {
 	exit
 }
+if global.cutscene {
+	exit
+}
 var dst = point_distance(x,y,player.x,player.y)
 var tdt = 210
 
@@ -14,9 +17,7 @@ if dst <= tdt && !seen {
 	}	
 	alarm[0] = 30
 }
-if global.cutscene {
-	instance_destroy()
-}
+
 if (point_distance(x,y,xstart,ystart) >= 1000 || place_meeting(x,y,obj_water)) && !toofar{
 	alarm[4] = 1
 	toofar = true

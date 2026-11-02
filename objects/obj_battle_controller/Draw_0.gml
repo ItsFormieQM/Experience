@@ -1,4 +1,5 @@
 var bcolor = 3350579
+var settings = draw_get_settings()
 if (intro == 1) { // SLIDE UP
     if (bp < (bpy - 1))
     {
@@ -37,7 +38,7 @@ draw_rectangle(xx - 10, (480 - bp - 3) + yy, xx + 700, (480 - bp - 2) + yy, fals
 draw_set_color(bcolor);
 
 draw_rectangle(xx - 10, (480 - bp) + 34 + yy, xx + 700, (480 - bp) + 36 + yy, false);
-if (sel_fight || sel_act || sel_spare) && !partyturn {
+if (sel_fight || sel_act || sel_spare) && !partyturn && !partyturn_act_sel{
 	
 	if global.w_press {
 		sel_fight_index--
@@ -59,7 +60,7 @@ if (sel_fight || sel_act || sel_spare) && !partyturn {
 		sel_fight_index = len(global.normalbattle_enemyinst)- 1
 	}
 	
-	var settings = draw_get_settings()
+	
 	draw_set_colour(c_white)
 	draw_set_font(fnt_main_battletxt)
 	draw_sprite(
@@ -89,7 +90,64 @@ if (sel_fight || sel_act || sel_spare) && !partyturn {
 		}
 	}
 	
-	draw_set_settings(settings)
+	
 }
-
+else if partyturn_act_sel {
+	if global.w_press {
+		sel_act_index--
+		if len(global.actables[actenemindex].actables) >= 2 {
+			snd_play(snd_menu_move,1.2)
+		}
+	}
+	else if global.s_press {
+		sel_act_index++
+		if len(global.actables[actenemindex].actables) >= 2 {
+			snd_play(snd_menu_move,1.2)
+		}
+	}
+	if sel_act_index >= len(global.actables[actenemindex].actables) {
+		sel_act_index = 0
+	}
+	else if sel_act_index <= -1 {
+		sel_act_index = len(global.actables[actenemindex].actables)- 1
+	}
+	draw_sprite(
+		spr_heart_centered,
+		0,
+		53+camx_ab,
+		391+camy_ab + (30*sel_act_index)
+	)
+				
+	for (var i = 0; i < len(global.actables); i++) {
+		if i_exists(global.actables[i]._id) {
+			draw_set_colour(c_white)
+			draw_set_font(fnt_main_battletxt)
+			
+			for (var j = 0; j < len(global.actables[i].actables); j++) {
+				
+				
+				draw_text_ext_transformed(
+					75+camx_ab,
+					373+camy_ab+(j*30),
+					global.actables[i].actables[j].name,
+					20,
+					9999,
+					0.99,
+					0.99,
+					0
+				)
+				
+			}
+			if global.interacted {
+				
+				sdm(global.actables[i].actables[sel_act_index])
+				partyturn = true
+				partyturn_act_sel = false
+				partyturn_act = false
+				sel_act = false
+			}
+		}
+	}
+}
+draw_set_settings(settings)
 draw_self()

@@ -79,6 +79,11 @@ if room == room_black {
 		alarm[1] = 200
 	}
 }
+if room == room_luzaro_beach_wharf {
+	if global.prev_room == room_deped_hallway_down {
+		instance_create(0,0,obj_cutscener_debugluzaro)
+	}	
+}	
 if global.flag[Flag.Story_RefusedSOUL] >= 1 {
 	if global.prev_room == room_gameover {
 		instance_destroy(refused_state_markerinst)

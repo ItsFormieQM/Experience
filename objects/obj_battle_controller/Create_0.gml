@@ -3,7 +3,7 @@ if instance_number(object_index) >= 2 {
 	instance_destroy()
 }
 if global.chapter == 1 {
-	song[0] = new_mus_play(mus_battle_pd,1.5)
+	song[0] = new_mus_play(mus_battle_ttt,1.5)
 }	
 for (var i = 0; i < len(global.normalbattle_heroinst); i++) {
 	if i_exists(global.normalbattle_heroinst[i]) {
@@ -15,7 +15,10 @@ instance_create(0,0,obj_nb_tp,{},true)
 if i_exists(obj_drawer) {
 	instance_destroy(obj_drawer)
 }
+actenemindex = 0
 partyturn = false
+partyturn_act = false
+partyturn_act_sel = false
 sel_fight = false
 sel_fight_index = 0
 sel_act = false

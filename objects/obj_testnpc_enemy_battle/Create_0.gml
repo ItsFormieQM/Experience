@@ -8,9 +8,16 @@ stats = {
 	spareable: false,
 	
 }
-actables = {
-	
-}
+#macro none "none"
+array_push(
+	global.actables,
+	{
+		_id: id, 
+		actables: [
+			new Act_Check("Check",0,none,["#t000^002^W* Test Froggit - AT:-666 DEF:67^/* Life's difficult for this enemy.^/* Try using the ^YMYSTIFY^W act?"]),
+			new Act_MercyAdders("Compliment",0,none,"#t000^002* Froggit didn't understand what you said,^/  ^020^002but was flattered anyway.") ]
+	}
+)
 
 shudder = false
 con = 0

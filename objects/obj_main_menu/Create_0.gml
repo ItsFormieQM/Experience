@@ -6,6 +6,7 @@ choices = [
 	"Copy",
 	"Erase",
 ]
+opened_settings = false
 erase_file = function(file) {
 	if file_exists(file) {
 		file_delete(file)

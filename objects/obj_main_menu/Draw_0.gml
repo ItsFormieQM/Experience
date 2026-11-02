@@ -1,0 +1,6 @@
+var settings = draw_get_settings()
+draw_set_halign(fa_center)
+draw_set_valign(fa_center)
+draw_set_font(fnt_main_battletxt)
+draw_text(camx_ab+(camw_ab/2),camy_ab+(camh_ab-20),scr_gettext("menu_config_1"))
+draw_set_settings(settings)

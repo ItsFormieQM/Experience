@@ -103,6 +103,11 @@ function scr_load(){
 		var ri = irandom_range(room_first,room_last)
 		room_goto(ri)
 	}
+	display_set_timing_method(tm_sleep)
+	display_set_sleep_margin(30);
+
+	// 3. Re-request the 60 FPS cap
+	game_set_speed(60, gamespeed_fps);
 	//instance_create(obj_mainchara.x,obj_mainchara.y,obj_warp, {target_marker_slot: wm_slot, target_room: rm, is_onload: true})
 	//random_set_seed(global.flag[Flag.Game_Seed],true)
 	

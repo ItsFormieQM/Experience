@@ -7,6 +7,12 @@ setidle_pos = function() {
 	image_speed = 1
 	image_index = 0
 }
-
+actstate = function() {
+	sprite_index = spr_krisb_act
+	image_speed = 1
+	image_index = 0
+	onetimeanim = true
+}
+onetimeanim = false
 aura = []
 array_push(global.heroes,id)
