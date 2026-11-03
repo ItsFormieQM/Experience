@@ -135,6 +135,7 @@
     {"id":{"name":"obj_battle_ui_txtbox","path":"objects/obj_battle_ui_txtbox/obj_battle_ui_txtbox.yy",},},
     {"id":{"name":"obj_battlebt_true","path":"objects/obj_battlebt_true/obj_battlebt_true.yy",},},
     {"id":{"name":"obj_battleicon","path":"objects/obj_battleicon/obj_battleicon.yy",},},
+    {"id":{"name":"obj_battlelooper","path":"objects/obj_battlelooper/obj_battlelooper.yy",},},
     {"id":{"name":"obj_battler","path":"objects/obj_battler/obj_battler.yy",},},
     {"id":{"name":"obj_black","path":"objects/obj_black/obj_black.yy",},},
     {"id":{"name":"obj_border_parent_c","path":"objects/obj_border_parent_c/obj_border_parent_c.yy",},},

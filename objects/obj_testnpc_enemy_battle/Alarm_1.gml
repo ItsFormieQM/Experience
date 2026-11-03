@@ -15,7 +15,8 @@ if shudder {
 	}
 	else {
 		sprite_index = ogspr
-		shudder = false
+		con = 0
+		shudder_amnt = 16
 		x = xstart
 		y = ystart
 		image_speed = irandom_range(1,1.234)

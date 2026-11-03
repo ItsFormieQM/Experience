@@ -50,6 +50,6 @@ with selfobj {
 		other.xstart = other.x
 		other.ystart = other.y
 		sdm("fro i won")
-		exit
+		break
 	}
 }	

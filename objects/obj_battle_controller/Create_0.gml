@@ -3,13 +3,14 @@ if instance_number(object_index) >= 2 {
 	instance_destroy()
 }
 if global.chapter == 1 {
-	song[0] = new_mus_play(mus_battle_rb,1.5)
+	song[0] = new_mus_play(mus_battle_rb,1)
 }	
 for (var i = 0; i < len(global.normalbattle_heroinst); i++) {
 	if i_exists(global.normalbattle_heroinst[i]) {
 		global.normalbattle_heroinst[i].setidle_pos()
 	}	
 }
+instance_create(0,0,obj_battlelooper)
 instance_create((camw_ab/2)+camx_ab,camy_ab+camh_ab,obj_battle_ui_fight_kris,{},true)
 instance_create(0,0,obj_nb_tp,{},true)
 if i_exists(obj_drawer) {

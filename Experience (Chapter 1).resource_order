@@ -87,6 +87,7 @@
     {"name":"obj_battle_ui_txtbox","order":26,"path":"objects/obj_battle_ui_txtbox/obj_battle_ui_txtbox.yy",},
     {"name":"obj_battlebt_true","order":2,"path":"objects/obj_battlebt_true/obj_battlebt_true.yy",},
     {"name":"obj_battleicon","order":54,"path":"objects/obj_battleicon/obj_battleicon.yy",},
+    {"name":"obj_battlelooper","order":165,"path":"objects/obj_battlelooper/obj_battlelooper.yy",},
     {"name":"obj_battler","order":51,"path":"objects/obj_battler/obj_battler.yy",},
     {"name":"obj_black","order":10,"path":"objects/obj_black/obj_black.yy",},
     {"name":"obj_border_parent_c","order":65,"path":"objects/obj_border_parent_c/obj_border_parent_c.yy",},
