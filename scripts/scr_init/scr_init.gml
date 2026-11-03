@@ -1,5 +1,6 @@
 function scr_init(){
 	audio_channel_num(256)
+	global.selectedenemeynormal = 0
 	global.interactable_controllerids = []
 	randomise()
 	global.rooms = []

@@ -53,6 +53,9 @@ if (delaytimer >= delay)
     }
     var _renderstretch = stretch / 2 * scale
 	var _renderkill = kill / 2 * scale
+	if variable_instance_exists(self,"colour") {
+		draw_set_colour(colour)
+	}
     if (message == 0)
     {
         draw_set_alpha(1 - kill);
@@ -64,7 +67,7 @@ if (delaytimer >= delay)
         draw_set_halign(fa_left);
         draw_set_alpha(1);
     } else {
-        if (message == 1) draw_sprite_ext(message_sprite, 0, x + 30, y, scale - _renderstretch, _renderstretch + _renderkill, 0, draw_get_color(), 1 - kill);        
+        if (message == 1) draw_sprite_ext(message_sprite, 0, x + 30, y, scale - _renderstretch, _renderstretch + _renderkill, 0, draw_get_color(), 1 - kill);    
         if (message == 2) draw_sprite_ext(message_sprite, 1, x + 30, y, scale - _renderstretch, _renderstretch + _renderkill, 0, c_red, 1 - kill);        
         if (message == 3) draw_sprite_ext(message_sprite, 2, x + 30, y, scale - _renderstretch, _renderstretch + _renderkill, 0, c_lime, 1 - kill);        
         if (message == 4) draw_sprite_ext(message_sprite, 3, x + 30, y, scale - _renderstretch, _renderstretch + _renderkill, 0, c_lime, 1 - kill);        
@@ -120,3 +123,5 @@ if (global.flag[Flag.On_Battle] == 1)
             x = xx + 600;
     }
 }
+
+gpu_set_fog(false,c_black,0,1)

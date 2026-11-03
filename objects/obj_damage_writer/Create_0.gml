@@ -46,10 +46,10 @@ with selfobj {
 	}
 	if point_distance(x,y,other.x,other.y) <= (sprite_get_width(spr_numbers_yellow)+sprite_height)*2 {
 		fnd = true
-		other.y -= sprite_get_height(spr_numbers_yellow)
+		other.y -= sprite_get_height(spr_numbers_yellow)*(instance_number(object_index)-1)
 		other.xstart = other.x
 		other.ystart = other.y
 		sdm("fro i won")
-		break
+		
 	}
 }	

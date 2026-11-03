@@ -41,4 +41,16 @@ else {
 		}
 	}
 }
+var sett = draw_get_settings()
+if keyboard_check_pressed(ord("7")) {
+	debughpshow = !debughpshow
+	
+}
+if debughpshow {
+	draw_set_font(-1)
+	draw_set_colour(c_white)
+	draw_text(x-(sprite_width*2),y-sprite_height,$"health: {stats.hp} / {stats.maxhp}")
+}
+
 draw_self()
+draw_set_settings(sett)

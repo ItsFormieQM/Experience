@@ -12,6 +12,9 @@ cutscene_real_set_direction(krissy,Left)
 cutscene_unfollow_camera()
 alarms = []
 global.flag[Flag.Story_DaysPassed]++
+with obj_interactable_controller {
+	y += 666
+}
 //if floor(global.flag[Flag.Story_DaysPassed]) % 2 == 0 {
 //	if random(100) <= 5 {
 //		if global.flag[Flag.Story_Route] != Route.Dating {

@@ -118,36 +118,49 @@ else if partyturn_act_sel {
 		391+camy_ab + (30*sel_act_index)
 	)
 				
-	for (var i = 0; i < len(global.actables); i++) {
-		if i_exists(global.actables[i]._id) {
-			draw_set_colour(c_white)
-			draw_set_font(fnt_main_battletxt)
+	
+	if i_exists(global.actables[actenemindex]._id) {
+		draw_set_colour(c_white)
+		draw_set_font(fnt_main_battletxt)
 			
-			for (var j = 0; j < len(global.actables[i].actables); j++) {
-				
-				
+		for (var j = 0; j < len(global.actables[actenemindex].actables); j++) {
+			
+			if actenemindex % 4 == 0 {
 				draw_text_ext_transformed(
-					75+camx_ab,
+					75+camx_ab+((actenemindex+1)/3),
 					373+camy_ab+(j*30),
-					global.actables[i].actables[j].name,
+					global.actables[actenemindex].actables[j].name,
 					20,
 					9999,
 					0.99,
 					0.99,
 					0
 				)
-				
 			}
-			if global.interacted {
-				
-				sdm(global.actables[i].actables[sel_act_index])
-				partyturn = true
-				partyturn_act_sel = false
-				partyturn_act = false
-				sel_act = false
+			else {
+				draw_text_ext_transformed(
+					75+camx_ab,
+					373+camy_ab+(j*30),
+					global.actables[actenemindex].actables[j].name,
+					20,
+					9999,
+					0.99,
+					0.99,
+					0
+				)
 			}
+				
+		}
+		if global.interacted {
+				
+			sdm(global.actables[actenemindex].actables[sel_act_index])
+			partyturn = true
+			partyturn_act_sel = false
+			partyturn_act = false
+			sel_act = false
 		}
 	}
 }
+
 draw_set_settings(settings)
 draw_self()

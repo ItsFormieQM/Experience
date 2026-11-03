@@ -91,6 +91,7 @@ function Act_Damagers(_name,_tp,_mercyamnt,_description,_output,_repeat) : Act_C
 function ActDamagers_Custom(_name,_tp,_mercyamnt,_description,_output,_repeat,customfunc) : Act_Damagers(_name,_tp,_mercyamnt,_description,_output,_repeat) constructor {
 	selfcustfunc = customfunc
 	acted = function(enemy) {
+		global.selectedenemeynormal = enemy
 		global.msg = []
 		for (var i = 0; i < len(output); i++) {
 			global.msg[i] = output[i]
@@ -113,4 +114,7 @@ function ActDamagers_Custom(_name,_tp,_mercyamnt,_description,_output,_repeat,cu
 		}
 	}
 
+}
+function Spare() constructor {
+	
 }

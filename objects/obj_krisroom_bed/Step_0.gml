@@ -15,6 +15,9 @@ if place_meeting(x,y,obj_mainchara) {
 	
 		global.flag[Flag.Story_Sleeping] = true
 		var darkner = instance_create(0,0,obj_fader_menu)
+		with obj_interactable_controller {
+			y -= 666
+		}
 		with darkner {
 			depth = krissy.depth - 20
 			incrementor = -0.01

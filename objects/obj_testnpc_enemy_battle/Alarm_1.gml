@@ -10,10 +10,10 @@ if shudder {
 		else
 			shudder_amnt = (-shudder_amnt)
 	}
-	if con <= 60 {
+	if con <= 60 || audio_is_playing(snd_enemy_damage){
 		alarm[1] = 1
 	}
-	else {
+	else if con > 60 && !audio_is_playing(snd_enemy_damage){
 		sprite_index = ogspr
 		con = 0
 		shudder_amnt = 16
@@ -22,4 +22,5 @@ if shudder {
 		image_speed = irandom_range(1,1.234)
 		image_index = irandom(image_number-1)
 	}
+	
 }
