@@ -10,6 +10,7 @@ for (var i = 0; i < len(global.normalbattle_heroinst); i++) {
 		global.normalbattle_heroinst[i].setidle_pos()
 	}	
 }
+
 instance_create(0,0,obj_battlelooper)
 instance_create((camw_ab/2)+camx_ab,camy_ab+camh_ab,obj_battle_ui_fight_kris,{},true)
 instance_create(0,0,obj_nb_tp,{},true)

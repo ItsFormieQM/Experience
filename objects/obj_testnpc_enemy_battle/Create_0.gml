@@ -6,35 +6,68 @@ stats = {
 	maxhp: 120,
 	hp: 120,
 	def: 2,
-	spareable: false,
-	
+	spareable: true,
+	sparemeter: 0
 }
+sparemethod = 
+new Spare(
+	["#t000^002#fnt001* You spared Test Froggit!","#t000^002#fnt001* You won!^/^020^002* Got nothing."],
+	["#t000^002#fnt001^W* You tried sparing Test Froggit,^/  but their name wasn't ^YYELLOW^W."],
+	50
+) 
+sparealarmnum = 2
+dmger = noone
 #macro none "none"
 idkabtts = function() {
+	
 	static con = 0
 	con++
 	if con == 1 {
 		with global.selectedenemeynormal  {
-			damage(-999)
+			if stats.hp > 20 {
+				damage(random_range(con/100*global.selectedenemeynormal.stats.hp,0.65*global.selectedenemeynormal.stats.hp))
+			}
+			else {
+				damage(-1)
+			}	
 			
 		}
-		global.tp -= 90
+		
 		con++
 	}
-	else if con == 30 {
-		with global.selectedenemeynormal {
-			damage(random(0.65*global.selectedenemeynormal.stats.hp))
+	if con == 30 {
+		if stats.hp > 20 {
+				damage(random_range(con/100*global.selectedenemeynormal.stats.hp,0.65*global.selectedenemeynormal.stats.hp))
+		}
+		else {
+			damage(-1)
+		}	
+		con++
+	}
+	if con == 60 {
+		
+		with global.selectedenemeynormal{
+			damage(random_range(con/100*global.selectedenemeynormal.stats.hp,0.65*global.selectedenemeynormal.stats.hp))
 		}
 		con++
 	}
-	else if con == 60 {
+	if con == 90 {
+		
+		with global.selectedenemeynormal{
+			damage(random_range(con/100*global.selectedenemeynormal.stats.hp,0.65*global.selectedenemeynormal.stats.hp))
+		}
+		con++
+	}
+	if con == 120 {
 		con = 0
 		with global.selectedenemeynormal{
-			damage(random(0.99*global.selectedenemeynormal.stats.hp))
+			damage(random_range(con/100*global.selectedenemeynormal.stats.hp,0.65*global.selectedenemeynormal.stats.hp))
 		}
 		with obj_battlelooper {
 			pop_loopfunc(1)
+			sdm("worked")
 		}
+		
 	}
 }
 array_push(
@@ -43,44 +76,70 @@ array_push(
 		_id: id, 
 		actables: [
 			new Act_Check("Check",0,none,["#t000^002^W* Test Froggit - ATK -666 DEF 67^/* Life's difficult for this enemy.^/* Try using the ^YCOMPLIMENT^W act?"]),
-			new Act_MercyAdders("Compliment",0,99,none,["#t000^002* Froggit didn't understand what^/  you said, ^020^002but was flattered anyway."]),
+			new Act_MercyAdders("Compliment",20,100,none,["#t000^002* Froggit didn't understand what^/  you said, ^020^002but was flattered anyway."]),
 			
-			new ActDamagers_Custom("X-Insult",0,20,none,["#t000^002* You insulted the enemy.^/* The enemy was harmed!"],1,{name: 1, func: idkabtts}) 
+			new ActDamagers_Custom("X-Insult",95,20,none,["#t000^002* You insulted the enemy.^/* The enemy was harmed!","#t000^002^W* The enemy lost ^YMERCY^W, ^010^002too."],1,{name: 1, func: idkabtts}) 
 		]
 	}
 )
 
 shudder = false
 con = 0
-debughpshow = false
+dmgercount = 0
+debughpshow = true
+kill = function() {
+	
+}
 damage = function(dmg = -1) {
 	
 	
 	if dmg > 0 {
+		
 		dmg = (dmg / stats.def) + irandom_range(stats.def-0.3321,stats.def+0.7953) 
 		snd_play(snd_enemy_damage,1.2)
 		shudder = true
+		con = 0
 		alarm[1] = 1
+		stats.hp -= floor(dmg)
+		stats.hp = clamp(stats.hp,0,stats.maxhp)
+	}
+	else {
+		dmg = -1
 	}
 	
-	stats.hp -= round(dmg)
-	stats.hp = clamp(stats.hp,0,stats.maxhp)
 	
 	show_debug_message($"DAMAGE NUMBER: {dmg}")
-	var dmger = instance_create(bbox_left+(sprite_width/2)-4,y,obj_damage_writer,{damage: round(dmg),colour: c_red},true)
-	
+	var yoff = 0
+	if i_exists(dmger) {
+		yoff = sprite_get_height(spr_numbers_yellow)*dmgercount
+	}
+	else {
+		dmgercount = 0
+		yoff = 0
+	}
+	dmger = instance_create(bbox_left+(sprite_width/2)-4,y-yoff,obj_damage_writer,{damage: floor(dmg)},true)
+	dmgercount++
 }
 shudder_amnt = 16
 add_mercy = function(dmg = 0) {
-	if dmg <= 0 {
-		dmg = 0
+	if dmg < 0 {
+		snd_play(snd_mercyremove)
+		var dmger = instance_create(bbox_left+(sprite_width/2)-4,y,obj_damage_writer,{damage: round(dmg)},true)
+		with dmger {
+			type = 5
+		}
 	}
-	
-	var dmger = instance_create(bbox_left+(sprite_width/2)-4,y,obj_damage_writer,{damage: round(dmg)},true)
-	with dmger {
-		type = 5
+	else {
+		var dmger = instance_create(bbox_left+(sprite_width/2)-4,y,obj_damage_writer,{damage: round(dmg)},true)
+		with dmger {
+			type = 5
+		}
+		snd_play(snd_mercyadd,1.2)
 	}
-	snd_play(snd_mercyadd,1.2)
+	stats.sparemeter += clamp(dmg,-100,100)
+	if stats.sparemeter >= 100 {
+		stats.spareable = true	
+	}	
 } 
 alarm[0] = 120
 xpos = 520 + camx_ab

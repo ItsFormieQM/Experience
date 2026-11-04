@@ -14,6 +14,9 @@ if shudder {
 		alarm[1] = 1
 	}
 	else if con > 60 && !audio_is_playing(snd_enemy_damage){
+		if stats.hp <= 0 {
+			
+		}	
 		sprite_index = ogspr
 		con = 0
 		shudder_amnt = 16

@@ -20,11 +20,11 @@ if (delaytimer >= delay)
 	if (type == 0) draw_set_color(c_yellow);    
     if (type == 3) draw_set_color(c_lime);    
     if (type == 4) draw_set_color(c_red);    
-    if (type == 5 && damage < 0) draw_set_color(c_ltgray);
+	
    
     message = specialmessage;
     
-    if (damage <= -1) message = 1;    
+    if (damage <= -1 && type != 5) message = 1;    
     if (type == 4) message = 2;
     
     if (type == 5 && damage == 100) message = 5;
@@ -39,15 +39,22 @@ if (delaytimer >= delay)
     if (type != 5) draw_set_font(global.bdamagefont);    
     if (type == 5) draw_set_font(global.bdamagefont);
     
-    if (hspeed > 0) hspeed -= 0.5;    
-    if (hspeed < 0) hspeed += 0.5;    
+    if (hspeed > 0) hspeed -= 1;    
+    if (hspeed < 0) hspeed += 1;    
     if (abs(hspeed) < 0.5) hspeed = 0;
     
     if (init == 0) {
         damagemessage = string(damage);
         
-        if (type == 5) damagemessage = "+" + string(damage) + "%";        
-        if (type == 5 && damage < 0) damagemessage = string(damage) + "%";
+        if (type == 5) 
+			if (damage > 0) 
+				damagemessage = "+" + string(damage) + "%";
+			else {
+				draw_set_colour(c_ltgrey)
+				damagemessage = string(damage) + "%";
+			}
+     
+		
         sdm(message)
         init = 1;
     }
@@ -84,7 +91,7 @@ if (delaytimer >= delay)
     
     if (y > ystart && bounces < 2 && killactive == 0) {
         y = ystart;
-        vspeed = vstart / 4 * scale;
+        vspeed = (vstart / 4 * scale) / 2;
         bounces += 1;
     }
     

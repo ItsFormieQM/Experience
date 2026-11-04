@@ -10,7 +10,7 @@ else
 
 yy = camy_ab;
 y = (yy + 40 + yoffset);
-
+global.tp = clamp(global.tp,0,100)
 gpu_set_fog(1, barcolors[4], 0, 0)
 draw_sprite(spr_tensionbar, 1, 0, 0);
 gpu_set_fog(0, c_white, 0, 0)

@@ -27,8 +27,8 @@ die = function() {
 			playery = obj_mainchara.y - camy
 		}
 		if i_exists(obj_hero_kris) {
-			playerx = obj_hero_kris.x-camy
-			playery = obj_hero_kris.y - camx
+			playerx = obj_hero_kris.x-camx
+			playery = obj_hero_kris.y - camy
 		}
 	}
 	else {

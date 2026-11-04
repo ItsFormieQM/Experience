@@ -1,4 +1,5 @@
 function cmd_mus_play(mus = noone,vol = 1,pitch = 1){
+	
 	if mus == "none" {
 		audio_stop_all()
 		return 0

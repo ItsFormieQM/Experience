@@ -1,7 +1,14 @@
 if !partyturn {
 	if sel_fight || sel_act || sel_spare {
 		if global.interacted {
-			
+			if sel_spare {
+				instance_destroy(obj_drawer)
+				with global.normalbattle_enemyinst[sel_spare_index] {
+					sparemethod.spare(global.normalbattle_enemyinst[other.sel_spare_index])
+				}
+				sel_spare = false
+				partyturn = true
+			}
 			snd_play(snd_select,1.2)
 			if partyturn_act_sel {
 				partyturn = true
@@ -10,6 +17,7 @@ if !partyturn {
 				sel_act = false
 				sdm(actenemindex)
 				sdm(global.normalbattle_enemyinst)
+				instance_destroy(obj_drawer)
 				method_call(global.actables[actenemindex].actables[sel_act_index].acted,[global.normalbattle_enemyinst[actenemindex]])
 			}
 			if partyturn_act {

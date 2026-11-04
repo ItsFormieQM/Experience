@@ -1,4 +1,5 @@
 function mus_play(_mus = noone, loop = true, pitch = 1, vol = 1){
+	
 	if _mus == noone {
 		return -1
 	}
@@ -28,6 +29,7 @@ function mus_pause(mus_handle) {
 	audio_pause_sound(mus_handle)
 }
 function new_mus_play(_mus,vol=1,pitch=1,offset=0) {
+	
 	var handle = audio_play_sound(_mus,90,true,vol,offset,pitch)
 	return {mus_name: audio_get_name(_mus),mus: handle}
 }

@@ -31,7 +31,7 @@ if (intro == 2) { // SLIDEDOWN
 }
 
 draw_set_color(c_black);
-draw_rectangle(xx - 10, 481 + yy, xx + 700, ((480 - bp) + yy) - 4, false);
+draw_rectangle(xx - 10, 481 + yy, xx + 700, ((480 - bp) + yy) - 2, false);
 draw_set_color(bcolor);
 
 draw_rectangle(xx - 10, (480 - bp - 3) + yy, xx + 700, (480 - bp - 2) + yy, false);
@@ -70,8 +70,15 @@ if (sel_fight || sel_act || sel_spare) && !partyturn && !partyturn_act_sel{
 		391+camy_ab + (30*sel_fight_index)
 	)
 	for (var i = 0; i < len(global.normalbattle_enemyinst);i++) {
+		if global.normalbattle_enemyinst[i] == none {
+			continue
+		}
 		with global.normalbattle_enemyinst[i] {
 			selected = false
+		}
+		draw_set_colour(c_white)
+		if global.normalbattle_enemyinst[i].stats.spareable {
+			draw_set_colour(c_yellow)
 		}
 		draw_text_ext_transformed(
 			75+camx_ab,
@@ -126,6 +133,10 @@ else if partyturn_act_sel {
 		for (var j = 0; j < len(global.actables[actenemindex].actables); j++) {
 			
 			if actenemindex % 4 == 0 {
+				draw_set_colour(c_white)
+				if global.tp < global.actables[actenemindex].actables[j].tp {
+					draw_set_colour(c_gray)
+				}
 				draw_text_ext_transformed(
 					75+camx_ab+((actenemindex+1)/3),
 					373+camy_ab+(j*30),
@@ -138,6 +149,10 @@ else if partyturn_act_sel {
 				)
 			}
 			else {
+				draw_set_colour(c_white)
+				if global.tp < global.actables[actenemindex].actables[j].tp {
+					draw_set_colour(c_gray)
+				}
 				draw_text_ext_transformed(
 					75+camx_ab,
 					373+camy_ab+(j*30),
