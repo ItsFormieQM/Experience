@@ -7,6 +7,7 @@ advance = false
 stopit = false
 OVERRIDE_Y = 0
 checkedforswear = false
+identifier = none
 show_debug_message($"PROFANITY SETTING: {global.setting_profanity ? "True":"False"}")
 if instance_exists(obj_mainchara)
 	obj_mainchara.image_index = 0

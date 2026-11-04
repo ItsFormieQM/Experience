@@ -1,3 +1,10 @@
+if i_exists(obj_drawer) {
+	if obj_drawer.stop_draw && global.interacted && obj_drawer.identifier == 1 {
+		endbstatemc = true
+		intro = 2
+		instance_destroy(obj_drawer)
+	}	
+}	
 if !partyturn {
 	if sel_fight || sel_act || sel_spare {
 		if global.interacted {
@@ -90,14 +97,12 @@ if !i_exists(obj_drawer) && partyturn {
 				global.xx_offset[i] = 12
 				global.yy_offset[i] = 960 / 2 + 150
 			}
-			instance_create(0,0,obj_drawer)
+			var smth = instance_create(0,0,obj_drawer)
+			with smth {
+				identifier = 1
+			}
 			checked = true
+			global.dialogue_enable_progress = false
 		}
 	}
 }
-if i_exists(obj_drawer) {
-	if obj_drawer.stop_draw && global.interacted{
-		endbstatemc = true
-		intro = 2
-	}	
-}	
