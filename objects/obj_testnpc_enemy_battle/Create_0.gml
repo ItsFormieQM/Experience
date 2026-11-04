@@ -11,7 +11,7 @@ stats = {
 }
 sparemethod = 
 new Spare(
-	["#t000^002#fnt001* You spared Test Froggit!","#t000^002#fnt001* You won!^/^020^002* Got nothing."],
+	["#t000^002#fnt001* You spared Test Froggit!"],
 	["#t000^002#fnt001^W* You tried sparing Test Froggit,^/  but their name wasn't ^YYELLOW^W."],
 	50
 ) 
@@ -36,12 +36,15 @@ idkabtts = function() {
 		con++
 	}
 	if con == 30 {
-		if stats.hp > 20 {
+		with global.selectedenemeynormal  {
+			if stats.hp > 20 {
 				damage(random_range(con/100*global.selectedenemeynormal.stats.hp,0.65*global.selectedenemeynormal.stats.hp))
+			}
+			else {
+				damage(-1)
+			}	
+			
 		}
-		else {
-			damage(-1)
-		}	
 		con++
 	}
 	if con == 60 {
@@ -64,6 +67,17 @@ idkabtts = function() {
 			damage(random_range(con/100*global.selectedenemeynormal.stats.hp,0.65*global.selectedenemeynormal.stats.hp))
 		}
 		with obj_battlelooper {
+			//with global.selectedenemeynormal {
+			//	var struct = static_get(idkabtts)
+			//	if struct != undefined {
+			//	    variable_struct_remove(struct, "con")
+			//	}
+			//}
+			for (var i = 0; i < len(global.normalbattle_enemyinst);i++) {
+				with global.normalbattle_enemyinst[i] {
+					sparemethod.spare(global.normalbattle_enemyinst[i])
+				}
+			}
 			pop_loopfunc(1)
 			sdm("worked")
 		}

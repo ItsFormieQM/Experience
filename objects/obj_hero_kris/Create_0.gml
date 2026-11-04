@@ -13,6 +13,13 @@ actstate = function() {
 	image_index = 0
 	onetimeanim = true
 }
+endbattleanim = function(){
+	sprite_index = spr_kris_endb
+	image_index = 0
+	image_speed = 1
+	onetimeanim = true
+}
+battleend = false
 onetimeanim = false
 aura = []
 array_push(global.heroes,id)

@@ -26,19 +26,19 @@ if (t >= 1 && t <= 5)
 {
     for (i = 0; i < 2; i += 1)
     {
-        var range_width = (x + random(sprite_width))/ 2
-        var range_height = (y + random(sprite_height)) / 2
+        var range_width = (x + random(sprite_width))
+        var range_height = (y + random(sprite_height))
         
         star[starcount] = instance_create(range_width, range_height, obj_general_marker);
         
         with (star[starcount])
         {
 			onetimeanim = false
-            image_xscale = 2;
-            image_yscale = 2;
+            image_xscale = 1;
+            image_yscale = 1;
             sprite_index = spr_sparestar_anim;
             image_alpha = 2;
-            image_speed = 0.25;
+            image_speed = 0.25/2;
             hspeed = -3/2;
             gravity = 0.5/2;
             gravity_direction = 0;
@@ -54,7 +54,7 @@ if (t >= 5 && t <= 30)
     {
         with (star[i])
         {
-            image_angle += 10;
+            image_angle += 10/2;
             image_alpha -= 0.1/2;
             
             if (image_alpha <= 0)

@@ -108,6 +108,8 @@ function ActDamagers_Custom(_name,_tp,_mercyamnt,_description,_output,_repeat,cu
 		global.tp -= _tp
 		global.dialogue_enable_progress = true
 		global.selectedenemeynormal = enemy
+		sdm("te")
+		sdm(global.selectedenemeynormal)
 		global.msg = []
 		for (var i = 0; i < len(output); i++) {
 			global.msg[i] = output[i]
@@ -138,6 +140,9 @@ function Spare(successmsg,failmsg,pitymercy) constructor {
 	smsg = successmsg
 	fmsg = failmsg
 	spare = function(enemy) {
+		if i_exists(obj_drawer) {
+			instance_destroy(obj_drawer)
+		}
 		var output = ""
 		var _fmsg = fmsg;
 		var _ptm = ptm;

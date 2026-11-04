@@ -538,6 +538,7 @@
     {"id":{"name":"spr_itembt_true","path":"sprites/spr_itembt_true/spr_itembt_true.yy",},},
     {"id":{"name":"spr_joystick","path":"sprites/spr_joystick/spr_joystick.yy",},},
     {"id":{"name":"spr_kris_battle_start","path":"sprites/spr_kris_battle_start/spr_kris_battle_start.yy",},},
+    {"id":{"name":"spr_kris_endb","path":"sprites/spr_kris_endb/spr_kris_endb.yy",},},
     {"id":{"name":"spr_kris_evil_knife_out","path":"sprites/spr_kris_evil_knife_out/spr_kris_evil_knife_out.yy",},},
     {"id":{"name":"spr_kris_evil_knife_walkr","path":"sprites/spr_kris_evil_knife_walkr/spr_kris_evil_knife_walkr.yy",},},
     {"id":{"name":"spr_kris_fall","path":"sprites/spr_kris_fall/spr_kris_fall.yy",},},

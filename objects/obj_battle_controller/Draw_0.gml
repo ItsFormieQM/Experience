@@ -28,6 +28,9 @@ if (intro == 2) { // SLIDEDOWN
     {
         bp = 0;
     }
+	with obj_battle_ui_fight_kris {
+		y += other.bp
+	}
 }
 
 draw_set_color(c_black);

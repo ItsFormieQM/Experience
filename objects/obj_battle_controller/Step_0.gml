@@ -1,6 +1,7 @@
 if !partyturn {
 	if sel_fight || sel_act || sel_spare {
 		if global.interacted {
+			checked = false
 			if sel_spare {
 				instance_destroy(obj_drawer)
 				with global.normalbattle_enemyinst[sel_spare_index] {
@@ -18,7 +19,7 @@ if !partyturn {
 				sdm(actenemindex)
 				sdm(global.normalbattle_enemyinst)
 				instance_destroy(obj_drawer)
-				method_call(global.actables[actenemindex].actables[sel_act_index].acted,[global.normalbattle_enemyinst[actenemindex]])
+				method_call(global.actables[actenemindex].actables[sel_act_index].acted,[global.normalbattle_enemyinst[sel_fight_index]])
 			}
 			if partyturn_act {
 				actenemindex = sel_fight_index
@@ -61,3 +62,42 @@ if global.hp[0] <= 0 {
 	global.flag[Flag.On_Battle] = false
 	instance_destroy()
 }
+if !i_exists(obj_drawer) && partyturn {
+	if !checked {
+		var check = []
+		for (var i = 0; i < len(global.normalbattle_enemyinst);i++) {
+			if global.normalbattle_enemyinst[i] != none {
+				array_push(check,global.normalbattle_enemyinst[i])
+			}
+		}
+		if len(check) <= 0  {
+			for (var i = 0; i < len(global.heroes); i++) {
+				with global.heroes[i] {
+					endbattleanim()
+				}
+			}
+			endb = true
+		}
+		if endb {
+			with obj_nb_tp {
+				hspeed = -(13/2)
+				friction = -(1/4)
+				alarm[5] = 60
+			}
+			global.msg = []
+			global.msg[0] = "#t000^002#fnt001* You won!^/^020^002* Got nothing."
+			for (var i = 0; i <len(global.msg);i++) {
+				global.xx_offset[i] = 12
+				global.yy_offset[i] = 960 / 2 + 150
+			}
+			instance_create(0,0,obj_drawer)
+			checked = true
+		}
+	}
+}
+if i_exists(obj_drawer) {
+	if obj_drawer.stop_draw && global.interacted{
+		endbstatemc = true
+		intro = 2
+	}	
+}	

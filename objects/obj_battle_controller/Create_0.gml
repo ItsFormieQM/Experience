@@ -17,6 +17,7 @@ instance_create(0,0,obj_nb_tp,{},true)
 if i_exists(obj_drawer) {
 	instance_destroy(obj_drawer)
 }
+checked = false
 actenemindex = 0
 partyturn = false
 partyturn_act = false
@@ -39,3 +40,6 @@ xx = camx_ab
 yy = camy_ab
 permx = 0
 permxbool = false
+endb = false
+endbstatemc = false
+endbproceed = false

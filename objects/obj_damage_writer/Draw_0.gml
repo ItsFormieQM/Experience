@@ -1,15 +1,17 @@
 if (delaytimer < delay)
 {
-    killtimer = 0;
+    with (object_index)
+        killtimer = 0;
 }
 
 delaytimer += 0.5;
-mercytimer += 0.5;
+mercytimer++;
 
-if (delaytimer >= delay && delaytimer < delay + 0.5){
-    vspeed = ((-5 - random(2))/2 * scale) / 2;
+if (delaytimer >= delay && delaytimer - 0.5 < delay)
+{
+    vspeed = ((-5 - random(2)) / 2 * scale) / 2;
     hspeed = (5 * scale) / 2;
-    vstart = vspeed;
+    vstart = vspeed * 2;
     flip = 90;
 }
 
@@ -17,21 +19,20 @@ if (delaytimer >= delay)
 {
     draw_set_color(c_white);
     
-	if (type == 0) draw_set_color(c_yellow);    
+    if (type == 0) draw_set_color(c_blue);    
     if (type == 3) draw_set_color(c_lime);    
     if (type == 4) draw_set_color(c_red);    
-	
+    if (type == 5 && damage < 0) draw_set_color(c_ltgray);
    
     message = specialmessage;
     
-    if (damage <= -1 && type != 5) message = 1;    
+    if (damage == 0) message = 1;    
     if (type == 4) message = 2;
-    
     if (type == 5 && damage == 100) message = 5;
-    
     if (type == 12) message = 10;
     
-    if (type == 13) {
+    if (type == 13) 
+    {
         message = 13;
         draw_set_color(aqcolor);
     }
@@ -39,30 +40,23 @@ if (delaytimer >= delay)
     if (type != 5) draw_set_font(global.bdamagefont);    
     if (type == 5) draw_set_font(global.bdamagefont);
     
-    if (hspeed > 0) hspeed -= 1;    
-    if (hspeed < 0) hspeed += 1;    
+    if (hspeed > 0) hspeed -= 0.5;    
+    if (hspeed < 0) hspeed += 0.5;    
     if (abs(hspeed) < 0.5) hspeed = 0;
     
-    if (init == 0) {
+    if (init == 0) 
+    {
         damagemessage = string(damage);
         
-        if (type == 5) 
-			if (damage > 0) 
-				damagemessage = "+" + string(damage) + "%";
-			else {
-				draw_set_colour(c_ltgrey)
-				damagemessage = string(damage) + "%";
-			}
-     
-		
-        sdm(message)
+        if (type == 5) damagemessage = "+" + string(damage) + "%";        
+        if (type == 5 && damage < 0) damagemessage = string(damage) + "%";
+        
         init = 1;
     }
-    var _renderstretch = stretch / 2 * scale
-	var _renderkill = kill / 2 * scale
-	if variable_instance_exists(self,"colour") {
-		draw_set_colour(colour)
-	}
+    
+    var _renderstretch = stretch / 2 * scale;
+    var _renderkill = kill / 2 * scale;
+    
     if (message == 0)
     {
         draw_set_alpha(1 - kill);
@@ -73,8 +67,10 @@ if (delaytimer >= delay)
         
         draw_set_halign(fa_left);
         draw_set_alpha(1);
-    } else {
-        if (message == 1) draw_sprite_ext(message_sprite, 0, x + 30, y, scale - _renderstretch, _renderstretch + _renderkill, 0, draw_get_color(), 1 - kill);    
+    } 
+    else 
+    {
+        if (message == 1) draw_sprite_ext(message_sprite, 0, x + 30, y, scale - _renderstretch, _renderstretch + _renderkill, 0, draw_get_color(), 1 - kill);        
         if (message == 2) draw_sprite_ext(message_sprite, 1, x + 30, y, scale - _renderstretch, _renderstretch + _renderkill, 0, c_red, 1 - kill);        
         if (message == 3) draw_sprite_ext(message_sprite, 2, x + 30, y, scale - _renderstretch, _renderstretch + _renderkill, 0, c_lime, 1 - kill);        
         if (message == 4) draw_sprite_ext(message_sprite, 3, x + 30, y, scale - _renderstretch, _renderstretch + _renderkill, 0, c_lime, 1 - kill);        
@@ -89,13 +85,15 @@ if (delaytimer >= delay)
     
     if (bounces < 2) vspeed += 0.25 * scale;
     
-    if (y > ystart && bounces < 2 && killactive == 0) {
+    if (y > ystart && bounces < 2 && killactive == 0) 
+    {
         y = ystart;
         vspeed = (vstart / 4 * scale) / 2;
         bounces += 1;
     }
     
-    if (bounces >= 2 && killactive == 0) {
+    if (bounces >= 2 && killactive == 0) 
+    {
         vspeed = 0;
         y = ystart;
     }
@@ -108,12 +106,13 @@ if (delaytimer >= delay)
         stretchgo = 0;
     }
     
-    killtimer += 0.5;
+    killtimer += 1;
     
-    if (killtimer > 35)
+    if (killtimer > 70)
         killactive = 1;
     
-    if (killactive == 1){
+    if (killactive == 1)
+    {
         kill += 0.04;
         y -= 1 * scale;
     }
@@ -122,7 +121,7 @@ if (delaytimer >= delay)
         instance_destroy();
 }
 
-if (global.flag[Flag.On_Battle] == 1)
+if (global.flag[Flag.On_Battle])
 {
     if (stayincamera == 1)
     {
@@ -130,5 +129,3 @@ if (global.flag[Flag.On_Battle] == 1)
             x = xx + 600;
     }
 }
-
-gpu_set_fog(false,c_black,0,1)

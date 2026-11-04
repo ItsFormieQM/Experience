@@ -12,6 +12,7 @@ y = yy + 40;
 x = xx - 40;
 hspeed = 13/2;
 friction = 1/4;
+
 flashsiner = 0;
 maxed = 0;
 healthbar_surf = surface_create(96, 250);

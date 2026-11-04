@@ -445,6 +445,7 @@
     {"name":"spr_israel_whole","order":59,"path":"sprites/spr_israel_whole/spr_israel_whole.yy",},
     {"name":"spr_itembt_true","order":2,"path":"sprites/spr_itembt_true/spr_itembt_true.yy",},
     {"name":"spr_joystick","order":14,"path":"sprites/spr_joystick/spr_joystick.yy",},
+    {"name":"spr_kris_endb","order":171,"path":"sprites/spr_kris_endb/spr_kris_endb.yy",},
     {"name":"spr_kris_evil_knife_out","order":121,"path":"sprites/spr_kris_evil_knife_out/spr_kris_evil_knife_out.yy",},
     {"name":"spr_kris_evil_knife_walkr","order":120,"path":"sprites/spr_kris_evil_knife_walkr/spr_kris_evil_knife_walkr.yy",},
     {"name":"spr_kris_fall","order":10,"path":"sprites/spr_kris_fall/spr_kris_fall.yy",},
