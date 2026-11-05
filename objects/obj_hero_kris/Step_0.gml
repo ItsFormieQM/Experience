@@ -7,7 +7,8 @@ stats = {
 if battleend {
 	if point_distance(x,y,realobj.x,realobj.y) <= spdr {
 		speed = 0
-		instance_destroy()
+		scheddel = true
+		i_destroy()
 		x = realobj.x
 		y = realobj.y
 		global.flag[Flag.On_Battle] = false
@@ -22,5 +23,10 @@ if battleend {
 				visible = true
 			}
 		}
+	}
+}
+if len(aura) <= 0 {
+	if scheddel {
+		
 	}
 }

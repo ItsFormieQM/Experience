@@ -20,9 +20,12 @@ dmger = noone
 #macro none "none"
 idkabtts = function() {
 	
-	static con = 0
-	con++
-	if con == 1 {
+	if !variable_instance_exists(object_index,"son") {
+		son = 0
+		sdm("bru")
+	}
+	son++
+	if son == 1 {
 		with global.selectedenemeynormal  {
 			if stats.hp > 20 {
 				damage(random_range(con/100*global.selectedenemeynormal.stats.hp,0.65*global.selectedenemeynormal.stats.hp))
@@ -33,9 +36,9 @@ idkabtts = function() {
 			
 		}
 		
-		con++
+		
 	}
-	if con == 30 {
+	else if son == 30 {
 		with global.selectedenemeynormal  {
 			if stats.hp > 20 {
 				damage(random_range(con/100*global.selectedenemeynormal.stats.hp,0.65*global.selectedenemeynormal.stats.hp))
@@ -45,24 +48,24 @@ idkabtts = function() {
 			}	
 			
 		}
-		con++
+	
 	}
-	if con == 60 {
+	else if son == 60 {
 		
 		with global.selectedenemeynormal{
 			damage(random_range(con/100*global.selectedenemeynormal.stats.hp,0.65*global.selectedenemeynormal.stats.hp))
 		}
-		con++
+	
 	}
-	if con == 90 {
+	else if son == 90 {
 		
 		with global.selectedenemeynormal{
 			damage(random_range(con/100*global.selectedenemeynormal.stats.hp,0.65*global.selectedenemeynormal.stats.hp))
 		}
-		con++
+		
 	}
-	if con == 120 {
-		con = 0
+	else if son >= 120 {
+		
 		with global.selectedenemeynormal{
 			damage(random_range(con/100*global.selectedenemeynormal.stats.hp,0.65*global.selectedenemeynormal.stats.hp))
 		}
@@ -78,12 +81,15 @@ idkabtts = function() {
 					sparemethod.spare(global.normalbattle_enemyinst[i])
 				}
 			}
-			con = 0
+			son = undefined
 			pop_loopfunc(1)
 			sdm("worked")
 		}
 		
+		
 	}
+	
+	sdm(con)
 }
 array_push(
 	global.actables,

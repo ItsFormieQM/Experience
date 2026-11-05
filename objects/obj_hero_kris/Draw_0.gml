@@ -4,6 +4,11 @@ if !global.ldm {
 			array_push(aura,{xpos: x, ypos: y, sprite: sprite_index, frame: image_index, alpha: 0.45, xscale: image_xscale, yscale: image_yscale})
 		}
 	}
+	if battleend {
+	
+		//array_push(aura,{xpos: x, ypos: y, sprite: sprite_index, frame: image_index, alpha: 0.45, xscale: image_xscale, yscale: image_yscale})
+		
+	}	
 	if len(aura) > 0 {
 		for (var i = 0; i < len(aura); i++) {
 			draw_sprite_ext(

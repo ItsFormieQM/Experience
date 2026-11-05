@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cmd_mus_setpos",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cmd_mus_setpos",
+  "parent":{
+    "name":"Commands",
+    "path":"folders/Real/Console/Commands.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

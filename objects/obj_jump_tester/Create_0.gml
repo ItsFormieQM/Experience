@@ -1,5 +1,12 @@
-ran = false
-start = false
-ran_1 = false
-modded_x = 0
-modded_y = 0
+data = string_to_array(scr_getimagedata(spr_mainchara_d))
+datalen = len(data)
+outofroom = false
+activated = false
+vaporize = false
+i = 0
+xx = player.x
+yy = player.y
+ogxx = player.x
+ogyy = player.y
+w = sprite_get_width(spr_whitepixel)
+h = sprite_get_height(spr_whitepixel)

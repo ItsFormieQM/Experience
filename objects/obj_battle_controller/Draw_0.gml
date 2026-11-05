@@ -54,6 +54,7 @@ if (sel_fight || sel_act || sel_spare) && !partyturn && !partyturn_act_sel{
 	}
 	else if global.s_press {
 		sel_fight_index++
+		
 		if len(global.normalbattle_enemyinst) >= 2 {
 			snd_play(snd_menu_move,1.2)
 		}
@@ -108,6 +109,7 @@ if (sel_fight || sel_act || sel_spare) && !partyturn && !partyturn_act_sel{
 else if partyturn_act_sel {
 	if global.w_press {
 		sel_act_index--
+		if global.actables[actenemindex]
 		if len(global.actables[actenemindex].actables) >= 2 {
 			snd_play(snd_menu_move,1.2)
 		}

@@ -1,58 +1,31 @@
-if place_meeting(x,y,obj_mainchara) {
-	if global.interacted && !ran {
-		global.canmove = false
-		ran = true
-		snd_play(snd_jump,1.4,1)
-		obj_mainchara.image_index = 0
-		start = true
-		alarm[0] = 5
-		obj_mainchara.jump_state = true
-	
-	}
-	obj_mainchara.sprite_index = spr_kris_jump_lw
+if !point_in_rectangle(x,y,camx_ab-200,camy_ab-200,camx_ab+camw_ab,camy_ab+camh_ab) {
+	outofroom = true
 }
-if start {
-	obj_mainchara.sprite_index = spr_kris_jump_lw
-	obj_mainchara.image_speed = 1
-	
-	obj_mainchara.image_speed = 1
-	with obj_mainchara {
-		if !other.use_inst_pos {
-			move_towards_point(other._x, other._y, other.sp)
-		
-			if point_distance(x, y, other._x, other._y) <= other.sp {
-				x = other._x
-				y = other._y
-				speed = 0
-				jump_state = false
-				global.canmove = true
-				other.start = false
-				other.ran = false
-				other.ran_1 = false
-			}
-		}
-		else {
-	
-			if !other.ran_1 {
-				other.modded_x = x + other._x
-				other.modded_y = y + other._y
-				other.ran_1 = true
-			}
-		
-			move_towards_point(other.modded_x, other.modded_y, other.sp)
-		
-			if point_distance(x, y, other.modded_x, other.modded_y) <= other.sp {
-				x = other.modded_x
-				y = other.modded_y
-				other.modded_y = 0
-				other.modded_x = 0
-				speed = 0
-				jump_state = false
-				global.canmove = true
-				other.start = false
-				other.ran = false
-				other.ran_1 = false
-			}
-		}
-	}
+else {
+	outofroom = false
+}
+if global.interacted && place_meeting(x,y,player) && !i_exists(obj_drawer){
+	global.msg = []
+	var index = 0
+	global.msg[index] = "#t000^002#fnt001* (Use the transport pad?)^/^/ #C         Yes       No /E"
+	for (var i = 0; i < len(global.msg);i++) {
+		global.xx_offset[i] = 68
+		global.yy_offset[i] = 960 /2 + 85
+	}	
+	instance_create(0,0,obj_drawer)
+	global.choice = -1
+}
+
+if global.choice == 0 {
+	global.choice = -1
+	activated = true
+	instance_create(0,0,obj_cutscener_test_transp)
+	alarm[0] = 100
+	xx = player.x
+	yy = player.y
+	ogxx = player.x
+	ogyy = player.y
+}
+else {
+	global.choice = -1
 }

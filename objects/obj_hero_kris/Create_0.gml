@@ -25,7 +25,7 @@ gotorealobj = function() {
 		i_destroy()
 	}
 	sprite_index = realobj.sprite_index
-	spdr = point_distance(x,y,realobj.x,realobj.y) / 18
+	spdr = point_distance(x,y,realobj.x,realobj.y) / 24
 	move_towards_point(realobj.x,realobj.y,spdr)
 	battleend = true
 }
@@ -37,4 +37,5 @@ if i_exists(obj_mainchara_actor) {
 		visible = false
 	}
 }
+scheddel = false
 array_push(global.heroes,id)

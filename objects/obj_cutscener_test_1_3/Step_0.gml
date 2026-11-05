@@ -50,7 +50,10 @@ if global.cutscene {
 			snd_play(snd_break2,1.25)
 			var alarm1 = time_source_create(tsg,65,tsuf,function(){
 				var froggit_actor = cutscene_actor_get_instance(Actors.Froggit)
+				var kris_actor = cutscene_get_actor_instance(Actors.Kris)
+				cutscene_real_set_direction(kris_actor,Up)
 				with obj_cutscener_test_1_3 {
+					
 					
 					array_push(global.normalbattle_enemyinst,obj_testnpc_enemy_battle)
 					array_push(global.normalbattle_enemyinst,obj_testnpc_enemy_battle)

@@ -77,3 +77,11 @@ function i_exists(obj) {
 		return true
 	return false
 }
+function string_to_array(str) {
+	str = string(str)
+	var bf = []
+	for (var i = 1; i <= len(str); i++) {
+		array_push(bf,string_char_at(str,i))
+	}
+	return bf
+}

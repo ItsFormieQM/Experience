@@ -6,7 +6,7 @@ if i_exists(obj_drawer) {
 		obj_drawer.identifier = none
 		mus_fade(130,1)
 		new_mus_fade(song[0],100,0)
-		audio_sound_set_track_position(global.current_mus,92.45)
+		sdm(global.actables)
 		instance_destroy(obj_drawer)
 		for (var i = 0; i < len(global.heroes);i++) {
 			with global.heroes[i] {

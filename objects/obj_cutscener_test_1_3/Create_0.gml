@@ -9,5 +9,6 @@ with obj_mainchara {
 	y = 3829
 }
 mus_fade(60,0)
+mus_toggle()
 song = []
 // BATTLE TESTER CUTSCENE MODE
