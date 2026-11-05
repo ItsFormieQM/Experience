@@ -19,7 +19,22 @@ endbattleanim = function(){
 	image_speed = 1
 	onetimeanim = true
 }
+realobj = player
+gotorealobj = function() {
+	if !i_exists(realobj) {
+		i_destroy()
+	}
+	sprite_index = realobj.sprite_index
+	spdr = point_distance(x,y,realobj.x,realobj.y) / 18
+	move_towards_point(realobj.x,realobj.y,spdr)
+	battleend = true
+}
 battleend = false
 onetimeanim = false
 aura = []
+if i_exists(obj_mainchara_actor) {
+	with obj_mainchara_actor {
+		visible = false
+	}
+}
 array_push(global.heroes,id)

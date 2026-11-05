@@ -27,9 +27,12 @@ if (intro == 2) { // SLIDEDOWN
     else
     {
         bp = 0;
+		alarm[1] = 1
     }
 	with obj_battle_ui_fight_kris {
-		y += other.bp
+		y += round(other.bp / 4)
+		friction = 0
+		gravity = 0
 	}
 }
 

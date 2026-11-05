@@ -2,7 +2,21 @@ if i_exists(obj_drawer) {
 	if obj_drawer.stop_draw && global.interacted && obj_drawer.identifier == 1 {
 		endbstatemc = true
 		intro = 2
+		
+		obj_drawer.identifier = none
+		mus_fade(130,1)
+		new_mus_fade(song[0],100,0)
+		audio_sound_set_track_position(global.current_mus,92.45)
 		instance_destroy(obj_drawer)
+		for (var i = 0; i < len(global.heroes);i++) {
+			with global.heroes[i] {
+				gotorealobj()
+			}
+		}
+		with obj_battle_default_bg {
+			fadeout = true
+		}
+		global.dialogue_enable_progress = true
 	}	
 }	
 if !partyturn {

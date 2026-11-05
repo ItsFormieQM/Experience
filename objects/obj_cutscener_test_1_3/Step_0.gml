@@ -51,7 +51,7 @@ if global.cutscene {
 			var alarm1 = time_source_create(tsg,65,tsuf,function(){
 				var froggit_actor = cutscene_actor_get_instance(Actors.Froggit)
 				with obj_cutscener_test_1_3 {
-					alarm[0] = 1
+					
 					array_push(global.normalbattle_enemyinst,obj_testnpc_enemy_battle)
 					array_push(global.normalbattle_enemyinst,obj_testnpc_enemy_battle)
 					array_push(global.normalbattle_enemyinst,obj_testnpc_enemy_battle)

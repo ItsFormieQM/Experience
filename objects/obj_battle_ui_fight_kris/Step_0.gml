@@ -89,3 +89,6 @@ if i_exists(obj_battle_controller) && !downstate {
 	}
 	image_index = index_main+1
 }
+if !i_exists(obj_battle_controller) {
+	i_destroy()
+}

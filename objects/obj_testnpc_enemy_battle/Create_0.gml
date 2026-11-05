@@ -78,6 +78,7 @@ idkabtts = function() {
 					sparemethod.spare(global.normalbattle_enemyinst[i])
 				}
 			}
+			con = 0
 			pop_loopfunc(1)
 			sdm("worked")
 		}

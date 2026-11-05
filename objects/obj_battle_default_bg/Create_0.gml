@@ -4,3 +4,4 @@ depthstart = 100
 if instance_number(object_index) >= 2 {
 	i_destroy()
 }
+fadeout = false

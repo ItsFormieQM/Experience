@@ -7,4 +7,5 @@ pop_loopfunc = function(name) {
 			sdm("GONE")
 		}
 	}
+	sdm(functions)
 }
