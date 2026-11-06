@@ -19,6 +19,7 @@ if instance_exists(kris_actor) && ran {
 	
 	if !executed {
 		executed = true
+		
 		cutscene_actor_set_direction(kris_actor,Down)
 		cutscene_real_set_direction(kris_actor,Down)
 	}

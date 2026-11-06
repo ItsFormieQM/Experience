@@ -1,4 +1,10 @@
 draw_self()
+var sett = draw_get_settings()
+draw_set_font(fnt_main)
+draw_set_colour(c_white)
+draw_text(x,y,$"DIR: {dir}")
+draw_text(x,y+45,$"IMAGE INDEX: {image_index}")
+draw_set_settings(sett)
 if global.flag[Flag.On_Battle] && variable_instance_exists(self,"movement_frames") && is_array(movement_frames) && array_length(movement_frames) >= 1 {
 	aura_decay = 0.05
 	aura_scale = 2

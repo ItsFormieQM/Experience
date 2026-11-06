@@ -1,7 +1,12 @@
-mus_fade(30,0)
+if global.current_mus != none {
+	mus_fade(30,0)
+}
 //with obj_mainchara {
 //	sprite_index = spr_kris_fall
 //}
+if !variable_instance_exists(id,"skipintro") {
+	skipintro = false
+}
 
 arrived = false
 kris_obj = obj_mainchara
@@ -19,6 +24,14 @@ kris_obj.visible = false
 kris_obj = hero_kris
 song = []
 array_push(global.normalbattle_heroinst,hero_kris)
+hero_aura_arrays = [
+	
+]
+stop_aura = true
+if skipintro {
+	arrived = true
+	
+}
 with kris_obj {
 	
 	tx = 35 + round(sprite_width * 1.8) + camx_ab
@@ -29,17 +42,20 @@ with kris_obj {
 	spdr = point_distance(x,y,tx,ty) / 20
 	show_debug_message(tx)
 	show_debug_message(spdr)
+	if other.skipintro {
+		tx = player.x
+		ty = player.y
+		exit
+	}
 	move_towards_point(tx,ty,spdr)
 }
-hero_aura_arrays = [
-	
-]
+
 //for (var i = 0; i < len(global.normalbattle_enemyinst); i++) {
 //	if i_exists(global.normalbattle_enemyinst) {
 //		global.normalbattle_enemyinst[i].battleintro()	
 //	}	
 //}
-stop_aura = true
+
 
 var idealx = camx_ab
 var idealy = camy_ab

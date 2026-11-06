@@ -1,5 +1,6 @@
 _x = 624
 _y = 0
+timer = 0
 ogdepth = depth
 loaded = false
 goto_x = 0

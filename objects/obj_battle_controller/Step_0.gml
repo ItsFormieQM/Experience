@@ -4,7 +4,9 @@ if i_exists(obj_drawer) {
 		intro = 2
 		
 		obj_drawer.identifier = none
-		mus_fade(130,1)
+		if global.current_mus != none {
+			mus_fade(130,1)
+		}
 		new_mus_fade(song[0],100,0)
 		sdm(global.actables)
 		instance_destroy(obj_drawer)

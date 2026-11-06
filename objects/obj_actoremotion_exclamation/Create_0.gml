@@ -1,4 +1,5 @@
 snd_play(snd_notice)
+
 if i_exists(actor) {
 	obj_name = actor.object_index
 }

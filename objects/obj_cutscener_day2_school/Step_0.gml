@@ -19,10 +19,10 @@ if instance_exists(kris_actor) && ran {
 		executed = true	
 		// sorry to keep u waiting
 		var susie_actor = cutscene_actor_create(obj_susie_actor,0,0)
-		var ralsei_actor = cutscene_actor_create(obj_ralsei_actor,0,0)
-		cutscene_actor_set_pos(ralsei_actor,1444,221,false)
+		
+		
 		cutscene_actor_set_pos(susie_actor,1295,218,false)
-		cutscene_actor_set_direction(ralsei_actor,Left)
+		
 		cutscene_actor_set_direction(susie_actor,Right)
 		cutscene_actor_set_direction(kris_actor,Up)
 		var alarm1 = time_source_create(tsg,65,tsuf,function(){
@@ -34,36 +34,44 @@ if instance_exists(kris_actor) && ran {
 			cutscene_actor_walk(kris_actor,Right,3,65)
 		})
 		var alarm3 = time_source_create(tsg,100+65+85,tsuf,function(){
-			var kris_actor = cutscene_actor_get_instance(Actors.Kris)
-			cutscene_actor_show_emotion(kris_actor,Actor_Emotion.ExclamationMark,50)
+			var kris_actor = cutscene_get_actor_instance(Actors.Kris)
+				
+				
+			cutscene_actor_show_emotion(kris_actor,Actor_Emotion.ExclamationMark,100)
+			var susie_actor = cutscene_actor_get_instance(Actors.Susie)
+			cutscene_actor_set_sprite(susie_actor,spr_susie_bangs_eatchalk,0)
+			
 		})
 		var alarm4 = time_source_create(tsg,100+65+85+130,tsuf,function(){
 			var kris_actor = cutscene_actor_get_instance(Actors.Kris)
-			cutscene_move_camera(Right,150,4)
-			var killfunc = function() {
-				static con = 0
-				static exc = false
-				con++
-				if con >= 30 {
-					with obj_cutscener_day2_school {
-						if !exc {
-							exc = true
-							alarm[0] = 1
+			cutscene_move_camera(Right,100,4)
+			
+			
+		})
+		var alarm5 = time_source_create(tsg,100+65+85+260+60,tsuf,function(){
+			var susie_actor = cutscene_actor_get_instance(Actors.Susie)
+			cutscene_actor_set_sprite(susie_actor,spr_susie_bangs_eatchalk,0)
+			with susie_actor {
+				image_speed = 0.9
+				onetimeanim = true
+			}
+			var func = function() {
+				var susie = cutscene_actor_get_instance(Actors.Susie)
+				with susie {
+					sdm("running son")
+					if floor(image_index) == 16 {
+						snd_play(snd_change,1.2)
+						with obj_cutscene_controller {
+							con = 1
+							
 						}
 						
-						if ran == false {
-							cmd_kill()
-							con = 0
-							cutscene_function_remove(0)
-						}
+						cutscene_function_remove(0)
+						
 					}
-					
 				}
-			}
-			cutscene_function_add(killfunc,0)
-		})
-		var alarm5 = time_source_create(tsg,100+65+85+260+100,tsuf,function(){
-			cmd_dialogue_play("susie_dateruiner_1")
+			}	
+			cutscene_function_add(func,0)
 		})
 		array_push(alarms,alarm1)
 		array_push(alarms,alarm2)
@@ -80,6 +88,47 @@ if instance_exists(kris_actor) && ran {
 if global.cutscene {
 	with obj_cutscene_controller {
 		if con == 1 {
+			
+			sdm("holup")
+			var alarm1 = time_source_create(tsg,100,tsuf,function(){
+				
+				var susie = cutscene_actor_get_instance(Actors.Susie)
+				with susie {
+					switched_sprite = false
+				}
+				cutscene_actor_set_direction_sprites(
+					susie,
+					noone,
+					noone,
+					spr_susie_bangs_walkl,
+					noone
+				)
+				cutscene_actor_set_direction(susie,Left)
+			})
+			var alarm2 = time_source_create(tsg,100+60,tsuf,function(){
+				var susie = cutscene_actor_get_instance(Actors.Susie)
+				//cutscene_actor_show_emotion(susie,Actor_Emotion.ExclamationMark,50)
+				array_push(global.normalbattle_enemyinst,obj_testnpc_enemy_battle)
+				array_push(global.normalbattle_enemyinst,obj_testnpc_enemy_battle)
+				array_push(global.normalbattle_enemyinst,obj_testnpc_enemy_battle)
+				instance_create(0,0,obj_normal_battler,{skipintro: true})
+				show_debug_message(global.normalbattle_enemyinst)
+				show_debug_message($"LEN: {len(global.normalbattle_enemyinst)}")
+				for (var i = 0; i < len(global.normalbattle_enemyinst); i++) {
+					if object_exists(global.normalbattle_enemyinst[i]) {
+						var enemier = instance_create(susie.x,susie.y,global.normalbattle_enemyinst[i])
+						enemier.depth = obj_hero_kris.depth
+						
+						show_debug_message($"SPAWNED: {enemier.stats.name}")
+						global.normalbattle_enemyinst[i] = enemier
+					}
+				}
+				
+			})
+			time_source_start(alarm1)
+			array_push(other.alarms,alarm1)
+			time_source_start(alarm2)
+			array_push(other.alarms,alarm2)
 			con += 0.1
 		}
 	}

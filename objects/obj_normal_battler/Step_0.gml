@@ -1,7 +1,7 @@
 
 with kris_obj {
 	
-	if point_distance(x,y,tx,ty) <= spdr && !other.arrived{
+	if other.skipintro || (point_distance(x,y,tx,ty) <= spdr && !other.arrived) {
 		other.stop_aura = true
 		speed = 0
 		image_index = 0
@@ -9,6 +9,7 @@ with kris_obj {
 		image_index = 2
 		image_speed = 0.5
 		other.arrived = true
+		other.skipintro = false
 		image_speed = 1.25
 		if len(other.hero_aura_arrays) > 0 {
 			array_delete(other.hero_aura_arrays,array_length(other.hero_aura_arrays) - 1, 1)

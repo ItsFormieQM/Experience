@@ -70,7 +70,7 @@ function scr_load(){
 		filename = global.save_folder + "flags.json"
 		if file_exists(filename) {
 			file = file_text_open_read(filename)
-			for (var i = 0; i <= Flag.COUNT; i++) {
+			for (i = 0; i <= Flag.COUNT; i++) {
 				var sanitized_value = ""
 				var value = file_text_read_string(file)
 			

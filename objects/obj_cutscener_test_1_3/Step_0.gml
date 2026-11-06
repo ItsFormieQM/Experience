@@ -54,7 +54,7 @@ if global.cutscene {
 				cutscene_real_set_direction(kris_actor,Up)
 				with obj_cutscener_test_1_3 {
 					
-					
+					alarm[0] = 1
 					array_push(global.normalbattle_enemyinst,obj_testnpc_enemy_battle)
 					array_push(global.normalbattle_enemyinst,obj_testnpc_enemy_battle)
 					array_push(global.normalbattle_enemyinst,obj_testnpc_enemy_battle)
@@ -75,6 +75,7 @@ if global.cutscene {
 			array_push(other.alarms,alarm1)
 			time_source_start(alarm1)
 			con += 0.1
+			
 		}
 		
 	}

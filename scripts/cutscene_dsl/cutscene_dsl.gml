@@ -117,7 +117,8 @@ function cutscene_actor_show_emotion(actor_handle,emotion,_delay) {
 	var emote = noone
 	switch emotion {
 		case Actor_Emotion.ExclamationMark:
-			emote = instance_create(0,0,obj_actoremotion_exclamation,{actor: actor_handle, delay: _delay})
+			instance_create_depth(0,0,depth,obj_actoremotion_exclamation,{actor: actor_handle, delay: _delay})
+			
 			break
 		case Actor_Emotion.Thinking:
 			emote = instance_create(0,0,obj_actoremotion_thinking,{actor: actor_handle, delay: _delay})
@@ -160,7 +161,7 @@ function cutscene_actor_set_direction_sprites(actor_handle,up=noone,down=noone,l
 	}
 }
 ///@desc Resets the actor's direction sprites to the actor's default ones.
-function cutscene_actor_reset_direction_sprites() {
+function cutscene_actor_reset_direction_sprites(actor_handle) {
 	with actor_handle {
 		cutscene_reset_direction_spr()
 	}

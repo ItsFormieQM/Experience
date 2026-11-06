@@ -26,7 +26,14 @@ if !global.flag[Flag.On_Battle] {
 		sp = 3 
 	}
 	if global.canmove {
-	
+		if floor(image_index) == 1 || floor(image_index) == 3{
+		
+			if timer >= round(60/sp)+5{
+				snd_play(snd_footstep1)
+				timer = 0
+			}
+			
+		}
 		if !global.cutscene {
 			if global.interacted_f {
 				global.flag[Flag.Player_Running] = !global.flag[Flag.Player_Running]
@@ -115,10 +122,11 @@ if !global.flag[Flag.On_Battle] {
 			ran = true
 			image_index = 0
 			image_index = 1
+			timer = 60
 		}
 	}
 	
-	if !removed_variable_1 && !jump_state {
+	if true {
 		if dir == Down {
 			sprite_index = spr_mainchara_d
 		}
@@ -132,7 +140,11 @@ if !global.flag[Flag.On_Battle] {
 			sprite_index = spr_mainchara_l
 		}
 	}
+	
 }
+if image_index != 0 {
+	timer++	
+}	
 
 
 

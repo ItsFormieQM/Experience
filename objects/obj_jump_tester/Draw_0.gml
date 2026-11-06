@@ -6,6 +6,7 @@ if vaporize {
 		
 		i++
 		if i >= len(data) {
+			complete = true
 			break
 		}
 		var val = data[i]
@@ -22,7 +23,7 @@ if vaporize {
 			xx = ogxx
 			yy += h
 			vaporize = false
-			alarm[1] = 30
+			alarm[1] = 3
 			break
 		}
 		else if val == "3" {

@@ -7,6 +7,11 @@ if room == room_deped_hallway_down {
 	if !school_day2 && global.flag[Flag.Story_DaysPassed] >= 2 && global.flag[Flag.Story_Day2Intro_School]{
 		school_day2 = true
 		instance_create(0,0,obj_cutscener_day2_school)
+		instance_destroy(obj_mus_manager)
+		
+	}
+	if global.flag[Flag.Story_DaysPassed] >= 2 && global.current_mus != none{
+		mus_free()
 	}
 	if instance_exists(obj_choicer) {
 		ran = false
