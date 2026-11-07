@@ -3,7 +3,6 @@
   "%Name":"obj_frisk_actor",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_frisk_actor",
@@ -13,8 +12,8 @@
     "path":"folders/Real/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_mainchara_actor",
-    "path":"objects/obj_mainchara_actor/obj_mainchara_actor.yy",
+    "name":"obj_cutscene_actor_parent",
+    "path":"objects/obj_cutscene_actor_parent/obj_cutscene_actor_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

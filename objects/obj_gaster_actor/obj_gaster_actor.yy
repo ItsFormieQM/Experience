@@ -13,8 +13,8 @@
     "path":"Experience (Chapter 1).yyp",
   },
   "parentObjectId":{
-    "name":"obj_frisk_actor",
-    "path":"objects/obj_frisk_actor/obj_frisk_actor.yy",
+    "name":"obj_cutscene_actor_parent",
+    "path":"objects/obj_cutscene_actor_parent/obj_cutscene_actor_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

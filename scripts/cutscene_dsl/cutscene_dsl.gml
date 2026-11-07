@@ -278,6 +278,20 @@ function cutscene_function_remove(_id) {
 		}
 	}
 }
+function cutscene_start_alarm(alarmie) {
+	if !variable_instance_exists(id,"alarms") {
+		show_error("alarm doesnt exist so this is prolly not a cutscene son :pray:",false)
+	}
+	tss(alarmie)
+	ap(alarms,alarmie)
+}
+function cutscene_start_alarm_other(alarmie) {
+	if !variable_instance_exists(other.id,"alarms") {
+		show_error("alarm doesnt exist so this is prolly not a cutscene son :pray:",false)
+	}
+	tss(alarmie)
+	ap(other.alarms,alarmie)
+}
 enum Actor_Emotion {
 	ExclamationMark,
 	Thinking,

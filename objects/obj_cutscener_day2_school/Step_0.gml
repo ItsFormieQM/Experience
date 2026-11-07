@@ -179,10 +179,29 @@ if global.cutscene {
 			var alarm3 = time_source_create(tsg,60+85+60,tsuf,function(){
 				
 				var susie = cutscene_actor_get_instance(Actors.Susie)
-				cutscene_actor_walk(susie,Left,60,)
+				cutscene_actor_walk(susie,Left,2,45)
 			})
+			var alarm4 = time_source_create(tsg,60+85+60+65,tsuf,function(){
+				var kris_actor = cutscene_actor_get_instance(Actors.Kris)
+				var susie = cutscene_actor_get_instance(Actors.Susie)
+				
+				cutscene_actor_set_visibility(kris_actor,false)
+				cutscene_actor_set_sprite(susie,spr_susie_bangs_krispickup,0)
+				with susie {
+					
+					image_speed = 1
+					onetimeanim = true
+				}
+				
+			})
+			
 			tss(alarm1)
+			tss(alarm2)
+			tss(alarm3)
+			cutscene_start_alarm_other(alarm4)
 			ap(other.alarms,alarm1)
+			ap(other.alarms,alarm2)
+			ap(other.alarms,alarm3)
 			con += 0.1
 		}
 	}

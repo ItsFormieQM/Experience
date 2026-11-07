@@ -1,0 +1,6 @@
+var sett = draw_get_settings()
+draw_set_font(fnt_main)
+draw_set_colour(c_white)
+draw_text(0,200,$"SUSIE ACTOR: {x},{y}")
+draw_text(0,224,$"SUSIE SPR: {sprite_get_name(sprite_index)}")
+draw_set_settings(sett)

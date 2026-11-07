@@ -21,8 +21,8 @@
     "path":"folders/Real/Objects/Characters/Player/Object.yy",
   },
   "parentObjectId":{
-    "name":"obj_interactable",
-    "path":"objects/obj_interactable/obj_interactable.yy",
+    "name":"obj_cutscene_actor_parent",
+    "path":"objects/obj_cutscene_actor_parent/obj_cutscene_actor_parent.yy",
   },
   "persistent":true,
   "physicsAngularDamping":0.1,
