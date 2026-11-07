@@ -30,3 +30,4 @@ if instance_exists(obj_cutscene_controller) {
 	}
 	
 }
+global.msg = []

@@ -9,7 +9,9 @@ if room == global.start_room {
 	
 }
 if room == room_deped_hallway_down {
-	
+	if global.prev_room == room_kris_house_entry {
+		room_set_persistent(global.prev_room,false)
+	}
 	if !global.flag[Flag.Story_IntroKrisHouse_Cutscene] {
 		for (var i = 0; i < array_length(global.warper_slot); i++) {
 			if global.warper_slot[i].slot == 1 {

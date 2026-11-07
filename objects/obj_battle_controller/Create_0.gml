@@ -2,9 +2,15 @@ song = []
 if instance_number(object_index) >= 2 {
 	instance_destroy()
 }
-if global.chapter == 1 {
+if global.chapter == 1 && len(global.cbattlemus) <= 0 {
 	song[0] = new_mus_play(mus_battle_rb,1)
 }	
+else {
+	for (var i = 0; i < len(global.cbattlemus);i++) {
+		song[i] = new_mus_play(global.cbattlemus[i].mus,global.cbattlemus[i].vol)
+		
+	}
+}
 for (var i = 0; i < len(global.normalbattle_heroinst); i++) {
 	if i_exists(global.normalbattle_heroinst[i]) {
 		global.normalbattle_heroinst[i].setidle_pos()

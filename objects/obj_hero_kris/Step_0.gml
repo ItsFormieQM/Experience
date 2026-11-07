@@ -14,9 +14,10 @@ if battleend {
 		global.flag[Flag.On_Battle] = false
 		global.canmove = true
 		battleend = false
-		with realobj {
-			visible = true
-			
+		if !i_exists(obj_mainchara_actor) {
+			with realobj {
+				visible = true
+			}
 		}
 		if i_exists(obj_mainchara_actor) {
 			with obj_mainchara_actor {

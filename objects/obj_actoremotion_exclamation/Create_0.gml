@@ -15,6 +15,10 @@ else if obj_name == obj_pink_actor {
 	myw = actor.x / 6 + 60
 	myh = actor.y / 6 + 123
 }
+else if obj_name == obj_susie_actor {
+	myw = actor.x
+	myh = actor.bbox_top
+}
 else {
 	myw = camx_ab
 	myh = camy_ab

@@ -40,7 +40,7 @@ draw_set_color(c_black);
 draw_rectangle(xx - 10, 481 + yy, xx + 700, ((480 - bp) + yy) - 2, false);
 draw_set_color(bcolor);
 
-draw_rectangle(xx - 10, (480 - bp - 3) + yy, xx + 700, (480 - bp - 2) + yy, false);
+draw_rectangle(xx - 10, (480 - bp - 3) + yy, xx + 700, (480 - bp - 1) + yy, false);
 draw_set_color(bcolor);
 
 draw_rectangle(xx - 10, (480 - bp) + 34 + yy, xx + 700, (480 - bp) + 36 + yy, false);

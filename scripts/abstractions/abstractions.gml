@@ -85,3 +85,14 @@ function string_to_array(str) {
 	}
 	return bf
 }
+function tss_group(array) {
+	for (var i = 0; i < len(array); i++) {
+		tss(array[i])
+	}
+}
+function tss(inp) {
+	time_source_start(inp)
+}
+function ap(array,val) {
+	array_push(array,val)
+}

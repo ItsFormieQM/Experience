@@ -180,3 +180,7 @@ function Spare(successmsg,failmsg,pitymercy) constructor {
 		}
 	}
 }
+function CustomBattleMusicData(index,volume) constructor {
+	mus = index
+	vol = volume
+}

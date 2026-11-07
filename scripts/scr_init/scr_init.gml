@@ -3,6 +3,7 @@ function scr_init(){
 	global.selectedenemeynormal = 0
 	global.interactable_controllerids = []
 	randomise()
+	global.cbattlemus = []
 	global.rooms = []
 	var rm = room_first 
 	while rm != -1 {

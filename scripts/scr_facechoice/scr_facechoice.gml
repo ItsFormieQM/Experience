@@ -13,7 +13,8 @@ function scr_facechoice(choice){
 		flowery,
 		flowey,
 		susie,
-		ralsei
+		ralsei,
+		susie_bangs
 	}
 	switch choice {
 		case facechoice.toriel: // toriel
@@ -25,6 +26,9 @@ function scr_facechoice(choice){
 			break
 		case facechoice.susie:
 			global.facechoice = obj_susie_face_dialogue
+			break
+		case facechoice.susie_bangs:
+			global.facechoice = obj_susie_bangs_face_dialogue
 			break
 		case facechoice.noelle:
 			global.facechoice = obj_noelle_face_dialogue

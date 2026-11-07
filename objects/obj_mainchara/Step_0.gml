@@ -1,3 +1,6 @@
+if !visible {
+	exit
+}
 if global.interacted_c {
 	if inventory_state == Inventory_State.off {
 		inventory_state = Inventory_State.active_firstchoice

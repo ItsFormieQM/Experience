@@ -1,7 +1,5 @@
-if !global.flag[Flag.On_Battle] && !switched_sprite {
-	if !jump_state {
-		image_speed = 0
-	}
+if !global.flag[Flag.On_Battle] {
+	
 	
 	if move_l {
 		x -= sp
@@ -43,15 +41,20 @@ if !global.flag[Flag.On_Battle] && !switched_sprite {
 			}
 		}
 	}
-	
-	if !moving && !jump_state {
-		ran = false
-		image_index = 0		
-	}	
-	else if moving {
-		if !ran {
-			ran = true
-			image_index = 1
+	if !switched_sprite {
+		if !moving {
+			ran = false
+			if floor(image_index) % 2 == 0 {
+				image_index = 0
+				image_speed = 0
+			}
+		
+		}	
+		else {
+			if !ran {
+				ran = true
+				image_index = 1
+			}
 		}
 	}
 

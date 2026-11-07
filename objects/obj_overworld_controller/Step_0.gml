@@ -47,6 +47,7 @@ if room == room_kris_house_entry {
 									with global.warper_slot[i]._id {
 										y += 60
 									}
+									room_persistent = true
 									break
 								}
 							}
