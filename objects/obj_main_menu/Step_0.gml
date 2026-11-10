@@ -1,0 +1,71 @@
+if visible {
+	if instance_exists(obj_fade_warp) {
+		alpha -= obj_fade_warp.fadeout_rate
+	}
+	if !loaded {
+		if global.w_press {
+			index--
+			if index <= -1 {
+				index = max_save_files - 1
+			}
+			snd_play(snd_menu_move,1)
+		}
+		if global.s_press {
+			index++
+			if index >= max_save_files {
+				index = 0
+			}
+			snd_play(snd_menu_move,1)
+		}
+		if global.a_press {
+			choicer--
+			if choicer <= -1 {
+				choicer = array_length(choices) - 1	
+			}
+			snd_play(snd_menu_move,1)
+		}
+		if global.d_press {
+			choicer++
+			if choicer >= array_length(choices) {
+				choicer = 0	
+			}
+			snd_play(snd_menu_move,1)
+		}
+	}
+	if global.interacted && !loaded{
+		global.time = 0
+		var file = save_files[index].location
+		if choicer == 0 {
+		
+			if file_exists(file) {
+				cmd_load(index + 1)
+				global.file_number = index + 1
+			}
+			else {
+				global.save_folder = $"{game_save_id}Chapter {global.chapter}/save{index+1}/"
+				sdm(global.save_folder)
+				var larper = instance_create_layer(0,0,"TECHNICAL",obj_fade_warp)
+				larper.image_alpha = 1
+				larper.rate = 0.05
+				larper.fadeout_rate = 0.05
+				room_goto(global.start_room)
+				global.file_number = index + 1
+			}
+			loaded = true
+			sdm(file)
+		}
+		else if choicer == 2 {
+			erase_file(file)
+		}
+		snd_play(snd_select,1.2)
+		sdm("INDEX: " + string(index))
+		sdm("CHOICER: " + string(choicer))
+	}
+}
+if global.flag[Flag.On_Battle] {
+	visible = false
+}
+else {
+	visible = true
+}
+

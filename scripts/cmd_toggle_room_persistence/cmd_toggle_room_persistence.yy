@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cmd_toggle_room_persistence",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cmd_toggle_room_persistence",
+  "parent":{
+    "name":"Commands",
+    "path":"folders/Real/Console/Commands.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,1 @@
+pixel_buff = buffer_create(sprite_get_width(sprite_index)*sprite_get_height(sprite_index)*4,buffer_fixed,1)

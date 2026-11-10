@@ -1,0 +1,1 @@
+path_start(path_froghead, 0.5 / 2, path_action_restart, false)

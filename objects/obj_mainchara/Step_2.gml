@@ -1,0 +1,76 @@
+if !global.flag[Flag.On_Battle] && !global.cutscene {
+	var cam = view_camera[0]
+	var cam_w = camera_get_view_width(cam)
+	var cam_h = camera_get_view_height(cam)
+	var cam_x = camera_get_view_x(cam)
+	var cam_y = camera_get_view_y(cam)
+	var tx = x - (cam_w / 2)
+	var ty = y - (cam_h / 2)
+
+	//tx = clamp(tx,0,room_width - cam_w)
+	//if instance_exists(obj_carrybird) {
+	//	if !obj_carrybird.active {
+	//		ty = clamp(ty,0,room_height - cam_h)
+	//	}
+	//	else {
+	//		ty = cam_y
+	//	}
+	//}
+	//else {
+	//	ty = clamp(ty,0,room_height - cam_h)
+	//}
+	
+
+	//camera_set_view_pos(cam,floor(tx),floor(ty))
+	with obj_dialogue {
+		cam = view_camera[0]
+		x = camera_get_view_x(cam) + 320
+		y = camera_get_view_y(cam) + self_y
+	}
+	
+	
+	
+	
+	
+	with obj_save_menu {
+		x = camera_get_view_x(cam) + self_x
+		y = camera_get_view_y(cam) + self_y
+	}
+	
+}
+move_l = false
+move_r = false
+move_u = false
+move_d = false
+if global.cutscene {
+	visible = false
+	
+	if !instance_exists(obj_mainchara_actor) {
+		_actor = instance_create(x,y,obj_mainchara_actor)
+		_actor.depth = depth
+		for (var i = 0; i < array_length(global.actors); i++) {
+			if global.actors[i] == noone {
+				global.actors[i] = {actor_name: Actors.Kris, actor: _actor}
+				sdm(global.actors)
+				break
+			}
+		}
+		
+	}
+	if i_exists(_actor) {
+		_actor = cutscene_get_actor_instance(Actors.Kris)
+		
+		with _actor {
+			other.x = round(x) 
+			other.y = round(y)	
+		}	
+		
+	}
+	//sdm($"X: {kris_actor.x}")
+	//sdm($"Y: {kris_actor.y}")
+	//sdm($"MAINCHARA: {x}")
+	//sdm($"MAINCHARA: {y}")
+}
+else {
+	
+}

@@ -1,0 +1,153 @@
+if !visible {
+	exit
+}
+if global.interacted_c {
+	if inventory_state == Inventory_State.off {
+		inventory_state = Inventory_State.active_firstchoice
+		if inventory_state == Inventory_State.active_firstchoice {
+			snd_play(snd_menu_move,1.2)
+		}
+	}
+	else {
+		inventory_state = Inventory_State.off
+		global.canmove = true
+	}
+}
+if inventory_state {
+	global.canmove = false
+	if global.s_press {
+		
+	}
+}
+
+if !global.flag[Flag.On_Battle] {
+	
+	if global.flag[Flag.Player_Running] {
+		sp = 4
+	}
+	else {
+		sp = 3 
+	}
+	if global.canmove {
+		if floor(image_index) == 1 || floor(image_index) == 3{
+		
+			if timer >= round(60/sp)+5{
+				snd_play(snd_footstep1)
+				timer = 0
+			}
+			
+		}
+		if !global.cutscene {
+			if global.interacted_f {
+				global.flag[Flag.Player_Running] = !global.flag[Flag.Player_Running]
+	
+			}
+			if global.a_held {
+				
+				x -= sp / global.deltatime
+				image_speed = floor(sp / (global.deltatime * 2)) 
+				dir = Left
+				previnp = dir
+				if !noclip
+					if place_meeting(x - 1,y,obj_wall) {
+			
+						x += sp / global.deltatime
+						previnp = noone
+						global.a_held = false
+					}
+		
+			}
+			
+			else if global.d_held {
+				x += sp / global.deltatime
+				image_speed = floor(sp / (global.deltatime * 2)) 
+				dir = Right
+				previnp = dir
+				if !noclip
+					if place_meeting(x + 1,y,obj_wall) {
+						x -= sp / global.deltatime
+						previnp = noone
+						global.d_held = false
+					}
+		
+			}
+			if global.w_held {
+				y -= sp / global.deltatime
+				image_speed = floor(sp / (global.deltatime * 2)) 
+				dir = Up
+				previnp = dir
+				if !noclip
+					if place_meeting(x,y - 1,obj_wall) {
+			
+						y += sp / global.deltatime
+						previnp = noone
+						global.w_held = false
+					}
+		
+			}
+			else if global.s_held {
+				y += sp / global.deltatime 
+				image_speed = floor(sp / (global.deltatime * 2)) 
+				dir = Down
+				previnp = dir
+				
+				if !noclip
+					if place_meeting(x,y + 1,obj_wall) {
+			
+						y -= sp / global.deltatime
+						previnp = noone
+						global.s_held = false
+					}
+		
+			}
+			
+		}
+	}
+	if !global.canmove || (!global.w_held && !global.a_held && !global.s_held && !global.d_held && !jump_state) {
+		ran = false
+		if sprite_index == spr_mainchara_l || sprite_index == spr_mainchara_r {
+			if floor(image_index) % 2 == 0 {
+				image_index = 0
+				image_speed = 0
+			}
+			
+		}
+		else {
+			if floor(image_index) % 2 == 0 {
+				image_index = 0
+				image_speed = 0
+			}
+		}
+		previnp = noone
+	}	
+	else if global.canmove {
+		if !ran {
+			ran = true
+			image_index = 0
+			image_index = 1
+			timer = 60
+		}
+	}
+	
+	if true {
+		if dir == Down {
+			sprite_index = spr_mainchara_d
+		}
+		if dir == Right {
+			sprite_index = spr_mainchara_r
+		}
+		if dir == Up {
+			sprite_index = spr_mainchara_u
+		}
+		if dir == Left {
+			sprite_index = spr_mainchara_l
+		}
+	}
+	
+}
+if image_index != 0 {
+	timer++	
+}	
+
+
+

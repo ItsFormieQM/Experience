@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cmd_set_obj_var",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cmd_set_obj_var",
+  "parent":{
+    "name":"Commands",
+    "path":"folders/Real/Console/Commands.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

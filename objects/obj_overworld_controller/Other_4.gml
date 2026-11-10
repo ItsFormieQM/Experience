@@ -1,0 +1,98 @@
+ran = false
+subchoice = -1
+layer_depth("Background",60100)
+if room == global.start_room {
+	if global.flag[Flag.Story_IntroStart] {
+		instance_create(0,0,obj_cutscener_rdhd,{spawned: true})
+		global.flag[Flag.Story_IntroStart] = false
+	}
+	
+}
+if room == room_deped_hallway_down && global.flag[Flag.Story_FightingSusie_1] == true {
+	instance_create(860,250,obj_cutscener_day2_school_postd)
+}
+if room == room_deped_hallway_down {
+	if global.prev_room == room_kris_house_entry {
+		room_set_persistent(global.prev_room,false)
+	}
+	if !global.flag[Flag.Story_IntroKrisHouse_Cutscene] {
+		for (var i = 0; i < array_length(global.warper_slot); i++) {
+			if global.warper_slot[i].slot == 1 {
+				with global.warper_slot[i]._id {
+					y = 465
+				}
+				break
+			}
+			
+		}
+		for (var i = 0; i < array_length(global.warper_slot); i++) {
+			if global.warper_slot[i].slot == 2 {
+				
+				with global.warper_slot[i]._id {
+					instance_destroy()
+				}
+				break
+			}
+			
+		}
+	}
+}
+
+if room == room_black {
+	if global.prev_room == room_deped_hallway_down {
+		instance_create(0,0,obj_cutscener_krisintro_gohome,{spawned: true})
+	}
+	else if global.prev_room == room_kris_house_krisroom {
+		if global.flag[Flag.Story_Sleeping] {
+			
+		}
+	}
+}
+if room == room_kris_house_entry {
+	if global.flag[Flag.Story_IntroKrisHouse_Cutscene] {
+		instance_create(0,0,obj_cutscener_krishouse_intro,{spawned: true})
+		global.flag[Flag.Story_IntroKrisHouse_Cutscene] = false
+	}
+}
+if !scr_in_school(room) {
+	global.flag[Flag.On_School] = false
+	if !global.flag[Flag.Story_IntroStart] {
+		global.flag[Flag.Story_LeftIntroRoom] = true
+	}
+}
+
+else {
+	global.flag[Flag.On_School] = true
+}
+if global.prev_room == room_battle {
+	for (var i = 0; i < array_length(global.rooms); i++) {
+		if room == global.rooms[i].room_index {
+			var persistency = global.rooms[i].persistence
+			if persistency == false {
+				room_persistent = false
+			}
+			break
+		}
+	}
+	if instance_exists(obj_mainchara) {
+		obj_mainchara.visible = true
+	}
+}
+if room == room_black {
+	if global.prev_room == room_kris_house_krisroom {
+		global.flag[Flag.Story_Sleeping] = true
+		dream_init = true
+		alarm[1] = 200
+	}
+}
+if room == room_luzaro_beach_wharf {
+	if global.prev_room == room_deped_hallway_down {
+		instance_create(0,0,obj_cutscener_debugluzaro)
+	}	
+}	
+if global.flag[Flag.Story_RefusedSOUL] >= 1 {
+	if global.prev_room == room_gameover {
+		instance_destroy(refused_state_markerinst)
+		room_persistent = false
+	}
+}

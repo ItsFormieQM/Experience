@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cmd_show_camera",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cmd_show_camera",
+  "parent":{
+    "name":"Commands",
+    "path":"folders/Real/Console/Commands.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

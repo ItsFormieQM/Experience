@@ -1,0 +1,2 @@
+
+global.deltatime = 1
