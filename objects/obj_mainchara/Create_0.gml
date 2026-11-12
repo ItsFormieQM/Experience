@@ -11,6 +11,7 @@ move_u = false
 move_d = false
 ogimageindex = 0
 scr_depth()
+alpha_shd = shader_get_uniform(shd_blacken,"alpha")
 if !instance_exists(obj_camera)
 	instance_create(x,y,obj_camera)
 sp = 2.5

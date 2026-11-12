@@ -1,4 +1,6 @@
+shader_set(shd_customcolour)
 draw_self()
+shader_reset()
 var sett = draw_get_settings()
 draw_set_font(fnt_main)
 draw_set_colour(c_white)

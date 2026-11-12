@@ -40,8 +40,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_kris_backtoidle",
-    "path":"sprites/spr_kris_backtoidle/spr_kris_backtoidle.yy",
+    "name":"spr_mus_manager",
+    "path":"sprites/spr_mus_manager/spr_mus_manager.yy",
   },
   "spriteMaskId":null,
   "visible":true,
