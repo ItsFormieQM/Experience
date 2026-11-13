@@ -1,9 +1,10 @@
 function cmd_tempload(file = 1){
 	if !string_canbe_int(file) {
+		sdm("issue")
 		return -1
 	}
 	global.cutscene = false
-	file = integer_floor(real(file))
+	file = floor(real(file))
 	var max_save_files = 5
 	if file > max_save_files {
 		file = max_save_files

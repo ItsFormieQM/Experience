@@ -1,2 +1,2 @@
 snd_play(snd_suslaugh,1.2)
-alarm[1] = 120
+alarm[1] = 100

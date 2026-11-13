@@ -61,8 +61,8 @@ if global.cutscene {
 		_actor = cutscene_get_actor_instance(Actors.Kris)
 		
 		with _actor {
-			other.x = round(x) 
-			other.y = round(y)	
+			other.x = x
+			other.y = y
 		}	
 		
 	}

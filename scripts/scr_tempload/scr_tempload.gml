@@ -100,8 +100,8 @@ function scr_tempload(){
 		random_set_seed(global.flag[Flag.Game_Seed],true)
 	}
 	catch (_exception) {
-		var ri = irandom_range(room_first,room_last)
-		room_goto(ri)
+		sdm("ISSUE")
+		
 	}
 	finally {
 		filename = global.save_folder + "tempsave.txt"

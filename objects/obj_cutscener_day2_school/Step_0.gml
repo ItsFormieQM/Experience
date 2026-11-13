@@ -424,10 +424,10 @@ if global.cutscene {
 				}
 				cutscene_actor_set_visibility(kris,false)
 				cutscene_actor_set_visibility(susie,false)
-				global.cbattlemus[0] = new CustomBattleMusicData(mus_battle_kr,1.3) 
+				global.cbattlemus[0] = new CustomBattleMusicData(mus_battle_rkb,1) 
 				array_push(global.normalbattle_enemyinst,obj_susie_enemy)
 				
-				instance_create(0,0,obj_normal_battler,{skipintro: true})
+				instance_create(0,0,obj_normal_battler,{skipintro: false})
 				sdm(global.normalbattle_enemyinst)
 				sdm($"LEN: {len(global.normalbattle_enemyinst)}")
 				for (var i = 0; i < len(global.normalbattle_enemyinst); i++) {

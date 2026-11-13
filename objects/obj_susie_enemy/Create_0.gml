@@ -1,3 +1,4 @@
+scr_tempsave(0)
 hurtspr = spr_susie_bhurt
 ogspr = sprite_index
 image_xscale *= -1
@@ -10,6 +11,7 @@ stats = {
 	spareable: false,
 	sparemeter: -9
 }
+alarm[4] = 240
 sparemethod = 
 new Spare(
 	["#t000^002#fnt001* You spared Susie!"],
@@ -24,7 +26,6 @@ idkabtts = function() {
 	
 	with obj_susie_enemy {
 		altmercy++
-		
 	}
 	exit
 	
@@ -197,8 +198,8 @@ add_mercy = function(dmg = 0) {
 	}	
 } 
 alarm[0] = 120
-xpos = i_exists(obj_susie_actor) ? obj_susie_actor.x+160:0
-ypos = i_exists(obj_susie_actor) ? obj_susie_actor.y:0
+xpos = i_exists(obj_susie_actor) ? ((camx_ab+camw_ab) + 100)-(abs(sprite_width*2)):0
+ypos = i_exists(obj_hero_kris) ? (200 + camy_ab)-8:0
 
 
 spdr = point_distance(x,y,xpos,ypos) / 20
