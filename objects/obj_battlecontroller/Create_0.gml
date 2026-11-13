@@ -3,6 +3,7 @@ rounds = 0
 if instance_number(object_index) >= 2 {
 	instance_destroy()
 }
+advance = 0
 if global.chapter == 1 && len(global.cbattlemus) <= 0 {
 	song[0] = new_mus_play(mus_battle_rb,1)
 }	

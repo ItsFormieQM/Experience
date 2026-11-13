@@ -153,6 +153,7 @@ function scr_init(){
 	#macro tsuf time_source_units_frames
 	#macro player obj_mainchara
 	#macro fnt_battlehp_normal global.fonts[0]
+	#macro ispconstant 0.166666666666666666
 	#endregion
 	
 	#region Enums

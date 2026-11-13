@@ -4,9 +4,16 @@ if !stopprocess {
 	slower++
 }
 draw_set_font(fnt_battle)
-if slower >= 2 && !stopprocess{
+if slower >= delay && !stopprocess{
 	slower = 0
 	index++
+	delay = 2
+	if strat(teststr,index) == "^" {
+		if string_canbe_int(strat(teststr,index+1)){
+			delay = real(string_copy(teststr,index+1,3))
+			teststr = string_delete(teststr,index,4)
+		}
+	}
 	if strat(teststr,index) == "/"{
 		if strat(teststr,index+1) == "E" {
 			typersnd_play(snd)
@@ -30,6 +37,7 @@ for (var i = 1; i <= string_length(vsst);++i) {
 	
 	if char_1 == "^" { 
 		var char_2 = string_char_at(vsst,i+1)
+		
 		if char_2 == "/" {
 			yoff += string_height(string_char_at(vsst,i))+3
 			i += 1
@@ -61,11 +69,10 @@ for (var i = 1; i <= string_length(vsst);++i) {
 	
 	//draw_set_colour(col)
 	//draw_text(,,string_char_at(vsst,i))
-	if xoff >= sprite_width - (30*image_xscale) {
-		sdm(xoff)
-		sdm("wtf")
-		yoff += string_height(string_char_at(vsst,i))+3
-		xoff = 0
+	if xoff >= abs(sprite_width) - (30*abs(image_xscale)) {
+		
+		
+		
 		
 		
 	}

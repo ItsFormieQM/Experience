@@ -2,6 +2,7 @@ scr_tempsave(0)
 hurtspr = spr_susie_bhurt
 ogspr = sprite_index
 image_xscale *= -1
+conv = 0
 stats = {
 	name: "Susie",
 	maxhp: 180,
@@ -53,6 +54,7 @@ idkabtts_1 = function() {
 				damage(-1)
 			}	
 			with obj_hero_kris {
+				snd_play(snd_sussuprised,0.95)
 				xslashaura = true
 				image_index = 0
 				sprite_index = spr_kris_battle_xslash
@@ -76,7 +78,7 @@ idkabtts_1 = function() {
 			//	}
 			//}
 			with obj_hero_kris {
-				
+				snd_play(snd_sussuprised,0.95)
 				image_index = 0
 				
 				image_speed = 1
@@ -90,20 +92,24 @@ idkabtts_1 = function() {
 		
 		
 	}
-	else if son >= 55 {
-		son = 0
-		exit
+	else if son == 55 {
+		
+		
 		with obj_hero_kris {
 				
 			image_index = 0
 			sprite_index = spr_kris_lw_battle_idle
-			image_speed = 1
+			image_speed = ispconstant
 			onetimeanim = false
 				
 		}
 		
+		
+	}
+	else if son >= 100 {
 		global.dialogue_enable_progress = true
 		son = undefined
+		
 		with obj_battlelooper {
 			with obj_hero_kris {
 				actout = false
@@ -127,12 +133,9 @@ array_push(
 		]
 	}
 )
-dialogue = [
-{
-	txt: ["You're doomed..."],snd: snd_txtsus
-}
 
-]
+
+
 shudder = false
 con = 0
 dmgercount = 0

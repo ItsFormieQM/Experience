@@ -21,7 +21,7 @@ function Act_Check(_name,_tp,_description,_output) : Act(_name,_tp,_description)
 			global.yy_offset[i] = 960 / 2 + 150
 		}
 		with obj_battlecontroller {
-			instance_create(0,0,obj_drawer,{identifier:2},true)
+			instance_create(0,0,obj_drawer,{identifier:10},true)
 		}
 		for (var i = 0; i < len(global.heroes); i++) {
 			with global.heroes[i] {
@@ -50,7 +50,7 @@ function Act_MercyAdders(_name,_tp,_mercyamnt,_description,_output) : Act_Check(
 			global.yy_offset[i] = 960 / 2 + 150
 		}
 		with obj_battlecontroller {
-			instance_create(0,0,obj_drawer,{identifier:2},true)
+			instance_create(0,0,obj_drawer,{identifier:10},true)
 		}
 		for (var i = 0; i < len(global.heroes); i++) {
 			with global.heroes[i] {
@@ -84,7 +84,7 @@ function Act_Damagers(_name,_tp,_mercyamnt,_description,_output,_repeat) : Act_C
 			global.yy_offset[i] = 960 / 2 + 150
 		}
 		with obj_battlecontroller {
-			instance_create(0,0,obj_drawer,{identifier:2},true)
+			instance_create(0,0,obj_drawer,{identifier:10},true)
 		}
 		for (var i = 0; i < len(global.heroes); i++) {
 			with global.heroes[i] {
@@ -119,7 +119,7 @@ function ActDamagers_Custom(_name,_tp,_mercyamnt,_description,_output,_repeat,cu
 			global.yy_offset[i] = 960 / 2 + 150
 		}
 		with obj_battlecontroller {
-			instance_create(0,0,obj_drawer,{identifier:2},true)
+			instance_create(0,0,obj_drawer,{identifier:10},true)
 		}
 		for (var i = 0; i < len(global.heroes); i++) {
 			with global.heroes[i] {
@@ -152,7 +152,7 @@ function Act_MercyAdders_Custom(_name,_tp,_desc,_output,_mercyamnt,_cfunc) const
 			global.yy_offset[i] = 960 / 2 + 150
 		}
 		with obj_battlecontroller {
-			instance_create(0,0,obj_drawer,{identifier:2},true)
+			instance_create(0,0,obj_drawer,{identifier:10},true)
 		}
 		for (var i = 0; i < len(global.heroes); i++) {
 			with global.heroes[i] {
@@ -207,7 +207,7 @@ function Spare(successmsg,failmsg,pitymercy) constructor {
 			global.yy_offset[i] = 960 / 2 + 150
 		}
 		with obj_battlecontroller {
-			instance_create(0,0,obj_drawer,{identifier:2},true)
+			instance_create(0,0,obj_drawer,{identifier:10},true)
 		}
 		for (var i = 0; i < len(global.heroes); i++) {
 			with global.heroes[i] {
@@ -217,11 +217,9 @@ function Spare(successmsg,failmsg,pitymercy) constructor {
 	}
 }
 ///@desc Sets up talk for enemy
-function scr_enemytalk(_x,_y,msgarray,_snd=snd_txt1,_xscale = 1) {
-	var dialoguer = instance_create(_x,_y,obj_bnormal_dialogue,{msg: msgarray, snd:_snd,owner: id},true)
-	with dialoguer {
-		image_xscale = _xscale
-	}
+function scr_enemytalk(_x,_y,msgarray,_snd=snd_txt1,scalerarr) {
+	var dialoguer = instance_create(_x,_y,obj_bnormal_dialogue,{msg: msgarray, snd:_snd,owner: id,scalers: scalerarr},true)
+	
 }
 function CustomBattleMusicData(index,volume) constructor {
 	mus = index

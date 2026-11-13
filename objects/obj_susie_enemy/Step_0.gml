@@ -8,9 +8,13 @@ if battleintro {
 		ystart = ypos
 	}
 }
-if con == 1 {
-	exit
-	scr_enemytalk(x,y,dialogue[con-1].txt,dialogue[con-1].snd)
-	con+=0.1
-	
-}
+if conv == 1 {
+	if stats.hp != stats.maxhp {
+		scr_enemytalk(bbox_left,y,
+			["So that's it?","You're just gonna kill me?","...","Heh^020, Kris..."],
+			snd_txtsus,
+			[1.4,2.45,0.55,1.35]
+		)
+	}	
+	conv += 0.1
+}	

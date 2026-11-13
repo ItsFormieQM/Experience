@@ -3,7 +3,7 @@ if !global.flag[Flag.On_Battle] {
 	exit
 }
 count = 0
-
+delay = 2
 instantiate = function() {
 	if count >= len(msg) {
 		typersnd_play(snd)
@@ -27,6 +27,12 @@ instantiate = function() {
 		if strat(teststr,i) == "^" && strat(teststr,i+1) == "/" {
 			newlines++
 		}
+	}
+	try {
+		image_xscale = scalers[count]
+	}
+	catch(ex) {
+		image_xscale = scalers[count-1]
 	}
 	teststr += "/E"
 	image_yscale = (newlines / 2) 

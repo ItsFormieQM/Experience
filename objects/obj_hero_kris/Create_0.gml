@@ -4,7 +4,7 @@ random_set_seed(global.flag[Flag.Game_Seed],true)
 image_speed = 0
 setidle_pos = function() {
 	sprite_index = spr_kris_lw_battle_idle
-	image_speed = 0.1666666
+	image_speed = ispconstant
 	image_index = 0
 }
 actout = false

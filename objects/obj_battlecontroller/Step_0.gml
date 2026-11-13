@@ -86,6 +86,19 @@ if global.hp[0] <= 0 {
 	global.flag[Flag.On_Battle] = false
 	instance_destroy()
 }
+if advance == 1 {
+	advance += 0.1
+	var en = global.normalbattle_enemyinst
+	for (var i = 0; i < len(en);i++) {
+		if is_string(en[i]) || !i_exists(en[i]) {
+			continue
+		}
+		sdm("fro")
+		with en[i] {
+			alarm[5] = 1
+		}
+	}
+}
 if !i_exists(obj_drawer) && partyturn {
 	if !checked {
 		if !endb {
