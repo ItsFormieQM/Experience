@@ -16,4 +16,8 @@ for (var i = 0; i < len(global.normalbattle_enemyinst); i++) {
 		global.normalbattle_enemyinst[i] = enemier
 	}
 }
-i_destroy()
+with all {
+	if point_in_rectangle(x,y,camx_ab,camy_ab,camw_ab+camx_ab,camh_ab+camy_ab) && object_index == obj_testnpc_enemy_overworld{
+		instance_destroy()
+	}
+}

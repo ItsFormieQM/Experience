@@ -7,5 +7,5 @@ if keyboard_check_pressed(ord("J")) {
 var sett = draw_get_settings()
 draw_set_colour(c_white)
 draw_set_font(fnt_main)
-draw_text(0,320,$"ROOM: {room_get_name(room)}")
+
 draw_set_settings(sett)
