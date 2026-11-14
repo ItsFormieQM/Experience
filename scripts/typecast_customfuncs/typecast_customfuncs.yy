@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"is_int",
+  "%Name":"typecast_customfuncs",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"is_int",
+  "name":"typecast_customfuncs",
   "parent":{
     "name":"Scripts",
     "path":"folders/Real/Scripts.yy",

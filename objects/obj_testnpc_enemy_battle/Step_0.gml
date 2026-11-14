@@ -9,8 +9,8 @@ if battleintro {
 		
 	}
 }
-if con == 1 {
-	sdm(con)
-	scr_enemytalk((bbox_left-sprite_width)+sprite_width/2,y,["Ribbit.","Tung^/Tung^/Tung^/Sahur"],snd_txt2)
-	con += 0.1
+if conv == 1 {
+	sdm(conv)
+	scr_enemytalk((bbox_left-sprite_width)+sprite_width/2,y,["..","Tung^/Tung^/Tung^/Sahur"],snd_txt1,[0.5])
+	conv += 0.1
 }

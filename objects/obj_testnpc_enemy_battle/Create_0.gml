@@ -9,6 +9,7 @@ stats = {
 	spareable: true,
 	sparemeter: 0
 }
+conv = 0
 sparemethod = 
 new Spare(
 	["#t000^002#fnt001* You spared Test Froggit!"],

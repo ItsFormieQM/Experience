@@ -48,7 +48,7 @@ if instance_exists(kris_actor) && ran {
 			}
 			cutscene_actor_set_visibility(kris,false)
 			cutscene_actor_set_visibility(susie,false)
-			global.cbattlemus[0] = new CustomBattleMusicData(mus_battle_rkb,1) 
+			global.cbattlemus[0] = new CustomBattleMusicData(mus_battle_rb,1) 
 			array_push(global.normalbattle_enemyinst,obj_susie_enemy)
 				
 			instance_create(0,0,obj_normal_battler,{skipintro: false})

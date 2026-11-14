@@ -4,7 +4,7 @@ if sprite_index == spr_kris_battle_start {
 }
 if sprite_index == spr_kris_backtoidle {
 	sprite_index = spr_kris_lw_battle_idle
-	image_speed = 1
+	image_speed = ispconstant
 	image_index = 0
 }
 if onetimeanim {

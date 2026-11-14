@@ -19,6 +19,8 @@ new Spare(
 	["#t000^002#fnt001^W* You tried sparing Susie...^/^015^002* But Susie is too determined to^/  defeat you."],
 	0
 ) 
+atktimer = 0
+atkanim = false
 global.cbmessage[0] = "#t000^002#fnt001* Susie attacks!"
 sparealarmnum = 2
 dmger = noone

@@ -169,6 +169,7 @@ function Act_MercyAdders_Custom(_name,_tp,_desc,_output,_mercyamnt,_cfunc) const
 		}
 	}
 }
+#macro soul obj_soul_battle
 function Spare(successmsg,failmsg,pitymercy) constructor {
 	ptm = pitymercy
 	smsg = successmsg
@@ -217,11 +218,24 @@ function Spare(successmsg,failmsg,pitymercy) constructor {
 	}
 }
 ///@desc Sets up talk for enemy
-function scr_enemytalk(_x,_y,msgarray,_snd=snd_txt1,scalerarr) {
+function scr_enemytalk(_x,_y,msgarray,_snd=snd_txt1,scalerarr=[1]) {
 	var dialoguer = instance_create(_x,_y,obj_bnormal_dialogue,{msg: msgarray, snd:_snd,owner: id,scalers: scalerarr},true)
-	
+}
+function scr_enemytalk_fskip() {
+	var _x = 0
+	var _y = 0
+	var msgarray = []
+	var _snd=snd_txt1
+	var scalerarr = []
+	var dialoguer = instance_create(_x,_y,obj_bnormal_dialogue,{msg: msgarray, snd:_snd,owner: id,scalers: scalerarr},true)
+	with dialoguer {
+		i_destroy()
+	}
 }
 function CustomBattleMusicData(index,volume) constructor {
 	mus = index
 	vol = volume
+}
+function scr_bbordersetup(_x,_y,xscale,yscale) {
+	instance_create(_x,_y,obj_battle_border,{borderxscale: xscale, borderyscale: yscale}) 
 }

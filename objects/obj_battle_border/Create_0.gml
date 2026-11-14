@@ -1,15 +1,18 @@
-var cam = view_camera[0]
-var camx = camera_get_view_x(cam)
-var camy = camera_get_view_y(cam)
-x += camx
-y += camy
-image_xscale = 0.7
-image_yscale = 0.7
+
+
+image_xscale = borderxscale
+image_yscale = borderyscale
 if !variable_instance_exists(self,"border_x") {
 	border_x = x
 }
 if !variable_instance_exists(self,"border_y") {
 	border_y = y
+}
+with obj_soul_battle {
+	tx = other.x
+	ty = other.y
+	spdr = point_distance(x,y,tx,ty) / 25
+	move_towards_point(tx,ty,spdr)
 }
 var top = instance_create(x, y, obj_soul_wall, {border_w: image_xscale, border_h: 1},true)
 top.y = y - (sprite_height / 2) + 22
@@ -19,7 +22,7 @@ top.image_yscale = 0.1
 sdm($"TOP X: {top.x} TOP Y: {top.y}")
 
 var bottom = instance_create(x, y, obj_soul_wall, {border_w: image_xscale, border_h: 1},true)
-bottom.y = y + (sprite_height / 2) - 24
+bottom.y = y + (sprite_height / 2) - 22
 bottom.x = x - (sprite_width / 2)
 bottom.image_xscale = sprite_width
 bottom.image_yscale = 0.1

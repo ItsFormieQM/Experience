@@ -94,10 +94,24 @@ if advance == 1 {
 			continue
 		}
 		sdm("fro")
+		for (var j = 0; j <len(global.normalbattle_heroinst);j++) {
+			
+			with global.normalbattle_heroinst[j] {
+				backtoidle()
+			}
+		}
 		with en[i] {
 			alarm[5] = 1
 		}
 	}
+}
+if advance == 2 {
+	if !i_exists(obj_bnormal_dialogue) {
+		with obj_hero_kris {
+			instance_create(x,y,obj_heartburst,{},true)
+		}
+	}
+	advance += 0.1
 }
 if !i_exists(obj_drawer) && partyturn {
 	if !checked {

@@ -16,10 +16,13 @@ actstate = function() {
 	onetimeanim = true
 }
 backtoidle = function() {
+	if sprite_index == spr_kris_lw_battle_idle {
+		return
+	}
 	sprite_index = spr_kris_backtoidle
 	image_speed = 1
 	image_index = 0
-	onetimeanim = true
+	
 }
 endbattleanim = function(){
 	sprite_index = spr_kris_endb
