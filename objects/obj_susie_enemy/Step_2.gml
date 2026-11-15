@@ -4,9 +4,15 @@ if !i_exists(bc) {
 if i_exists(obj_soul_battle) && obj_battlecontroller.fighting {
 	if !i_exists(obj_battle_border) {
 		scr_bbordersetup(camx_ab+(camw_ab/2),camy_ab+(camh_ab/2)-90,0.8,0.8)
-		scr_bsettimer(60*6)
+		
 	}
 	if i_exists(obj_battle_border) {
+		if atktimer == 0 {
+			if atkcount >= 5 {
+				scr_bendturn()
+				atkcount = 0
+			}
+		}
 		atktimer++
 		if sprite_index == spr_susie_rb {
 			if floor(image_index) == 6 {
@@ -17,11 +23,7 @@ if i_exists(obj_soul_battle) && obj_battlecontroller.fighting {
 				global.tp += irandom_range(4,25)
 			}
 		}
-		if atktimer == 0 {
-			if atkcount >= 5 {
-				scr_bendturn()
-			}
-		}
+		
 		if atktimer == 30 {
 			image_index = 0
 			sprite_index = spr_susie_rb
@@ -29,7 +31,7 @@ if i_exists(obj_soul_battle) && obj_battlecontroller.fighting {
 		}
 		if atktimer == 120 {
 			atktimer = 0
-			atkcount = 0
+			
 		}		
 	}
 }
