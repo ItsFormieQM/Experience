@@ -1,0 +1,5 @@
+layer = layer_add_instance("TECHNICAL",id)
+darksurf = surface_create(room_width,room_height)
+col = shader_get_uniform(shd_dark,"col")
+depth = layer_get_depth(layer)
+sdm("black")

@@ -1,0 +1,1 @@
+instance_create(320,96,obj_gameover)

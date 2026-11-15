@@ -1,0 +1,5 @@
+var sett = draw_get_settings()
+draw_set_font(fnt_main)
+draw_set_colour(c_white)
+draw_text(x,y,$"X: {x} Y: {y}")
+draw_set_settings(sett)

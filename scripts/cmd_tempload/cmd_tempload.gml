@@ -1,0 +1,19 @@
+function cmd_tempload(file = 1){
+	if !string_canbe_int(file) {
+		sdm("issue")
+		return -1
+	}
+	global.cutscene = false
+	file = floor(real(file))
+	var max_save_files = 5
+	if file > max_save_files {
+		file = max_save_files
+	}
+	if file <= 0 {
+		file = 1
+	}
+	
+	global.save_folder = $"{game_save_id}Chapter {global.chapter}/save{file}/"
+	scr_tempload()  
+	return 0
+}

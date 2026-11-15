@@ -1,0 +1,11 @@
+draw_sprite_ext(
+	spr_black,
+	0,
+	0,
+	0,
+	666,
+	666,
+	0,
+	c_white,
+	image_alpha
+)

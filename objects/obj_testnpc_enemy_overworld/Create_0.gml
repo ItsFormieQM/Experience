@@ -1,0 +1,17 @@
+seen = false
+touched = false
+chase = false
+aura_array = []
+time = 0
+stoprender_aura = false
+toofar = false
+giveup = false
+giveup_calc = false
+tired = false
+battle_object = obj_testnpc_enemy_battle
+toofar = false
+drag = false
+touched = false
+if global.flag[Flag.On_Battle] {
+	instance_destroy()
+}

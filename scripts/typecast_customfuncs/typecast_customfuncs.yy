@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"typecast_customfuncs",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"typecast_customfuncs",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Real/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_facechoice",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_facechoice",
+  "parent":{
+    "name":"Dialogue",
+    "path":"folders/Real/Scripts/Dialogue.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

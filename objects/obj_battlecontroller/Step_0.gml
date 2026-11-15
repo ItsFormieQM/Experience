@@ -1,0 +1,175 @@
+if i_exists(obj_drawer) {
+	if obj_drawer.stop_draw && global.interacted && obj_drawer.identifier == 1 {
+		endbstatemc = true
+		intro = 2
+		
+		obj_drawer.identifier = none
+		if global.current_mus != none {
+			mus_fade(130,1)
+		}
+		new_mus_fade(song[0],100,0)
+		sdm(global.actables)
+		instance_destroy(obj_drawer)
+		for (var i = 0; i < len(global.heroes);i++) {
+			with global.heroes[i] {
+				gotorealobj()
+			}
+		}
+		with obj_battle_default_bg {
+			fadeout = true
+		}
+		global.dialogue_enable_progress = true
+	}	
+}
+if i_exists(obj_battle_border) {
+	if timer > 0 {
+		timer -= 1
+	}
+}
+if timer == 0 {
+	with obj_battle_border {
+		fadeout = true
+	}
+	with obj_soul_battle {
+		end_soulmode()
+	}
+	fighting = false
+	timer = -666
+}
+if !partyturn {
+	if sel_fight || sel_act || sel_spare {
+		if global.interacted {
+			global.interacted = false
+			checked = false
+			if sel_spare {
+				instance_destroy(obj_drawer)
+				sel_spare_index = sel_fight_index
+				with global.normalbattle_enemyinst[sel_spare_index] {
+					sparemethod.spare(global.normalbattle_enemyinst[other.sel_spare_index])
+				}
+				sel_spare = false
+				partyturn = true
+			}
+			snd_play(snd_select,1.2)
+			if partyturn_act_sel {
+				partyturn = true
+				partyturn_act_sel = false
+				partyturn_act = false
+				sel_act = false
+				sdm(actenemindex)
+				sdm(global.normalbattle_enemyinst)
+				instance_destroy(obj_drawer)
+				method_call(global.actables[actenemindex].actables[sel_act_index].acted,[global.normalbattle_enemyinst[sel_fight_index]])
+			}
+			if partyturn_act {
+				actenemindex = sel_fight_index
+				partyturn_act_sel = true
+			}	
+			
+			if sel_act {
+				partyturn_act = true
+				partyturn_act_sel = true
+			}
+			else if sel_fight {
+				partyturn = true
+				with obj_hero_kris {
+					sprite_index = spr_kris_battle_start
+					image_index = 0
+					image_speed = 0
+				}
+				instance_create((x+camx_ab) + 150,(y+camy_ab) + 384,obj_atk_box,{},true)
+			}
+			if partyturn {
+				with obj_battle_ui_fight_kris {
+					down()
+				}
+				for (var i =0; i < len(global.normalbattle_enemyinst); i++) {
+					if !i_exists(global.normalbattle_enemyinst[i]) {
+						continue
+					}
+					with global.normalbattle_enemyinst[i] {
+						selected = false
+					}
+				}
+				if i_exists(obj_enemy_highlighter) {
+					instance_destroy(obj_enemy_highlighter)
+				}
+				sdm("so?")
+			}
+			
+		}
+	}
+}
+if global.hp[0] <= 0 {
+	cmd_kill()
+	global.flag[Flag.On_Battle] = false
+	instance_destroy()
+}
+if advance == 1 {
+	advance += 0.1
+	var en = global.normalbattle_enemyinst
+	for (var i = 0; i < len(en);i++) {
+		if is_string(en[i]) || !i_exists(en[i]) {
+			continue
+		}
+		sdm("fro")
+		for (var j = 0; j <len(global.normalbattle_heroinst);j++) {
+			
+			with global.normalbattle_heroinst[j] {
+				backtoidle()
+			}
+		}
+		with en[i] {
+			alarm[5] = 1
+		}
+	}
+}
+if advance == 2 {
+	if !i_exists(obj_bnormal_dialogue) {
+		with obj_hero_kris {
+			instance_create(x,y,obj_heartburst,{},true)
+			instance_create(x+3,y+9,obj_soul_battle)
+		}
+	}
+	advance += 0.1
+}
+if !i_exists(obj_drawer) && partyturn {
+	if !checked {
+		if !endb {
+			var check = []
+			for (var i = 0; i < len(global.normalbattle_enemyinst);i++) {
+				if global.normalbattle_enemyinst[i] != none {
+					array_push(check,global.normalbattle_enemyinst[i])
+				}
+			}
+			if len(check) <= 0  {
+				for (var i = 0; i < len(global.heroes); i++) {
+					with global.heroes[i] {
+						endbattleanim()
+					}
+				}
+				endb = true
+			}
+			if endb {
+				with obj_nb_tp {
+					hspeed = -(13/2)
+					friction = -(1/4)
+					alarm[5] = 60
+				}
+				global.msg = []
+				global.msg[0] = "#t000^002#fnt001* You won!^/^020^002* Got nothing."
+				for (var i = 0; i <len(global.msg);i++) {
+					global.xx_offset[i] = 12
+					global.yy_offset[i] = 960 / 2 + 150
+				}
+				var smth = instance_create(0,0,obj_drawer)
+				with smth {
+					identifier = 1
+				}
+				checked = true
+				global.dialogue_enable_progress = false
+			}
+		}
+	}
+}
+

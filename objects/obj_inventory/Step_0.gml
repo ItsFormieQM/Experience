@@ -1,0 +1,3 @@
+var cam = view_camera[0]
+x = camera_get_view_x(cam) + 320
+y = camera_get_view_y(cam) + 256

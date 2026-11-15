@@ -1,0 +1,1 @@
+global.interactable_controllerids = []

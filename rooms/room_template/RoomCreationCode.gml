@@ -1,0 +1,1 @@
+SCR_TEXT("gaster_start")

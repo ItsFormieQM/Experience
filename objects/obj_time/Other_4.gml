@@ -1,0 +1,2 @@
+global.canmove = true
+

@@ -1,0 +1,1 @@
+obj_battlecontroller.begin_counter_attack = true

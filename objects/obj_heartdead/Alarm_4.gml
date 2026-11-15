@@ -1,0 +1,1 @@
+cmd_warp(global.prev_room,-666)

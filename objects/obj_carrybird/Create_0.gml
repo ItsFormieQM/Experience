@@ -1,0 +1,15 @@
+ran = false
+choiced = false
+done = false
+active = false
+dir = Left
+sp = 0.75
+moveup = false
+movesomewhere = false
+movedown = false
+_ogx = x
+_ogy = y
+timer = 0
+scr_depth()
+arrivedtoogpos = false
+touched = false

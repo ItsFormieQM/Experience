@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"mus_vs_susie",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":81.081085,
+  "exportDir":"",
+  "name":"mus_vs_susie",
+  "parent":{
+    "name":"Experience (Chapter 1)",
+    "path":"Experience (Chapter 1).yyp",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_vs_susie.ogg",
+  "volume":1.0,
+}

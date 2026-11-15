@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cutscene_dsl",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cutscene_dsl",
+  "parent":{
+    "name":"Manipulation",
+    "path":"folders/Real/Cutscenes/Scripts/Manipulation.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,11 @@
+partyturn = false
+fighting = false
+sel_fight = false
+sel_fight_index = 0
+sel_act = false
+sel_act_index = 0
+sel_item = false
+sel_item = 0
+sel_spare = false
+sel_spare_index = 0
+actenemindex = 0

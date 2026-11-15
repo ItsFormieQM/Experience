@@ -1,0 +1,13 @@
+data = string_to_array(scr_getimagedata(spr_mainchara_d))
+datalen = len(data)
+outofroom = false
+activated = false
+vaporize = false
+i = 0
+complete = false
+xx = (player.x - player.sprite_width / 2)+2
+yy = (player.y - player.sprite_height / 2)+1
+ogxx = (player.x - player.sprite_width / 2)+1
+ogyy = (player.y - player.sprite_height /2)+1
+w = sprite_get_width(spr_whitepixel)
+h = sprite_get_height(spr_whitepixel)

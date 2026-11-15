@@ -1,0 +1,1 @@
+global.buggy_room = true
