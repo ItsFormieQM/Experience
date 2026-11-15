@@ -39,9 +39,15 @@ if instance_exists(kris_actor) && ran {
 				cutscene_follow_camera(obj_cutscener_krishouse_intro,0.6)
 			})
 			other.alarm2 = time_source_create(time_source_game,20 + 300,time_source_units_frames,function() {
+				var kris_actor = cutscene_get_actor_instance(Actors.Kris)
 				cutscene_unfollow_camera()
 				cmd_dialogue_play("kris_home_intro_1")
-				
+				with player {
+					dir = kris_actor.dir
+					x = kris_actor.x
+					y = kris_actor.y
+				}
+				//cutscene_real_set_pos(kris_actor,1184,320,false)
 			})
 			other.alarm3 = time_source_create(time_source_game,60,time_source_units_frames,function() {
 				

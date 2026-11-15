@@ -7,6 +7,7 @@ for (var i = 0; i < len(global.normalbattle_enemyinst);i++) {
 }
 image_speed = 0
 var sparer = instance_create(x,y,obj_spareanim)
+global.flag[Flag.Story_SusieState_1] = SusieState_1.Spared
 sparer.image_index = image_index
 sparer.sprite_index = sprite_index
 sparer.image_xscale = image_xscale

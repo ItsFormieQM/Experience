@@ -11,7 +11,11 @@ window_center()
 scr_load_audio_external()
 window_set_position(window_get_x(), window_get_y() - 20)
 depth = -666
-
+global.debug = false
+var env = environment_get_variable("formerhyde")
+if env == "1" {
+	global.debug = true
+}
 function test(_name,_age) constructor {
 	name = _name
 	age = _age

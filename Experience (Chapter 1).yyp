@@ -85,9 +85,9 @@
     {"$GMFolder":"","%Name":"Soul","folderPath":"folders/Real/Soul.yy","name":"Soul","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Real/Soul/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Real/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Room Object Managers","folderPath":"folders/Room Object Managers.yy","name":"Room Object Managers","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Susie","folderPath":"folders/Susie.yy","name":"Susie","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Dialogue Portrait","folderPath":"folders/Susie/Dialogue Portrait.yy","name":"Dialogue Portrait","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Room Object Managers","folderPath":"folders/Room Object Managers.yy","name":"Room Object Managers","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Susie/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[

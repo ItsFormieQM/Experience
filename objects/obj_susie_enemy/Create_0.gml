@@ -37,7 +37,7 @@ idkabtts_1 = function() {
 	
 	if !variable_instance_exists(object_index,"son") {
 		son = 0
-		sdm("bru")
+		
 	}
 	if is_undefined(son) {
 		son = 0
@@ -45,6 +45,17 @@ idkabtts_1 = function() {
 	son++
 	with obj_hero_kris {
 		actout = true
+	}
+	if !i_exists(obj_susie_enemy) {
+		global.dialogue_enable_progress = true
+		with obj_battlelooper {
+			with obj_hero_kris {
+				actout = false
+			}
+			son = undefined
+			pop_loopfunc(1)
+		}
+		exit
 	}
 	if son == 1 {
 		global.dialogue_enable_progress = false
@@ -121,6 +132,7 @@ idkabtts_1 = function() {
 	}
 	
 }
+global.flag[Flag.Story_SusieState_1] = SusieState_1.Fought
 idkabtts_2 = function() {
 	with obj_battlelooper {
 		with global.selectedenemeynormal {
@@ -225,7 +237,7 @@ add_mercy = function(dmg = 0) {
 alarm[0] = 120
 xpos = i_exists(obj_susie_actor) ? ((camx_ab+camw_ab) + 100)-(abs(sprite_width*2)):0
 ypos = i_exists(obj_hero_kris) ? (200 + camy_ab)-8:0
-
+drag = false
 
 spdr = point_distance(x,y,xpos,ypos) / 20
 move_towards_point(xpos,ypos,spdr)
