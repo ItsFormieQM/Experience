@@ -3,7 +3,9 @@
 var minusscaler = 10
 
 if !onwater {
+	
 	draw_self()
+	
 	if surface_exists(watersurf) {
 		surface_free(watersurf)
 	}

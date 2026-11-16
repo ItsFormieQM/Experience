@@ -73,4 +73,5 @@ function scr_flags(){
 		"Story_SusieState_1",
 	]
 	global.flag[Flag.Story_SusieState_1] = SusieState_1.NotFought
+	global.flag[Flag.Dream_World] = false
 }

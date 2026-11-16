@@ -1,0 +1,1 @@
+global.flag[Flag.Dream_World] = true

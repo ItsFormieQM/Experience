@@ -80,6 +80,17 @@ if (sel_fight || sel_act || sel_spare) && !partyturn && !partyturn_act_sel{
 	)
 	for (var i = 0; i < len(global.normalbattle_enemyinst);i++) {
 		if global.normalbattle_enemyinst[i] == none {
+			draw_set_colour(c_gray)
+			draw_text_ext_transformed(
+				75+camx_ab,
+				373+camy_ab+(i*30),
+				"---",
+				20,
+				9999,
+				0.99,
+				0.99,
+				0
+			)
 			continue
 		}
 		with global.normalbattle_enemyinst[i] {
@@ -101,9 +112,15 @@ if (sel_fight || sel_act || sel_spare) && !partyturn && !partyturn_act_sel{
 		)
 	}
 	if i_exists(global.normalbattle_enemyinst[sel_fight_index]) {
+		with obj_battle_ui_fight_kris {
+			donot = false
+		}
 		with global.normalbattle_enemyinst[sel_fight_index] {
 			selected = true
 		}
+	}
+	else {
+		
 	}
 	
 	
@@ -148,7 +165,7 @@ else if partyturn_act_sel {
 		53+camx_ab,
 		391+camy_ab + (30*sel_act_index)
 	)
-				
+			
 	
 	if i_exists(global.actables[actenemindex]._id) {
 		draw_set_colour(c_white)

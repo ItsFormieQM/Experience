@@ -17,7 +17,11 @@ if i_exists(obj_battlecontroller) && !downstate {
 		}
 		else if global.interacted {
 			global.interacted = false
+			if donot {
+				exit
+			}
 			snd_play(snd_select,1.2)
+			
 			with obj_drawer {
 				OVERRIDE_Y = 666
 				snd = snd_none
@@ -55,6 +59,7 @@ if i_exists(obj_battlecontroller) && !downstate {
 		with obj_battlecontroller {
 			if !partyturn_act_sel {
 				for (var i = 0; i < len(global.normalbattle_enemyinst); i++) {
+					
 					with global.normalbattle_enemyinst[i] {
 						selected = false
 					}

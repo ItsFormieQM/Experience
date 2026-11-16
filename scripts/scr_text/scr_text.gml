@@ -805,6 +805,14 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 				}
 				sdm(global.xx_offset)
 				break
+			case "drw_sign_test_1":
+				index = 0
+				global.msg[index] = "#t000^002#fnt001* Warning!!!^/^015^002* Enemies up ahead.^/^015^002* Signed by the creator."
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}
+				break
 			default:
 				index = 0
 				global.msg[index] = "* What a dirty hacker we got here./E"

@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"mus_dw_forestnight",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":1,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":79.98984,
+  "exportDir":"",
+  "name":"mus_dw_forestnight",
+  "parent":{
+    "name":"Experience (Chapter 1)",
+    "path":"Experience (Chapter 1).yyp",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_dw_forestnight.ogg",
+  "volume":1.0,
+}

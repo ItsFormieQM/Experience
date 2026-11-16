@@ -26,6 +26,9 @@ if (place_meeting(x,y,obj_mainchara) && !obj_mainchara.occupied) || force_run{
 		choiced = obj_drawer.is_choicer
 	}
 	if can_move && !instance_exists(obj_drawer) && !choiced {
+		if !i_exists(obj_dialogue) {
+			instance_create(0,0,obj_dialogue)
+		}
 		obj_dialogue.visible = false
 		
 	}

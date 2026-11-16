@@ -6,7 +6,22 @@ function Act(_name,_tp,_description) constructor {
 		
 	}
 }
-
+function scr_enemydefeat() {
+	for (var i = 0; i < len(global.normalbattle_enemyinst);i++) {
+		if global.normalbattle_enemyinst[i] == id {
+			for (var i = 0; i < len(global.actables);i++) {
+				sdm(global.actables)
+				if global.actables[i]._id == id {
+					array_delete(global.actables,i,1)
+					break
+				}
+			}
+			array_delete(global.normalbattle_enemyinst,i,1)
+			break
+		
+		}
+	}
+}
 function Act_Check(_name,_tp,_description,_output) : Act(_name,_tp,_description) constructor {
 	name = "Check"
 	output = _output

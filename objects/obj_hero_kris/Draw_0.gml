@@ -84,4 +84,8 @@ if xslashaura {
 	}
 	
 }
+if global.flag[Flag.Dream_World] {
+	shader_set(shd_dreamworld_btint)
+}
 draw_self()
+shader_reset()

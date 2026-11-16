@@ -1,4 +1,4 @@
-
+donot = false
 sel_smth = false
 self_x = x
 self_y = y - 0.1

@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"ts_drw_tileset",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"ts_drw_tileset",
+  "out_columns":3,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Experience (Chapter 1)",
+    "path":"Experience (Chapter 1).yyp",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_ts_forestile",
+    "path":"sprites/spr_ts_forestile/spr_ts_forestile.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":32,
+  "tilehsep":1,
+  "tilevsep":0,
+  "tileWidth":32,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":9,
+}

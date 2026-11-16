@@ -110,3 +110,13 @@ function tss(inp) {
 function ap(array,val) {
 	array_push(array,val)
 }
+function tileset_shader_set(shader) {
+	if (event_type == ev_draw_pre && event_number == 0) {
+		shader_set(shader)
+	}
+}
+function tileset_shader_reset() {
+	if (event_type == ev_draw_pre && event_number == 0) {
+		shader_reset()
+	}
+}

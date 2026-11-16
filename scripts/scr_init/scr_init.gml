@@ -27,8 +27,7 @@ function scr_init(){
 	)
 	instance_create(0,0,obj_mus_manager_new)
 	global.faceemotion = 0
-	display_set_timing_method(tm_sleep)
-	display_set_sleep_margin(30)
+	
 	
 	
 	game_set_speed(60, gamespeed_fps)

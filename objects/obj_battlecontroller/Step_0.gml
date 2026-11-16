@@ -38,12 +38,18 @@ if timer == 0 {
 }
 if !partyturn {
 	if sel_fight || sel_act || sel_spare {
-		if global.interacted {
+		if global.interacted && !is_string(global.selectedenemeynormal){
 			global.interacted = false
+			if !i_exists(global.normalbattle_enemyinst[sel_fight_index]) {
+				exit
+			}
 			checked = false
 			if sel_spare {
 				instance_destroy(obj_drawer)
 				sel_spare_index = sel_fight_index
+				if !i_exists(global.normalbattle_enemyinst[sel_spare_index]) {
+					exit
+				}
 				with global.normalbattle_enemyinst[sel_spare_index] {
 					sparemethod.spare(global.normalbattle_enemyinst[other.sel_spare_index])
 				}
@@ -51,6 +57,7 @@ if !partyturn {
 				partyturn = true
 			}
 			snd_play(snd_select,1.2)
+			
 			if partyturn_act_sel {
 				partyturn = true
 				partyturn_act_sel = false

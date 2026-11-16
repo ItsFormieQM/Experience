@@ -1,0 +1,5 @@
+event_inherited()
+ftile = layer_get_id("Floor")
+ftilemap = layer_tilemap_get_id(ftile)
+layer_set_visible(ftile,false)
+depth = layer_get_depth(ftile)

@@ -1,9 +1,9 @@
 snd_play(snd_spare,2.5)
 for (var i = 0; i < len(global.normalbattle_enemyinst);i++) {
 	if global.normalbattle_enemyinst[i] == id {
-		global.normalbattle_enemyinst[i] = none
+		scr_enemydefeat()
 		try {
-			global.normalbattle_enemyinst[i+1].leader = true
+			global.normalbattle_enemyinst[i].leader = true
 		}
 		catch (_ex) {
 			

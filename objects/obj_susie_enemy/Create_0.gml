@@ -15,7 +15,7 @@ stats = {
 alarm[4] = 240
 sparemethod = 
 new Spare(
-	["#t000^002#fnt001* You spared Susie!"],
+	[scr_settext("#t000^002#fnt001* You spared Susie!","susie_enem_1_1_spare")],
 	["#t000^002#fnt001^W* You tried sparing Susie...^/^015^002* But Susie is too determined to^/  defeat you."],
 	0
 ) 
