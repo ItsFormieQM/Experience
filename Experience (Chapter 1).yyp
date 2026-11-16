@@ -94,9 +94,9 @@
     {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
   ],
   "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"lang_ceb.json","CopyToMask":-1,"filePath":"datafiles","name":"lang_ceb.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"lang_en_battle.json","CopyToMask":-1,"filePath":"datafiles","name":"lang_en_battle.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"lang_en_ui.json","CopyToMask":-1,"filePath":"datafiles","name":"lang_en_ui.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"lang_ceb.json","CopyToMask":-1,"filePath":"datafiles","name":"lang_ceb.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],

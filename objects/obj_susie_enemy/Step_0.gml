@@ -27,25 +27,128 @@ if conv == 1 {
 			]
 		)
 	}
+	else if mercycon == floor(mercycon) {
+		mercycon += 0.1
+		
+		scr_enemytalk(bbox_left,y,
+			[
+				scr_settext("Kris^005, you know that you^/started this mess?","susie_enem_1_5"),
+				scr_settext("...^015 ^/So why are you holding back?","susie_enem_1_6")
+			],
+			snd_txtsus,
+			[
+				2.35,
+				2.5,
+			]
+		)
+	}
 	else {
 		scr_enemytalk_fskip()
 	}
 	conv += 0.1
 }
-else if conv == floor(conv) && mercycon > 0 {
-	mercycon += 0.1
-	conv += 0.1
-	scr_enemytalk(bbox_left,y,
-		[scr_settext("Kris^005, you know that you^/started this mess?","susie_enem_1_5")],
-		snd_txtsus,
-		[3]
-	)
-}
+
 else if conv == 2 {
-	scr_enemytalk_fskip()
+	if mercycon == floor(mercycon) {
+		mercycon += 0.1
+		
+		scr_enemytalk(bbox_left,y,
+			[
+				"...",
+				
+			],
+			snd_txt1,
+			[
+				0.6,
+			]
+		)
+	}
+	else {
+		scr_enemytalk_fskip()
+	}
 	conv += 0.1
 }	
-else if conv == floor(conv) {
+else if conv == 3 {
+	if mercycon == floor(mercycon) {
+		mercycon += 0.1
+		
+		scr_enemytalk(bbox_left,y,
+			[
+				"....",
+				
+			],
+			snd_txt1,
+			[
+				0.67,
+			]
+		)
+	}
+	else {
+		scr_enemytalk_fskip()
+	}
+	conv += 0.1
+}
+else if conv == 4 {
+	if mercycon == floor(mercycon) {
+		mercycon += 0.1
+		
+		scr_enemytalk(bbox_left,y,
+			[
+				scr_settext("Kris^020, what are you doing?","susie_enem_1_7"),
+				
+			],
+			snd_txtsus,
+			[
+				2.2,
+			]
+		)
+	}
+	else {
+		scr_enemytalk_fskip()
+	}
+	conv += 0.1
+}
+else if conv == 5 {
+	if mercycon == floor(mercycon) {
+		mercycon += 0.1
+		
+		scr_enemytalk(bbox_left,y,
+			[
+				scr_settext("Don't you know that^/refusing to fight...","susie_enem_1_7"),
+				
+			],
+			snd_txtsus,
+			[
+				2.3,
+			]
+		)
+	}
+	else {
+		scr_enemytalk_fskip()
+	}
+	conv += 0.1
+}
+else if conv == 6 {
+	if mercycon == floor(mercycon) {
+		mercycon += 0.1
+		
+		scr_enemytalk(bbox_left,y,
+			[
+				"....",
+				
+			],
+			snd_txt1,
+			[
+				0.7,
+			]
+		)
+	}
+	else {
+		scr_enemytalk_fskip()
+	}
+	conv += 0.1
+}
+else if conv == floor(conv){
 	scr_enemytalk_fskip()
 	conv += 0.1
 }

@@ -139,15 +139,15 @@ idkabtts_1 = function() {
 global.flag[Flag.Story_FightingSusie_1] = true
 global.flag[Flag.Story_SusieState_1] = SusieState_1.Fought
 idkabtts_2 = function() {
-	if !variable_instance_exists(id,"stop") {
-		stop = false
-	}
+	
 	with obj_susie_enemy {
-		if stop {
-			exit
-		}
-		stop = true
+		
+		
 		mercycon = floor(mercycon) + 1
+		with obj_battlelooper {
+			pop_loopfunc(1)
+		}
+		exit
 	}
 }
 array_push(
@@ -255,4 +255,4 @@ aura = []
 selected = false
 global.cbattlemus[0] = new_mus_init(mus_battle_rb)
 global.flag[Flag.Story_FightingSusie_1] = true
-scr_switchlang(Language.ceb,"ceb")
+//scr_switchlang(Language.ceb,"ceb")
