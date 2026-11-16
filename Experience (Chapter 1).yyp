@@ -18,6 +18,7 @@
     {"$GMFolder":"","%Name":"Debug Sprites","folderPath":"folders/Debug Sprites.yy","name":"Debug Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Educational Room","folderPath":"folders/Educational Room.yy","name":"Educational Room","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Test","folderPath":"folders/Educational Room/Test.yy","name":"Test","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Dream World","folderPath":"folders/Dream World.yy","name":"Dream World","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Maybe Unused Bullshi","folderPath":"folders/Maybe Unused Bullshi.yy","name":"Maybe Unused Bullshi","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"SOn","folderPath":"folders/Maybe Unused Bullshi/SOn.yy","name":"SOn","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Original Music i guess","folderPath":"folders/Original Music i guess.yy","name":"Original Music i guess","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -286,6 +287,7 @@
     {"id":{"name":"room_deped_hallway_down","path":"rooms/room_deped_hallway_down/room_deped_hallway_down.yy",},},
     {"id":{"name":"room_deped_hallway_up","path":"rooms/room_deped_hallway_up/room_deped_hallway_up.yy",},},
     {"id":{"name":"room_dih","path":"rooms/room_dih/room_dih.yy",},},
+    {"id":{"name":"room_drw_tutorial","path":"rooms/room_drw_tutorial/room_drw_tutorial.yy",},},
     {"id":{"name":"room_gameover","path":"rooms/room_gameover/room_gameover.yy",},},
     {"id":{"name":"room_gaster","path":"rooms/room_gaster/room_gaster.yy",},},
     {"id":{"name":"room_init","path":"rooms/room_init/room_init.yy",},},
@@ -731,6 +733,7 @@
     {"roomId":{"name":"room_cutscene_tester","path":"rooms/room_cutscene_tester/room_cutscene_tester.yy",},},
     {"roomId":{"name":"room_kris_house_krisroom","path":"rooms/room_kris_house_krisroom/room_kris_house_krisroom.yy",},},
     {"roomId":{"name":"room_soundtest","path":"rooms/room_soundtest/room_soundtest.yy",},},
+    {"roomId":{"name":"room_drw_tutorial","path":"rooms/room_drw_tutorial/room_drw_tutorial.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
