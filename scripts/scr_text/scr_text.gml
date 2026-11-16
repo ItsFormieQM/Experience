@@ -739,6 +739,27 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 				}
 			
 				break
+			case "test_son1":
+				index = -1
+				if con == 0 {
+					index++
+					global.msg[index] = "#t011^002#fnt001* Hey there,^010^002 young one."
+					index++
+					global.msg[index] = "#t011^002#fnt001* You seem to be lost."
+					index++
+					global.msg[index] = "#t011^002#fnt001* Here,^015^002 get up..."
+					index++
+					global.msg[index] = "#t999^002#fnt001* ... #t011If you may..."
+					index++
+					global.msg[index] = "#t011^002#fnt001* I can take care of you^/  until you are yourself, OK?"
+					index++
+					global.msg[index] = "#t011^002#fnt001* Just say the word..."
+				}
+				for (var i = 0; i < array_length(global.msg); i++) {
+					global.xx_offset[i] = 68
+					global.yy_offset[i] = 960 / 2 + 85
+				}
+				break
 			case "kris_house_entry_landline_call_1":
 				index = -1
 				if con == 0 {

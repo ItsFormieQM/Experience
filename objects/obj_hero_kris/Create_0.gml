@@ -7,6 +7,7 @@ setidle_pos = function() {
 	image_speed = ispconstant
 	image_index = 0
 }
+invintimer = 0
 actout = false
 xslashaura = false
 actstate = function() {
@@ -16,10 +17,32 @@ actstate = function() {
 	onetimeanim = true
 }
 damage = function(amt) {
+	if invintimer > 0 {
+		exit
+	}
+	with obj_camera {
+		shake_xcoord(15,12,3)
+		shake_ycoord(15,12,3)
+	}
 	snd_play(snd_damage,1.1)
-	sprite_index = spr_krisb_hurt
+	
 	global.hp[0] -= clamp(amt,0,global.maxhp[0])
+	if global.hp[0] <= 0 {
+		cmd_kill()
+		exit
+	}
 	var yoff = 0
+	sprite_index = spr_krisb_hurt
+	invintimer = 60*4
+	if !i_exists(obj_soul_battle) {
+		invintimer = 0
+	}
+	else {
+		with obj_soul_battle {
+			image_index = 1
+			invintimer = other.invintimer
+		}
+	}
 	dmger = noone
 	if i_exists(dmger) {
 		yoff = sprite_get_height(spr_numbers_yellow)*dmgercount

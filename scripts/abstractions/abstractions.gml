@@ -14,6 +14,14 @@ function _camw(){
 	var result = camera_get_view_width(cam)
 	return result
 }
+function overflow_safe(variable,overflownum,underflownum,overflownumset,underflownumset) {
+	if variable > overflownum {
+		variable = overflownumset
+	}
+	else if variable < underflownum {
+		variable = underflownumset
+	}
+}
 function _camh(){
 	var cam = view_camera[0]
 	var result = camera_get_view_height(cam)

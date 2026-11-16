@@ -348,6 +348,9 @@ if timer / global.deltatime >= delay && !stop_draw {
 					case 10:
 						snd = snd_txtral
 						break
+					case 11:
+						snd = snd_testtalk
+						break
 					case 999:
 						snd = noone
 						break
@@ -667,28 +670,32 @@ for (var i = 1; i <= string_length(test); i++) {
 		
 	}
 	else {
+		
 		var _text = char
 		var _tx = _x
 		var _ty = _y
 		var _border_thick = 2 * scale
 		var _text_color = draw_get_colour()
 		var _outline_color = c_gray
+		var deviationx = 45
+		var deviationy = 124.5
 		for (var j = 1; j <= _border_thick; j++) {
 			draw_text_transformed_colour(
-				_tx - j + 70, _ty + 80, _text, scale,scale,0,_outline_color,_outline_color,_outline_color,_outline_color,alpha
+				_tx - j + deviationx, _ty + deviationy, _text, scale,scale,0,_outline_color,_outline_color,_outline_color,_outline_color,alpha
 			)
 			draw_text_transformed_colour(
-				_tx + j + 70, _ty + 80, _text, scale,scale,0,_outline_color,_outline_color,_outline_color,_outline_color,alpha
+				_tx + j + deviationx, _ty + deviationy, _text, scale,scale,0,_outline_color,_outline_color,_outline_color,_outline_color,alpha
 			)
 			draw_text_transformed_colour(
-				_tx + 70, _ty - j + 80, _text, scale,scale,0,_outline_color,_outline_color,_outline_color,_outline_color,alpha
+				_tx + deviationx, _ty - j + deviationy, _text, scale,scale,0,_outline_color,_outline_color,_outline_color,_outline_color,alpha
 			)
 			draw_text_transformed_colour(
-				_tx + 70, _ty + j + 80, _text, scale,scale,0,_outline_color,_outline_color,_outline_color,_outline_color,alpha
+				_tx + deviationx, _ty + j + deviationy, _text, scale,scale,0,_outline_color,_outline_color,_outline_color,_outline_color,alpha
 			)
 		}
+		
 		draw_text_transformed_colour(
-			_tx + 70,_ty + 80,_text,scale,scale,0,_text_color,_text_color,_text_color,_text_color,alpha
+			_tx + deviationx,_ty + deviationy,_text,scale,scale,0,_text_color,_text_color,_text_color,_text_color,alpha
 		)
 		
 		_x += (string_width(char) * scale) + distance

@@ -21,7 +21,12 @@ if cammoving {
 	}
 	
 }
-
+if shaking && shake_timer > 0{
+	shake_timer--
+}
+if shake_timer <= 0 {
+	shaking = false
+}
 else {
 }
 if keyboard_check_pressed(ord("7")) {

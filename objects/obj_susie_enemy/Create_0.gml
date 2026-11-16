@@ -19,6 +19,7 @@ new Spare(
 	["#t000^002#fnt001^W* You tried sparing Susie...^/^015^002* But Susie is too determined to^/  defeat you."],
 	0
 ) 
+bcon = 0
 atktimer = 0
 atkanim = false
 global.cbmessage[0] = "#t000^002#fnt001* Susie attacks!"
@@ -33,6 +34,7 @@ idkabtts = function() {
 	exit
 	
 }
+leader = true
 idkabtts_1 = function() {
 	
 	if !variable_instance_exists(object_index,"son") {
@@ -134,11 +136,15 @@ idkabtts_1 = function() {
 }
 global.flag[Flag.Story_SusieState_1] = SusieState_1.Fought
 idkabtts_2 = function() {
-	with obj_battlelooper {
-		with global.selectedenemeynormal {
-			damage(stats.maxhp+99999)
+	if !variable_instance_exists(id,"stop") {
+		stop = false
+	}
+	with obj_susie_enemy {
+		if stop {
+			exit
 		}
-		pop_loopfunc(1)
+		stop = true
+		mercycon = floor(mercycon) + 1
 	}
 }
 array_push(
@@ -148,12 +154,12 @@ array_push(
 		actables: [
 			new Act_Check("Check",0,none,["#t000^002^W* SUSIE - ATK 15 DEF 5^/* Looks determined to fight you.^/* Try convincing her to stop?"]),
 			//new Act_MercyAdders("Convince",20,100,none,["#t000^002* Froggit didn't understand what^/  you said, ^020^002but was flattered anyway."]),
-			new ActDamagers_Custom("Kill",35,obj_susie_enemy.stats.maxhp,none,["#t000^002^W* You tried convincing Susie."],1,{name: 1, func: idkabtts_2}),
+			new ActDamagers_Custom("Convince",35,obj_susie_enemy.stats.maxhp,none,["#t000^002^W* You tried convincing Susie."],1,{name: 1, func: idkabtts_2}),
 			new ActDamagers_Custom("X-Slash",95,20,none,["#t000^002* Kris used X-Slash."],1,{name: 1, func: idkabtts_1}) 
 		]
 	}
 )
-
+mercycon = 0
 
 
 shudder = false

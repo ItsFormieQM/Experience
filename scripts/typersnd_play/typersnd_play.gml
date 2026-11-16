@@ -71,7 +71,7 @@ function typersnd_play(typersnd = noone,handle = noone){
 	if typersnd != noone {
 		
 		
-		if typersnd == snd_txtsus {
+		if typersnd == snd_txtsus || typersnd == snd_testtalk{
 			handle = audio_play_sound(typersnd,1,false,0.5)
 		}
 		else {

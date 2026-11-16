@@ -4,6 +4,9 @@ stats = {
 	maxhp: global.maxhp[0],
 	def: 5,
 }
+if invintimer > 0 {
+	invintimer--
+}
 if battleend {
 	if point_distance(x,y,realobj.x,realobj.y) <= spdr {
 		speed = 0

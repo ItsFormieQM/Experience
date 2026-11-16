@@ -52,6 +52,32 @@ unfollow_cam = function() {
 	_x = 0
 	_y = 0
 }
+shaking = false
+pause_off = 0
+shake_x = false
+shake_y = false
+shake_strength = 0
+shake_timer = 0
+shake_xcoord = function(strength,time,pauses) {
+	xstart = x
+	ystart = y
+	shaking = true
+	pause_off = pauses
+	shake_strength = strength
+	shake_timer = time
+	shake_x = true
+	alarm[2] = 1
+}
+shake_ycoord = function(strength,time,pauses) {
+	xstart = x
+	ystart = y
+	shaking = true
+	pause_off = pauses
+	shake_strength = strength
+	shake_timer = time
+	shake_y = true
+	alarm[2] = 1
+}
 ext_follow_cam = function(_x,_y,_smoothness) {
 	other.smoothness = _smoothness
 	other._x = _x

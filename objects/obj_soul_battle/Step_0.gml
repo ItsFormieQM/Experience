@@ -2,6 +2,14 @@ if !global.flag[Flag.On_Battle] {
 	i_destroy()
 	exit
 }
+if invintimer >0 {
+	image_speed = 1
+	invintimer--
+}
+else {
+	image_speed = 0
+	image_index = 0
+}
 if soulmode == SoulMode.Red {
 	if canmove {
 		if global.w_held {

@@ -31,7 +31,14 @@ if conv == 1 {
 	}
 	conv += 0.1
 }
-
+else if mercycon == floor(mercycon) && mercycon > 0 {
+	mercycon += 0.1
+	scr_enemytalk(bbox_left,y,
+		["Now's not the time to yap.^/Fight only."],
+		snd_txtsus,
+		[3]
+	)
+}
 else if conv == 2 {
 	scr_enemytalk_fskip()
 	conv += 0.1

@@ -430,7 +430,7 @@ if global.cutscene {
 				}
 				cutscene_actor_set_visibility(kris,false)
 				cutscene_actor_set_visibility(susie,false)
-				global.cbattlemus[0] = new_mus_init(mus_battle_rb,1.2)
+				global.cbattlemus[0] = new_mus_init(mus_battle_test,0.9)
 				array_push(global.normalbattle_enemyinst,obj_susie_enemy)
 				
 				instance_create(0,0,obj_normal_battler,{skipintro: false})
