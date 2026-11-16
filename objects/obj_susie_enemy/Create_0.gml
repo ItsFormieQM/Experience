@@ -49,7 +49,6 @@ idkabtts_1 = function() {
 		actout = true
 	}
 	if !i_exists(obj_susie_enemy) {
-		global.dialogue_enable_progress = true
 		with obj_battlelooper {
 			with obj_hero_kris {
 				actout = false
@@ -57,6 +56,8 @@ idkabtts_1 = function() {
 			son = undefined
 			pop_loopfunc(1)
 		}
+		global.dialogue_enable_progress = true
+		
 		exit
 	}
 	if son == 1 {
@@ -122,18 +123,20 @@ idkabtts_1 = function() {
 		
 	}
 	else if son >= 100 {
-		global.dialogue_enable_progress = true
-		son = undefined
-		
 		with obj_battlelooper {
 			with obj_hero_kris {
 				actout = false
 			}
 			pop_loopfunc(1)
 		}
+		global.dialogue_enable_progress = true
+		son = undefined
+		
+		
 	}
 	
 }
+global.flag[Flag.Story_FightingSusie_1] = true
 global.flag[Flag.Story_SusieState_1] = SusieState_1.Fought
 idkabtts_2 = function() {
 	if !variable_instance_exists(id,"stop") {
@@ -250,3 +253,6 @@ move_towards_point(xpos,ypos,spdr)
 battleintro = true
 aura = []
 selected = false
+global.cbattlemus[0] = new_mus_init(mus_battle_rb)
+global.flag[Flag.Story_FightingSusie_1] = true
+scr_switchlang(Language.ceb,"ceb")

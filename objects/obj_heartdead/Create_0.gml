@@ -6,9 +6,12 @@ dingus = 0
 currentvol = 1
 heartcon = 0
 hearttimer = 0
-if !global.flag[Flag.Story_FightingSusie_1] {
+if global.flag[Flag.Story_FightingSusie_1] {
 	instance_destroy()
-}
+	
+	instance_create(0,0,obj_gameover_susieevent)
+	exit
+}	
 with obj_overworld_controller {
 	other.x = playerx 
 	other.y = playery

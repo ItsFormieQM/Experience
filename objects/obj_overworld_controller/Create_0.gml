@@ -45,6 +45,7 @@ die = function() {
 	pause(delay)
 	
 	room_goto(room_gameover)
+	exit
 }
 enum Inventory_State {
 	off,

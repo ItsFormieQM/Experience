@@ -7,6 +7,9 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 	if true {
 		var json = "lang_en_ui.json"
 		var result = global.text
+		if is_undefined(result) {
+			result = "missing string here"
+		}
 		var index = 0
 		switch _msc {
 			case "test_1":

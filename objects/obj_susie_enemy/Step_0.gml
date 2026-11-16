@@ -17,7 +17,8 @@ if conv == 1 {
 				scr_gettext("susie_enem_1_2"),
 				scr_gettext("susie_enem_1_3"),
 				scr_gettext("susie_enem_1_4"),
-			],snd_txtsus,
+			],
+			snd_txtsus,
 			[
 				1.4,
 				2.45,
@@ -31,10 +32,11 @@ if conv == 1 {
 	}
 	conv += 0.1
 }
-else if mercycon == floor(mercycon) && mercycon > 0 {
+else if conv == floor(conv) && mercycon > 0 {
 	mercycon += 0.1
+	conv += 0.1
 	scr_enemytalk(bbox_left,y,
-		["Now's not the time to yap.^/Fight only."],
+		[scr_settext("Kris^005, you know that you^/started this mess?","susie_enem_1_5")],
 		snd_txtsus,
 		[3]
 	)

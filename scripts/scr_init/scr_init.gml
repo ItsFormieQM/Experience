@@ -6,6 +6,13 @@ function scr_init(){
 	global.cbattlemus = []
 	global.rooms = []
 	global.cbmessage = []
+	enum Language {
+		en,
+		fil,
+		ceb,
+		ja
+	}
+	global.lang = Language.en
 	var rm = room_first 
 	while rm != -1 {
 		var info = room_get_info(rm)

@@ -1,0 +1,1 @@
+global.flag[Flag.Story_FightingSusie_1] = false
