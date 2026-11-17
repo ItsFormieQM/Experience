@@ -38,6 +38,8 @@ function strat(str,index) {
 #macro camy_ab _camy()
 #macro camw_ab _camw()
 #macro camh_ab _camh()
+#macro guiw display_get_gui_width()
+#macro guih display_get_gui_height()
 #endregion 
 #region instances
 function exists(obj) {
@@ -110,9 +112,9 @@ function tss(inp) {
 function ap(array,val) {
 	array_push(array,val)
 }
-function tileset_shader_set(shader) {
+function tileset_shader_set() {
 	if (event_type == ev_draw_pre && event_number == 0) {
-		shader_set(shader)
+		shader_set(shd_dreamworld_btint)
 	}
 }
 function tileset_shader_reset() {

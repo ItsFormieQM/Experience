@@ -8,16 +8,22 @@ if room == global.start_room {
 	}
 	
 }
-if global.flag[Flag.Dream_World] {
-	with all {
-		shader_reset()
+var dreamcheck = room_get_name(room)
+var check = string_copy(dreamcheck,1,8)
+if check == "room_drw" {
+	global.flag[Flag.Dream_World] = true
+}
+ 
+//if global.flag[Flag.Dream_World] {
+//	with all {
+//		shader_reset()
 	
-		shader_set(shd_dreamworld_btint)
-	}
-}
-else {
-	shader_reset()
-}
+//		shader_set(shd_dreamworld_btint)
+//	}
+//}
+//else {
+//	shader_reset()
+//}
 if room == room_deped_hallway_down && global.flag[Flag.Story_FightingSusie_1] == true {
 	instance_create(860,250,obj_cutscener_day2_school_postd)
 }

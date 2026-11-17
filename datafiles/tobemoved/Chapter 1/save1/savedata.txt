@@ -1,0 +1,10 @@
+4 
+413 
+216 
+School Hallway - Lower
+96207 
+1 
+0 
+100 
+100 
+end of hp

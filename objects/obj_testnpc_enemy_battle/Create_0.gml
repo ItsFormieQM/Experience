@@ -182,5 +182,5 @@ image_index = random_range(0,image_number-1)
 
 global.cbattlemus[0] = new_mus_init(mus_battle_sneo)
 if global.flag[Flag.Dream_World] {
-	global.cbattlemus[0] = new_mus_init(mus_drw_forestnight)
+	global.cbattlemus[0] = new_mus_init(snd_none)
 }

@@ -18,6 +18,8 @@ if instance_exists(kris_actor) && ran {
 		with obj_savepoint {
 			visible = false
 		}
+		alarm[0] = 1
+		exit
 		cutscene_fade(0.0025,false)
 		sdm(global.actors)
 		

@@ -217,7 +217,49 @@ function scr_init(){
 		global.ldm = true
 	}
 	// end of sp
+	copy_datafile_folder("tobemoved/Chapter 1")
 }
+function copy_datafile_folder(_subfolder_name) {
+    var _source = working_directory + _subfolder_name;
+    var _dest   = game_save_id + _subfolder_name;
+
+    // Ensure trailing slashes
+    if (string_char_at(_source, string_length(_source)) != "/") _source += "/";
+    if (string_char_at(_dest, string_length(_dest)) != "/") _dest += "/";
+
+    // Create destination folder in game_save_id
+    if (!directory_exists(_dest)) {
+        directory_create(_dest);
+    }
+
+    // 1. Scan all files and subfolders in Included Files
+    var _files = [];
+    var _folders = [];
+    var _item = file_find_first(_source + "*", fa_directory);
+
+    while (_item != "") {
+        if (_item != "." && _item != "..") {
+            if (directory_exists(_source + _item)) {
+                array_push(_folders, _item);
+            } else {
+                array_push(_files, _item);
+            }
+        }
+        _item = file_find_next();
+    }
+    file_find_close();
+
+    // 2. Copy every file into game_save_id
+    for (var i = 0; i < array_length(_files); i++) {
+        file_copy(_source + _files[i], _dest + _files[i]);
+    }
+
+    // 3. Recursively copy any nested subfolders
+    for (var i = 0; i < array_length(_folders); i++) {
+        copy_datafile_folder(_subfolder_name + "/" + _folders[i]);
+    }
+}
+
 exception_unhandled_handler(function(ex) {
 	snd_play(snd_error)
 	

@@ -3,9 +3,13 @@ var clmp = clamp(instance_number(object_index)+1,1,9999)
 repeat clmp {
 	array_push(global.normalbattle_enemyinst,battle_object)
 }
-mus_fade(1,0)
+
 alarm[3] = 120
-instance_create(0,0,obj_normal_battler)
+var truthy = false
+if global.flag[Flag.Dream_World] {
+	truthy = true
+}
+instance_create(0,0,obj_normal_battler,{samemus: truthy})
 sdm(global.normalbattle_enemyinst)
 sdm($"LEN: {len(global.normalbattle_enemyinst)}")
 for (var i = 0; i < len(global.normalbattle_enemyinst); i++) {

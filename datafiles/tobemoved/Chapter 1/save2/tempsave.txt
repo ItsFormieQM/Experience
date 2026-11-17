@@ -1,0 +1,10 @@
+4 
+866 
+228 
+School Hallway - Lower
+27810 
+1 
+0 
+100 
+100 
+end of hp

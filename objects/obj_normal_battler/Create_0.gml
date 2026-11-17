@@ -1,5 +1,9 @@
-if global.current_mus != none {
+if !variable_instance_exists(self,"samemus") {
+	samemus = false
+}
+if global.current_mus != none && !samemus{
 	mus_fade(30,0)
+	
 }
 //with obj_mainchara {
 //	sprite_index = spr_kris_fall

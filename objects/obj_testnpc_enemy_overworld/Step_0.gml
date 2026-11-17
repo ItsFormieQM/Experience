@@ -53,8 +53,17 @@ if giveup {
 		alarm[5] = 250 + round(random_range(250,5*60 + 4.53232313))
 	}
 }
+ec = obj_enemy_clamper
 if chase{
 	if !toofar {
-		move_towards_point(player.x,player.y,4)
+		
+		//direction = point_direction(x,y,player.x,player.y)
+		var dir = point_direction(x,y,player.x,player.y)
+		x += round(lengthdir_x(4,dir))
+		y += round(lengthdir_y(4,dir))
+		var distance = 175.5 - sprite_get_height(spr_israel_whole)
+		x = clamp(x,xstart-distance,xstart+distance)
+		y = clamp(y,ystart-distance,ystart+distance)
+		
 	}
 }

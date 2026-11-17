@@ -1,3 +1,4 @@
+occupied = false
 if global.cutscene {
 	visible = false
 	
