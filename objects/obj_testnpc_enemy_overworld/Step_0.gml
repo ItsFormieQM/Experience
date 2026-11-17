@@ -58,7 +58,7 @@ if chase{
 	if !toofar {
 		
 		//direction = point_direction(x,y,player.x,player.y)
-		var dir = point_direction(x,y,player.x,player.y)
+		var dir = ceil(point_direction(x,y,player.x,player.y))
 		x += round(lengthdir_x(4,dir))
 		y += round(lengthdir_y(4,dir))
 		var distance = 175.5 - sprite_get_height(spr_israel_whole)

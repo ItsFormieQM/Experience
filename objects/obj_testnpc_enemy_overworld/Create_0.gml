@@ -12,6 +12,13 @@ battle_object = obj_testnpc_enemy_battle
 toofar = false
 drag = false
 touched = false
+lazerer = noone
 if global.flag[Flag.On_Battle] {
 	instance_destroy()
+}
+if room == room_drw_forestnight {
+	lazerer = instance_create(910,752,obj_lazerwall)
+	with lazerer {
+		image_yscale = 1.3
+	}
 }
