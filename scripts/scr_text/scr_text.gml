@@ -7,6 +7,7 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 	if true {
 		var json = "lang_en_ui.json"
 		var result = global.text
+		
 		if is_undefined(result) {
 			result = "missing string here"
 		}

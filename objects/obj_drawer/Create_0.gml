@@ -10,7 +10,7 @@ checkedforswear = false
 if !variable_instance_exists(id,"identifier") {
 	identifier = none	
 }	
-sdm($"PROFANITY SETTING: {global.setting_profanity ? "True":"False"}")
+
 if instance_exists(obj_mainchara)
 	obj_mainchara.image_index = 0
 sdm("instantiate drwawer")

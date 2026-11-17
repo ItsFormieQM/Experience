@@ -3,7 +3,7 @@
 //
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
-const float number = 7.25;
+
 void main()
 {
     vec4 mycolour = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );

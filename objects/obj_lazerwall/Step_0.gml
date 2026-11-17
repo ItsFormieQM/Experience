@@ -1,5 +1,4 @@
-alphaer = ceil(point_distance(x,y,player.x,player.y)) / abs(((sprite_get_width(middle)*image_xscale)+(sprite_get_height(middle)*image_yscale)))
-image_alpha = (1-clamp(alphaer,0,1))
-if point_distance(x,y,player.x,player.y) <= 20 {
-	image_alpha = point_distance(x,y,player.x,player.y) / abs(((sprite_get_width(middle)*image_xscale)+(sprite_get_height(middle)*image_yscale)))
-}
+
+alphaer = distance_to_object(player) / 2//abs(((sprite_get_width(middle)*image_xscale)+(sprite_get_height(middle)*image_yscale)))
+alphaer = clamp(alphaer,10,40)
+image_alpha = 1-((alphaer-10)/30)
