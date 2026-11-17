@@ -1,6 +1,7 @@
 // exclusive to saving
 // holup do i do the flags or what?
-buffer_async_group_begin("")
+// constant use 0
+scr_save_async(0)
 
 sprite_index = spr_saving_indicator
 image_alpha = 0

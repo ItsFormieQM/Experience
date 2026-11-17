@@ -2,7 +2,7 @@ if visible {
 	
 	
 	global.canmove = false
-	if !file_saved {
+	if !file_saved && canmove {
 		if global.d_press {
 			i++
 			check_values()
@@ -21,6 +21,8 @@ if visible {
 		}
 		if i == 0 {
 			beginsave()
+			canmove = false
+			snd_play(snd_select,1.2)
 		}
 		else if i == 1 {
 			visible = false

@@ -15,6 +15,7 @@ if image_xscale < 20 {
 if image_yscale < 10 {
 	image_yscale = 10.25
 }
+canmove = true
 check_values = function() {
 	if i >= array_length(choices) {
 		i = 0
