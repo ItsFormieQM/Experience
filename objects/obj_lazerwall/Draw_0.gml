@@ -35,5 +35,6 @@ draw_sprite_ext(
 	c_white,
 	image_alpha
 )
+draw_text(bbox_left,bbox_top-18,"IMAGE ALPHA: " + string(image_alpha))
 draw_text(bbox_left,bbox_top,"ALPHAER: " + string(alphaer)) 
 shader_set(oldshd)
