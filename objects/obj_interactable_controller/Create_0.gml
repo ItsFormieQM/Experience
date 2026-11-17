@@ -12,3 +12,6 @@ if layer_exists(layer)
 if !variable_instance_exists(self,"_convo") {
 	_convo = 0
 }
+if !i_exists(obj_dialogue) {
+	instance_create(0,0,obj_dialogue)
+}
