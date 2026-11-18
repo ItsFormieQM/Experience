@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_ts_forestile",
-    "path":"sprites/spr_ts_forestile/spr_ts_forestile.yy",
+    "name":"ts_spr_forestile",
+    "path":"sprites/ts_spr_forestile/ts_spr_forestile.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

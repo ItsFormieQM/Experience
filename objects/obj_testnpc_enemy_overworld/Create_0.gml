@@ -22,3 +22,6 @@ if room == room_drw_forestnight {
 		image_yscale = 1.3
 	}
 }
+if is_dreamworld() {	
+	sprite_index = spr_froggit_npc_drw
+}

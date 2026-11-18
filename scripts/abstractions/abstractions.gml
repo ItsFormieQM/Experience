@@ -14,6 +14,14 @@ function _camw(){
 	var result = camera_get_view_width(cam)
 	return result
 }
+function is_dreamworld() {
+	var rm = room_get_name(room)
+	var checkrm = string_copy(rm,1,8)
+	if checkrm == "room_drw" {
+		return true
+	}
+	return false
+}
 function overflow_safe(variable,overflownum,underflownum,overflownumset,underflownumset) {
 	if variable > overflownum {
 		variable = overflownumset

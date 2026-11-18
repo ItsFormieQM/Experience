@@ -5,7 +5,7 @@ if i_exists(obj_drawer) {
 		
 		obj_drawer.identifier = none
 		if global.current_mus != none {
-			mus_fade(130,1)
+			mus_fade(130,audio_sound_get_gain(global.current_mus))
 		}
 		new_mus_fade(song[0],100,0)
 		sdm(global.actables)

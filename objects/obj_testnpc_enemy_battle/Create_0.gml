@@ -4,6 +4,9 @@ leader = false
 if instance_number(object_index) <= 1 {
 	leader = true
 }
+if is_dreamworld() {
+	sprite_index = spr_froggit_npc_drw
+}
 stats = {
 	name: "Test Froggit",
 	maxhp: 120,

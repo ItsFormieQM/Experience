@@ -6,6 +6,7 @@ function scr_init(){
 	global.cbattlemus = []
 	global.rooms = []
 	global.cbmessage = []
+	global.battlegroup = 0
 	enum Language {
 		en,
 		fil,

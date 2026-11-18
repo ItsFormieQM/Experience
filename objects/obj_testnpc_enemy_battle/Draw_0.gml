@@ -1,3 +1,5 @@
+
+
 if !global.ldm {
 	if battleintro {
 		array_push(aura,{xpos: x, ypos: y, sprite: sprite_index, frame: image_index, alpha: 0.45, xscale: image_xscale, yscale: image_yscale})

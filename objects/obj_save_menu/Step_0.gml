@@ -20,9 +20,9 @@ if visible {
 			exit
 		}
 		if i == 0 {
-			beginsave()
-			canmove = false
-			snd_play(snd_select,1.2)
+			successsave()
+			
+			
 		}
 		else if i == 1 {
 			visible = false

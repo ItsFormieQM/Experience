@@ -7,6 +7,6 @@ var fborder = application_get_position()
 draw_surface_stretched(application_surface,fborder[0],fborder[1],fborder[2]-fborder[0],fborder[3]-fborder[1])
 shader_reset()
 
-draw_surface_stretched(dsurf,fborder[0],fborder[1],fborder[2]-fborder[0],fborder[3]-fborder[1])
+
 
 
