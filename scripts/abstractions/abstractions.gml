@@ -130,3 +130,4 @@ function tileset_shader_reset() {
 		shader_reset()
 	}
 }
+

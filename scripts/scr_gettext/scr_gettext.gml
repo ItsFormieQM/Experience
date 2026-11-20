@@ -30,3 +30,9 @@ function scr_switchlang(langabrv,actual) {
 	global.text = dump_text($"lang_{actual}.json")
 	global.lang = langabrv
 }
+function scr_normaltextoffset() {
+	for (var i = 0; i < len(global.msg);i++) {
+		global.xx_offset[i] = 68
+		global.yy_offset[i] = 960 / 2 + 85
+	}
+}

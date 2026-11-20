@@ -36,6 +36,13 @@ if !global.flag[Flag.On_Battle] && !global.cutscene {
 		x = camera_get_view_x(cam) + self_x
 		y = camera_get_view_y(cam) + self_y
 	}
+	if i_exists(obj_overworldsoul) {
+		with obj_overworldsoul {
+			x = other.x
+			y = other.y
+		}
+		
+	}
 	
 }
 move_l = false

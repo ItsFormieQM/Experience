@@ -4,7 +4,9 @@ if global.cutscene {
 	
 	if !instance_exists(obj_mainchara_actor) {
 		_actor = instance_create(x,y,obj_mainchara_actor)
-		_actor.depth = depth
+		with _actor {
+			depth = other.depth
+		}
 		for (var i = 0; i < array_length(global.actors); i++) {
 			if global.actors[i] == noone {
 				global.actors[i] = {actor_name: Actors.Kris, actor: _actor}

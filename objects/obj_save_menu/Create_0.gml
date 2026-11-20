@@ -49,3 +49,4 @@ successsave = function() {
 	snd_play(snd_menu_move,1)
 	saved = true
 }
+layer_add_instance("TECHNICAL",id)

@@ -294,6 +294,10 @@ function cutscene_start_alarm_other(alarmie) {
 	tss(alarmie)
 	ap(other.alarms,alarmie)
 }
+function cutscene_create_timer(delay,_func){
+	var handle = time_source_create(tsg,delay,tsuf,_func)
+	return handle
+}
 enum Actor_Emotion {
 	ExclamationMark,
 	Thinking,

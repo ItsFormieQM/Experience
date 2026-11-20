@@ -21,7 +21,6 @@
     {"name":"inst_408B21E","path":"rooms/room_drw_forestnight/room_drw_forestnight.yy",},
     {"name":"inst_612A1633","path":"rooms/room_drw_forestnight/room_drw_forestnight.yy",},
     {"name":"inst_31656608","path":"rooms/room_drw_forestnight/room_drw_forestnight.yy",},
-    {"name":"inst_5CCB8007","path":"rooms/room_drw_forestnight/room_drw_forestnight.yy",},
     {"name":"inst_24D5339E","path":"rooms/room_drw_forestnight/room_drw_forestnight.yy",},
     {"name":"inst_2FCC141F","path":"rooms/room_drw_forestnight/room_drw_forestnight.yy",},
     {"name":"inst_466C8ADF","path":"rooms/room_drw_forestnight/room_drw_forestnight.yy",},
@@ -58,7 +57,6 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":0.9375,"x":292.0,"y":76.0,},
         {"$GMRInstance":"v4","%Name":"inst_3C127BC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3C127BC","objectId":{"name":"obj_testnpc_enemy_overworld","path":"objects/obj_testnpc_enemy_overworld/obj_testnpc_enemy_overworld.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":768.0,},
         {"$GMRInstance":"v4","%Name":"inst_663589DB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_663589DB","objectId":{"name":"obj_mainchara","path":"objects/obj_mainchara/obj_mainchara.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":190.0,"y":187.0,},
-        {"$GMRInstance":"v4","%Name":"inst_5CCB8007","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5CCB8007","objectId":{"name":"obj_enemy_clamper","path":"objects/obj_enemy_clamper/obj_enemy_clamper.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.82927,"scaleY":1.0,"x":700.5854,"y":593.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Lower","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Lower","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Lowerer","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
