@@ -13,6 +13,7 @@ function scr_init(){
 		ceb,
 		ja
 	}
+	
 	global.lang = Language.en
 	var rm = room_first 
 	while rm != -1 {
@@ -129,7 +130,7 @@ function scr_init(){
 	global.buggy_room = false
 	global.doors = []
 	// PLAYER
-	global.player_items = 0
+	global.player_items = [new Item()]
 	global.player_points = 0
 	global.run = false
 	global.flag[Flag.On_Battle] = false
@@ -179,7 +180,7 @@ function scr_init(){
 		Raining,
 		Thunderstorm
 	}
-	enum Item {
+	enum Item_Enum {
 		// Fallback
 		invalid = -1,
 		air = 0,
@@ -263,8 +264,14 @@ function copy_datafile_folder(_subfolder_name) {
 }
 
 exception_unhandled_handler(function(ex) {
+	var rn = date_current_datetime()
+	if !directory_exists("logs") {
+		directory_create("logs")
+	}
+	var filer = file_text_open_write($"logs/log_{date_get_month_name(date_get_month(rn))} {date_get_day(rn)}, {date_get_year(rn)}_{date_get_hour(rn) % 12 == 0 ?12: date_get_hour(rn) % 12}{date_get_hour(rn) >= 12 ? "PM":"AM"}h{date_get_minute(rn)}min{date_get_second(rn)}s{date_get_second(rn)/1000}ms.txt")
 	snd_play(snd_error)
-	
+	file_text_write_string(filer,ex.longMessage)
+	file_text_close(filer)
     sdm("================== LOGIC ERROR ===================")
     sdm(ex.longMessage)
     sdm("==================================================")

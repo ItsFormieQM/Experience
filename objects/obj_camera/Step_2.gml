@@ -1,5 +1,10 @@
-x = floor(x)
-y = floor(y)
+
+if i_exists(obj_battle_default_bg) {
+	with obj_battle_default_bg {
+		x = other.x - (sprite_width / 2)
+		y = other.y - (sprite_height / 2)
+	}
+}
 if !global.cutscene && !global.flag[Flag.On_Battle] {
 	x = obj_mainchara.x - (sprite_width / 2)
 	y = obj_mainchara.y - (sprite_height / 2)

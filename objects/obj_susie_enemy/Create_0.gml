@@ -2,6 +2,7 @@ scr_tempsave(0)
 hurtspr = spr_susie_bhurt
 ogspr = sprite_index
 image_xscale *= -1
+idle = spr_susie_b_idle
 conv = 0
 stats = {
 	name: "Susie",
@@ -157,8 +158,8 @@ array_push(
 		actables: [
 			new Act_Check("Check",0,none,["#t000^002^W* SUSIE - ATK 15 DEF 5^/* Looks determined to fight you.^/* Try convincing her to stop?"]),
 			//new Act_MercyAdders("Convince",20,100,none,["#t000^002* Froggit didn't understand what^/  you said, ^020^002but was flattered anyway."]),
-			new ActDamagers_Custom("Convince",35,obj_susie_enemy.stats.maxhp,none,["#t000^002^W* You tried convincing Susie."],1,{name: 1, func: idkabtts_2}),
-			new ActDamagers_Custom("X-Slash",95,20,none,["#t000^002* Kris used X-Slash."],1,{name: 1, func: idkabtts_1}) 
+			new ActDamagers_Custom("Convince",15,obj_susie_enemy.stats.maxhp,none,["#t000^002^W* You tried convincing Susie."],1,{name: 1, func: idkabtts_2}),
+			new ActDamagers_Custom("X-Slash",65,20,none,["#t000^002* Kris used X-Slash."],1,{name: 1, func: idkabtts_1}) 
 		]
 	}
 )
@@ -174,7 +175,7 @@ kill = function() {
 }
 damage = function(dmg = -1) {
 	
-	
+	mercycon--
 	if dmg > 0 {
 		dmg = (dmg / stats.def) + irandom_range(stats.def-0.3321,stats.def+0.7953)
 		dmg = clamp(dmg,0,99999999)
@@ -253,6 +254,6 @@ move_towards_point(xpos,ypos,spdr)
 battleintro = true
 aura = []
 selected = false
-global.cbattlemus[0] = new_mus_init(mus_battle_rb)
+global.cbattlemus[0] = new_mus_init(snd_none)
 global.flag[Flag.Story_FightingSusie_1] = true
 //scr_switchlang(Language.ceb,"ceb")

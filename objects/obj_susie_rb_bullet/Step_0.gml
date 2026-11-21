@@ -17,6 +17,19 @@ if is_bool(down) {
 		direction = image_angle
 	}
 }
+mask_index = spr_susie_rudebuster_full
+if place_meeting(x,y,obj_soultensioner) {
+	with obj_soultensioner {
+		image_alpha = 1
+		if i_exists(obj_soul_battle) {
+			with obj_soultensioner {
+				add_tpgr(1.5)
+			}
+		}
+
+	}
+}
+mask_index = sprite_index
 if place_meeting(x,y,obj_soul_battle) {
 	with obj_hero_kris {
 		damage(5)

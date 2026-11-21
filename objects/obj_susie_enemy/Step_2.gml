@@ -22,7 +22,7 @@ if i_exists(obj_soul_battle) && obj_battlecontroller.fighting {
 					snd_play(snd_rudebuster_swing,1.1)
 					instance_create(x,y-68,obj_susie_rb_bullet,{},true)
 					atkcount++
-					global.tp += irandom_range(4,25)
+					
 				}
 			}
 		
@@ -57,7 +57,7 @@ if i_exists(obj_soul_battle) && obj_battlecontroller.fighting {
 					snd_play(snd_battleswing,1.1)
 					instance_create(x,y+instance_number(object_index),obj_susie_bullet_miniaxe,{},true)
 					atkcount++
-					global.tp += irandom_range(4,25)
+					
 				}
 			}
 		
@@ -92,7 +92,7 @@ if i_exists(obj_soul_battle) && obj_battlecontroller.fighting {
 					snd_play(snd_battleswing,1.1)
 					instance_create(x,y+instance_number(object_index),obj_susie_bullet_miniaxe,{},true)
 					atkcount++
-					global.tp += irandom_range(4,25)
+					
 				}
 			}
 		

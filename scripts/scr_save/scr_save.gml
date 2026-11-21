@@ -46,6 +46,12 @@ function scr_save(savepoint_id){
 	}
 	file_text_write_string(file,"end of hp")
 	file_text_writeln(file)
+	
+	// itemer
+	for (var i = 0; i < len(global.player_items); i++) {
+		file_text_write_string(file,global.player_items[i])
+		file_text_writeln(file)
+	}
 	file_text_close(file)
 	// FLAGS SAVING
 	filename = global.save_folder + "flags.json"

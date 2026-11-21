@@ -10,4 +10,4 @@ pureblack = false
 ralph = 0
 manualthing = false
 sdm("black")
-draw_set_circle_precision(64)
+draw_set_circle_precision(256)

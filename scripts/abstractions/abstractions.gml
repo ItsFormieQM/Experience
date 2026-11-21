@@ -130,4 +130,25 @@ function tileset_shader_reset() {
 		shader_reset()
 	}
 }
-
+function cardinal_direction_opposite(num) {
+	var opp = direction + 180 % 360
+	return opp
+}
+function date_get_month_name(num) {
+	num = floor(clamp(num,0,12) - 1)
+	var names = [
+		"Jan", 
+		"Feb", 
+		"Mar", 
+		"Apr", 
+		"May", 
+		"Jun", 
+		"Jul", 
+		"Aug", 
+		"Sep", 
+		"Oct", 
+		"Nov", 
+		"Dec"
+	]
+	return (names[num])
+}

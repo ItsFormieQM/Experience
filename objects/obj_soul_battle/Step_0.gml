@@ -5,8 +5,10 @@ if !global.flag[Flag.On_Battle] {
 if invintimer >0 {
 	image_speed = 1
 	invintimer--
+	hurt = true
 }
 else {
+	hurt = false
 	image_speed = 0
 	image_index = 0
 }

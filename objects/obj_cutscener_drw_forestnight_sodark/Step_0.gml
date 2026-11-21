@@ -39,6 +39,7 @@ if global.cutscene {
 				with kriss {
 					depth = player.depth
 				}
+				
 			})
 			var alarm2 = cutscene_create_timer(120+100,function(){
 				var souler = instance_create(player.x,player.y,obj_overworldsoul)

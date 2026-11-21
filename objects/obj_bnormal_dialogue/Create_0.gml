@@ -10,7 +10,7 @@ if variable_instance_exists(self,"kill") {
 }
 instantiate = function() {
 	if count >= len(msg) {
-		typersnd_play(snd)
+		
 		stopprocess = true
 		i_destroy()
 		exit

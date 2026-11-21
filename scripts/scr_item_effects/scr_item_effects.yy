@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_item_effects",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Real/Scripts.yy",
+    "name":"Experience (Chapter 1)",
+    "path":"Experience (Chapter 1).yyp",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

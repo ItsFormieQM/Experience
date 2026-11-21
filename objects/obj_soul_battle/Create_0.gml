@@ -8,6 +8,7 @@ switch_soulmode = function(type = SoulMode.Red) {
 		event_user(1)
 	}
 }
+grazer = instance_create(x,y,obj_soultensioner)
 invintimer = 0
 takedamage_normal = function(amount = 0, indice = 0) {
 	global.hp[indice] -= amount
@@ -34,6 +35,7 @@ end_soulmode = function() {
 	retract = true
 	canmove = false
 }
+hurt = true
 depth = obj_hero_kris.depth - 1
 spdr = undefined
 

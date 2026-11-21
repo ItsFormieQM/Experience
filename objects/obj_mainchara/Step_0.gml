@@ -139,15 +139,19 @@ if !global.flag[Flag.On_Battle] {
 	if true {
 		if dir == Down {
 			sprite_index = spr_mainchara_d
+			direction = 270
 		}
 		if dir == Right {
 			sprite_index = spr_mainchara_r
+			direction = 0
 		}
 		if dir == Up {
 			sprite_index = spr_mainchara_u
+			direction = 90
 		}
 		if dir == Left {
 			sprite_index = spr_mainchara_l
+			direction = 180
 		}
 	}
 	

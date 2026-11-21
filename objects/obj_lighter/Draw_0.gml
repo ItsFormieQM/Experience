@@ -16,9 +16,10 @@ if !i_exists(obj_battle_default_bg) || obj_battle_default_bg.image_alpha < 1 {
 		)
 	}
 	else if !pureblack && manualthing {
+		
 		draw_circle(
-		    player.x-camx_ab,
-		    player.y-camy_ab,
+		    obj_overworldsoul.x-camx_ab,
+		    obj_overworldsoul.y-camy_ab,
 		    ralph,
 		    false
 		)

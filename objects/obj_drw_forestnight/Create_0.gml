@@ -14,6 +14,13 @@ with lazerwall {
 	layer_add_instance("Instances",id)
 	image_yscale = 2
 }
-
+wall = instance_create(704,576,obj_lazerwall)
+with wall {
+	
+	direction = 90
+	image_angle += direction
+	image_xscale = 1
+	image_yscale = 4
+}
 timer = 0
 con = 0
