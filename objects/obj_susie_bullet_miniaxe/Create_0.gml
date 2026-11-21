@@ -7,4 +7,4 @@ if !variable_instance_exists(id,"DONOT") {
 		instance_create(x,y,object_index,{DONOT: true})
 	}
 }
-speed -= 2
+speed -= 1
