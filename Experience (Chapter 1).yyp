@@ -108,6 +108,7 @@
   "resources":[
     {"id":{"name":"fnt_battle","path":"fonts/fnt_battle/fnt_battle.yy",},},
     {"id":{"name":"fnt_hp","path":"fonts/fnt_hp/fnt_hp.yy",},},
+    {"id":{"name":"fnt_main_battletxt_small","path":"fonts/fnt_main_battletxt_small/fnt_main_battletxt_small.yy",},},
     {"id":{"name":"fnt_main_battletxt","path":"fonts/fnt_main_battletxt/fnt_main_battletxt.yy",},},
     {"id":{"name":"fnt_main_small","path":"fonts/fnt_main_small/fnt_main_small.yy",},},
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},},

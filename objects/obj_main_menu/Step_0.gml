@@ -54,6 +54,11 @@ if visible {
 			loaded = true
 			sdm(file)
 		}
+		else if choicer == 1 {
+			
+			game_change("/test","-game ut.win")
+			
+		}
 		else if choicer == 2 {
 			erase_file(file)
 		}

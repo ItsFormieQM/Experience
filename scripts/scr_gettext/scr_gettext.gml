@@ -1,7 +1,7 @@
 global.loggedtxt = {}
 function scr_gettext(name){
 	global.loggedtxt.name = global.text[$name]
-	sdm($"NAME: {global.loggedtxt}")
+	
 	if is_undefined(global.text[$ name]) {
 		return "missing string here!"
 	}
