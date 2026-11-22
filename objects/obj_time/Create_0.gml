@@ -1,11 +1,14 @@
 global.deltatime = 1
+global.chapter = string(1)
 sdm($"Deltatime: {global.deltatime}")
 timer = 0
 global.is_fs = false
+global.langchoice = Language.en
+scr_load_preferences()
 scr_init()
 room_goto(room_gaster)
 texture_prefetch("Default")
-scr_load_preferences()
+
 sdm(global.is_fs ? "True" : "False")
 window_center()
 scr_load_audio_external()

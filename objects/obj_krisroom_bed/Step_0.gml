@@ -18,6 +18,7 @@ if place_meeting(x,y,obj_mainchara) {
 		with obj_interactable_controller {
 			y -= 666
 		}
+		pleasestop = instance_create(0,0,obj_cutscener_lazytofixthisonebug)
 		with darkner {
 			depth = krissy.depth - 20
 			incrementor = -0.01

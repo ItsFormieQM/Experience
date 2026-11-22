@@ -1,5 +1,23 @@
-global.langchoice = Language.en
+global.ogvol = 1
+global.volnum = 0
+function volume_changer() {
+	global.volnum += 2
+	if global.volnum > 10 {
+		global.volnum = 0
+	}
+	cmd_volume_set(clamp(global.volnum,1,90))
+}
+function ossafe_fs_switch() {
+	if global.osflavor != PC {
+		exit
+	}
+	keyboard_key_press(vk_f4) 
+	keyboard_key_release(vk_f4)
+}
 function scr_language_switcher(){
+	sdm($"OBJECT: {object_get_name(object_index)}")
+	sdm($"OBJECT EVENT: {string(event_type)}")
+	
 	global.langchoice++
 	if global.langchoice >= Language.COUNT {
 		global.langchoice = 0
@@ -15,10 +33,12 @@ function scr_language_switcher(){
 			dump_text("lang_ceb.json")
 			break
 		default:
+			sdm(global.langchoice)
 			throw "wtf"
 			break
 	}
 	global.lang = global.langchoice
+	scr_save_preferences()
 }
 function scr_fchange_lang(enumm) {
 	switch enumm {
@@ -32,6 +52,8 @@ function scr_fchange_lang(enumm) {
 			throw "wtf"
 			break
 	}
+	global.lang = enumm
+	global.langchoice = global.lang
 }
 function scr_translate_enum_lang(num) {
 	switch num {

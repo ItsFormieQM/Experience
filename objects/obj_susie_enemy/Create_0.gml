@@ -23,7 +23,7 @@ new Spare(
 bcon = 0
 atktimer = 0
 atkanim = false
-global.cbmessage[0] = "#t000^002#fnt001* Susie attacks!"
+global.cbmessage[0] = scr_settext("#t000^002#fnt001* Susie attacks!","susie_enem_intro_1")
 sparealarmnum = 2
 dmger = noone
 altmercy = 0
@@ -156,7 +156,7 @@ array_push(
 	{
 		_id: id, 
 		actables: [
-			new Act_Check("Check",0,none,["#t000^002^W* SUSIE - ATK 15 DEF 5^/* Looks determined to fight you.^/* Try convincing her to stop?"]),
+			new Act_Check("Check",0,none,[scr_settext("#t000^002^W* SUSIE - ATK 15 DEF 5^/* Looks determined to fight you.^/* Try convincing her to stop?","susie_enem_check_1")]),
 			//new Act_MercyAdders("Convince",20,100,none,["#t000^002* Froggit didn't understand what^/  you said, ^020^002but was flattered anyway."]),
 			new ActDamagers_Custom("Convince",15,obj_susie_enemy.stats.maxhp,none,["#t000^002^W* You tried convincing Susie."],1,{name: 1, func: idkabtts_2}),
 			new ActDamagers_Custom("X-Slash",65,20,none,["#t000^002* Kris used X-Slash."],1,{name: 1, func: idkabtts_1}) 
@@ -164,7 +164,7 @@ array_push(
 	}
 )
 mercycon = 0
-
+atkcon = 0
 
 shudder = false
 con = 0
@@ -256,4 +256,4 @@ aura = []
 selected = false
 global.cbattlemus[0] = new_mus_init(snd_none)
 global.flag[Flag.Story_FightingSusie_1] = true
-//scr_switchlang(Language.ceb,"ceb")
+

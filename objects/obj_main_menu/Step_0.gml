@@ -2,11 +2,15 @@ if !opened_settings {
 	if instance_exists(obj_fade_warp) {
 		alpha -= obj_fade_warp.fadeout_rate
 	}
+	
 	if !loaded {
 		if global.w_press {
+			if index == -666 {
+				index = max_save_files
+			}
 			index--
-			if index <= -1 {
-				index = max_save_files - 1
+			if index == -1 {
+				index = -666
 			}
 			snd_play(snd_menu_move,1)
 		}
@@ -36,8 +40,7 @@ if !opened_settings {
 			}
 			snd_play(snd_menu_move,1)
 		}
-		sdm("INDEX: " + string(index))
-		sdm("CHOICER: " + string(choicer))
+		
 	}
 	if global.interacted && !loaded{
 		global.time = 0
@@ -76,10 +79,40 @@ if !opened_settings {
 			erase_file(file)
 		}
 		snd_play(snd_select,1.2)
-		sdm("INDEX: " + string(index))
-		sdm("CHOICER: " + string(choicer))
+		
 	}
+	
 }
 else {
-	
+	if global.interacted_x {
+		if opened_settings {
+			opened_settings = 0
+			
+			snd_play(snd_change)
+		}
+	}
+	if global.w_press {
+		sett_i--
+		if sett_i < 0 {
+			sett_i = len(setts) -1
+		}
+		snd_play(snd_menu_move,1.2)
+	}
+	else if global.s_press {
+		sett_i++
+		if sett_i >= len(setts) {
+			sett_i = 0
+		}
+		snd_play(snd_menu_move,1.2)
+	}
+	if global.interacted {
+		if is_callable(setts[sett_i].func) {
+			
+			script_execute(setts[sett_i].func)
+			
+		}
+		
+		sdm(sett_i)
+		sdm("wtf")
+	}
 }

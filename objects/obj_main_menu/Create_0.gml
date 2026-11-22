@@ -6,6 +6,9 @@ choices = [
 	"Copy",
 	"Erase",
 ]
+event_user(0)
+sett_i = 0
+sdm("wtf")
 opened_settings = false
 erase_file = function(file) {
 	if file_exists(file) {

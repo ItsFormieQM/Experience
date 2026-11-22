@@ -806,6 +806,12 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 				}
 				sdm(global.xx_offset)
 				break
+			case "kris_house_hallway_rfl_1":
+				index = -1
+				index++
+				global.msg[index] = scr_settext("#t000^002#fnt001* It's you!","kris_house_hallway_mirror_1")
+				scr_normaltextoffset()
+				break
 			case "drw_sign_test_1":
 				index = 0
 				global.msg[index] = "#t000^002#fnt001* Warning!!!^/^015^002* Enemies up ahead.^/^015^002* Signed by the creator."

@@ -10,7 +10,7 @@ add_tpgr = function(amnt) {
 	if image_alpha > 0.9 {
 		if !audio_is_playing(snd_graze) {
 			snd_play(snd_graze)
-		}scheduler_resolution_get()
+		}
 	}
 	timer = 30
 }

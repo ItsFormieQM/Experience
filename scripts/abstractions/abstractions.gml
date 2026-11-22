@@ -157,3 +157,6 @@ function Setting_Option(_name,_defstate,_scr) constructor {
 	state = _defstate
 	func = _scr
 }
+function boolstr(inp) {
+	return inp ? "true":"false"
+}

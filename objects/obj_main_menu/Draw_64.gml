@@ -1,5 +1,8 @@
+draw_text(0,0,global.lang)
+draw_text(0,24,global.langchoice)
 if opened_settings {
 	layer_set_visible("TEST",false)
+	
 	exit
 }
 else {
