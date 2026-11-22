@@ -113,5 +113,11 @@
 	"kris_house_hallway_door_1_1":"#t000^000#fnt001^002* (Locked...)/E",
 	"kris_house_hallway_plant_1_1":"#t000^000#fnt001^002* Tanom ni.^/^020^002* Cactus./E",
 	"kris_house_hallway_plant_1_2":"#t000^000#fnt001^002* Murag mobulak ni siya into^/  5 kabuok nga prutas!/E",
-	"susie_enem_1_5":"Kris^010, wala nay paluoy diri.^/Pagpatay nalang."
+	"susie_enem_1_5":"Kris^010, wala nay paluoy diri.^/Pagpatay nalang.",
+	"kris_house_myroom_bed_mybed_1_1":"#t000^000#fnt001^002* Higdaanan nimo.^/^020^002* Ma-tulog ka?^/#C           Oo         Dili /E",
+	"kris_house_myroom_bed_mybed_1_2":"#t000^000#fnt001^002* Na-tulog ka#F^020...",
+	"kris_house_myroom_bed_mybed_1_3":"#t000^000#fnt001^002#F* Imong kalawasan na-luwasan^020...",
+	"kris_house_myroom_bed_mybed_1_4":"#t000^000#fnt001^002#F* Grabe ka luwas sa tulog nga^/  nakatulog gyud ka tinood^020...",
+	"kris_house_myroom_bed_mybed_1_5":"#t000^000#fnt001^002* Sayo kaayo sa buntag...",
+	"kris_house_myroom_drawer_1_1":"#t000^000#fnt001^002* (Imong kabinet.)^/^005^002* (Walay sulod.)"
 }

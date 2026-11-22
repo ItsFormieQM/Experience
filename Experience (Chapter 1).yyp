@@ -96,7 +96,6 @@
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"lang_ceb.json","CopyToMask":-1,"filePath":"datafiles","name":"lang_ceb.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"lang_en_battle.json","CopyToMask":-1,"filePath":"datafiles","name":"lang_en_battle.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"lang_en_ui.json","CopyToMask":-1,"filePath":"datafiles","name":"lang_en_ui.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
@@ -390,6 +389,7 @@
     {"id":{"name":"scr_is_offensive","path":"scripts/scr_is_offensive/scr_is_offensive.yy",},},
     {"id":{"name":"scr_isdebug","path":"scripts/scr_isdebug/scr_isdebug.yy",},},
     {"id":{"name":"scr_item_effects","path":"scripts/scr_item_effects/scr_item_effects.yy",},},
+    {"id":{"name":"scr_language_switcher","path":"scripts/scr_language_switcher/scr_language_switcher.yy",},},
     {"id":{"name":"scr_load_audio_external","path":"scripts/scr_load_audio_external/scr_load_audio_external.yy",},},
     {"id":{"name":"scr_load_preferences","path":"scripts/scr_load_preferences/scr_load_preferences.yy",},},
     {"id":{"name":"scr_load","path":"scripts/scr_load/scr_load.yy",},},

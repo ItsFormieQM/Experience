@@ -152,3 +152,8 @@ function date_get_month_name(num) {
 	]
 	return (names[num])
 }
+function Setting_Option(_name,_defstate,_scr) constructor {
+	name = _name
+	state = _defstate
+	func = _scr
+}

@@ -14,6 +14,7 @@ erase_file = function(file) {
 	values = get_values()
 	save_files = save_files_list()
 }
+
 loaded = false
 save_files_list = function() {
 	var save_files_found = []

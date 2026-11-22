@@ -656,7 +656,9 @@ for (var i = 1; i <= string_length(test); i++) {
 		)
 		
 		if is_choicer {
+			var ff = 0
 			if array_length(choicer_choices) != 0 {
+				
 				for (var k = 0; k < array_length(choicer_choices); k++) {
 					if char == string_char_at(choicer_choices[k],1) {
 						

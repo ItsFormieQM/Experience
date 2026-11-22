@@ -1,3 +1,10 @@
+if opened_settings {
+	layer_set_visible("TEST",false)
+	exit
+}
+else {
+	layer_set_visible("TEST",true)
+}
 scale = 1.5
 _x = 0
 _y = 0

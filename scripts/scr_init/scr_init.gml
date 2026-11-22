@@ -11,7 +11,8 @@ function scr_init(){
 		en,
 		fil,
 		ceb,
-		ja
+		ja,
+		COUNT
 	}
 	
 	global.lang = Language.en
@@ -44,7 +45,7 @@ function scr_init(){
 	global.music = []
 	global.played_music = []
 	global.prev_mus = noone
-	global.text = dump_text("lang_en_ui.json")
+	scr_fchange_lang(Language.ceb)
 	global.mus_list = []
 	global.skip_trueb_intro = true
 	global.drawer_info = []

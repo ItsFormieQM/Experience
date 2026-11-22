@@ -7,6 +7,11 @@ advance = false
 stopit = false
 OVERRIDE_Y = 0
 checkedforswear = false
+for (var i = 0; i < len(global.msg); i++) {
+	if is_undefined(global.msg[i]) {
+		global.msg[i] = "* Error"
+	}
+}
 if !variable_instance_exists(id,"identifier") {
 	identifier = none	
 }	

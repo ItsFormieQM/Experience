@@ -1,4 +1,4 @@
-if visible {
+if !opened_settings {
 	if instance_exists(obj_fade_warp) {
 		alpha -= obj_fade_warp.fadeout_rate
 	}
@@ -11,9 +11,14 @@ if visible {
 			snd_play(snd_menu_move,1)
 		}
 		if global.s_press {
+			if index == -666 {
+				index = -1
+				
+			}
 			index++
+			
 			if index >= max_save_files {
-				index = 0
+				index = -666
 			}
 			snd_play(snd_menu_move,1)
 		}
@@ -31,10 +36,18 @@ if visible {
 			}
 			snd_play(snd_menu_move,1)
 		}
+		sdm("INDEX: " + string(index))
+		sdm("CHOICER: " + string(choicer))
 	}
 	if global.interacted && !loaded{
 		global.time = 0
+		if index = -666 {
+			opened_settings = true
+			snd_play(snd_select,1.2)
+			exit
+		}
 		var file = save_files[index].location
+		
 		if choicer == 0 {
 		
 			if file_exists(file) {
@@ -56,7 +69,7 @@ if visible {
 		}
 		else if choicer == 1 {
 			
-			game_change("/test","-game ut.win")
+			//game_change("/test","-game ut.win")
 			
 		}
 		else if choicer == 2 {
@@ -67,10 +80,6 @@ if visible {
 		sdm("CHOICER: " + string(choicer))
 	}
 }
-if global.flag[Flag.On_Battle] {
-	visible = false
-}
 else {
-	visible = true
+	
 }
-
