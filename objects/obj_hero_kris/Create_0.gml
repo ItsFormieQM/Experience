@@ -33,6 +33,7 @@ damage = function(amt) {
 	}
 	var yoff = 0
 	sprite_index = spr_krisb_hurt
+	image_index = 0
 	invintimer = 60*4
 	if !i_exists(obj_soul_battle) {
 		invintimer = 0

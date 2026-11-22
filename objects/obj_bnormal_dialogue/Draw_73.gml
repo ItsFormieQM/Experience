@@ -24,7 +24,9 @@ if slower >= delay && !stopprocess{
 	
 	if !stopprocess {
 		vst += strat(teststr,index)
-		typersnd_play(snd)
+		if strat(teststr,index) != " " {
+			typersnd_play(snd)
+		}
 	}
 }
 draw_set_colour(c_black)

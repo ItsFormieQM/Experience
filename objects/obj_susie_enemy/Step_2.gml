@@ -72,7 +72,7 @@ if i_exists(obj_soul_battle) && obj_battlecontroller.fighting {
 			}		
 		}
 	}
-	else if floor(conv) >= 0{
+	else if floor(conv) >= 0 && mercycon < 8{
 		if !i_exists(obj_battle_border) {
 			scr_bbordersetup(camx_ab+(camw_ab/2),camy_ab+(camh_ab/2)-90,0.65,0.65)
 			bcon++
@@ -107,10 +107,31 @@ if i_exists(obj_soul_battle) && obj_battlecontroller.fighting {
 			}		
 		}
 	}
+	else if mercycon >= 8 && floor(conv) > 0 {
+		if !i_exists(obj_battle_border) {
+			scr_bbordersetup(camx_ab+(camw_ab/2),camy_ab+(camh_ab/2)-90,0.65,0.65)
+			bcon++
+		}
+		if i_exists(obj_battle_border) {
+			atktimer++
+			
+		
+			
+			if atktimer == 60*4 {
+				atktimer = 0
+				atkcount = 0
+				scr_bendturn()
+			}		
+		}
+	}
 	
 }
-if bc.turns == 1 {
+if bc.turns == 2 {
 	global.cbmessage[0] = "#t000^002#fnt001* Susie readies up for another^/  round."
+	bc.turns += 0.1
+}
+if mercycon >= 8 && bc.turns == floor(bc.turns) {
+	global.cbmessage[0] = scr_settext("#t000^002#fnt001* Susie's reluctant to continue^/  fighting you.","susie_enem_12")
 	bc.turns += 0.1
 }
 

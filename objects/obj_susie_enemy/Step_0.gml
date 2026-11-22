@@ -110,7 +110,7 @@ if conv == floor(conv){
 		sprite_index = idle
 		scr_enemytalk(bbox_left,y,
 			[
-				scr_settext("....","susie_enem_1_9"),
+				scr_settext("....","susie_enem_1_10"),
 			],
 			snd_txtsus,
 			[
@@ -123,11 +123,39 @@ if conv == floor(conv){
 		
 		scr_enemytalk(bbox_left,y,
 			[
-				scr_settext("Kris","susie_enem_1_9"),
+				scr_settext("Kris...","susie_enem_1_11"),
 			],
 			snd_txtsus,
 			[
 				0.67,
+			]
+		)
+	}
+	else if mercycon == floor(mercycon) && mercycon == 10 {
+		mercycon += 0.1
+		
+		scr_enemytalk(bbox_left,y,
+			[
+				scr_settext("...","susie_enem_1_12"),
+			],
+			snd_txtsus,
+			[
+				0.9,
+			]
+		)
+	}
+	else if mercycon == floor(mercycon) && mercycon == 11 {
+		mercycon += 0.1
+		
+		scr_enemytalk(bbox_left,y,
+			[
+				scr_settext("I'm sorry...","susie_enem_1_13"),
+				scr_settext("I'm sorry for^/everything that happened^/before...","susie_enem_1_14")
+			],
+			snd_txtsus,
+			[
+				1.3,
+				2.3
 			]
 		)
 	}
