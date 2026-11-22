@@ -14,6 +14,12 @@ function ossafe_fs_switch() {
 	keyboard_key_press(vk_f4) 
 	keyboard_key_release(vk_f4)
 }
+function ossafe_get_fsstate() {
+	if global.osflavor != PC {
+		return true
+	}
+	return window_get_fullscreen()
+}
 function scr_language_switcher(){
 	sdm($"OBJECT: {object_get_name(object_index)}")
 	sdm($"OBJECT EVENT: {string(event_type)}")

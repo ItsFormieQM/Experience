@@ -5,7 +5,7 @@ draw_set_font(fnt_main_battletxt_small)
 draw_set_colour(c_white)
 setts = [
 	{name: "Language: ", state: scr_translate_enum_lang(global.lang),func: scr_language_switcher},
-	new Setting_Option("Fullscreen: ", boolstr(window_get_fullscreen()), ossafe_fs_switch()),
+	new Setting_Option("Fullscreen: ", boolstr(ossafe_get_fsstate()), ossafe_fs_switch),
 	new Setting_Option("Volume Multiplier: ",string(global.volnum)+"x",volume_changer) 
 ]
 if opened_settings {
