@@ -9,6 +9,11 @@ scr_init()
 room_goto(room_gaster)
 texture_prefetch("Default")
 
+enableautoz = false
+enable = function() {
+	enableautoz = true
+	alarm[1]  =1
+}
 sdm(global.is_fs ? "True" : "False")
 window_center()
 scr_load_audio_external()

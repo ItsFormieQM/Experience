@@ -105,7 +105,7 @@ if instance_exists(kris_actor) && ran {
 					i = 0
 				}
 			}	
-			cutscene_function_add(gooner,1)
+			
 			
 		
 		})
