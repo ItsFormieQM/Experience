@@ -15,8 +15,8 @@
   "name":"obj_cutscene_actor_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"Objects",
+    "path":"folders/Real/Cutscenes/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

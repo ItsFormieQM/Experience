@@ -10,8 +10,8 @@
   "name":"obj_cutscener_test_transp",
   "overriddenProperties":[],
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"unused",
+    "path":"folders/Real/Cutscenes/Objects/Cutscenes/unused.yy",
   },
   "parentObjectId":{
     "name":"obj_cutscener_test_1_3",

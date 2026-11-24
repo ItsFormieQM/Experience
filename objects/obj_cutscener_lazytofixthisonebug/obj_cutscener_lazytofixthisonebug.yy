@@ -8,8 +8,8 @@
   "name":"obj_cutscener_lazytofixthisonebug",
   "overriddenProperties":[],
   "parent":{
-    "name":"Experience (Chapter 1)",
-    "path":"Experience (Chapter 1).yyp",
+    "name":"Used",
+    "path":"folders/Real/Cutscenes/Objects/Cutscenes/Used.yy",
   },
   "parentObjectId":{
     "name":"obj_cutscener_debugluzaro",
@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_cutscene",
+    "path":"sprites/spr_cutscene/spr_cutscene.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

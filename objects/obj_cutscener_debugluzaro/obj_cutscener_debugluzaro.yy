@@ -11,8 +11,8 @@
   "name":"obj_cutscener_debugluzaro",
   "overriddenProperties":[],
   "parent":{
-    "name":"Debug",
-    "path":"folders/Real/Cutscenes/Objects/Cutscenes/Debug.yy",
+    "name":"unused",
+    "path":"folders/Real/Cutscenes/Objects/Cutscenes/unused.yy",
   },
   "parentObjectId":{
     "name":"obj_cutscener_test_1",
