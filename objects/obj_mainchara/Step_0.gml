@@ -2,6 +2,7 @@ if !visible {
 	exit
 }
 if global.interacted_c {
+	exit
 	if inventory_state == Inventory_State.off {
 		inventory_state = Inventory_State.active_firstchoice
 		if inventory_state == Inventory_State.active_firstchoice {
@@ -110,7 +111,7 @@ if !global.flag[Flag.On_Battle] {
 			
 		}
 	}
-	if !global.canmove || (!global.w_held && !global.a_held && !global.s_held && !global.d_held && !jump_state) {
+	if (!global.canmove) || (!global.w_held && !global.a_held && !global.s_held && !global.d_held && !jump_state) {
 		ran = false
 		if sprite_index == spr_mainchara_l || sprite_index == spr_mainchara_r {
 			if floor(image_index) % 2 == 0 {

@@ -7,6 +7,9 @@ function volume_changer() {
 	}
 	cmd_volume_set(clamp(global.volnum,1,90))
 }
+function ldm() {
+	global.ldm = !global.ldm
+}
 function ossafe_fs_switch() {
 	if global.osflavor != PC {
 		exit

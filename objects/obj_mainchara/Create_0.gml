@@ -14,6 +14,7 @@ scr_depth()
 alpha_shd = shader_get_uniform(shd_customcolour,"colour")
 if !instance_exists(obj_camera)
 	instance_create(x,y,obj_camera)
+pleasestop = false
 sp = 2.5
 image_speed = 0
 dir = 0

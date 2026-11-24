@@ -160,3 +160,6 @@ function Setting_Option(_name,_defstate,_scr) constructor {
 function boolstr(inp) {
 	return inp ? "true":"false"
 }
+function safe_execute() {
+	
+}

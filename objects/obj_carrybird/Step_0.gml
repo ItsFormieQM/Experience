@@ -29,7 +29,7 @@ if place_meeting(x,y,obj_mainchara) || touched {
 		if !choiced {
 			global.choice = -1
 			choiced = true
-			
+			touched = false
 		}
 	}
 }

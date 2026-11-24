@@ -254,6 +254,7 @@ move_towards_point(xpos,ypos,spdr)
 battleintro = true
 aura = []
 selected = false
-global.cbattlemus[0] = new_mus_init(snd_none)
+
+global.cbattlemus[0] = new_mus_init(mus_battle_rb)
 global.flag[Flag.Story_FightingSusie_1] = true
 

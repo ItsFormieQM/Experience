@@ -67,10 +67,14 @@ if room == room_black {
 var obj = asset_get_index($"obj{string_delete(room_get_name(room),1,4)}")
 sdm($"obj{string_delete(room_get_name(room),1,4)}")
 if obj != -1 {
-	sdm("WORKED")
-	instance_create(0,0,obj)
+	
+	var master_apiong = instance_create(0,0,obj)
+	sdm($"created {master_apiong}")
 }
 else {
+	if !i_exists(obj_inventory_handler) {
+		instance_create(0,0,obj_inventory_handler)
+	}
 	sdm("defaulting")
 }
 if room == room_kris_house_entry {

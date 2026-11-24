@@ -8,6 +8,11 @@ if true {
 	if !global.dialogue_autoskip {
 		if global.interacted && skippable && global.dialogue_enable_progress{
 			sdm("how tf")
+			if owner != noone {
+				with owner {
+					con = floor(con) + 1
+				}
+			}
 			playtxt = false
 			buffer = true
 			checkedforswear = false

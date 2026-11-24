@@ -1,8 +1,8 @@
 
 if i_exists(obj_battle_default_bg) {
 	with obj_battle_default_bg {
-		x = other.x - (sprite_width / 2)
-		y = other.y - (sprite_height / 2)
+		x = camx_ab
+		y = camy_ab
 	}
 }
 if !global.cutscene && !global.flag[Flag.On_Battle] {

@@ -125,7 +125,7 @@ function scr_init(){
 	global.buggy_room = false
 	global.doors = []
 	// PLAYER
-	global.player_items = [new Item()]
+	global.player_items = []
 	global.player_points = 0
 	global.run = false
 	global.flag[Flag.On_Battle] = false

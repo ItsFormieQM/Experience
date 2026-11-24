@@ -7,6 +7,9 @@ advance = false
 stopit = false
 OVERRIDE_Y = 0
 checkedforswear = false
+if !variable_instance_exists(id,"owner") {
+	owner = noone
+}
 for (var i = 0; i < len(global.msg); i++) {
 	if is_undefined(global.msg[i]) {
 		global.msg[i] = "* Error"

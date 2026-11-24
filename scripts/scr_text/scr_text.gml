@@ -820,6 +820,14 @@ function SCR_TEXT(_msc, ui = false,con = 0){
 					global.yy_offset[i] = 960 / 2 + 85
 				}
 				break
+			case "i_test1":
+				index = 0
+				global.msg[index] = "#t000^002#fnt001* You opened the chest."
+				index++
+				global.msg[index] = "#t000^002#fnt001^W* Inside is ^YTest Item^W"
+				scr_normaltextoffset()
+				instance_create(0,0,obj_drawer)
+				break
 			default:
 				index = 0
 				global.msg[index] = "* What a dirty hacker we got here./E"
