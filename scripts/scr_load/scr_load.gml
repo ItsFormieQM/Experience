@@ -22,7 +22,11 @@ function scr_load(){
 		}
 	
 		var file = file_text_open_read(filename)
-		var rm = file_text_read_real(file)
+		var rm = asset_get_index(file_text_read_string(file))
+		if rm == -1 {
+			c_error("wtf")
+			exit
+		}
 		file_text_readln(file)
 	
 		obj_mainchara.goto_x = file_text_read_real(file)

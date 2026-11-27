@@ -10,7 +10,7 @@ function scr_save(savepoint_id){
 	var file = file_text_open_write(filename)
 	
 	// player room line 1
-	file_text_write_real(file,room)
+	file_text_write_string(file,room_get_name(room))
 	file_text_writeln(file)
 		
 	// player x line 2

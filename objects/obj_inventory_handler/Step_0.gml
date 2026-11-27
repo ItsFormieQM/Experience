@@ -1,3 +1,6 @@
+if global.cutscene {
+	exit
+}
 if global.interacted_c {
 	astate = !astate
 	if !astate {
@@ -34,7 +37,21 @@ if astate {
 		snd_play(snd_menu_move,1.2)
 	}
 	else if global.interacted {
-		cmd_crash()
+		switch first_menu_i {
+			case Pause_Options.ITEM:
+				break
+			case Pause_Options.STAT:
+				break
+			case Pause_Options.CELL:
+				break
+			case Pause_Options.SETT:
+				sdm(scr_get_settings())
+				break
+			default:
+				c_error("shit",false)
+				break
+		}
 	}
+	
 }
 

@@ -72,10 +72,10 @@ if obj != -1 {
 	sdm($"created {master_apiong}")
 }
 else {
-	if !i_exists(obj_inventory_handler) {
+	sdm("defaulting")
+	if !i_exists(obj_inventory_handler) && !scr_prohibit_rooms() {
 		instance_create(0,0,obj_inventory_handler)
 	}
-	sdm("defaulting")
 }
 if room == room_kris_house_entry {
 	if global.flag[Flag.Story_IntroKrisHouse_Cutscene] {

@@ -22,6 +22,9 @@ function is_dreamworld() {
 	}
 	return false
 }
+function c_error(str,_continue = false) {
+	show_error(str,false)
+}
 function overflow_safe(variable,overflownum,underflownum,overflownumset,underflownumset) {
 	if variable > overflownum {
 		variable = overflownumset
