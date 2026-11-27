@@ -32,8 +32,8 @@
     {"$GMFolder":"","%Name":"Cutscenes","folderPath":"folders/Real/Cutscenes.yy","name":"Cutscenes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Real/Cutscenes/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Cutscenes","folderPath":"folders/Real/Cutscenes/Objects/Cutscenes.yy","name":"Cutscenes","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"unused","folderPath":"folders/Real/Cutscenes/Objects/Cutscenes/unused.yy","name":"unused","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sleeping Cutscenes","folderPath":"folders/Real/Cutscenes/Objects/Cutscenes/Sleeping Cutscenes.yy","name":"Sleeping Cutscenes","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"unused","folderPath":"folders/Real/Cutscenes/Objects/Cutscenes/unused.yy","name":"unused","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Used","folderPath":"folders/Real/Cutscenes/Objects/Cutscenes/Used.yy","name":"Used","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Real/Cutscenes/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Manipulation","folderPath":"folders/Real/Cutscenes/Scripts/Manipulation.yy","name":"Manipulation","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -103,7 +103,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.1.0.27",
+    "IDEVersion":"2026.1.1.34",
   },
   "name":"Experience (Chapter 1)",
   "resources":[

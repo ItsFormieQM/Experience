@@ -75,3 +75,12 @@ function scr_translate_enum_lang(num) {
 
 	}
 }
+function scr_get_settings() {
+	var setts = [
+		new Setting_Option("Language: ", scr_translate_enum_lang(global.lang), scr_language_switcher),
+		new Setting_Option("Fullscreen: ", boolstr(ossafe_get_fsstate()), ossafe_fs_switch),
+		new Setting_Option("Volume Multiplier: ",string(global.volnum)+"x",volume_changer),
+		new Setting_Option("Low detail mode: ",boolstr(global.ldm), ldm),
+	]
+	return setts
+}

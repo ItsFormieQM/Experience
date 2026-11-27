@@ -20,6 +20,8 @@ if astate {
 	draw_text(lvpos, 40*2 + cy, string(global.lv))
 	draw_text(23*2 + cx, 49*2 + cy, "HP")
 	draw_text(lvpos, 49*2 + cy, string(global.hp[0]) + "/" + string(global.maxhp[0]))
+	draw_text(23*2 + cx, 58*2 + cy, "$")
+	draw_text(lvpos +cx, 58*2 + cy, string(global.player_points))
 	draw_set_font(fnt_main_battletxt)
 	draw_text(42*2 + cx, 84*2 + cy, "ITEM")
 	draw_text(42*2 + cx, 102*2 + cy, "STAT")
@@ -28,8 +30,8 @@ if astate {
 	draw_sprite_ext(
 		spr_small_heart,
 		0,
-		(42*2) - sprite_get_width(spr_small_heart),
-		((84+(first_menu_i*18))*2) + sprite_get_height(spr_small_heart),
+		((42*2) - sprite_get_width(spr_small_heart))+cx,
+		(((84+(first_menu_i*18))*2) + sprite_get_height(spr_small_heart))+cy,
 		1,
 		1,
 		
