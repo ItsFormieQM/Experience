@@ -99,7 +99,13 @@ function scr_load(){
 			file_text_close(file)
 			
 		}
-		
+		if len(global.player_items) <= 0 {
+			global.player_items = json_stringify(global.flag[Flag.Story_Items])
+			if is_array(global.player_items) {
+				sdm("ok")
+			}
+			
+		}
 		instance_create(obj_mainchara.x,obj_mainchara.y,obj_warp, {target_marker_slot: wm_slot, target_room: rm, is_onload: true})
 		random_set_seed(global.flag[Flag.Game_Seed],true)
 	}

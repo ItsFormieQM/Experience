@@ -20,7 +20,7 @@ if instance_exists(kris_actor) && ran {
 	if !executed {
 		mus_fade(120,0)
 		executed = true
-		global.msg[0] = "#t000^002#fnt001* An ad will play in 5 seconds."
+		global.msg[0] = "#t000^002#fnt001* A video will play in 5 seconds."
 		scr_normaltextoffset()
 		instance_create(0,0,obj_drawer)
 		var alarm1 = cutscene_create_timer(60*5,function(){
@@ -54,12 +54,22 @@ if fade {
 		}
 	}
 }
+
 if global.cutscene {
 	with obj_cutscene_controller {
+		
 		if con == 1 {
 			con += 0.1
 			var alarm1 = cutscene_create_timer(240,function(){
-				var thing = scr_start_video(working_directory+"video/zoo.mp4",0,0)
+				var rvid = choose(
+								"video/zoo_1.mp4",
+								"video/zoo_2.mp4",
+								"video/zoo_3.mp4"
+							)
+				var thing = scr_start_video(working_directory+rvid,0,0)
+				with obj_cutscene_test_whataexoticzoo {
+					vider = thing
+				}
 				with thing {
 					depth = obj_fader_menu.depth - 100
 					owner = other.id
@@ -77,4 +87,5 @@ if global.cutscene {
 		}
 	}
 }
+
 visible = !global.cutscene

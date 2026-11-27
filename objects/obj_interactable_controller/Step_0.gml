@@ -2,6 +2,9 @@
 if global.flag[Flag.On_Battle] {
 	exit
 }
+if i_exists(obj_inventory_handler) && obj_inventory_handler.astate {
+	exit
+}
 if (place_meeting(x,y,obj_mainchara) && !obj_mainchara.occupied) || force_run{
 	if (global.interacted && can_move && !instance_exists(obj_drawer)) || force_run {
 		

@@ -23,21 +23,40 @@ if astate {
 	draw_text(23*2 + cx, 58*2 + cy, "$")
 	draw_text(lvpos, 58*2 + cy, string(global.player_points))
 	draw_set_font(fnt_main_battletxt)
+	draw_set_colour(c_white)
+	if len(global.player_items) <= 0 {
+		draw_set_colour(c_gray)
+	}
+	
+	
 	draw_text(42*2 + cx, 84*2 + cy, "ITEM")
+	draw_set_colour(c_white)
 	draw_text(42*2 + cx, 102*2 + cy, "STAT")
 	draw_text(42*2 + cx, 120*2 + cy, "CELL")
-	draw_text(42*2 + cx, 138*2 + cy, "SETT")
-	draw_sprite_ext(
-		spr_small_heart,
-		0,
-		((42*2) - sprite_get_width(spr_small_heart))+cx,
-		(((84+(first_menu_i*18))*2) + sprite_get_height(spr_small_heart))+cy,
-		1,
-		1,
+	draw_text(42*2 + cx, 138*2 + cy, scr_settext("SETT","pausemenu_sett"))
+	if first_menu {
+		draw_sprite_ext(
+			spr_small_heart,
+			0,
+			((42*2) - sprite_get_width(spr_small_heart))+cx,
+			(((84+(first_menu_i*18))*2) + sprite_get_height(spr_small_heart))+cy,
+			1,
+			1,
 		
-		0,
-		c_white,
-		1
-	)
+			0,
+			c_white,
+			1
+		)
+	}
+	else {
+		switch othermenu {
+			case Pause_Options.ITEM:
+				draw_set_colour(c_white)
+				draw_rectangle(95*2+cx,16*2+cy,190*2+cx,147*2+cy+36,false)
+				break
+			default:
+				break
+		}
+	}
 	draw_set_settings(sett)
 }

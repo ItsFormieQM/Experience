@@ -1,5 +1,8 @@
 if !visible {
 	exit
+}	
+if i_exists(obj_inventory_handler) && obj_inventory_handler.astate {
+	exit
 }
 if place_meeting(x,y,obj_mainchara) && !global.flag[Flag.On_Battle] {
 	with obj_save_menu {

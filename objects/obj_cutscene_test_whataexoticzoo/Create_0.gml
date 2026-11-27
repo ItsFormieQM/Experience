@@ -8,3 +8,4 @@ mus_fade(120,0)
 song = []
 fade = false
 didnt = false
+vider = noone

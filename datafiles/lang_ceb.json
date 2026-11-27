@@ -122,5 +122,6 @@
 	"kris_house_myroom_drawer_1_1":"#t000^000#fnt001^002* (Imong kabinet.)^/^005^002* (Walay sulod.)",
 	"menu_config_2":"Konfiguro",
 	"susie_enem_intro_1":"#t000^002#fnt001* Gi-barahan ka ni Susie!",
-	"susie_enem_check_1":"#t000^002#fnt001* SUSIE - ATK 15 DEF 5^/* Murag patyon ka ani niya...^/* Try daw ug pag-kombinsan?"
+	"susie_enem_check_1":"#t000^002#fnt001* SUSIE - ATK 15 DEF 5^/* Murag patyon ka ani niya...^/* Try daw ug pag-kombinsa?",
+	"pausemenu_sett":"KONF",
 }

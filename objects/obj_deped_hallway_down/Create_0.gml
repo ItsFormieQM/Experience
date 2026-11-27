@@ -8,3 +8,4 @@ if global.flag[Flag.Story_SusieState_1] == SusieState_1.Fought {
 else {
 	sdm("fail")
 }
+instance_create(0,0,obj_inventory_handler)

@@ -1,3 +1,6 @@
+if i_exists(obj_inventory_handler) && obj_inventory_handler.astate {
+	exit
+}
 rz = global.interacted
 if place_meeting(x,y,player) && !i_exists(obj_drawer) && rz && z = false{
 	SCR_TEXT(msc)
