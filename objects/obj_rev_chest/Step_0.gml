@@ -31,6 +31,7 @@ if z && !i_exists(obj_drawer) {
 	if !reuse {
 		i_destroy()
 	}
+	con = 0
 	z = false
 	ind = -1
 

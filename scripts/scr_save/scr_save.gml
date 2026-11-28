@@ -76,4 +76,12 @@ function scr_save(savepoint_id){
 		}
 	}
 	file_text_close(file)
+	var sjson = global.save_folder + "items.json"
+	// items as json
+	if file_exists(sjson) {
+		file_delete(sjson)
+	}
+	var ijson = file_text_open_write(sjson) 
+	file_text_write_string(ijson,json_stringify(global.player_items,true))
+	file_text_close(ijson)
 }

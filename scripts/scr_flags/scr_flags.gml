@@ -31,7 +31,7 @@ function scr_flags(){
 		Story_Day2Intro_School, // 28
 		Story_FightingSusie_1, // 29
 		Story_SusieState_1, // 30
-		Story_Items, // 31
+		
 		COUNT,
 	}
 	enum SusieState_1 {
@@ -72,7 +72,6 @@ function scr_flags(){
 		"Story_Day2Intro_School",
 		"Story_FightingSusie_1",
 		"Story_SusieState_1",
-		"Story_Items",
 	]
 	global.flag[Flag.Story_SusieState_1] = SusieState_1.NotFought
 	global.flag[Flag.Dream_World] = false

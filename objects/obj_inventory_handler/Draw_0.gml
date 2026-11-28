@@ -52,7 +52,24 @@ if astate {
 		switch othermenu {
 			case Pause_Options.ITEM:
 				draw_set_colour(c_white)
-				draw_rectangle(95*2+cx,16*2+cy,190*2+cx,147*2+cy+36,false)
+				draw_rectangle(95*2+cx,16*2+cy,600+cx,465+cy,false)
+				draw_set_colour(c_black)
+				draw_rectangle(98*2+cx,19*2+cy,594+cx,459+cy,false)
+				draw_set_colour(c_white)
+				draw_sprite_ext(
+					spr_small_heart,
+					0,
+					98*2+30,
+					75+(othermenu_i*30),
+					1,
+					1,
+					0,
+					c_white,
+					1
+				)
+				for (var i = 0; i < len(global.player_items); i++) {
+					draw_text(98*2+cx+50,(19*2+cy+20)+(i*30),global.player_items[i].name)
+				}
 				break
 			default:
 				break

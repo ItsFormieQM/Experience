@@ -1,1 +1,0 @@
-array_push(global.player_items,awards)
