@@ -5,6 +5,7 @@ if global.cutscene {
 if global.interacted_x {
 	if astate && first_menu {
 		global.interacted_c = true
+		othermenu_i = 0
 	}
 	if !first_menu {
 		first_menu = true
@@ -18,7 +19,7 @@ if global.interacted_c {
 	astate = !astate
 	if !astate {
 		global.canmove = true
-		
+		othermenu_i = 0
 	}
 	if astate {
 		snd_play(snd_menu_move,1.2)

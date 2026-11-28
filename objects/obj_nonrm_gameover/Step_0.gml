@@ -14,3 +14,6 @@ if waitfordonity {
 		ran1 = true
 	}
 }
+if i_exists(obj_dialogue) {
+	instance_destroy(obj_dialogue)
+}
