@@ -63,7 +63,7 @@ if astate {
 	}
 	else {
 		if othermenu == Pause_Options.ITEM {
-			if len(global.player_items) > 0 {
+			if len(global.player_items) > 1 {
 				if global.w_press {
 					othermenu_i--
 					if othermenu_i < 0{
